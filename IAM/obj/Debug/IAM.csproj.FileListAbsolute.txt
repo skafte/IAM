@@ -1,0 +1,12 @@
+C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM\Bin\Debug\IAM.dll
+C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM\Bin\Debug\IAM.pdb
+C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM\Bin\Debug\AppManifest.xaml
+C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM\Bin\Debug\IAM.xap
+C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM\Bin\Debug\IAMTestPage.html
+C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM\obj\Debug\App.g.i.cs
+C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM\obj\Debug\MainPage.g.i.cs
+C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM\obj\Debug\IAM.g.resources
+C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM\obj\Debug\IAM.dll
+C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM\obj\Debug\IAM.pdb
+C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM\obj\Debug\XapCacheFile.xml
