@@ -1,5 +1,5 @@
 C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM.Web\bin\IAM.Web.dll
 C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM.Web\bin\IAM.Web.pdb
-C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM.Web\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM.Web\obj\Debug\IAM.Web.dll
 C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM.Web\obj\Debug\IAM.Web.pdb
+C:\Users\Klaus Skafte\Documents\Kode projekter\IAM\IAM.Web\obj\Debug\IAM.Web.csprojResolveAssemblyReference.cache
