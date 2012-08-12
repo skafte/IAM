@@ -5,7 +5,6 @@
    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
    xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
-	xmlns:System_Windows_Controls_Primitives="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls.Input.Toolkit" 
 	xmlns:System="clr-namespace:System;assembly=mscorlib"
    x:Class="IAM.MainPage"
    mc:Ignorable="d"
