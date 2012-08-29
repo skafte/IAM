@@ -333,10 +333,10 @@ namespace IAM
       {
          Globals.TemporaryData.SelectedCharacterStats = document;
 
-         //if (document.Descendants("powers") != null)
-         //   clWebClientManager.PrepareFilePaths("Get character powers", "", document);
-         //else
-         clWebClientManager.PrepareFilePaths("Get empty character sheet", document.Element("body").Attribute("type").Value.ToString());
+         if (document.Descendants("powers").Count() != 0)
+            clWebClientManager.PrepareFilePaths("Get character powers", "", document);
+         else
+            clWebClientManager.PrepareFilePaths("Get empty character sheet", document.Element("body").Attribute("type").Value.ToString());
       }
 
       private void clWebClientManager_gotCharacterPowers(XDocument document)
