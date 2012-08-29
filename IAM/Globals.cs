@@ -155,7 +155,7 @@ namespace IAM
          }
 
          /// <summary>
-         /// Number of files still in not loaded as part of a given task
+         /// Number of files still in 'not loaded' as part of a given task
          /// </summary>
          static public int FilesStillToLoad
          {
@@ -170,7 +170,7 @@ namespace IAM
          }
 
          /// <summary>
-         /// Powers containing character powers
+         /// XML data files containing character powers
          /// </summary>
          static public List<XElement> PowersXML
          {
