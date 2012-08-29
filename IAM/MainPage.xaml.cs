@@ -334,17 +334,16 @@ namespace IAM
          Globals.TemporaryData.SelectedCharacterStats = document;
 
          if (document.Descendants("powers").Count() != 0)
-            clWebClientManager.PrepareFilePaths("Get character powers", "", document);
+            clWebClientManager.PrepareFilePaths("Get character powers", "", Globals.TemporaryData.SelectedCharacterStats);
          else
-            clWebClientManager.PrepareFilePaths("Get empty character sheet", document.Element("body").Attribute("type").Value.ToString());
+            clWebClientManager.PrepareFilePaths("Get empty character sheet", Globals.TemporaryData.SelectedCharacterStats.Element("body").Attribute("type").Value.ToString());
       }
 
       private void clWebClientManager_gotCharacterPowers(XDocument document)
       {
-         //Globals.TemporaryData.PowersXML.Add(
-         //List<string> forallPowerIndex = Globals.GameInformation.PowerIndexForAll.ElementAt(document.Element("body").Attribute("name").Value.ToString);
-         //if (--Globals.TemporaryData.FilesStillToLoad == 0)
-         //    clWebClientManager.PrepareFilePaths("Get empty character sheet", document.Element("body").Attribute("type").Value.ToString());
+         Globals.TemporaryData.PowersXML.Add(document.Element("body"));
+         if (--Globals.TemporaryData.FilesStillToLoad == 0)
+            clWebClientManager.PrepareFilePaths("Get empty character sheet", Globals.TemporaryData.SelectedCharacterStats.Element("body").Attribute("type").Value.ToString());
       }
 
       /// <summary>
