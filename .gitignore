@@ -62,9 +62,8 @@ local.properties
 *.vspscc
 .builds
 *.dotCover
-IAM.Web/ClientBin/IAM.xap
-IAM.Web/bin/IAM.Web.dll
-IAM.Web/bin/IAM.Web.pdb
+IAM.Web/ClientBin/IAM*
+IAM.Web/bin/IAM*
 
 ## TODO: If you have NuGet Package Restore enabled, uncomment this
 #packages/
