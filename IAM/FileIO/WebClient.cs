@@ -101,26 +101,22 @@ namespace FileIONamespace
                break;
             case "Get character powers":
                FileProcessTask = (int)FileProcessEnum.getCharacterPowers;
+               Globals.TemporaryData.FilesStillToLoad = 0;
+
                foreach (XElement ePowerName in document.Descendants("powers"))
                {
                   string powerType = ePowerName.Attribute("type").Value.ToString();
 
                   // find single power types
-                  List<string> singlePowerIndex = (from vTypes in ePowerName.Descendants(powerType)
+                  List<string> PowerIndex = (from vTypes in ePowerName.Descendants(powerType)
                                                    select vTypes.Element("type").Value).Distinct().ToList();
-                  singlePowerIndex.Remove("");                                                          // Cleanup of list
-
-                  // find for all power types for that kind of powers
-                  List<string> forallPowerIndex = Globals.GameInformation.PowerIndexForAll.ElementAt(Globals.GameInformation.PowerIndex.IndexOf(powerType));
+                  PowerIndex.AddRange(Globals.GameInformation.PowerIndexForAll.ElementAt(Globals.GameInformation.PowerIndex.IndexOf(powerType)));  // find general powers
+                  PowerIndex.Remove("");                                                          // Cleanup of list
 
                   // number of files to load
-                  Globals.TemporaryData.FilesStillToLoad += singlePowerIndex.Count + forallPowerIndex.Count;
+                  Globals.TemporaryData.FilesStillToLoad += PowerIndex.Count;
 
-                  singlePowerIndex.ForEach(delegate(string str)
-                  {
-                     LoadFile("./" + Globals.GameInformation.SelectedGame + "/powers/" + powerType + "/" + str + ".xml");
-                  });
-                  forallPowerIndex.ForEach(delegate(string str)
+                  PowerIndex.ForEach(delegate(string str)
                   {
                      LoadFile("./" + Globals.GameInformation.SelectedGame + "/powers/" + powerType + "/" + str + ".xml");
                   });
