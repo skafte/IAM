@@ -76,28 +76,28 @@ namespace FileIONamespace
                break;
             case "Get list of characters":
                FileProcessTask = (int)FileProcessEnum.getListOfCharacters;
-               LoadFile("./" + Globals.GameInformation.SelectedGame + "/Characters/index_Characters.xml");
+               LoadFile("./" + Globals.GameInformation.SelectedGame + "/characters/index_Characters.xml");
                break;
             case "Get list of equipment":
                FileProcessTask = (int)FileProcessEnum.getListOfEquipment;
-               LoadFile("./" + Globals.GameInformation.SelectedGame + "/Equipment/index_Equipment.xml");
+               LoadFile("./" + Globals.GameInformation.SelectedGame + "/equipment/index_Equipment.xml");
                break;
             case "Get list of powers":
                FileProcessTask = (int)FileProcessEnum.getListOfPowers;
-               LoadFile("./" + Globals.GameInformation.SelectedGame + "/Powers/index_Powers.xml");
+               LoadFile("./" + Globals.GameInformation.SelectedGame + "/powers/index_Powers.xml");
                break;
             case "Get types of equipment":
                FileProcessTask = (int)FileProcessEnum.getTypesOfEquipment;
-               LoadFile("./" + Globals.GameInformation.SelectedGame + "/Equipment/" + File + "/index_" + File + ".xml");
+               LoadFile("./" + Globals.GameInformation.SelectedGame + "/equipment/" + File + "/index_" + File + ".xml");
                break;
             case "Get types of power":
                FileProcessTask = (int)FileProcessEnum.getTypesOfPower;
-               LoadFile("./" + Globals.GameInformation.SelectedGame + "/Powers/" + File + "/index_" + File + ".xml");
+               LoadFile("./" + Globals.GameInformation.SelectedGame + "/powers/" + File + "/index_" + File + ".xml");
                break;
             // Character sheet informations
             case "Get character stats":
                FileProcessTask = (int)FileProcessEnum.getCharacterStats;
-               LoadFile("./" + Globals.GameInformation.SelectedGame + "/Characters/" + File + ".xml");
+               LoadFile("./" + Globals.GameInformation.SelectedGame + "/characters/" + File + ".xml");
                break;
             case "Get character powers":
                FileProcessTask = (int)FileProcessEnum.getCharacterPowers;
@@ -108,8 +108,8 @@ namespace FileIONamespace
                   // find single power types
                   List<string> singlePowerIndex = (from vTypes in ePowerName.Descendants(powerType)
                                                    select vTypes.Element("type").Value).Distinct().ToList();
-                  if (singlePowerIndex.Contains(""))
-                     singlePowerIndex.Remove("");                                                          // Cleanup of list
+                  singlePowerIndex.Remove("");                                                          // Cleanup of list
+
                   // find for all power types for that kind of powers
                   List<string> forallPowerIndex = Globals.GameInformation.PowerIndexForAll.ElementAt(Globals.GameInformation.PowerIndex.IndexOf(File));
 
