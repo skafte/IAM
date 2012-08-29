@@ -23,8 +23,8 @@ namespace CharacterSheetNamespace
       #region Properties --------------------------------------------------------------------
       #region Private ---------------------------------------------------------------------------
       enum DefaultItemEnum { enDefault, enCustom };
-      enum CreateItemEnum { enColumn, enRow, enComboBox, enDot, enLabel, enLabelTitle, enNumericUpDown, enTextBox };
-      string[,] StyleLayout = new string[2, 8];
+      enum CreateItemEnum { enColumn, enRow, enComboBox, enDot, enLabel, enLabelTitle, enNumericUpDown, enTextBox, enPowerBox };
+      string[,] StyleLayout = new string[2, 9];
       #endregion --------------------------------------------------------------------------------
 
       #region Events ----------------------------------------------------------------------------
@@ -42,30 +42,32 @@ namespace CharacterSheetNamespace
       /// </summary>
       private void ResetLayoutValues()
       {
-         StyleLayout[(int)DefaultItemEnum.enCustom, (int)CreateItemEnum.enColumn] = "HorizontalAlignment=Left; VerticalAlignment=Top";
-         StyleLayout[(int)DefaultItemEnum.enCustom, (int)CreateItemEnum.enRow] = "HorizontalAlignment=Left; VerticalAlignment=Top";
-         StyleLayout[(int)DefaultItemEnum.enCustom, (int)CreateItemEnum.enComboBox] = "Height=24; MinWidth=50";
-         StyleLayout[(int)DefaultItemEnum.enCustom, (int)CreateItemEnum.enDot] = "Height=24; HorizontalAlignment=Right";
-         StyleLayout[(int)DefaultItemEnum.enCustom, (int)CreateItemEnum.enLabel] = "Height=24; MinWidth=100; FontSize=13";
-         StyleLayout[(int)DefaultItemEnum.enCustom, (int)CreateItemEnum.enLabelTitle] = "HorizontalAlignment=Center; HorizontalContentAlignment=Center; FontSize=16; Foreground=SolidColorBrush, 255, 139, 54, 54";
-         StyleLayout[(int)DefaultItemEnum.enCustom, (int)CreateItemEnum.enNumericUpDown] = "Height=24; MinWidth=100; FontSize=13";
-         StyleLayout[(int)DefaultItemEnum.enCustom, (int)CreateItemEnum.enTextBox] = "Height=24; MinWidth=100";
+         StyleLayout[(int)DefaultItemEnum.enDefault, (int)CreateItemEnum.enColumn] = "HorizontalAlignment=Left; VerticalAlignment=Top";
+         StyleLayout[(int)DefaultItemEnum.enDefault, (int)CreateItemEnum.enRow] = "HorizontalAlignment=Left; VerticalAlignment=Top";
+         StyleLayout[(int)DefaultItemEnum.enDefault, (int)CreateItemEnum.enComboBox] = "Height=24; MinWidth=50";
+         StyleLayout[(int)DefaultItemEnum.enDefault, (int)CreateItemEnum.enDot] = "Height=24; HorizontalAlignment=Right";
+         StyleLayout[(int)DefaultItemEnum.enDefault, (int)CreateItemEnum.enLabel] = "Height=24; MinWidth=100; FontSize=13";
+         StyleLayout[(int)DefaultItemEnum.enDefault, (int)CreateItemEnum.enLabelTitle] = "HorizontalAlignment=Center; HorizontalContentAlignment=Center; FontSize=16; Foreground=SolidColorBrush, 255, 139, 54, 54";
+         StyleLayout[(int)DefaultItemEnum.enDefault, (int)CreateItemEnum.enNumericUpDown] = "Height=24; MinWidth=100; FontSize=13";
+         StyleLayout[(int)DefaultItemEnum.enDefault, (int)CreateItemEnum.enTextBox] = "Height=24; MinWidth=100";
+         StyleLayout[(int)DefaultItemEnum.enDefault, (int)CreateItemEnum.enPowerBox] = "MaxHeight=300; MaxWidth=500";
 
-         StyleLayout[(int)DefaultItemEnum.enDefault, (int)CreateItemEnum.enColumn] = "";
-         StyleLayout[(int)DefaultItemEnum.enDefault, (int)CreateItemEnum.enRow] = "";
-         StyleLayout[(int)DefaultItemEnum.enDefault, (int)CreateItemEnum.enComboBox] = "";
-         StyleLayout[(int)DefaultItemEnum.enDefault, (int)CreateItemEnum.enDot] = "";
-         StyleLayout[(int)DefaultItemEnum.enDefault, (int)CreateItemEnum.enLabel] = "";
-         StyleLayout[(int)DefaultItemEnum.enDefault, (int)CreateItemEnum.enLabelTitle] = "";
-         StyleLayout[(int)DefaultItemEnum.enDefault, (int)CreateItemEnum.enNumericUpDown] = "";
-         StyleLayout[(int)DefaultItemEnum.enDefault, (int)CreateItemEnum.enTextBox] = "";
+         StyleLayout[(int)DefaultItemEnum.enCustom, (int)CreateItemEnum.enColumn] = "";
+         StyleLayout[(int)DefaultItemEnum.enCustom, (int)CreateItemEnum.enRow] = "";
+         StyleLayout[(int)DefaultItemEnum.enCustom, (int)CreateItemEnum.enComboBox] = "";
+         StyleLayout[(int)DefaultItemEnum.enCustom, (int)CreateItemEnum.enDot] = "";
+         StyleLayout[(int)DefaultItemEnum.enCustom, (int)CreateItemEnum.enLabel] = "";
+         StyleLayout[(int)DefaultItemEnum.enCustom, (int)CreateItemEnum.enLabelTitle] = "";
+         StyleLayout[(int)DefaultItemEnum.enCustom, (int)CreateItemEnum.enNumericUpDown] = "";
+         StyleLayout[(int)DefaultItemEnum.enCustom, (int)CreateItemEnum.enTextBox] = "";
+         StyleLayout[(int)DefaultItemEnum.enCustom, (int)CreateItemEnum.enPowerBox] = "";
       }
 
       /// <summary>
       /// Find layout informations in attribute to node
       /// </summary>
       /// <param name="eValue">node to get attribute from</param>
-      /// <param name="CreateItem">StyleLayout type to set layout infortions for</param>
+      /// <param name="CreateItem">StyleLayout type to set layout informations for</param>
       /// <returns>An array of layout values to use</returns>
       private string[] GetLayoutAttributes(XElement eValue, int CreateItem)
       {
@@ -78,7 +80,7 @@ namespace CharacterSheetNamespace
                attribute = StyleLayout[(int)DefaultItemEnum.enCustom, CreateItem] = eValue.Attribute("layout").Value;      // set custom layout
             else if (eValue.Attribute("layout").Value == "default")
             {
-               StyleLayout[1, CreateItem] = "";                                                                            // clear custom layout
+               StyleLayout[(int)DefaultItemEnum.enCustom, CreateItem] = "";                                                // clear custom layout
                attribute = StyleLayout[(int)DefaultItemEnum.enDefault, CreateItem];                                        // layout to use equals default
             }
          }
@@ -470,27 +472,23 @@ namespace CharacterSheetNamespace
             grd.Margin = new Thickness(0);
             grd.Visibility = Visibility.Collapsed;
 
+            StackPanel wrppnl = new StackPanel();
+            wrppnl.Name = ePage.Element("menuTitle").Value.ToString() + "_stckpnl";
+            wrppnl.HorizontalAlignment = HorizontalAlignment.Left;
+            wrppnl.VerticalAlignment = VerticalAlignment.Top;
+            wrppnl.Orientation = Orientation.Vertical;
+
             if (ePage.Element("powers") != null)
             {
                // TODO
-               //Globals.PowerXML.PowerName = ePage.Element("menuTitle").Value.ToString().ToLower();
-               //Globals.PowerXML.UserType = ePage.Element("userType").Value;
-
-               //this.CharacterNeedsPowers("Get character powers", ePage.Element("powers"));
+               
             }
             else
             {
-               StackPanel wrppnl = new StackPanel();
-               wrppnl.Name = ePage.Element("menuTitle").Value.ToString() + "_stckpnl";
-               wrppnl.HorizontalAlignment = HorizontalAlignment.Left;
-               wrppnl.VerticalAlignment = VerticalAlignment.Top;
-               wrppnl.Orientation = Orientation.Vertical;
-
                ResetLayoutValues();
                DiscectSheetXML(ePage, wrppnl);
-
-               grd.Children.Add(wrppnl);
             }
+            grd.Children.Add(wrppnl);
             CharacterSheet_grd.Children.Add(grd);
          }
       }
@@ -519,6 +517,7 @@ namespace CharacterSheetNamespace
             // if grid exist, insert values
             if (objgrd != null)
             {
+               // for stats and text
                foreach (XElement eValue in ePage.Descendants("value"))
                {
                   if (eValue.Attribute("id").Value.ToString().Contains("_cmbbx"))
@@ -576,6 +575,11 @@ namespace CharacterSheetNamespace
                   }
                   else
                      throw new UnknownObjectException(eValue.Attribute("id").Value.ToString());
+               }
+
+               // for powers
+               foreach (XElement eValue in ePage.Element("powers").Descendants(ePage.Element("menuTitle").Value.ToString()))
+               {
                }
             }
          }
