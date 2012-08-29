@@ -111,24 +111,24 @@ namespace FileIONamespace
                   singlePowerIndex.Remove("");                                                          // Cleanup of list
 
                   // find for all power types for that kind of powers
-                  List<string> forallPowerIndex = Globals.GameInformation.PowerIndexForAll.ElementAt(Globals.GameInformation.PowerIndex.IndexOf(File));
+                  List<string> forallPowerIndex = Globals.GameInformation.PowerIndexForAll.ElementAt(Globals.GameInformation.PowerIndex.IndexOf(powerType));
 
                   // number of files to load
                   Globals.TemporaryData.FilesStillToLoad += singlePowerIndex.Count + forallPowerIndex.Count;
 
                   singlePowerIndex.ForEach(delegate(string str)
                   {
-                     LoadFile("./" + Globals.GameInformation.SelectedGame + "/Powers/" + powerType + "/" + str + ".xml");
+                     LoadFile("./" + Globals.GameInformation.SelectedGame + "/powers/" + powerType + "/" + str + ".xml");
                   });
                   forallPowerIndex.ForEach(delegate(string str)
                   {
-                     LoadFile("./" + Globals.GameInformation.SelectedGame + "/Powers/" + powerType + "/" + str + ".xml");
+                     LoadFile("./" + Globals.GameInformation.SelectedGame + "/powers/" + powerType + "/" + str + ".xml");
                   });
                }
                break;
             case "Get empty character sheet":
                FileProcessTask = (int)FileProcessEnum.getEmptyCharacterSheet;
-               LoadFile("./" + Globals.GameInformation.SelectedGame + "/Sheets/" + File + ".xml");
+               LoadFile("./" + Globals.GameInformation.SelectedGame + "/sheets/" + File + ".xml");
                break;
             default:
                throw new UnknownFileProcessException(Reason);
