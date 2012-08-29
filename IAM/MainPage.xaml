@@ -109,7 +109,7 @@
                </StackPanel>
             </toolkit:Expander.Header>
             <Grid>
-               <ListBox x:Name="CharacterSheetMenu_lstbx" HorizontalContentAlignment="Left" VerticalAlignment="Top" Margin="2,0" BorderBrush="{x:Null}" />
+               <ListBox x:Name="CharacterSheetMenu_lstbx" SelectionChanged="SecondaryMenu_lstbx_SelectionChanged" HorizontalContentAlignment="Left" VerticalAlignment="Top" Margin="2,0" BorderBrush="{x:Null}" />
             </Grid>
          </toolkit:Expander>
          <toolkit:Expander x:Name="PowerLibraryMenu_expndr" ExpandDirection="Left" HorizontalAlignment="Left" Expanded="Expanders_ExpandCollaps" Background="White" IsExpanded="False">

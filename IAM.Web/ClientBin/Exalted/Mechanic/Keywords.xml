@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<body>
+	<keyword> <!-- Action-Only -->
+		<name>Action-Only</name>
+		<reference>The Thousand Correct Actions of the Upright Soldier, page 64</reference>
+		<description>A reflexive Charm with this keyword can be activated only on a tick when the character acts and only once per tick. It may not be used on the ticks between actions.</description>
+	</keyword>
+	<keyword> <!-- Aquatic -->
+		<name>Aquatic</name>
+		<reference>Debris from the Fallen Races, page 7</reference>
+		<description>Charms with this keyword may be employed only if the martial artist is submerged in water at least chest-deep, or is completely underwater.</description>
+	</keyword>
+	<keyword> <!-- Assumption -->
+		<name>Assumption</name>
+		<reference>Graceful Wicked Masques: The Fair Folk, page 153</reference>
+		<description>The Charm allows the raksha to assume a fixed form capable of existing in some fashion in Creation (or comparable realms of existence). Assumption Charms last until terminated in the Wyld. Many other Charms have a listed duration of "Assumption". Such Charms must be activated in conjunction with an Assumption Charm and will last as long as the underlying Assumption does.</description>
+		<errata>
+			<todo>add</todo>
+			<date>14-11-2010</date>
+			<reference>Scroll of Errata, page 70</reference>
+			<description>Charms no longer use the "Assumption" duration and are not tied to the activation of Assumption Charms. Assumption Charms may normally only be activated in the Wyld, but most other raksha Charms may be activated anywhere.</description>
+		</errata>
+	</keyword>
+	<keyword> <!-- Avatar -->
+		<name>Avatar</name>
+		<reference>Manual of Exalted Power: Abyssals, page 120</reference>
+		<description>These Charms draw directly on the power of the Neverborn through the psychic link of their Whispers (see pp. 100-101). Characters must have the minimum rating in that Background listed in parentheses to purchase or use Avatar Charms. Moreover, the effects and/or use of these Charms are considered outside fate since they disrupt the Tapestry with Primordial Essence. The Neverborn cannot withhold their power from being tapped in this fashion any more than they can prevent powerful necromancy spells from doing the same.</description>
+	</keyword>
+	<keyword> <!-- Axiomatic -->
+		<name>Axiomatic</name>
+		<reference>Manual of Exalted Power: Alchemicals, page 119</reference>
+		<description>Much like the Holy Charms of Creation, this keyword indicates that a Charm is imbued with the divine order of the Great Maker. Such Charms have extra impact against creatures of the Void and cannot be used by such beings. Charms with optional or secondary Axiomatic effects may be used without these effects, however.</description>
+	</keyword>
+	<keyword> <!-- Blasphemy -->
+		<name>Blasphemy</name>
+		<reference>Manual of Exalted Power: Infernals, page 103</reference>
+		<description>Charms with this keyword snarl the Tapestry when activated in Creation or Yu-Shan, triggering alerts in the Loom of Fate and the Realm Defense Grid's central control room that each display the Charm's basic effect, the Infernal's Essence rating and the location where the Charm was activated. How the forces of Heaven respond generally depends on available resources and the relative threat posed by the incursion, but any use of these Charms invites some possibility of intervention by Sidereal demon hunters or their often-unwitting pawns in Creation. As a very rough benchmark, Storytellers can roll one die and dispatch a Celestial intervention if the result is less than or equal to the Charm's minimum Essence. Teams responding to blasphemy Charms with a minimum of Essence 7+ will almost certainly include Aerial Legion reinforcements or comparably deadly forces. Unless the Infernal uses a Charm that seems to threaten Creation as a whole, she can at least count on finishing the current scene before any response team arrives.
+   More locally, players of all gods and Celestial Exalted within a mile of a blasphemy Charm activation make a reflexive (Perception + Occult) roll at difficulty (10 - the Infernal's Essence rating) for the characters to mystically sense the waves of Infernal Essence radiating from the Exalt for the duration of the Charm. This numinous awareness typically manifests as pain, nausea or vertigo but inflicts no actual penalties. However, characters who can feel the presence automatically succeed on all attempts to track the Infernal, pierce her Stealth with Awareness or otherwise know the tainted Exalt's exact location relative to their own position. Charms cannot conceal or disguise an Infernal from individuals who sense her presence unless they explicitly state they are capable of doing so. Observers whose players fail the roll to sense a Blasphemy Charm can make additional attempts with miscellaneous actions, but the difficulty increases normally for retrying. Blasphemy effects that are also Sorcerous (see below) do not necessarily betray the Infernal's location. Instead, the Blasphemy radiates from the target(s) and the center of any affected area.</description>
+	</keyword>
+	<keyword> <!-- Combo-Basic -->
+		<name>Combo-Basic</name>
+		<reference>Exalted, page 183</reference>
+		<description>Exalted can place this Charm in a Combo with reflexive Charms, including the Excellencies. They cannot place this Charm in a Combo with simple Charms, extra action Charms or supplemental Charms.</description>
+	</keyword>
+	<keyword> <!-- Combo-OK -->
+		<name>Combo-OK</name>
+		<reference>Exalted, page 183</reference>
+		<description>Exalted can place this Charm in a Combo.</description>
+	</keyword>
+	<keyword> <!-- Compulsion -->
+		<name>Compulsion</name>
+		<reference>Exalted, page 183</reference>
+		<description>This Charm's special damage is a Compulsion effect.</description>
+	</keyword>
+	<keyword> <!-- Cooperative -->
+		<name>Cooperative</name>
+		<reference>Manual of Exalted Power: Dragon-Blooded, page 127</reference>
+		<description>If a Charm has this keyword, then multiple Dragon-Blooded who all know the Charm can use it simultaneously while in close contact. By doing so, the animas of all participants interact, improving the potency of the Charm. Often, Elemental Charms (per the next new keyword) are also Cooperative Charms, and Dragon-Blooded using them in tandem can generate more sophisticated elemental effects over much larger areas than a single Dragon-Blood could while working alone. Only Dragon-Blooded can use such Charms cooperatively. Eclipse or Moonshadow Caste Exalted can learn these Charms, but the anima of a Celestial Exalt is not designed to interact with that of other Exalted so as to produce the same effect. Generally, Charms with this keyword can be used in Combos unless otherwise noted. A Cooperative Charm can never be used in a Combo if it is also being used in a cooperative manner, though, i.e. with two or more Dragon-Blooded using it simultaneously to gain the cooperative benefi ts.</description>
+		<errata>
+			<todo>add</todo>
+			<date>2010</date>
+			<reference>The Thousand Correct Actions of the Upright Soldier, page 64</reference>
+			<description>Close contact means that each participating Dragon-Blood must be within five yards of one or more other participants to harmonize animas.</description>
+		</errata>
+	</keyword>
+	<keyword> <!-- Counterattach -->
+		<name>Counterattack</name>
+		<reference>Exalted, page 183</reference>
+		<description>This Charm is or involves a counterattack - something extra that happens during the course of attack resolution, usually but not always the defender counterattacking the attacker. Characters cannot use counterattacks to respond to other counterattacks, and characters cannot use multiple counterattacks to respond to a single attack unless otherwise stated. Making a counterattack imposes a cumulative counterattack penalty of -1 to your DV until your next action.</description>
+	</keyword>
+	<keyword> <!-- Creation-Bound -->
+		<name>Creation-Bound</name>
+		<reference>Scroll of Fallen Races, page 48</reference>
+		<description>Charms with this keyword are tied to the Essence patterns of Creation and have no function outside Creationin the Underworld, Yu-Shan, Malfeas, Elsewhere or the Wyld, they have no effect whatsoever.</description>
+	</keyword>
+	<keyword> <!-- Crippling -->
+		<name>Crippling</name>
+		<reference>Exalted, page 183</reference>
+		<description>This Charm's special damage is a Crippling effect.</description>
+	</keyword>
+	<keyword> <!-- Dawn -->
+		<name>Dawn</name>
+		<reference>Ink Monkeys, vol. 32</reference>
+		<description>Solars of the Dawn Caste may buy Charms with this Keyword for eight experience points, even if they do not Favor the Ability the Charm is located in.</description>
+        <errata>
+            <todo>replace</todo>
+            <date>08-03-2012</date>
+            <reference>Scroll of Errata, page 20</reference>
+            <description>Solars of the Dawn Caste may buy Charms with this Keyword for eight experience points, even if they do not Favor the Ability the Charm is located in. Training these Charms takes as much time as training a Caste or Favored Charm.</description>
+        </errata>
+	</keyword>
+	<keyword> <!-- Desecration -->
+		<name>Desecration</name>
+		<reference>Manual of Exalted Power: Infernals, page 103</reference>
+		<description>Infernal Shaping Charms with this keyword inflict mutations on targeted beings. These effects are modeled with Wyld mutations, examples of which can be found on pages 288-291 of Exalted, pages 207-209 of The Manual of Exalted Power: The Lunars and pages 144-148 of The Compass of Celestial Directions, Vol. II - The Wyld. Mutations imposed through Desecration Charms are considered internal mutations and do not inhibit a creature's viability in Creation or Essence potential unless they state otherwise. Any positive mutations permanently imposed on a character are considered a Training effect costing (mutation points x 2) experience points. Permanent negative mutations inflicted with Desecration Charms may offset this cost by their (mutation point cost x 2) experience points, but these cannot reduce the experience required below 0. The experience cost discount can be banked and applied toward the cost of future positive mutations. No combination of effects that includes Desecration Charms can bestow more dots of temporary positive mutations than the target's (Willpower + Essence). The mutation points associated with each category are: 1 (pox), 2 (affliction), 4 (blight), 6 (abomination), -1 (deficiency), -2 (debility) and -4 (deformity).
+   If the target of a Desecration Charm is not already a creature of darkness, the only mutation that can be bestowed is that deformity (which helps offset the experience cost of positive mutations as normal). The mutant becomes a native of Malfeas vulnerable to and unable to use Holy effects. Targets marked by this mutation or who are creatures of darkness already may be further mutated in any way permitted by the Desecration Charm in question. Note that Infernals can't impose mutations that a being isn't capable of having. For instance, Essence Channeler can't be given to a being that already wields Essence. The Storyteller may also decide a particular mutation is inappropriate for a given target even if no rules prohibit the combination. All mutations should be thematically appropriate to their Infernal source. Even a gift of beauty is ultimately alien and probably at least mildly disturbing; Erembour is nearly as beautiful as Venus but not quite so desired.</description>
+	</keyword>
+	<keyword> <!-- Dusk -->
+		<name>Dusk</name>
+		<reference>Scroll of Errata, page 54</reference>
+		<description>Abyssals of the Dusk Caste may buy Charms with this Keyword for eight experience points, even if they do not Favor the Ability the Charm is located in.</description>
+        <errata>
+            <todo>replace</todo>
+            <date>08-03-2012</date>
+            <reference>Scroll of Errata, page 20</reference>
+            <description>Abyssals of the Dusk Caste may buy Charms with this Keyword for eight experience points, even if they do not Favor the Ability the Charm is located in. Training these Charms takes as much time as training a Caste or Favored Charm.</description>
+        </errata>
+	</keyword>
+	<keyword> <!-- Dynasty -->
+		<name>Dynasty</name>
+		<reference>Dreams of the First Age: Lords of Creation, page 98</reference>
+		<description>A Charm with this keyword has effects on descendents, defined as anyone who traces direct lineage to the Exalt with the Charm (such as children, grandchildren, etc.). Some of these Charms distinguish between Dragon-Blooded and mortal descendents, as noted in their description.</description>
+		<errata>
+			<todo>add</todo>
+			<date>2010</date>
+			<reference>The Thousand Correct Actions of the Upright Soldier, page 64</reference>
+			<description>A Charm with this keyword has special effects on human descendants and occasionally other blood relatives. For these purposes, a blood relative is defined as anyone with whom the character shares a common ancestor no more than five generations back. A descendant is anyone who traces direct lineage to the Exalt, regardless of the number of generations. Some Charms differentiate between relatives who are mortal versus Dragon-Blooded, as noted in their description. Celestial Exalted are never considered blood relatives or descendants unless a Charm explicitly says so.</description>
+		</errata>
+	</keyword>
+	<keyword> <!-- Echo -->
+		<name>Echo</name>
+		<reference>Scroll of Errata, page 70</reference>
+		<description>The haunting songs of the Wyld carry different meanings for the ears of the Creation-born. Charms with this keyword are essentially two Charms in one, with two different faces: Dreaming and Waking. In general, a Charm's Dreaming aspect focuses on Shaping actions and dealing with the things of the Wyld, while its Waking aspect focuses on 'normal' actions and the denizens and things of Creation. Echo Charms in Graceful Wicked Masques generally detail their Dreaming aspect in their Charm rules block, and their Waking aspect as an Innate Power; the presented errata reflects this. A character who buys any Echo Charm gains both the Dreaming and Waking versions of the Charm at no additional cost.</description>
+	</keyword>
+	<keyword> <!-- Elemental -->
+		<name>Elemental</name>
+		<reference>Manual of Exalted Power: Dragon-Blooded, page 128</reference>
+		<description>A Charm with this keyword has an elemental effect. In some cases, this effect is purely cosmetic, and the underlying Charm functions the same way regardless of the aspect of the Dragon-Blood who uses it. More often, however, the Charm functions somewhat differently depending on the Exalt's aspect. For example, Elemental Bolt Attack (see pp. 133-134) produces the same base damage effect regardless of who uses it, but if a Fire Aspect uses it, it inflicts additional burning damage, whereas the version fired by a Wood Aspect poisons the target with a plant toxin. The Charm descriptions explain how such Charms change by aspect. An Eclipse or Moonshadow Caste Exalt who learns an Elemental Charm understands only the version used by the Dragon-Blood from whom she learned the Charm.</description>
+		<errata>
+			<todo>add</todo>
+			<date>2010</date>
+			<reference>The Thousand Correct Actions of the Upright Soldier, page 64</reference>
+			<description>When the same or different Charms list effects that vary by element which are functionally identical, these effects never stack. For example, a target choking on seawater cannot have his action delayed more than three ticks by repeatedly hitting him with further action-delaying attacks. Some common Elemental effects function differently than were originally printed. The -2 internal penalty for buffeting should be a -1 external penalty. Charms that induce knockback or knockdown with a successful hit always function and do not afford a roll for the victim to avoid falling prone. Further, hurling someone back or prone is a Knockback effect and only imposes the buffeting penalty on complementary unit targets unless the Charm encompasses most of the area the unit occupies. References to bonus levels of damage (usually via fire) add dice instead. Wood toxins are a Poison effect and any penalties they impose are internal. Although they do not stack, these toxins automatically take hold with a successful hit to impose their usual penalty; the victim's player receives no roll to avoid this. For reference, the Wood anima toxin is: Damage (Essence)L/action, Toxicity (Essence), Tolerance None, Penalty -(half Essence) and inflicts one dose per action to each victim who makes skin-to-skin contact, whether momentary or continuous.</description>
+		</errata>
+	</keyword>
+	<keyword> <!-- Emotion -->
+		<name>Emotion</name>
+		<reference>Exalted, page 183</reference>
+		<description>This Charm's special damage is an Emotion effect.</description>
+        <errata>
+            <todo>replace</todo>
+            <date>08-03-2012</date>
+            <reference>Scroll of Errata, page 10</reference>
+            <description>When an Emotion effect instills a feeling but does not specify a particular result, treat the Emotion as a sceneduration one-die situational internal penalty that applies to all actions that do not fall in accordance with the emotion (such as attempting to decipher a First Age text while enraged), and a three-die penalty for all actions that run directly counter to the emotion (such as resisting a seduction attempt while feeling lust). Beyond these mechanics, players should endeavor to represent their character’s emotional state in their choice of actions as befits the balance of the character's Virtues, especially Temperance.</description>
+        </errata>
+	</keyword>
+	<keyword> <!-- Enhancing -->
+		<name>Enhancing</name>
+		<reference>Ink Monkeys, vol. 32</reference>
+		<description>This Charm denotes 'hero style' Charms which grant an enhanced benefit when used by the Exalt type they belong to (for example, Solar Hero style Charms used by a Solar).</description>
+	</keyword>
+	<keyword> <!-- Enlightening -->
+		<name>Enlightening</name>
+		<reference>Scroll of the Monk, page 18</reference>
+		<description>Charms with this keyword enable a person to perceive and channel Essence in a new and greater way. In some cases (such as the Charms that prepare Terrestrial Exalted to perform Celestial martial arts), the subject of the Charm is the Exalt herself. In other cases, the Exalt enlightens another person. Most Enlightening Charms have a permanent effect.</description>
+	</keyword>
+	<keyword> <!-- Evocation -->
+		<name>Evocation</name>
+		<reference>Graceful Wicked Masques: The Fair Folk, page 153</reference>
+		<description>The Charm allows the raksha to summon into Creation one of his possessions that could not normally exist there.</description>
+	</keyword>
+	<keyword> <!-- Exemplar -->
+		<name>Exemplar</name>
+		<reference>Manual of Exalted Power: Alchemicals, page 119</reference>
+		<description>As long as a Charm with this keyword is installed, the Alchemical gains the listed number of points of permanent Clarity. Champions afflicted with Gremlin Syndrome gain permanent Dissonance points instead. Other beings who somehow acquire these Charms gain a Clarity (or Dissonance) track like an Alchemical, adding the appropriate permanent points to it.</description>
+	</keyword>
+	<keyword> <!-- Fate -->
+		<name>Fate</name>
+		<reference>Manual of Exalted Power: Sidereals, page 125</reference>
+		<description>Against most targets, a Sidereal Charm works just as written. The Sidereal plays the strands of the victim's fate exactly as the Sidereal intends. Some Sidereal Charms, however, have a modified effect (sometimes no effect at all) against creatures outside of fate, and receive this keyword as a reminder of their limited utility. As general guidelines, Sidereal Charms cannot cause such beings to lose or gain temporary Willpower directly or indirectly. A Sidereal Charm cannot inflict unnatural mental influence on such creatures or transport such beings from one location to another. When a Charm inflicts effects in addition to any of these listed here, those additional effects still apply normally to beings outside fate.</description>
+        <errata>
+            <todo>remove</todo>
+            <date>08-03-2012</date>
+            <reference>Scroll of Errata, page 58</reference>
+        </errata>
+	</keyword>
+	<keyword> <!-- Form-Enhancing -->
+		<name>Form-Enhancing</name>
+		<reference>Ink Monkeys, vol. 9</reference>
+		<description>These Permanent Charms add additional powers to a Form-Type Charm they build upon. Unless stated otherwise, each Form-Enhancing Charm adds one mote to the cost of activating the appropriate Form. The surcharge only applies once per Charm, regardless of how many times the Infernal purchased that Charm. Exceptions to these rules note their surcharge in parentheses beside the keyword. Once-learned, a Form-Enhancing Charm always improves all activations of its Form by forcing the surcharge. This is not optional.
+</description>
+	</keyword>
+	<keyword> <!-- Form-Type -->
+		<name>Form-Type</name>
+		<reference>Exalted, page 183</reference>
+		<description>This Charm is a martial arts Form-Type Charm. Characters cannot use more than one Martial Arts Form-Type Charm at a time. The character must end one Form-Type Charm to use another.</description>
+	</keyword>
+	<keyword> <!-- Fury-OK -->
+		<name>Fury-OK</name>
+		<reference>Manual of Exalted Power: Lunars, page 140</reference>
+		<description>A Charm marked Fury-OK can activate automatically when the character uses Relentless Lunar Fury.</description>
+	</keyword>
+	<keyword> <!-- Gift -->
+		<name>Gift</name>
+		<reference>Manual of Exalted Power: Lunars, page 140</reference>
+		<description>Gift Charms can activate automatically when the character wears the Deadly Beastman Transformation. Motes committed to the Gift Charms' activation cannot be uncommitted until the character leaves the war form.</description>
+	</keyword>
+	<keyword> <!-- Glamour -->
+		<name>Glamour</name>
+		<reference>Graceful Wicked Masques: The Fair Folk, page 153</reference>
+		<description>The Charm directly affects the Creation-born or else alters the raksha in some way so that she gains an innate ability that can directly affect the Creation-born.</description>
+		<errata>
+			<todo>replace</todo>
+			<date>14-11-2010</date>
+			<reference>Scroll of Errata, page 70</reference>
+			<description>This keyword, accompanied by a value, indicates the number of points the Charm is worth for the purpose of constructing oneiromantic spells. Certain Charms may only enhance inward-facing dreams our outward-facing glamours, and are noted as such.</description>
+		</errata>
+	</keyword>
+	<keyword> <!-- Gregarious -->
+		<name>Gregarious</name>
+		<reference>Scroll of Fallen Races, page 48</reference>
+		<description>Charms with the Gregarious keyword draw their strength from the number of Jadeborn surrounding user. The more Jadeborn around, the more powerful the effect. In some ways, this effect is the mirror of the Dragon-Blooed Cooperative keyword. Where the Dragon-Blooded grant their strength to others, the Jadeborn drawn strength from other's presence. In some cases, this keyword is conditional. It might require that the other Jadeborn be using the same Charm, or it might be keyed to only a certain type of Jadeborn (only Workers, for example). There are no known examples of this type of Charm among the Artisans.</description>
+	</keyword>
+	<keyword> <!-- Heretical -->
+		<name>Heretical</name>
+		<reference>The Broken-Winged Crane, page 44</reference>
+		<description>Charms with this Keyword originate in the Charm trees of multiple Yozis. The Yozis cannot learn them. Heretical Charms cannot be learned by akuma or through the Eclipse anima power or its equivalents. Only Green Sun Princes may utilize these Charms, which cost 9 experience points and have a training time of (Min. Essence) weeks.
+   The vast majority of Green Sun Princes have no idea Heretical Charms are possible, much less how to create them. Yet.</description>
+	</keyword>
+	<keyword> <!-- Holy -->
+		<name>Holy</name>
+		<reference>Exalted, page 183</reference>
+		<description>This Charm's special damage is imbued with the judgment of the Unconquered Sun. Such Charms have extra impact when used against creatures of darkness (see Exalted p. 192).</description>
+		<errata>
+			<todo>add</todo>
+			<date>2009</date>
+			<reference>Manual of Exalted Power: Infernals, page 103</reference>
+			<errText>As a point of clarification, creatures of darkness can't use Holy Charms under any circumstances and both types of Infernal Exalted are inherently creatures of darkness. They may learn Holy Charms solely to satisfy prerequisites but gain no other benefit from doing so. This limitation really only matters for once-righteous akuma, as no Infernal Charms have the Holy keyword. Charms that can be used in ways that do not have the Holy keyword may be learned and activated in those ways. Holy options remain unavailable.
+Apart from inability to use Holy effects and increased vulnerability to such magic, creatures of darkness are no more "evil" as a result of the label itself. In practice, the beings judged enemies of Creation by the decree of the Unconquered Sun are named such because they really are wicked and dangerous. However, as some kindly ancestor spirits demonstrate, not all creatures of darkness mean harm to the world, even if cosmologically associated with a power inimical to divine law.</errText>
+		</errata>
+		<errata>
+            <todo>add</todo>
+			<date>2010</date>
+			<reference>The Thousand Correct Actions of the Upright Soldier, page 65</reference>
+			<errText>A complementary unit primarily composed of creatures of darkness is itself considered such for the purpose of Holy Charms.</errText>
+		</errata>
+        <errata>
+            <todo>add</todo>
+            <date>08-03-2012</date>
+            <reference>Scroll of Errata, page 10</reference>
+            <errText>A complementary unit primarily composed of creatures of darkness is itself considered such for the purpose of Holy Charms.
+   Holy effects fail to function when invoked by creatures of darkness, whether they attempt toactivate a Holy Charm or try to direct the Holy powers of an artifact.</errText>
+        </errata>
+	</keyword>
+	<keyword> <!-- Illusion -->
+		<name>Illusion</name>
+		<reference>Exalted, page 183</reference>
+		<description>This Charm's special damage is an Illusion effect.</description>
+	</keyword>
+	<keyword> <!-- Internal -->
+		<name>Internal</name>
+		<reference>Manual of Exalted Power: Alchemicals, page 119</reference>
+		<description>This keyword indicates that an Alchemical Charm has no externally visible components.</description>
+	</keyword>
+	<keyword> <!-- Iterative -->
+		<name>Iterative</name>
+		<reference>Scroll of Fallen Races, page 48</reference>
+		<description>Charms marked with the Iterative keyword are actually suites of Charms, tied together by a single common theme or trait. Most commonly for Mountain Folk, this is either the five types of jade or the four Virtues that fuel so many of their Charms. If a character knows multiple versions of the Charm, he may invoke any or all of the versions he knows on the same tick as a single action, as if invoking a single Charm. If a character knows all versions of the Charm, there is frequently an additional benefit, usually a slight reduction in the cost of using the Charm. Such benefits are described in the text of each Charm.</description>
+	</keyword>
+	<keyword> <!-- Knockback -->
+		<name>Knockback</name>
+		<reference>Exalted, page 183</reference>
+		<description>This Charm knocks its target backward. Appropriate Charms can resist this effect.</description>
+	</keyword>
+	<keyword> <!-- Leader -->
+		<name>Leader</name>
+		<reference>The Thousand Correct Actions of the Upright Soldier, page 65</reference>
+		<description>Any character capable of acting in mass combat may use Charms as explained on p. 166 of Exalted, including unit commanders. Yet, applying non-Excellency Charms to enhance the entire unit's action or to extend the benefits of a personal Charm to the entire unit normally requires justification as a form of special stunt. Charms with the Leader keyword do not require this justification and have the same overall function in mass combat when leading a complementary unit as they do normally, whether to enhance the unit or the unit's actions. Unit bonuses also apply normally to use of these Charms. Unless specific differences are noted, Leader Charms operate identically in both personal and mass combat. When the Leader keyword lists a number beside it, an Exalt must have that Essence rating to apply the Charm to a unit she leads. Cooperative Charms with a Leader function allow the led unit to join with its special characters to produce the usual magnified effect. By definition, Charms with the Leader keyword automatically have the War keyword.</description>
+	</keyword>
+	<keyword> <!-- Leadership -->
+		<name>Leadership</name>
+		<reference>Scroll of Fallen Races, page 49</reference>
+		<description>The Enlightened provide structure, leadership and guidance to their charges - and when necessary, augment them through the use of Charms. Charms with the Leadership keyword affect all Jadeborn of the appropriate type within a given range. Like the Gregarious keyword, this improvement is often conditional in nature. Most commonly, Charms with the Leadership keyword affect only a given caste of Mountain Folk or affect only the Unenlightened.</description>
+	</keyword>
+	<keyword> <!-- Maiden -->
+		<name>Maiden</name>
+		<reference>Manual of Exalted Power: Sidereals, page 125</reference>
+		<description>Before a character can learn a Charm with this keyword, she must obtain special permission from one of the Five Maidens or from their deputies, the five gods who administer the divisions of the Bureau of Destiny. This is typically because the Charm in question can force a god to obey the character. The Bureau of Heaven witnesses every use of these Charms in Creation and records each use in the character's file. If the Charm was not used to advance a plan sanctioned by the Bureau of Destiny, the character has committed an offense whose Severity is at least equal to the Essence Minimum of the Charm. The character might not face an audit immediately, but when the character does get in trouble, the improper exploitation of gods will be added to the charges. Indeed, the character may need to justify any use of these Charms, if a bureaucratic enemy decides to make trouble for the character.</description>
+        <errata>
+            <todo>add</todo>
+            <date>08-03-2012</date>
+            <reference>Scroll of Errata, page 58</reference>
+            <errText>The Five Maidens cannot withhold Charms with this keyword. Their use may still be subject to sanction.</errText>
+        </errata>
+	</keyword>
+	<keyword> <!-- Martial -->
+		<name>Martial</name>
+		<reference>Ink Monkeys, vol. 32</reference>
+		<description>Charms with this Keyword may also be used with or applied to the listed Abilities when the Solar's rating in those Abilities meets the Charm's minimum Ability rating.</description>
+	</keyword>
+	<keyword> <!-- Martial-Ready -->
+		<name>Martial-Ready</name>
+		<reference>Ink Monkeys, vol. 32</reference>
+		<description>This Keyword replicates all the effects of the Martial keyword. In addition, the Solar may use the Charm with or apply its benefits to any of the listed Abilities that he has as a Caste or Favored Ability, even if their ratings are lower than the Charm's minimum Ability requirement.</description>
+	</keyword>
+	<keyword> <!-- Martyr -->
+		<name>Martyr</name>
+		<reference>Dreams of the First Age: Lords of Creation, page 98</reference>
+		<description>A Charm with this keyword has a greater effect if the Exalt voluntarily forfeits his life when activating it. The mystical suicide joins the Terrestrial's soul and Essence directly to the Elemental Dragon associated with his aspect, subsuming the totality of his name and being into the Dragon like a drop of water returned to the ocean. Only the empty shell of the Terrestrial's body remains, unless it is consumed by the Charm's effect. When using the Martyr keyword, death substitutes for the usual cost of the Charm, and it may be expressly activated as a reflexive action regardless of its normal type, allowing Terrestrial elders to fight to the last mote and still unleash one final act of greatness. Characters may activate one Martyr effect with their death, plus one different additional one for every dot of Essence above 6. (An Essence 10 paragon - if such a being existed - could die the death of five dragons).</description>
+	</keyword>
+	<keyword> <!-- Merged -->
+		<name>Merged</name>
+		<reference>Ink Monkeys, vol. 32</reference>
+		<description>Charms with this Keyword exist in more than one Ability. Buying this Charm in any of the Abilities it exists in means the character also has that Charm in all other Abilities it exists in.</description>
+        <errata>
+            <todo>replace</todo>
+            <date>08-03-2012</date>
+            <reference>Scroll of Errata, page 11</reference>
+            <description>Charms with this keyword can be bought from multiple sources, but they all count as a single Charm purchase. For instance, a Solar learning Call the Blade from Melee also learns Call the Blade from Thrown at no additional cost or training time. The list of other Charms with which one is Merged are listed at the end of the Charm.</description>
+        </errata>
+	</keyword>
+	<keyword> <!-- Messianic -->
+		<name>Messianic</name>
+		<reference>Manual of Exalted Power: Infernals, page 103</reference>
+		<description>A Charm with this keyword requires the character to have a minimum rating in the Cult Background (listed with the Charm's Essence minimum) to use it. No Cult rating is needed to learn the Charm, however. Permanent Charms are never Messianic.</description>
+	</keyword>
+	<keyword> <!-- Mirror -->
+		<name>Mirror</name>
+		<reference>Manual of Exalted Power: Abyssals, page 120</reference>
+		<description>As mockeries of Solar power, deathknights wield comparably potent Charms arranged in similar structures. Abyssal Mirror Charms list their Solar analogues in parentheses, which always have the same total number of prerequisite Charms and minimum trait requirements. For Eclipse and Moonshadow Castes, a mirror can substitute for its analogue with regard to any prerequisites as if it were the same Charm. This keyword also guides Charm reallocation for redeemed Abyssals or Solars corrupted to darkness.
+   Note that some Abyssal Charms mirror Solar Charms that are not in general use (i.e., not in the Exalted rulebook itself). In such cases, the Charm description appends a brief description of the Solar analogue. Storytellers can introduce these new Solar Charms to their series - or perhaps a Solar who wants to learn these Charms must seek an Abyssal teacher. At the Storyteller's option, cross-training Solars and Abyssals can deduce the Mirrors of each others' Charms. For instance, a Dawn Caste could study with an Abyssal who knows Lightning Clutch of the Raptor (see p. 133), and after four days he could learn its Mirror Charm, Deft Hands Deflection. Solars and Abyssals thus becomevaluable but morally objectionable sources of Charms for the other side to learn.</description>
+	</keyword>
+	<keyword> <!-- Monstrous -->
+		<name>Monstrous</name>
+		<reference>Ink Monkeys, vol. 9</reference>
+		<description>This keyword serves as a referent tag on some Infernal Monster Style Charms and Primordial Charms that inflict fear through unnatural mental influence. Whenever a victim pays one or more Willpower points to resist a Monstrous effect, she deducts this total from the number of Willpower points required to resist any Monstrous effect within the next day. Discounts from separate resistance expenditures stack, resetting the clock to 25 hours whenever Willpower is spent. Only after the character has gone a full day without spending Willpower to resist a Monstrous effect does the discount drop back to zero. Even if resistance costs no Willpower, the victim can only resist when the Charm permits Willpower to be spent resisting it. The total number of "windows of opportunity" in which resistance is possible does not increase. All Monstrous Charms also have the Emotion keyword.
+</description>
+	</keyword>
+	<keyword> <!-- Mount (Any) -->
+		<name>Mount (Any)</name>
+		<reference>Ink Monkeys, vol. 20</reference>
+		<description>This Charm may only be applied to living beings (or, in the case of Abyssal Charms, living beings and ghostly animals), not automatons or vehicles operated with the Ride ability, such as Warbirds.</description>
+	</keyword>
+	<keyword> <!-- Mount (Mundane) -->
+		<name>Mount (Mundane)</name>
+		<reference>Ink Monkeys, vol. 20</reference>
+		<description>This Charm may only be applied to living mounts (or, in the case of Abyssal Charms, living mounts and ghostly animals) which are not Essence-users.</description>
+	</keyword>
+	<keyword> <!-- Mutation -->
+		<name>Mutation</name>
+		<reference>Graceful Wicked Masques: The Fair Folk, page 153</reference>
+		<description>The Charm can be used in conjunction with an Assumption Charm to grant the raksha innate magical powers or special traits at the time he enters Creation. Unless expressly stated in the text, a mutation Charm must be activated at the same time as the Assumption Charm the raksha is using to build his shell for travel through Creation.</description>
+		<errata>
+			<todo>add</todo>
+			<date>14-11-2010</date>
+			<reference>Scroll of Errata, page 70</reference>
+			<description>This keyword, accompanied by a value, indicates the number of points the Charm is worth for the purpose of building adjurations and enhancing behemoths. Generally, this keyword indicates that a Charm lends its effect to those who have sworn themselves to an adjuration as a permanent benefit, or that a behemoth gains its effects as a permanent benefit. Charms with variable effects may contain clarifying notes.</description>
+		</errata>
+	</keyword>
+	<keyword> <!-- Native -->
+		<name>Native</name>
+		<reference>Dreams of the First Age: Lords of Creation, page 57</reference>
+		<description>Powers like the Eclipse, Moonshadow and Fiend anima do not allow acquisition of Native Charms. Only natural wielders can learn Native charms. Exalted Charms and hero-style expansions are natural to the appropriate type of Chosen. Spirit Charms are natural to gods, elementals, demons and akuma. Arcanoi are natural to ghosts. Raksha Charms are natural to Fair Folk. Primordial Charms are natural to Primordials, Green Sun Princes and Exalted akuma. The God-Blooded children of natural wielders cannot learn their parents' Native Charms. Martial Arts Charms that are not Hero Style expansions cannot have the Native keyword.</description>
+	</keyword>
+	<keyword> <!-- Obvious -->
+		<name>Obvious</name>
+		<reference>Exalted, page 183</reference>
+		<description>Observers can tell that the Exalt is using a Charm, and they have a rough idea of its effects. Obvious permanent Charms are only obvious when actively in use.</description>
+	</keyword>
+	<keyword> <!-- Overdrive -->
+		<name>Overdrive</name>
+		<reference>Ink Monkeys, vol. 33</reference>
+		<description>Charms with this Keyword create a temporary pool of Peripheral Essence, which can only be filled by terms outlined in the text of the Charm. Motes in these pools may only be used to activate offensive Charms with a duration of One action or less. Charms whose mote cost are paid for entirely from a character's Overdrive pool do not count as Charm activations. Other restrictions may be present in the text of the Charm. Motes gathered into the pools created by Overdrive Charms dissipate at the end of the scene, barring additional Charms to prolong their existence. Temporary mote pools created by the Overdrive keyword share their motes and stack together to determine the storage capacity of the overall pool. This Overdrive pool may store no more than 25 motes, regardless of the size of the pool generated by individual Charms with the Overdrive keyword.
+   Overdrive Charms which have a mote-regain limit imposed in the Charm's text expand this cap to meet the total size of the character's Overdrive pool based on their collective Overdrive Charms, up to a cap of 25 motes. For example, a character with a 25-mote collective Overdrive pool may use Essence-Gathering Temper to stock 25 motes in this pool, even though Essence-Gathering Temper itself only produces a ten-mote Overdrive pool. The same is true of Certain Victory Formulation and other Overdrive Charms.</description>
+        <errata>
+            <todo>replace</todo>
+            <date>08-03-2012</date>
+            <reference>Scroll of Errata, page 11</reference>
+            <description>Charms with this Keyword create a temporary pool of Peripheral Essence, which can only be filled by terms outlined in the text of the Charm. Motes in these pools may only be used to activate offensive Charms with a duration of One action or less. Charms whose mote cost are paid for entirely from a character's Overdrive pool do not count as Charm activations, but must obey normal Combo rules if used in conjunction with other Charms. Other restrictions may be present in the text of the Charm. Motes gathered into the pools created by Overdrive Charms dissipate at the end of the scene, barring additional Charms to prolong their existence. Temporary mote pools created by the Overdrive keyword share their motes and stack together to determine the storage capacity of the overall pool. This Overdrive pool may store no more than 25 motes, regardless of the size of the pool generated by individual Charms with the Overdrive keyword.</description>
+        </errata>
+	</keyword>
+	<keyword> <!-- Poison -->
+		<name>Poison</name>
+		<reference>Exalted, page 183</reference>
+		<description>This Charm's special damage is a Poison effect.</description>
+	</keyword>
+	<keyword> <!-- Purity -->
+		<name>Purity</name>
+		<reference>Dreams of the First Age: Lords of Creation, page 98</reference>
+		<description>Charms with this keyword channel the Elemental Dragons directly through racial birthright and cannot be learned by Dragon-Blooded who lack the minimum Breeding listed for the Charm. Eclipse Caste Solars can learn these Charms despite lacking Breeding, but they do so as if the Charms required a minimum Essence one dot higher than usual.</description>
+		<errata>
+			<todo>add</todo>
+			<date>2010</date>
+			<reference>The Thousand Correct Actions of the Upright Soldier, page 65</reference>
+			<description>Charms with this keyword channel the Elemental Dragons through birthright, requiring the minimum Breeding indicated in parentheses to learn them. The Eclipse anima and similar powers allow these Charms to be learned without Breeding as though their minimum Essence was one dot higher. The steady dilution of the Dragon-Blooded race has made Purity magic ever rarer, almost legendary. Knowing about each of these Charms requires an (Intelligence + Occult) roll at a difficulty of the highest minimum trait required for them. Incidentally, this is also the difficulty to know about the special support effects of each Terrestrial Charm capable of aiding Celestial Exalted leaders, as the Immaculate Order does its utmost to stamp out this heretical knowledge.</description>
+		</errata>
+	</keyword>
+	<keyword> <!-- Prayer Strip -->
+		<name>Prayer Strip</name>
+		<reference>Manual of Exalted Power: Sidereals, page 125</reference>
+		<description>Each Sidereal Charm tree culminates in a powerful Charm that has a special connection to the scripture of that constellation and Ability. To perform that Charm, a Sidereal must write that scripture on a prayer strip and infuse it with Essence. Without the right prayer strip, the Charm cannot be used.
+   When a character activates a Charm with this keyword, the prayer strip he uses becomes noticeable to magicdetecting powers such as All-Encompassing Sorcerer's Sight (see Exalted, p. 222) or Telltale Symphony (see p. 169). What once was normal paper and ink becomes immune to bashing damage and gains a lethal soak of 10, as well as 25 health levels, for as long as the Charm's duration lasts. The strip can reflexively block or dodge all attacks - even ones that are normally unblockable - with a value equal to the character's own unmodified Defense Value. (A prayer strip can either parry or dodge, based on whether it is immobile or free-floating). If attacks can get past this Defense Value, overcome a strip's soak and eventually inflict enough damage to destroy the strip, the Charm that requires the strip's use ends immediately.</description>
+	</keyword>
+	<keyword> <!-- Rage -->
+		<name>Rage</name>
+		<reference>Ink Monkeys, vol. 3</reference>
+		<description>Charms with this keyword impose a state of enchanted fury duplicating all effects of the Charm Retribution Will Follow (i.e. berserk rampage, immunity to pain, mental defense and Limit reduction). Inducing Rage is a form of unnatural mental influence with the Compulsion and Emotion keywords. Characters attacked with a Rage effect instantly succumb to the berserk fury unless they pay one Willpower to remain calm.
+   Victims in the grip of Rage cannot abort their rampage by spending Willpower to calm down, but their madness does make them invalid targets for all other Rage effects for as long as it lasts. Characters who pay Willpower to resist Rage also become immune to all Rage effects for one day. Since victims of Rage aren't valid targets for other Rage effects, they can't abort their madness by deliberately exposing themselves to other Rage magic for a new chance to resist. Retribution Will Follow retroactively gains the Rage keyword. In the spirit of this keyword, that Charm also adds the line "The martial artist can't voluntarily terminate or reactivate this Charm before its Duration".</description>
+	</keyword>
+	<keyword> <!-- Reactor -->
+		<name>Reactor</name>
+		<reference>Dreams of the First Age: Lords of Creation, page 57</reference>
+		<description>No combination of effects including any Charm carrying this Keyword may cause the character to gain more than 20 motes during the course of a single action. Stunt rewards explicitly do not count toward this limit.</description>
+	</keyword>
+	<keyword> <!-- Sea -->
+		<name>Sea</name>
+		<reference>The Broken-Winged Crane, page 33</reference>
+		<description>Charms with this keyword can only be activated in proximity of a sea (i.e. within a mile). A sea is defined as a standing body of liquid at least a mile across in any direction that has remained at its present location for a month or longer. Flowing bodies of liquid only qualify as a sea if their width or depth is at least a mile; length is irrelevant.</description>
+	</keyword>
+	<keyword> <!-- Servitude -->
+		<name>Servitude</name>
+		<reference>Exalted, page 183</reference>
+		<description>This Charm's special damage is a Servitude effect.</description>
+	</keyword>
+	<keyword> <!-- Shaped-Only -->
+		<name>Shaped-Only</name>
+		<reference>Graceful Wicked Masques: The Fair Folk, page 153</reference>
+		<description>The Charm can be used only by shaped raksha, whether in Creation or the Wyld. Such Charms are generally not part of shaping actions (although one might be able to incorporate such a Charm into a shaping action with a clever stunt). An unshaped raksha can learn a Shaped-Only Charm and incorporate it into creations such as behemoths, oneiromantic spells and even lesser raksha created to serve it, but it can never apply the effects of a Shaped-Only Charm to its own unshaped form without first becoming shaped. Nor can an unshaped raksha's Emanations ever use Shaped-Only Charms on themselves without first becoming shaped.</description>
+		<errata>
+			<todo>add</todo>
+			<date>14-11-2010</date>
+			<reference>Scroll of Errata, page 70</reference>
+			<description>Creation-born are considered to be shaped raksha for the purpose of learning and using these Charms, assuming they have some means of learning raksha Charms in the first place.</description>
+		</errata>
+	</keyword>
+	<keyword> <!-- Shaping -->
+		<name>Shaping</name>
+		<reference>Exalted, page 183</reference>
+		<description>Integrity and Lore Charms treat this Charm's effects as a Shaping effect.</description>
+	</keyword>
+	<keyword> <!-- Sickness -->
+		<name>Sickness</name>
+		<reference>Exalted, page 183</reference>
+		<description>This Charm's special damage is a Sickness effect.</description>
+	</keyword>
+	<keyword> <!-- Social -->
+		<name>Social</name>
+		<reference>Exalted, page 183</reference>
+		<description>This Charm is often used when the character participates in a social conflict. It affects actions on the social time scale.</description>
+	</keyword>
+	<keyword> <!-- Sorcerous -->
+		<name>Sorcerous</name>
+		<reference>Manual of Exalted Power: Infernals, page 103</reference>
+		<description>Charms with this keyword channel Essence according to the patterns the Primordials negotiated amongst themselves when they seared the principles of sorcery into the Wyld's shinmaic substrata. As such, these Charms may be countered or dispelled by appropriate effects as if they were spells with a circle based on their minimum Essence: 1-3 (emerald), 4-5 (sapphire) and 6+ (adamant). Necromancers may also dispel Sorcerous Charms without their countermagic losing a circle of relative potency, provided they do not have an Essence rating lower than the Infernal's rating at the time the Sorcerous Charm was activated. On the plus side, these effects require no commitment of Essence to sustain, even those with Duration greater than instant. However, their creator can't deactivate such effects at will unless stated otherwise. Countering a Sorcerous Charm does not release any sort of Essence backlash unless noted. During the Primordial War, Solar and Lunar Exalted developed specialized Charms to dispel sorcerous effects; these anti-Primordial techniques fell out of favor with the advent of sorcery among the Exalted, since countermagic spells were both easier to learn and more efficient.</description>
+	</keyword>
+	<keyword> <!-- Spectral -->
+		<name>Spectral</name>
+		<reference>Manual of Exalted Power: Abyssals, page 121</reference>
+		<description>This keyword identifies Charms that specifically depend on the metaphysical properties of the Underworld. Although characters can use Spectral Charms beyond the realms of the dead (which are defined as the shadowlands, Underworld and Labyrinth), doing so adds a +1 Willpower surcharge to the activation cost. Once a character activates a Spectral Charm at this increased cost, further Spectral Charms do not require this surcharge until the character's next action.</description>
+	</keyword>
+	<keyword> <!-- Stance-Type -->
+		<name>Stance-Type</name>
+		<reference>Scroll of Errata, page 70</reference>
+		<description>This Charm is a shaping style Stance-type Charm. Characters cannot use more than one Stance-type Charm at a time. They must end one Stance-type Charm to use another.</description>
+	</keyword>
+	<keyword> <!-- Stackable -->
+		<name>Stackable</name>
+		<reference>Exalted, page 183</reference>
+		<description>Multiple invocations of this Charm are cumulative - the Solar can use it more than once to increase the bonuses or penalties the Charm inflicts.</description>
+	</keyword>
+	<keyword> <!-- Taint -->
+		<name>Taint</name>
+		<reference>Manual of Exalted Power: Abyssals, page 121</reference>
+		<description>This keyword allows Abyssals to make a Charm's effect permanent, enabling her to use it without further expended or committed costs. This is not done lightly, however, as the transformation is irreversible and such Charms always carry some kind of drawback. Therefore, for every persistent advantage gained with this keyword, an Abyssal also bears a new curse to compound the doom of his Dark Fate.
+   Turning a Charm into a permanent Taint also costs bonus points or experience points. The sample costs are based on comparison with Wyld mutations (see The Compass of Celestial Directions, Vol. II - The Wyld, p. 144). The more extreme (or useful) the effect of making a Charm permanent is the more points doing so costs.</description>
+	</keyword>
+	<keyword> <!-- Touch -->
+		<name>Touch</name>
+		<reference>Exalted, page 183</reference>
+		<description>The Exalt must touch the target to use the Charm. Touching a non-consenting target requires a (Dexterity + Martial Arts) attack.</description>
+	</keyword>
+	<keyword> <!-- Training -->
+		<name>Training</name>
+		<reference>Exalted, page 183</reference>
+		<description>This Charm trains other characters. Characters who receive training and aren't extras must pay the normal experience cost for any trait increases. If they can't afford this cost, they go into "experience point debt". They must pay at least half of all awarded experience points, rounded down, toward this debt until repaid.</description>
+	</keyword>
+	<keyword> <!-- Unshaped-Only -->
+		<name>Unshaped-Only</name>
+		<reference>Graceful Wicked Masques: The Fair Folk, page 153</reference>
+		<description>The Charm can be used only by an Emanation of an unshaped raksha in the Wyld (see Chapter Two).</description>
+	</keyword>
+	<keyword> <!-- Variable -->
+		<name>Variable</name>
+		<reference>Manual of Exalted Power: Alchemicals, page 119</reference>
+		<description>Charms with this keyword experience altered performance based on installed prerequisites.</description>
+	</keyword>
+	<keyword> <!-- Velocity -->
+		<name>Velocity</name>
+		<reference>Manual of Exalted Power: Infernals, page 103</reference>
+		<description>Some Adorjani Charms with durations longer than Instant have this keyword, requiring that the Infernal maintain a minimum speed. If the character spends longer than one tick moving slower than this limit, the Charm automatically deactivates (but may be reactivated). Note that this means actual movement. Running in tight circles does not count; the beginning and end of the character's movement path each tick must be spaced no closer than the distance the Infernal Exalt may cover with a Move action. Riding on a mount or vehicle also doesn't count - the character's speed must come from his own power and means of locomotion. The most common Velocity requirement is that the character must continuously dash at maximum possible speed.</description>
+	</keyword>
+	<keyword> <!-- Virtue -->
+		<name>Virtue</name>
+		<reference>Manual of Exalted Power: Sidereals, page 125</reference>
+		<description>Just as any Exalted character, a Sidereal may channel a point of Willpower through a Virtue for bonus dice on an important action that resonates with the ideals of that Virtue. (See Exalted, p. 102). Some Sidereal Charms are considered to always resonate with the ideals of certain Virtues. Simply using such a Charm reinforces the Virtue's value in Creation. Therefore, any roll related to the Charm's use - be it a granted extra action, an action the Charm supplements or any other roll mentioned in the Charm's description - can benefit in this way from bonus dice gained by channeling the specific Virtue named in the keyword. Channeling Willpower through the Virtue for a Charm does count against the maximum number of times per story a character may channel Willpower through that Virtue. On the other hand, channeling a Virtue this way does not count as dice added through Charms.</description>
+	</keyword>
+	<keyword> <!-- Void -->
+		<name>Void</name>
+		<reference>N/A</reference>
+		<description>N/A</description>
+	</keyword>
+	<keyword> <!-- Wanton -->
+		<name>Wanton</name>
+		<reference>Scroll of Swallowed Darkness, page 95</reference>
+		<description>Inserted into the human species, the Exalted were chosen in part for their propensity to reproduce in numbers large enough to perpetually replenish the supply of foes for the Primordials. To evolve human promiscuity, certain Charms best serve those whose sexual inhibitions are less pronounced than normal. If there is a roll for the Charm's effects, the player of the Exalt gains one to three additional dice, depending upon how explicitly she describes the sexual actions of her character (subject to Storyteller judgment). If there is no roll involved, then the character instead gains two, four or six motes of Essence, although the player may choose to gain one temporary Willpower instead of a mote value of four or higher. Although this mirrors the stunt system, the benefits of the two add together; a player who explicitly describes her character giving Sesus Lahor oral sex still gets the relevant bonuses from also describing her aerial acrobatics and interaction with the furniture of his Dynastic bedroom. If the Charm also has the Obvious keyword, then the Essence expelled also leaves unmistakable signs of sex, from the odors of well-used beds to smears of semen.</description>
+	</keyword>
+	<keyword> <!-- War -->
+		<name>War</name>
+		<reference>Exalted, page 183</reference>
+		<description>This Charm is often used when the character participates in a war, by means of the Join War action. It affects actions on the war time scale.</description>
+		<errata>
+			<todo>add</todo>
+			<date>2010</date>
+			<reference>The Thousand Correct Actions of the Upright Soldier, page 65</reference>
+			<description>All special characters in a complementary unit and that unit's champion during mid-battle duels are fellow officers to one another. If a Charm functions differently when targeting a fellow officer, it deactivates if that relationship no longer applies due to either character leaving the unit. Cooperative Charms ignore their usual range limit for close contact when used by fellow officers, as the unit itself conducts the harmonization.</description>
+		</errata>
+	</keyword>
+	<keyword> <!-- Wyld -->
+		<name>Wyld</name>
+		<reference>Manual of Exalted Power: Lunars, page 140</reference>
+		<description>Charms with this keyword only function in at least the Bordermarches, or they have increased functionality within the Wyld.</description>
+	</keyword>
+</body>

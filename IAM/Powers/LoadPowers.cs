@@ -17,26 +17,26 @@ using IAM;
 
 namespace ShowPowersNamespace
 {
-    public class LoadPowers : INotifyPropertyChanged
-    {
-        #region Properties --------------------------------------------------------------------
-        #region Public ----------------------------------------------------------------------------
-        public event PropertyChangedEventHandler PropertyChanged;
-        #endregion --------------------------------------------------------------------------------
+   public class LoadPowers : INotifyPropertyChanged
+   {
+      #region Properties --------------------------------------------------------------------
+      #region Public ----------------------------------------------------------------------------
+      public event PropertyChangedEventHandler PropertyChanged;
+      #endregion --------------------------------------------------------------------------------
 
-        #region Events ----------------------------------------------------------------------------
-        #region Event Signatures ----------------------------------------------------------------------
-        #region INotifyPropertyChanged Members ------------------------------------------------------------
-        private void NotifyPropertyChanged(string info)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(info));
-            }
-        }
-        #endregion ----------------------------------------------------------------------------------------
-        #endregion ------------------------------------------------------------------------------------
-        #endregion --------------------------------------------------------------------------------
-        #endregion ----------------------------------------------------------------------------
-    }
+      #region Events ----------------------------------------------------------------------------
+      #region Event Signatures ----------------------------------------------------------------------
+      #region INotifyPropertyChanged Members ------------------------------------------------------------
+      private void NotifyPropertyChanged(string info)
+      {
+         if (PropertyChanged != null)
+         {
+            PropertyChanged(this, new PropertyChangedEventArgs(info));
+         }
+      }
+      #endregion ----------------------------------------------------------------------------------------
+      #endregion ------------------------------------------------------------------------------------
+      #endregion --------------------------------------------------------------------------------
+      #endregion ----------------------------------------------------------------------------
+   }
 }

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<body>
+	<charm>
+		<name>Flashing Vengeance Draw</name>
+		<type>Solars</type>
+		<skill>Archery</skill>
+	</charm>
+	<charm>
+		<name>Rout-Stemming Gesture</name>
+		<type>Solars</type>
+		<skill>War</skill>
+	</charm>
+	<charm>
+		<name>Trance Of Unhesitating Speed</name>
+		<type>Solars</type>
+		<skill>Archery</skill>
+	</charm>
+	<charm>
+		<name>Fury Inciting Presence</name>
+		<type>Solars</type>
+		<skill>War</skill>
+	</charm>
+	<charm>
+		<name>Mob-Dispersing Rebuke</name>
+		<type>Solars</type>
+		<skill>War</skill>
+	</charm>
+	<charm>
+		<name>Worthy Mount Technique</name>
+		<type>Solars</type>
+		<skill>Ride</skill>
+	</charm>
+	<charm>
+		<name>Master Horseman's Techniques</name>
+		<type>Solars</type>
+		<skill>Ride</skill>
+	</charm>
+	<charm>
+		<name>Durability Of Oak Meditation</name>
+		<type>Solars</type>
+		<skill>Resistance</skill>
+	</charm>
+	<charm>
+		<name>Ox-Body Technique</name>
+		<type>Solars</type>
+		<skill>Resistance</skill>
+	</charm>
+	<charm>
+		<name>Hungry Tiger Technique</name>
+		<type>Solars</type>
+		<skill>Melee</skill>
+	</charm>
+	<charm>
+		<name>Spirit Strengthens The Skin</name>
+		<type>Solars</type>
+		<skill>Resistance</skill>
+	</charm>
+	<charm>
+		<name>Essence Arrow Attack</name>
+		<type>Solars</type>
+		<skill>Archery</skill>
+	</charm>
+	<charm>
+		<name>First (Ability) Excellency - Essence Overwhelming</name>
+		<type>Solars</type>
+		<skill>(Ability)</skill>
+		<trueSkill>Archery</trueSkill>
+	</charm>
+	<charm>
+		<name>First (Ability) Excellency - Essence Overwhelming</name>
+		<type>Solars</type>
+		<skill>(Ability)</skill>
+		<trueSkill>Melee</trueSkill>
+	</charm>
+	<charm>
+		<name>First (Ability) Excellency - Essence Overwhelming</name>
+		<type>Solars</type>
+		<skill>(Ability)</skill>
+		<trueSkill>War</trueSkill>
+	</charm>
+</body>

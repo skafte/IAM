@@ -16,7 +16,7 @@ using FileIONamespace;
 
 namespace CharacterSheetNamespace
 {
-    public class GetPowers
-    {
-    }
+   public class GetPowers
+   {
+   }
 }

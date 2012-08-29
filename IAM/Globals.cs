@@ -13,220 +13,220 @@ using System.Xml.Linq;
 
 namespace IAM
 {
-    static class Globals
-    {
-        /// <summary>
-        /// Path to folders corrently in use
-        /// </summary>
-        public struct GameInformation
-        {
-            static private string selectedgame = "";
-            static private List<string> equipmentindex = new List<string>();
-            static private List<List<string>> equipmentindexsingle = new List<List<string>>();
-            static private List<List<string>> equipmentindexforall = new List<List<string>>();
-            static private List<string> powerindex = new List<string>();
-            static private List<List<string>> powerindexsingle = new List<List<string>>();
-            static private List<List<string>> powerindexforall = new List<List<string>>();
+   static class Globals
+   {
+      /// <summary>
+      /// Path to folders corrently in use
+      /// </summary>
+      public struct GameInformation
+      {
+         static private string selectedgame = "";
+         static private List<string> equipmentindex = new List<string>();
+         static private List<List<string>> equipmentindexsingle = new List<List<string>>();
+         static private List<List<string>> equipmentindexforall = new List<List<string>>();
+         static private List<string> powerindex = new List<string>();
+         static private List<List<string>> powerindexsingle = new List<List<string>>();
+         static private List<List<string>> powerindexforall = new List<List<string>>();
 
-            /// <summary>
-            /// Game selected from UserMenu_grd -> GameSelection_grd
-            /// </summary>
-            static public string SelectedGame
+         /// <summary>
+         /// Game selected from UserMenu_grd -> GameSelection_grd
+         /// </summary>
+         static public string SelectedGame
+         {
+            get
             {
-                get
-                {
-                    return selectedgame;
-                }
-                set
-                {
-                    selectedgame = value;
-                }
+               return selectedgame;
             }
+            set
+            {
+               selectedgame = value;
+            }
+         }
 
-            /// <summary>
-            /// List of equipment index
-            /// </summary>
-            static public List<string> EquipmentIndex
+         /// <summary>
+         /// List of equipment index
+         /// </summary>
+         static public List<string> EquipmentIndex
+         {
+            get
             {
-                get
-                {
-                    return equipmentindex;
-                }
-                set
-                {
-                    equipmentindex = value;
-                }
+               return equipmentindex;
             }
-            /// <summary>
-            /// List of equipment index's to single types
-            /// </summary>
-            static public List<List<string>> EquipmentIndexSingle
+            set
             {
-                get
-                {
-                    return equipmentindexsingle;
-                }
-                set
-                {
-                    equipmentindexsingle = value;
-                }
+               equipmentindex = value;
             }
-            /// <summary>
-            /// List of equipment index's for all types
-            /// </summary>
-            static public List<List<string>> EquipmentIndexForAll
+         }
+         /// <summary>
+         /// List of equipment index's to single types
+         /// </summary>
+         static public List<List<string>> EquipmentIndexSingle
+         {
+            get
             {
-                get
-                {
-                    return equipmentindexforall;
-                }
-                set
-                {
-                    equipmentindexforall = value;
-                }
+               return equipmentindexsingle;
             }
+            set
+            {
+               equipmentindexsingle = value;
+            }
+         }
+         /// <summary>
+         /// List of equipment index's for all types
+         /// </summary>
+         static public List<List<string>> EquipmentIndexForAll
+         {
+            get
+            {
+               return equipmentindexforall;
+            }
+            set
+            {
+               equipmentindexforall = value;
+            }
+         }
 
-            /// <summary>
-            /// List of powers index
-            /// </summary>
-            static public List<string> PowerIndex
+         /// <summary>
+         /// List of powers index
+         /// </summary>
+         static public List<string> PowerIndex
+         {
+            get
             {
-                get
-                {
-                    return powerindex;
-                }
-                set
-                {
-                    powerindex = value;
-                }
+               return powerindex;
             }
-            /// <summary>
-            /// List of powers index's to single types
-            /// </summary>
-            static public List<List<string>> PowerIndexSingle
+            set
             {
-                get
-                {
-                    return powerindexsingle;
-                }
-                set
-                {
-                    powerindexsingle = value;
-                }
+               powerindex = value;
             }
-            /// <summary>
-            /// List of power index's for all types
-            /// </summary>
-            static public List<List<string>> PowerIndexForAll
+         }
+         /// <summary>
+         /// List of powers index's to single types
+         /// </summary>
+         static public List<List<string>> PowerIndexSingle
+         {
+            get
             {
-                get
-                {
-                    return powerindexforall;
-                }
-                set
-                {
-                    powerindexforall = value;
-                }
+               return powerindexsingle;
             }
-        }
+            set
+            {
+               powerindexsingle = value;
+            }
+         }
+         /// <summary>
+         /// List of power index's for all types
+         /// </summary>
+         static public List<List<string>> PowerIndexForAll
+         {
+            get
+            {
+               return powerindexforall;
+            }
+            set
+            {
+               powerindexforall = value;
+            }
+         }
+      }
 
-        /// <summary>
-        /// Information that is needed across classes for a limited time
-        /// </summary>
-        public struct TemporaryData
-        {
-            static private XDocument selectedcharacterstats = new XDocument();
-            static private int filesstilltoload = 0;
-            static private List<XElement> powersxml = new List<XElement>();
+      /// <summary>
+      /// Information that is needed across classes for a limited time
+      /// </summary>
+      public struct TemporaryData
+      {
+         static private XDocument selectedcharacterstats = new XDocument();
+         static private int filesstilltoload = 0;
+         static private List<XElement> powersxml = new List<XElement>();
 
-            /// <summary>
-            /// Used for temporary storing of data while fetching the sheet layout for that character type
-            /// </summary>
-            static public XDocument SelectedCharacterStats
+         /// <summary>
+         /// Used for temporary storing of data while fetching the sheet layout for that character type
+         /// </summary>
+         static public XDocument SelectedCharacterStats
+         {
+            get
             {
-                get
-                {
-                    return selectedcharacterstats;
-                }
-                set
-                {
-                    selectedcharacterstats = value;
-                }
+               return selectedcharacterstats;
             }
+            set
+            {
+               selectedcharacterstats = value;
+            }
+         }
 
-            /// <summary>
-            /// Number of files still in not loaded as part of a given task
-            /// </summary>
-            static public int FilesStillToLoad
+         /// <summary>
+         /// Number of files still in not loaded as part of a given task
+         /// </summary>
+         static public int FilesStillToLoad
+         {
+            get
             {
-                get
-                {
-                    return filesstilltoload;
-                }
-                set
-                {
-                    filesstilltoload = value;
-                }
+               return filesstilltoload;
             }
+            set
+            {
+               filesstilltoload = value;
+            }
+         }
 
-            /// <summary>
-            /// Powers containing character powers
-            /// </summary>
-            static public List<XElement> PowersXML
+         /// <summary>
+         /// Powers containing character powers
+         /// </summary>
+         static public List<XElement> PowersXML
+         {
+            get
             {
-                get
-                {
-                    return powersxml;
-                }
-                set
-                {
-                    powersxml = value;
-                }
+               return powersxml;
             }
-        }
+            set
+            {
+               powersxml = value;
+            }
+         }
+      }
 
-        /// <summary>
-        /// Styles to put on objects
-        /// </summary>
-        public struct ObjectStyles
-        {
-            static private Style textbox = new Style();
-            static private Style button_up = new Style();
-            static private Style button_down = new Style();
+      /// <summary>
+      /// Styles to put on objects
+      /// </summary>
+      public struct ObjectStyles
+      {
+         static private Style textbox = new Style();
+         static private Style button_up = new Style();
+         static private Style button_down = new Style();
 
-            static public Style Textbox
+         static public Style Textbox
+         {
+            get
             {
-                get
-                {
-                    return textbox;
-                }
-                set
-                {
-                    textbox = value;
-                }
+               return textbox;
             }
-            static public Style Button_Up
+            set
             {
-                get
-                {
-                    return button_up;
-                }
-                set
-                {
-                    button_up = value;
-                }
+               textbox = value;
             }
-            static public Style Button_Down
+         }
+         static public Style Button_Up
+         {
+            get
             {
-                get
-                {
-                    return button_down;
-                }
-                set
-                {
-                    button_down = value;
-                }
+               return button_up;
             }
-        }
-    }
+            set
+            {
+               button_up = value;
+            }
+         }
+         static public Style Button_Down
+         {
+            get
+            {
+               return button_down;
+            }
+            set
+            {
+               button_down = value;
+            }
+         }
+      }
+   }
 }

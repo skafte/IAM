@@ -16,7 +16,7 @@ using IAM;
 
 namespace ShowPowersNamespace
 {
-    public class DisplayPowers
-    {
-    }
+   public class DisplayPowers
+   {
+   }
 }

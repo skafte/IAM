@@ -11,23 +11,23 @@ using System.Windows.Shapes;
 
 namespace IAM
 {
-    // TODO: global catching of exceptions
-    public class UnknownFileProcessException : ArgumentException
-    {
-        public UnknownFileProcessException(string Reason)
-            : base(Reason)
-        { }
-    }
-    public class FileNotFoundException : ArgumentException
-    {
-        public FileNotFoundException(string FileProcess, string FileToLoad)
-            : base(FileProcess, FileToLoad)
-        { }
-    }
-    public class UnknownObjectException : ArgumentException
-    {
-        public UnknownObjectException(string ObjectType)
-            : base(ObjectType)
-        { }
-    }
+   // TODO: global catching of exceptions
+   public class UnknownFileProcessException : ArgumentException
+   {
+      public UnknownFileProcessException(string Reason)
+         : base(Reason)
+      { }
+   }
+   public class FileNotFoundException : ArgumentException
+   {
+      public FileNotFoundException(string FileProcess, string FileToLoad)
+         : base(FileProcess, FileToLoad)
+      { }
+   }
+   public class UnknownObjectException : ArgumentException
+   {
+      public UnknownObjectException(string ObjectType)
+         : base(ObjectType)
+      { }
+   }
 }

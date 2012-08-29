@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<body>
+	<charm>
+		<name>First (Ability) Excellency - Essence Overwhelming</name>
+		<type>Solars</type> 
+		<skill>(Ability)</skill>
+		<trueSkill>Presence</trueSkill>
+	</charm>
+	<charm>
+		<name>Second (Ability) Excellency - Essence Triumphant</name>
+		<type>Solars</type> 
+		<skill>(Ability)</skill>
+		<trueSkill>Melee</trueSkill>
+	</charm>
+	<charm>
+		<name>Third (Ability) Excellency - Essence Resurgent</name>
+		<type>Solars</type> 
+		<skill>(Ability)</skill>
+		<trueSkill>Integrity</trueSkill>
+	</charm>	
+	<charm>
+		<name>Hungry Tiger Technique</name>
+		<type>Solars</type>
+		<skill>Melee</skill>
+	</charm>
+	<charm>
+		<name>Ox-Body Technique</name>
+		<type>Solars</type>
+		<skill>Resistance</skill>
+	</charm>
+	<charm>
+		<name>Graceful Crane Stance</name>
+		<type>Solars</type>
+		<skill>Athletics</skill>
+	</charm>
+	<charm>
+		<name>Monkey Leap Technique</name>
+		<type>Solars</type>
+		<skill>Athletics</skill>
+	</charm>
+	<charm>
+		<name>Soaring Crane Leap</name>
+		<type>Solars</type>
+		<skill>Athletics</skill>
+	</charm>
+	<charm>
+		<name>Reflex Sidestep Technique</name>
+		<type>Solars</type>
+		<skill>Dodge</skill>
+	</charm>
+	<charm>
+		<name>Integrity-Protecting Prana</name>
+		<type>Solars</type>
+		<skill>Integrity</skill>
+	</charm>
+	<charm>
+		<name>Temptation-Resisting Stance</name>
+		<type>Solars</type>
+		<skill>Integrity</skill>
+	</charm>
+</body>

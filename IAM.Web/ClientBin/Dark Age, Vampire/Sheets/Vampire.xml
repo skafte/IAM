@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<body>
+	<page id="0">
+		<name>Informations</name>
+		<row>
+			<column>
+				<stat id="name_textbox">
+					<value id="title">
+						<type>name</type>
+						<name>Name</name>
+					</value>
+				</stat>
+				<stat id="concept_combobox">
+					<value id="title">
+						<type>name</type>
+						<name>Concept</name>
+					</value>
+				</stat>
+			</column>
+			<column>
+				<stat id="name_textbox">
+					<value id="inputtext">
+						<type>textbox</type>
+						<start />
+					</value>
+				</stat>
+				<stat id="concept_combobox">
+					<value id="inputtext">
+						<type>combobox</type>
+						<start />
+					</value>
+				</stat>
+			</column>
+			<column>
+				<stat id="player_textbox">
+					<value id="title">
+						<type>name</type>
+						<name>Player</name>
+					</value>
+				</stat>
+				<stat id="caste_combobox">
+					<value id="title">
+						<type>name</type>
+						<name>Caste</name>
+					</value>
+				</stat>
+			</column>
+			<column>
+				<stat id="player_textbox">
+					<value id="inputtext">
+						<type>textbox</type>
+						<start />
+					</value>
+				</stat>
+				<stat id="caste_combobox">
+					<value id="inputtext">
+						<type>combobox</type>
+						<start />
+					</value>
+				</stat>
+			</column>
+		</row>
+	</page>
+	<page id="1">
+		<name>Stats</name>
+		<row id="attTitle_row" HorizontalAlighment="center">
+			<name>Attributes</name>
+		</row>
+		<row id="att_row" HorizontalAlighment="stretch">
+			<row id="att_category_physical">
+				<column>
+					<stat id="att_strength">
+						<value id="title">
+							<type>name</type>
+							<name>Strength</name>
+						</value>
+					</stat>
+					<stat id="att_dexterity">
+						<value id="title">
+							<type>name</type>
+							<name>Dexterity</name>
+						</value>
+					</stat>
+					<stat id="att_stamina">
+						<value id="title">
+							<type>name</type>
+							<name>Stamina</name>
+						</value>
+					</stat>
+				</column>
+				<column>
+					<stat id="att_strength">
+						<value id="statvalue">
+							<type>dot</type>
+							<look>dot</look>
+							<start>1</start>
+							<maxshow>5</maxshow>
+						</value>
+					</stat>
+					<stat id="att_dexterity">
+						<value id="statvalue">
+							<type>dot</type>
+							<look>dot</look>
+							<start>1</start>
+							<maxshow>5</maxshow>
+						</value>
+					</stat>
+					<stat id="att_stamina">
+						<value id="statvalue">
+							<type>dot</type>
+							<look>dot</look>
+							<start>1</start>
+							<maxshow>5</maxshow>
+						</value>
+					</stat>
+				</column>
+			</row>
+			<row id="att_category_social">
+				<column>
+					<stat id="att_charisma">
+						<value id="title">
+							<type>name</type>
+							<name>Charisma</name>
+						</value>
+					</stat>
+					<stat id="att_manipulation">
+						<value id="title">
+							<type>name</type>
+							<name>Manipulation</name>
+						</value>
+					</stat>
+					<stat id="att_appearance">
+						<value id="title">
+							<type>name</type>
+							<name>Appearance</name>
+						</value>
+					</stat>
+				</column>
+				<column>
+					<stat id="att_charisma">
+						<value id="statvalue">
+							<type>dot</type>
+							<look>dot</look>
+							<start>1</start>
+							<maxshow>5</maxshow>
+						</value>
+					</stat>
+					<stat id="att_manipulation">
+						<value id="statvalue">
+							<type>dot</type>
+							<look>dot</look>
+							<start>1</start>
+							<maxshow>5</maxshow>
+						</value>
+					</stat>
+					<stat id="att_appearance">
+						<value id="statvalue">
+							<type>dot</type>
+							<look>dot</look>
+							<start>1</start>
+							<maxshow>5</maxshow>
+						</value>
+					</stat>
+				</column>
+			</row>
+			<row id="att_category_mental">
+				<column>
+					<stat id="att_perception">
+						<value id="title">
+							<type>name</type>
+							<name>Perception</name>
+						</value>
+					</stat>
+					<stat id="att_intelligence">
+						<value id="title">
+							<type>name</type>
+							<name>Intelligence</name>
+						</value>
+					</stat>
+					<stat id="att_wits">
+						<value id="title">
+							<type>name</type>
+							<name>Wits</name>
+						</value>
+					</stat>
+				</column>
+				<column>
+					<stat id="att_perception">
+						<value id="statvalue">
+							<type>dot</type>
+							<look>dot</look>
+							<start>1</start>
+							<maxshow>5</maxshow>
+						</value>
+					</stat>
+					<stat id="att_intelligence">
+						<value id="statvalue">
+							<type>dot</type>
+							<look>dot</look>
+							<start>1</start>
+							<maxshow>5</maxshow>
+						</value>
+					</stat>
+					<stat id="att_wits">
+						<value id="statvalue">
+							<type>dot</type>
+							<look>dot</look>
+							<start>1</start>
+							<maxshow>5</maxshow>
+						</value>
+					</stat>
+				</column>
+			</row>
+		</row>
+		<row id="abiTitle_row">
+			<name>Abilities</name>
+		</row>
+		<column id="abi_row" HorizontalAlighment="stretch">
+			<row HorizontalAlighment="stretch">
+				<column id="abiDawn_caste">
+					<name>Dawn</name>
+					<row>
+						<column>
+							<stat id="abi_archery">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_martialarts">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_melee">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_thrown">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_war">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+						</column>
+						<column>
+							<stat id="abi_archery">
+								<value id="title">
+									<type>name</type>
+									<name>Archery</name>
+								</value>
+							</stat>
+							<stat id="abi_martialarts">
+								<value id="title">
+									<type>name</type>
+									<name>Martial Arts</name>
+								</value>
+							</stat>
+							<stat id="abi_melee">
+								<value id="title">
+									<type>name</type>
+									<name>Melee</name>
+								</value>
+							</stat>
+							<stat id="abi_thrown">
+								<value id="title">
+									<type>name</type>
+									<name>Thrown</name>
+								</value>
+							</stat>
+							<stat id="abi_war">
+								<value id="title">
+									<type>name</type>
+									<name>War</name>
+								</value>
+							</stat>
+						</column>
+						<column>
+							<stat id="abi_archery">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_martialarts">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_melee">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_thrown">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_war">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+						</column>
+					</row>
+				</column>
+				<column id="abiZenith_caste">
+					<name>Zenith</name>
+					<row>
+						<column>
+							<stat id="abi_integrity">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_performance">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_presence">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_resistance">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_survival">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+						</column>
+						<column>
+							<stat id="abi_integrity">
+								<value id="title">
+									<type>name</type>
+									<name>Integrity</name>
+								</value>
+							</stat>
+							<stat id="abi_performance">
+								<value id="title">
+									<type>name</type>
+									<name>Performance</name>
+								</value>
+							</stat>
+							<stat id="abi_presence">
+								<value id="title">
+									<type>name</type>
+									<name>Presence</name>
+								</value>
+							</stat>
+							<stat id="abi_resistance">
+								<value id="title">
+									<type>name</type>
+									<name>Resistance</name>
+								</value>
+							</stat>
+							<stat id="abi_survival">
+								<value id="title">
+									<type>name</type>
+									<name>Survival</name>
+								</value>
+							</stat>
+						</column>
+						<column>
+							<stat id="abi_integrity">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_performance">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_presence">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_resistance">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_survival">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+						</column>
+					</row>
+				</column>
+				<column id="abiTwilight_caste">
+					<name>Twilight</name>
+					<row>
+						<column>
+							<stat id="abi_Craft">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_investigation">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_lore">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_medicine">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_occult">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+						</column>
+						<column>
+							<stat id="abi_Craft">
+								<value id="title">
+									<type>name</type>
+									<name>Craft</name>
+								</value>
+								<value id="inputtext">
+									<type>combobox</type>
+									<start />
+								</value>
+							</stat>
+							<stat id="abi_investigation">
+								<value id="title">
+									<type>name</type>
+									<name>Investigation</name>
+								</value>
+							</stat>
+							<stat id="abi_lore">
+								<value id="title">
+									<type>name</type>
+									<name>Lore</name>
+								</value>
+							</stat>
+							<stat id="abi_medicine">
+								<value id="title">
+									<type>name</type>
+									<name>Medicine</name>
+								</value>
+							</stat>
+							<stat id="abi_occult">
+								<value id="title">
+									<type>name</type>
+									<name>Occult</name>
+								</value>
+							</stat>
+						</column>
+						<column>
+							<stat id="abi_Craft">							
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_investigation">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_lore">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_medicine">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_occult">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+						</column>
+					</row>
+				</column>
+			</row>
+			<row HorizontalAlighment="stretch">
+				<column id="abiNight_caste">
+					<name>Night</name>
+					<row>
+						<column>
+							<stat id="abi_athletics">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_awareness">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_dodge">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_larceny">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_stealth">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+						</column>
+						<column>
+							<stat id="abi_athletics">
+								<value id="title">
+									<type>name</type>
+									<name>Athletics</name>
+								</value>
+							</stat>
+							<stat id="abi_awareness">
+								<value id="title">
+									<type>name</type>
+									<name>Awareness</name>
+								</value>
+							</stat>
+							<stat id="abi_dodge">
+								<value id="title">
+									<type>name</type>
+									<name>Dodge</name>
+								</value>
+							</stat>
+							<stat id="abi_larceny">
+								<value id="title">
+									<type>name</type>
+									<name>Larceny</name>
+								</value>
+							</stat>
+							<stat id="abi_stealth">
+								<value id="title">
+									<type>name</type>
+									<name>Stealth</name>
+								</value>
+							</stat>
+						</column>
+						<column>
+							<stat id="abi_athletics">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_awareness">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_dodge">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_larceny">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_stealth">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+						</column>
+					</row>
+				</column>
+				<column id="abiEclipse_caste">
+					<name>Eclipse</name>
+					<row>
+						<column>
+							<stat id="abi_bureaucracy">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_linguistics">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_ride">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_sail">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_socialize">
+								<value id="favorite">
+									<type>dot</type>
+									<look>square</look>
+									<start>0</start>
+									<maxshow>1</maxshow>
+								</value>
+							</stat>
+						</column>
+						<column>
+							<stat id="abi_bureaucracy">
+								<value id="title">
+									<type>name</type>
+									<name>Bureaucracy</name>
+								</value>
+							</stat>
+							<stat id="abi_linguistics">
+								<value id="title">
+									<type>name</type>
+									<name>Linguistics</name>
+								</value>
+							</stat>
+							<stat id="abi_ride">
+								<value id="title">
+									<type>name</type>
+									<name>Ride</name>
+								</value>
+							</stat>
+							<stat id="abi_sail">
+								<value id="title">
+									<type>name</type>
+									<name>Sail</name>
+								</value>
+							</stat>
+							<stat id="abi_socialize">
+								<value id="title">
+									<type>name</type>
+									<name>Socialize</name>
+								</value>
+							</stat>
+						</column>
+						<column>
+							<stat id="abi_bureaucracy">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_linguistics">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_ride">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_sail">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+							<stat id="abi_socialize">
+								<value id="statvalue">
+									<type>dot</type>
+									<look>dot</look>
+									<start>0</start>
+									<maxshow>5</maxshow>
+								</value>
+							</stat>
+						</column>
+					</row>
+				</column>
+			</row>
+		</column>
+		<row name="add_row">
+			<column id="essence">
+				<stat>
+					<value id="title">
+						<type>name</type>
+						<name>Essence</name>
+					</value>
+					<value id="essence_dots">
+						<type>dot</type>
+						<look>dot</look>
+						<start>1</start>
+						<maxshow>5</maxshow>
+					</value>
+				</stat>
+				<stat>
+					<value id="title">
+						<type>name</type>
+						<name>Personal</name>
+					</value>
+					<value id="inall">
+						<type>textbox</type>
+						<start />
+					</value>
+					<value id="aftercommit">
+						<type>textbox</type>
+						<start />
+					</value>
+					<value id="used">
+						<type>textbox</type>
+						<start />
+					</value>
+				</stat>
+				<stat>
+					<value id="title">
+						<type>name</type>
+						<name>Peripherial</name>
+					</value>
+					<value id="inall">
+						<type>textbox</type>
+						<start />
+					</value>
+					<value id="aftercommit">
+						<type>textbox</type>
+						<start />
+					</value>
+					<value id="used">
+						<type>textbox</type>
+						<start />
+					</value>
+				</stat>
+				<stat>
+					<value id="title">
+						<type>name</type>
+						<name>Overdrive</name>
+					</value>
+					<value id="max">
+						<type>textbox</type>
+						<start />
+					</value>
+					<value id="have">
+						<type>textbox</type>
+						<start />
+					</value>
+					<value id="used">
+						<type>textbox</type>
+						<start />
+					</value>
+				</stat>
+			</column>
+		</row>
+	</page>
+	<page id="2">
+		<name>Social Combat</name>
+
+	</page>
+	<page id="3">
+		<name>Combat</name>
+
+	</page>
+	<page id="4">
+		<name>Charms</name>
+
+	</page>
+	<page id="5">
+		<name>Equipment</name>
+
+	</page>
+	<page id="6">
+		<name>Background</name>
+
+	</page>
+</body>

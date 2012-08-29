@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<body>
+	<character>
+		<name>Erik von Kleist</name>
+		<type>Vampire</type>
+		<type>Ventrue</type>
+	</character>
+	<character>
+		<name>Hestia</name>
+		<type>Vampire</type>
+		<type>Gangrel</type>
+	</character>
+</body>
