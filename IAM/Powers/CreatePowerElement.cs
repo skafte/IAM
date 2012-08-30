@@ -9,6 +9,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Expression.Controls;
+using Microsoft.Expression.Media;
 
 using IAM;
 
@@ -63,8 +64,7 @@ namespace IAM.Powers
          Devider_lnrrw.Height = 1;
          Devider_lnrrw.Margin = new Thickness(1, 0, 1, 0);
          Devider_lnrrw.VerticalAlignment = VerticalAlignment.Top;
-         // TODO
-         //Devider_lnrrw.EndArrow = ArrowType.NoArrow;
+         Devider_lnrrw.EndArrow = ArrowType.NoArrow;
          stckpnl.Children.Add(Devider_lnrrw);
 
          CreatePowerBody_Description(stckpnl);
@@ -436,6 +436,8 @@ namespace IAM.Powers
       public Expander CreateElement()
       {
          Expander expndr = new Expander();
+
+         expndr.HorizontalAlignment = HorizontalAlignment.Stretch;
          expndr.Header = CreateHeader();
          expndr.Content = CreateContent();
          return expndr;
