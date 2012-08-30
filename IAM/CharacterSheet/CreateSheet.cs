@@ -193,6 +193,7 @@ namespace IAM.CharacterSheet
             while ((eNode = eNode.NextNode) != null);
          }
       }
+      
       /// <summary>
       /// Find the different power to create in the XML
       /// </summary>
