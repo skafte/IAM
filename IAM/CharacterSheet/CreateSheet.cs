@@ -15,6 +15,7 @@ using System.Windows.Media;
 
 using IAM;
 using IAM.FileIO;
+using IAM.Powers;
 
 namespace IAM.CharacterSheet
 {
@@ -22,6 +23,8 @@ namespace IAM.CharacterSheet
    {
       #region Properties --------------------------------------------------------------------
       #region Private ---------------------------------------------------------------------------
+      private CreatePowerElement clCreatePowerElement = new CreatePowerElement();
+      
       enum DefaultItemEnum { enDefault, enCustom };
       enum CreateItemEnum { enColumn, enRow, enComboBox, enDot, enLabel, enLabelTitle, enNumericUpDown, enTextBox, enPowerBox };
       string[,] StyleLayout = new string[2, 9];
@@ -177,7 +180,6 @@ namespace IAM.CharacterSheet
                            (wrppnl as StackPanel).Children.Add(wrppnlRowInner);
                         break;
                      case "name":
-                        //CreateLabelTitle((eNode as XElement), wrppnl);
                         CreateElement((eNode as XElement), wrppnl);
                         break;
                      case "stat":
@@ -190,6 +192,16 @@ namespace IAM.CharacterSheet
             }
             while ((eNode = eNode.NextNode) != null);
          }
+      }
+      /// <summary>
+      /// Find the different power to create in the XML
+      /// </summary>
+      /// <param name="ePage">Page (XML node) where objects are described</param>
+      /// <param name="wrppnl">Wrappanel to create object on</param>
+      private void DiscectSheetPowersXML(XElement ePage, object wrppnl)
+      {
+         foreach (XElement ePower in Globals.TemporaryData.SelectedCharacterStats.Descendants(ePage.Element("menuTitle").Value))
+            (wrppnl as Panel).Children.Add(clCreatePowerElement.CreateElement());
       }
 
       /// <summary>
@@ -461,7 +473,7 @@ namespace IAM.CharacterSheet
       /// </summary>
       /// <param name="document">XML database with layout of character sheet</param>
       /// <param name="CharacterSheet_grd">Reference to CharacterSheet_grd</param>
-      public void GetSheets(XDocument document, Grid CharacterSheet_grd)
+      public void GetEmptySheets(XDocument document, Grid CharacterSheet_grd)
       {
          CharacterSheet_grd.Children.Clear();
 
@@ -478,16 +490,12 @@ namespace IAM.CharacterSheet
             wrppnl.VerticalAlignment = VerticalAlignment.Top;
             wrppnl.Orientation = Orientation.Vertical;
 
+            ResetLayoutValues();
             if (ePage.Element("powers") != null)
-            {
-               // TODO
-               
-            }
+               DiscectSheetPowersXML(ePage, wrppnl);
             else
-            {
-               ResetLayoutValues();
                DiscectSheetXML(ePage, wrppnl);
-            }
+
             grd.Children.Add(wrppnl);
             CharacterSheet_grd.Children.Add(grd);
          }
