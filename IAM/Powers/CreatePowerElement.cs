@@ -9,9 +9,11 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 
+using IAM;
+
 namespace IAM.Powers
 {
-   public class GreatePowerElement
+   public class CreatePowerElement
    {
 
    }
