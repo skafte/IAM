@@ -12,9 +12,9 @@ using System.Xml.Linq;
 using System.Linq;
 
 using IAM;
-using FileIONamespace;
+using IAM.FileIO;
 
-namespace CharacterSheetNamespace
+namespace IAM.CharacterSheet
 {
    public class GetPowers
    {

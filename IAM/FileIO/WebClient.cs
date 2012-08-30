@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using IAM;
 using System.IO;
 
-namespace FileIONamespace
+namespace IAM.FileIO
 {
    public class WebClientManager
    {

@@ -19,7 +19,7 @@ using System.Text;
 
 using IAM;
 
-namespace ShowPowersNamespace
+namespace IAM.Powers
 {
    public class ViewGraph: BaseViewModel
    {

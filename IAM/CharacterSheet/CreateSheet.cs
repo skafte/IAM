@@ -14,9 +14,9 @@ using System.Collections.Generic;
 using System.Windows.Media;
 
 using IAM;
-using FileIONamespace;
+using IAM.FileIO;
 
-namespace CharacterSheetNamespace
+namespace IAM.CharacterSheet
 {
    public class CreateSheet
    {
@@ -578,8 +578,11 @@ namespace CharacterSheetNamespace
                }
 
                // for powers
-               foreach (XElement eValue in ePage.Element("powers").Descendants(ePage.Element("menuTitle").Value.ToString()))
+               if (ePage.Element("powers") != null)
                {
+                  foreach (XElement eValue in ePage.Element("powers").Descendants(ePage.Element("menuTitle").Value.ToString()))
+                  {
+                  }
                }
             }
          }

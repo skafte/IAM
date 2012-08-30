@@ -97,6 +97,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Powers\DisplayPowers.cs" />
+    <Compile Include="Powers\GreatePowerElement.cs" />
     <Compile Include="Powers\LoadPowers.cs" />
     <Compile Include="Powers\ViewGraph.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

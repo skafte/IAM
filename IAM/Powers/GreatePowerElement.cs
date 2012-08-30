@@ -8,15 +8,11 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
-using System.Xml.Linq;
-using System.Linq;
-using System.Windows.Data;
-
-using IAM;
 
 namespace IAM.Powers
 {
-   public class DisplayPowers
+   public class GreatePowerElement
    {
+
    }
 }

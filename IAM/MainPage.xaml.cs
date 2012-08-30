@@ -10,11 +10,11 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using System.Windows.Data;
-
-using CharacterSheetNamespace;
-using FileIONamespace;
-using ShowPowersNamespace;
 using System.Xml.Linq;
+
+using IAM.CharacterSheet;
+using IAM.FileIO;
+using IAM.Powers;
 
 namespace IAM
 {
