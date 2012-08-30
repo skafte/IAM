@@ -359,7 +359,7 @@ namespace IAM
             CharacterSheetMenu_lstbx.Items.Add(ePage.Element("menuTitle").Value);
 
          // create sheet layout
-         clCreateSheet.GetSheets(document, CharacterSheet_grd);
+         clCreateSheet.GetEmptySheets(document, CharacterSheet_grd);
 
          // fill in stats
          if (Globals.TemporaryData.SelectedCharacterStats.ToString() != "")
