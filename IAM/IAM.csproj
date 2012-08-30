@@ -68,6 +68,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>resources\GraphLight.Drawing.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Expression.Controls, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Expression.Drawing, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="mscorlib" />
     <Reference Include="System.ComponentModel.DataAnnotations, Version=2.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217, processorArchitecture=MSIL" />
     <Reference Include="System.Windows" />
@@ -97,7 +99,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Powers\DisplayPowers.cs" />
-    <Compile Include="Powers\GreatePowerElement.cs" />
+    <Compile Include="Powers\CreatePowerElement.cs" />
     <Compile Include="Powers\LoadPowers.cs" />
     <Compile Include="Powers\ViewGraph.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
