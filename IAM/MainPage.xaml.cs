@@ -177,7 +177,7 @@ namespace IAM
          CharacterName_txtbx.Text = "";                              // name on Character menu
          for (int i = 0; i < name.Length; i++)
          {
-            if (!((name[i].ToString().Equals(" ")) && (name[i + 1].ToString().Equals("("))))                 // this will cause problems if no " (" exist
+            if (!((name[i].ToString().Equals(" ")) && (name[i + 1].ToString().Equals("("))))                 // TODO: this will cause problems if no " (" exist
             {
                CharacterName_txtbx.Text += name[i] + "\n";
             }
@@ -331,6 +331,7 @@ namespace IAM
       /// <param name="document">XML with stats on character</param>
       private void clWebClientManager_gotCharacterStats(XDocument document)
       {
+         ResetTemporaryData();
          Globals.TemporaryData.SelectedCharacterStats = document;
 
          if (document.Descendants("powers").Count() != 0)
@@ -379,6 +380,18 @@ namespace IAM
 
       #region Methods -----------------------------------------------------------------------
       #region Private ---------------------------------------------------------------------------
+      /// <summary>
+      /// Will clear all data from Globals.TemporaryData
+      /// This function is first called after a character sheet is actually found, in case the sheet doesn't exist anyway
+      /// </summary>
+      private void ResetTemporaryData()
+      {
+         Globals.TemporaryData.FilesStillToLoad = 0;
+         Globals.TemporaryData.PowersXMLFiles.Clear();
+         Globals.TemporaryData.SelectedCharacterPowers.RemoveNodes();
+         Globals.TemporaryData.SelectedCharacterStats.RemoveNodes();
+      }
+
       #region ShowHide ------------------------------------------------------------------------------
       /// <summary>
       /// Collaps all child-grids in ParentGrid, except VisualGrid
