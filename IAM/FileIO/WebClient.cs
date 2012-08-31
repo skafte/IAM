@@ -31,7 +31,7 @@ namespace IAM.FileIO
       getListOfGames, getListOfCharacters, getListOfEquipment, getListOfPowers,
       getTypesOfEquipment, getTypesOfPower,
       // Character sheet informations
-      getCharacterStats, getCharacterPowers, getEmptyCharacterSheet
+      getCharacterStats, getCharacterPowerFiles, getEmptyCharacterSheet
             
       };
       int FileProcessTask;
@@ -51,7 +51,7 @@ namespace IAM.FileIO
       public event fromWebClientHandler gotTypesOfPower;
       // Character sheet informations
       public event fromWebClientHandler gotCharacterStats;
-      public event fromWebClientHandler gotCharacterPowers;
+      public event fromWebClientHandler gotCharacterPowerFiles;
       public event fromWebClientHandler gotEmptyCharacterSheet;
       #endregion ------------------------------------------------------------------------------------
       #endregion --------------------------------------------------------------------------------
@@ -100,7 +100,7 @@ namespace IAM.FileIO
                LoadFile("./" + Globals.GameInformation.SelectedGame + "/characters/" + File + ".xml");
                break;
             case "Get character powers":
-               FileProcessTask = (int)FileProcessEnum.getCharacterPowers;
+               FileProcessTask = (int)FileProcessEnum.getCharacterPowerFiles;
                Globals.TemporaryData.FilesStillToLoad = 0;
 
                foreach (XElement ePowerName in document.Descendants("powers"))
@@ -176,8 +176,8 @@ namespace IAM.FileIO
                case (int)FileProcessEnum.getCharacterStats:
                   this.gotCharacterStats(XDocument.Load(e.Result));
                   break;
-               case (int)FileProcessEnum.getCharacterPowers:
-                  this.gotCharacterPowers(XDocument.Load(e.Result));
+               case (int)FileProcessEnum.getCharacterPowerFiles:
+                  this.gotCharacterPowerFiles(XDocument.Load(e.Result));
                   break;
                case (int)FileProcessEnum.getEmptyCharacterSheet:
                   this.gotEmptyCharacterSheet(XDocument.Load(e.Result));
