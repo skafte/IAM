@@ -33,7 +33,7 @@ namespace IAM.Powers
       {
          Label lbl = new Label();
 
-         lbl.Content = "the power header";
+         lbl.Content = "power header";
          lbl.Margin = new Thickness(0);
          lbl.IsHitTestVisible = false;
 
