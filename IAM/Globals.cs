@@ -24,8 +24,9 @@ namespace IAM
       {
          Globals.TemporaryData.FilesStillToLoad = 0;
          Globals.TemporaryData.PowersXMLFiles.Clear();
-         Globals.TemporaryData.SelectedCharacterPowers.RemoveNodes();
          Globals.TemporaryData.SelectedCharacterStats.RemoveNodes();
+         Globals.TemporaryData.SelectedCharacterPowers.RemoveNodes();
+         Globals.TemporaryData.SelectedCharacterPowers.Add(new XElement("body"));
       }
       #endregion ----------------------------------------------------------------------------
 
