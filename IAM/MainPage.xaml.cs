@@ -341,7 +341,7 @@ namespace IAM
 
       private void clWebClientManager_gotCharacterPowerFiles(XDocument document)
       {
-         Globals.TemporaryData.PowersXML.Add(document.Element("body"));
+         Globals.TemporaryData.PowersXMLFiles.Add(document.Element("body"));
          if (--Globals.TemporaryData.FilesStillToLoad == 0)
          {
             clGetPowers.findCharacterPowers();
