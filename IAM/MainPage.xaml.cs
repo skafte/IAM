@@ -77,7 +77,7 @@ namespace IAM
          this.clWebClientManager.gotTypesOfPower += new WebClientManager.fromWebClientHandler(clWebClientManager_gotTypesOfPower);
          // Character sheet informations
          this.clWebClientManager.gotCharacterStats += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterStats);
-         this.clWebClientManager.gotCharacterPowers += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterPowers);
+         this.clWebClientManager.gotCharacterPowerFiles += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterPowerFiles);
          this.clWebClientManager.gotEmptyCharacterSheet += new WebClientManager.fromWebClientHandler(clWebClientManager_gotEmptyCharacterSheet);
       }
 
@@ -339,11 +339,17 @@ namespace IAM
             clWebClientManager.PrepareFilePaths("Get empty character sheet", Globals.TemporaryData.SelectedCharacterStats.Element("body").Attribute("type").Value.ToString());
       }
 
-      private void clWebClientManager_gotCharacterPowers(XDocument document)
+      private void clWebClientManager_gotCharacterPowerFiles(XDocument document)
       {
          Globals.TemporaryData.PowersXML.Add(document.Element("body"));
          if (--Globals.TemporaryData.FilesStillToLoad == 0)
+         {
+            clGetPowers.findCharacterPowers();
+
+
+            // skal ikke være her, er her kun for at stoppe forløbet til den bliver placeret rigtigt
             clWebClientManager.PrepareFilePaths("Get empty character sheet", Globals.TemporaryData.SelectedCharacterStats.Element("body").Attribute("type").Value.ToString());
+         }
       }
 
       /// <summary>
