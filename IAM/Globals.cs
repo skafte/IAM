@@ -15,6 +15,21 @@ namespace IAM
 {
    static class Globals
    {
+      #region Methods -----------------------------------------------------------------------
+      /// <summary>
+      /// Will clear all data from Globals.TemporaryData
+      /// This function is first called after a character sheet is actually found, in case the sheet doesn't exist anyway
+      /// </summary>
+      public static void ResetTemporaryData()
+      {
+         Globals.TemporaryData.FilesStillToLoad = 0;
+         Globals.TemporaryData.PowersXMLFiles.Clear();
+         Globals.TemporaryData.SelectedCharacterPowers.RemoveNodes();
+         Globals.TemporaryData.SelectedCharacterStats.RemoveNodes();
+      }
+      #endregion ----------------------------------------------------------------------------
+
+      #region Properties --------------------------------------------------------------------
       /// <summary>
       /// Path to folders corrently in use
       /// </summary>
@@ -244,5 +259,6 @@ namespace IAM
             }
          }
       }
+      #endregion ----------------------------------------------------------------------------
    }
 }

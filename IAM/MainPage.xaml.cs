@@ -331,7 +331,7 @@ namespace IAM
       /// <param name="document">XML with stats on character</param>
       private void clWebClientManager_gotCharacterStats(XDocument document)
       {
-         ResetTemporaryData();
+         Globals.ResetTemporaryData();
          Globals.TemporaryData.SelectedCharacterStats = document;
 
          if (document.Descendants("powers").Count() != 0)
@@ -380,18 +380,6 @@ namespace IAM
 
       #region Methods -----------------------------------------------------------------------
       #region Private ---------------------------------------------------------------------------
-      /// <summary>
-      /// Will clear all data from Globals.TemporaryData
-      /// This function is first called after a character sheet is actually found, in case the sheet doesn't exist anyway
-      /// </summary>
-      private void ResetTemporaryData()
-      {
-         Globals.TemporaryData.FilesStillToLoad = 0;
-         Globals.TemporaryData.PowersXMLFiles.Clear();
-         Globals.TemporaryData.SelectedCharacterPowers.RemoveNodes();
-         Globals.TemporaryData.SelectedCharacterStats.RemoveNodes();
-      }
-
       #region ShowHide ------------------------------------------------------------------------------
       /// <summary>
       /// Collaps all child-grids in ParentGrid, except VisualGrid
