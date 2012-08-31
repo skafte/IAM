@@ -137,7 +137,7 @@ namespace IAM
       {
          static private XDocument selectedcharacterstats = new XDocument();
          static private int filesstilltoload = 0;
-         static private List<XElement> powersxml = new List<XElement>();
+         static private List<XElement> powersxmlfiles = new List<XElement>();
 
          /// <summary>
          /// Used for temporary storing of data while fetching the sheet layout for that character type
@@ -172,15 +172,15 @@ namespace IAM
          /// <summary>
          /// XML data files containing character powers
          /// </summary>
-         static public List<XElement> PowersXML
+         static public List<XElement> PowersXMLFiles
          {
             get
             {
-               return powersxml;
+               return powersxmlfiles;
             }
             set
             {
-               powersxml = value;
+               powersxmlfiles = value;
             }
          }
       }
