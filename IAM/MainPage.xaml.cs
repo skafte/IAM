@@ -345,11 +345,10 @@ namespace IAM
          Globals.TemporaryData.PowersXMLFiles.Add(document.Element("body"));
          if (--Globals.TemporaryData.FilesStillToLoad == 0)
          {
-            clGetPowers.findCharacterPowers();
-
-
-            // skal ikke være her, er her kun for at stoppe forløbet til den bliver placeret rigtigt
-            clWebClientManager.PrepareFilePaths("Get empty character sheet", Globals.TemporaryData.SelectedCharacterStats.Element("body").Attribute("type").Value.ToString());
+            if (clGetPowers.findCharacterPowers())
+               clWebClientManager.PrepareFilePaths("Get character power crossRefs", "", Globals.TemporaryData.SelectedCharacterPowers);
+            else
+               clWebClientManager.PrepareFilePaths("Get empty character sheet", Globals.TemporaryData.SelectedCharacterStats.Element("body").Attribute("type").Value.ToString());
          }
       }
 

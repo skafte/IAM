@@ -18,15 +18,8 @@ namespace IAM.CharacterSheet
 {
    public class GetPowers
    {
-      public void findCharacterPowers()
+      public bool findCharacterPowers()
       {
-         // get all the power "pages" from the sheet
-         XElement sheetPowerList = new XElement("body", from vPower in Globals.TemporaryData.SelectedCharacterStats.Descendants("powers")
-                                                        select vPower);
-
-
-         XElement ePowers = new XElement("body");
-
          foreach (XElement eSheetPowerList in Globals.TemporaryData.SelectedCharacterStats.Descendants("powers"))       // get all the power "pages" from the sheet
          {
             string powerType = eSheetPowerList.Attribute("type").Value;                                                 // get type of power on page
@@ -36,16 +29,18 @@ namespace IAM.CharacterSheet
                {
                   foreach (XElement eSheetPower in eSheetPowerList.Descendants(powerType))
                   {
-                     ePowers.Add(from vPower in eFilePowers.Descendants(powerType)
-                                 where ((vPower.Element("name").Value == eSheetPower.Element("name").Value) &&
-                                        (vPower.Element("skill").Element("name").Value == eSheetPower.Element("skill").Value))
-                                 select vPower);
+                     Globals.TemporaryData.SelectedCharacterPowers.Element("body").Add(from vPower in eFilePowers.Descendants(powerType)
+                                                                                       where ((vPower.Element("name").Value == eSheetPower.Element("name").Value) &&
+                                                                                              (vPower.Element("skill").Element("name").Value == eSheetPower.Element("skill").Value))
+                                                                                       select vPower);
                   }
                }
             }
          }
 
-
+         if (Globals.TemporaryData.SelectedCharacterPowers.ToString().Contains("crossRef"))
+            return true;
+         return false;
 
           //Globals.TemporaryData.PowersXML
       }
