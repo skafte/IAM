@@ -18,6 +18,10 @@ namespace IAM.CharacterSheet
 {
    public class GetPowers
    {
+      /// <summary>
+      /// Will find the specific powers belonging to the selected sheet
+      /// </summary>
+      /// <returns>true: if and crossRef powers are needed, else return false</returns>
       public bool findCharacterPowers()
       {
          foreach (XElement eSheetPowerList in Globals.TemporaryData.SelectedCharacterStats.Descendants("powers"))       // get all the power "pages" from the sheet
@@ -41,8 +45,13 @@ namespace IAM.CharacterSheet
          if (Globals.TemporaryData.SelectedCharacterPowers.ToString().Contains("crossRef"))
             return true;
          return false;
+      }
 
-          //Globals.TemporaryData.PowersXML
+      /// <summary>
+      /// Will find all needed crossRef powers and add them to SelectedCharacterPowers
+      /// </summary>
+      public void findCharacterCrossRefPowers()
+      {
       }
    }
 }
