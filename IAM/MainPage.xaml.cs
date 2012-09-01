@@ -78,6 +78,7 @@ namespace IAM
          // Character sheet informations
          this.clWebClientManager.gotCharacterStats += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterStats);
          this.clWebClientManager.gotCharacterPowerFiles += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterPowerFiles);
+         this.clWebClientManager.gotCharacterPowerCrossRefs += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterPowerCrossRefs);
          this.clWebClientManager.gotEmptyCharacterSheet += new WebClientManager.fromWebClientHandler(clWebClientManager_gotEmptyCharacterSheet);
       }
 
@@ -340,15 +341,38 @@ namespace IAM
             clWebClientManager.PrepareFilePaths("Get empty character sheet", Globals.TemporaryData.SelectedCharacterStats.Element("body").Attribute("type").Value.ToString());
       }
 
+      /// <summary>
+      /// Get and temporarely store power data files
+      /// Will call functions to process data files when all are loaded
+      /// </summary>
+      /// <param name="document">XML with powers</param>
       private void clWebClientManager_gotCharacterPowerFiles(XDocument document)
       {
          Globals.TemporaryData.PowersXMLFiles.Add(document.Element("body"));
          if (--Globals.TemporaryData.FilesStillToLoad == 0)
          {
             if (clGetPowers.findCharacterPowers())
+            {
+               Globals.ResetTemporaryData("PowersXMLFiles");
                clWebClientManager.PrepareFilePaths("Get character power crossRefs", "", Globals.TemporaryData.SelectedCharacterPowers);
+            }
             else
                clWebClientManager.PrepareFilePaths("Get empty character sheet", Globals.TemporaryData.SelectedCharacterStats.Element("body").Attribute("type").Value.ToString());
+         }
+      }
+
+      /// <summary>
+      /// Get and temporarely store power (crossRef) data files
+      /// Will call functions to process data files when all are loaded
+      /// </summary>
+      /// <param name="document">XML with crossRef powers</param>
+      void clWebClientManager_gotCharacterPowerCrossRefs(XDocument document)
+      {
+         Globals.TemporaryData.PowersXMLFiles.Add(document.Element("body"));
+         if (--Globals.TemporaryData.FilesStillToLoad == 0)
+         {
+            clGetPowers.findCharacterCrossRefPowers();
+            clWebClientManager.PrepareFilePaths("Get empty character sheet", Globals.TemporaryData.SelectedCharacterStats.Element("body").Attribute("type").Value.ToString());
          }
       }
 

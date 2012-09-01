@@ -31,7 +31,7 @@ namespace IAM.FileIO
       getListOfGames, getListOfCharacters, getListOfEquipment, getListOfPowers,
       getTypesOfEquipment, getTypesOfPower,
       // Character sheet informations
-      getCharacterStats, getCharacterPowerFiles, getEmptyCharacterSheet
+      getCharacterStats, getCharacterPowerFiles, getCharacterPowerCrossRefs, getEmptyCharacterSheet
             
       };
       int FileProcessTask;
@@ -52,6 +52,7 @@ namespace IAM.FileIO
       // Character sheet informations
       public event fromWebClientHandler gotCharacterStats;
       public event fromWebClientHandler gotCharacterPowerFiles;
+      public event fromWebClientHandler gotCharacterPowerCrossRefs;
       public event fromWebClientHandler gotEmptyCharacterSheet;
       #endregion ------------------------------------------------------------------------------------
       #endregion --------------------------------------------------------------------------------
@@ -122,6 +123,25 @@ namespace IAM.FileIO
                   });
                }
                break;
+            case "Get character power crossRefs":
+               FileProcessTask = (int)FileProcessEnum.getCharacterPowerCrossRefs;
+               Globals.TemporaryData.FilesStillToLoad = 0;
+
+               List<string> UserFiles = new List<string>();
+
+               foreach (XElement eCrossRef in document.Descendants("crossRef"))
+               {
+                  string parentName = eCrossRef.Parent.Name.ToString();
+                  string typeName = eCrossRef.Element("type").Value;
+               
+                  if (UserFiles.IndexOf(parentName + ": " + typeName) == -1)                                                     // file hasn't been called to load yet
+                  {
+                     UserFiles.Add(parentName + ": " + typeName);                                                                // add file to has been called to load list
+                     Globals.TemporaryData.FilesStillToLoad++;                                                                   // NB. because FilesStillToLoad isn't set the exact number from the start it can potentially be counter down to 0 (and new new functions called) before all files are send to loading
+                     LoadFile("./" + Globals.GameInformation.SelectedGame + "/powers/" + parentName + "/" + typeName + ".xml");
+                  }
+               }
+               break;
             case "Get empty character sheet":
                FileProcessTask = (int)FileProcessEnum.getEmptyCharacterSheet;
                LoadFile("./" + Globals.GameInformation.SelectedGame + "/sheets/" + File + ".xml");
@@ -178,6 +198,9 @@ namespace IAM.FileIO
                   break;
                case (int)FileProcessEnum.getCharacterPowerFiles:
                   this.gotCharacterPowerFiles(XDocument.Load(e.Result));
+                  break;
+               case (int)FileProcessEnum.getCharacterPowerCrossRefs:
+                  this.gotCharacterPowerCrossRefs(XDocument.Load(e.Result));
                   break;
                case (int)FileProcessEnum.getEmptyCharacterSheet:
                   this.gotEmptyCharacterSheet(XDocument.Load(e.Result));
