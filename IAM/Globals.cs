@@ -20,13 +20,19 @@ namespace IAM
       /// Will clear all data from Globals.TemporaryData
       /// This function is first called after a character sheet is actually found, in case the sheet doesn't exist anyway
       /// </summary>
-      public static void ResetTemporaryData()
+      public static void ResetTemporaryData(string varToReset = "")
       {
-         Globals.TemporaryData.FilesStillToLoad = 0;
-         Globals.TemporaryData.PowersXMLFiles.Clear();
-         Globals.TemporaryData.SelectedCharacterStats.RemoveNodes();
-         Globals.TemporaryData.SelectedCharacterPowers.RemoveNodes();
-         Globals.TemporaryData.SelectedCharacterPowers.Add(new XElement("body"));
+         if ((varToReset == "FilesStillToLoad") || (varToReset == ""))
+            Globals.TemporaryData.FilesStillToLoad = 0;
+         if ((varToReset == "PowersXMLFiles") || (varToReset == ""))
+            Globals.TemporaryData.PowersXMLFiles.Clear();
+         if ((varToReset == "SelectedCharacterStats") || (varToReset == ""))
+            Globals.TemporaryData.SelectedCharacterStats.RemoveNodes();
+         if ((varToReset == "SelectedCharacterPowers") || (varToReset == ""))
+         {
+            Globals.TemporaryData.SelectedCharacterPowers.RemoveNodes();
+            Globals.TemporaryData.SelectedCharacterPowers.Add(new XElement("body"));
+         }
       }
       #endregion ----------------------------------------------------------------------------
 
