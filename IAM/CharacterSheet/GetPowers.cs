@@ -52,6 +52,23 @@ namespace IAM.CharacterSheet
       /// </summary>
       public void findCharacterCrossRefPowers()
       {
+         XElement CrossRefPowers = new XElement("crossRefPowers");
+
+         foreach (string powerType in Globals.TemporaryData.SelectedCharacterStats.Descendants("powers").Attributes("type"))              // get the power type name, for each type of power
+         {
+            foreach (XElement eSheetPowerCrossRef in Globals.TemporaryData.SelectedCharacterPowers.Descendants(powerType).Elements("crossRef"))   // get each crossRef
+            {
+               foreach (XElement eFilePowers in Globals.TemporaryData.PowersXMLFiles)                                                     // search through all the XML data files after power matching the crossRef
+               {
+                  CrossRefPowers.Add(from vCrossRefPower in eFilePowers.Descendants(powerType)
+                                                               where ((eSheetPowerCrossRef.Element("type").Value == eFilePowers.Attribute("user").Value) &&
+                                                                      (eSheetPowerCrossRef.Element("name").Value == vCrossRefPower.Element("name").Value) &&
+                                                                      (eSheetPowerCrossRef.Element("skill").Value == vCrossRefPower.Element("skill").Element("name").Value))
+                                                               select vCrossRefPower);
+               }
+            }
+         }
+         Globals.TemporaryData.SelectedCharacterPowers.Element("body").Add(CrossRefPowers);
       }
    }
 }
