@@ -92,6 +92,9 @@
     </Compile>
     <Compile Include="CharacterSheet\CreateSheet.cs" />
     <Compile Include="CharacterSheet\GetPowers.cs" />
+    <Compile Include="CustomControlStyles.xaml.cs">
+      <DependentUpon>CustomControlStyles.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CustomExceptions.cs" />
     <Compile Include="FileIO\WebClient.cs" />
     <Compile Include="Globals.cs" />
@@ -109,9 +112,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="CustomControlStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
