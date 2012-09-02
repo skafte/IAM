@@ -24,6 +24,7 @@ namespace IAM.CharacterSheet
       #region Properties --------------------------------------------------------------------
       #region Private ---------------------------------------------------------------------------
       private CreatePowerElement clCreatePowerElement = new CreatePowerElement();
+      private CustomControlStyles usCustomControlStyles = new CustomControlStyles();
       
       enum DefaultItemEnum { enDefault, enCustom };
       enum CreateItemEnum { enColumn, enRow, enComboBox, enDot, enLabel, enLabelTitle, enNumericUpDown, enTextBox, enPowerBox };
@@ -374,7 +375,7 @@ namespace IAM.CharacterSheet
       {
          string[] KeyValuePairArray;
          string[] KeyValuePair;
-         string[] seperatorKeyValue = new string[] { "=" };
+         string[] seperatorKeyValue = new string[] { "=" };   
 
          // object specific setup
          object obj = null;
@@ -429,13 +430,11 @@ namespace IAM.CharacterSheet
                (obj as Rating).Value = float.Parse(eValue.Element("start").Value) / (obj as Rating).ItemCount;
             switch (eValue.Element("look").Value)
             {
-               // TODO
-               // Get styles back again, they should probably be put in an external file..
                case "dot":
-                  (obj as Rating).ItemContainerStyle = (Style)App.Current.Resources["RatingItemStyleDot"];
+                  (obj as Rating).ItemContainerStyle = (Style)usCustomControlStyles.Resources["RatingItemStyleDot"];
                   break;
                case "square":
-                  (obj as Rating).ItemContainerStyle = (Style)App.Current.Resources["RatingItemStyleSquare"];
+                  (obj as Rating).ItemContainerStyle = (Style)usCustomControlStyles.Resources["RatingItemStyleSquare"];
                   break;
                default:
                   break;
