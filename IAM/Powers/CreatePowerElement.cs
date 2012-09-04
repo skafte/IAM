@@ -355,7 +355,6 @@ namespace IAM.Powers
          DescriptionText_txtbx.Padding = new Thickness(0);
          DescriptionText_txtbx.VerticalScrollBarVisibility = ScrollBarVisibility.Auto;
          DescriptionText_txtbx.MaxHeight = 200;
-         DescriptionText_txtbx.MaxWidth = 500;
          DescriptionText_txtbx.Margin = new Thickness(2, 0, 1, 0);
          stckpnl.Children.Add(DescriptionText_txtbx);
       }
@@ -372,7 +371,6 @@ namespace IAM.Powers
          SubmoduleText_txtbx.Padding = new Thickness(0);
          SubmoduleText_txtbx.VerticalScrollBarVisibility = ScrollBarVisibility.Auto;
          SubmoduleText_txtbx.MaxHeight = 200;
-         SubmoduleText_txtbx.MaxWidth = 500;
          SubmoduleText_txtbx.Margin = new Thickness(2, 0, 1, 0);
          stckpnl.Children.Add(SubmoduleText_txtbx);
       }
@@ -389,7 +387,6 @@ namespace IAM.Powers
          MirrorText_txtbx.Padding = new Thickness(0);
          MirrorText_txtbx.VerticalScrollBarVisibility = ScrollBarVisibility.Auto;
          MirrorText_txtbx.MaxHeight = 200;
-         MirrorText_txtbx.MaxWidth = 500;
          MirrorText_txtbx.Margin = new Thickness(2, 0, 1, 0);
          stckpnl.Children.Add(MirrorText_txtbx);
       }
@@ -406,7 +403,6 @@ namespace IAM.Powers
          ErrataText_txtbx.Padding = new Thickness(0);
          ErrataText_txtbx.VerticalScrollBarVisibility = ScrollBarVisibility.Auto;
          ErrataText_txtbx.MaxHeight = 200;
-         ErrataText_txtbx.MaxWidth = 500;
          ErrataText_txtbx.Margin = new Thickness(2, 0, 1, 0);
          stckpnl.Children.Add(ErrataText_txtbx);
       }
@@ -424,7 +420,6 @@ namespace IAM.Powers
          CommentText_txtbx.Padding = new Thickness(0);
          CommentText_txtbx.VerticalScrollBarVisibility = ScrollBarVisibility.Auto;
          CommentText_txtbx.MaxHeight = 200;
-         CommentText_txtbx.MaxWidth = 500;
          CommentText_txtbx.Margin = new Thickness(2, 0, 1, 0);
          stckpnl.Children.Add(CommentText_txtbx);
       }
@@ -433,13 +428,16 @@ namespace IAM.Powers
       #endregion --------------------------------------------------------------------------------
 
       #region Public ----------------------------------------------------------------------------
-      public Expander CreateElement()
+      public Expander CreateElement(int itemcount = 0, string powertype = "power")
       {
          Expander expndr = new Expander();
 
+         expndr.Name = powertype + "_" + itemcount.ToString() + "_expndr";
          expndr.HorizontalAlignment = HorizontalAlignment.Stretch;
+
          expndr.Header = CreateHeader();
          expndr.Content = CreateContent();
+
          return expndr;
       }
       #endregion --------------------------------------------------------------------------------
