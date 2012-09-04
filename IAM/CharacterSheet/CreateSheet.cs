@@ -24,6 +24,7 @@ namespace IAM.CharacterSheet
       #region Properties --------------------------------------------------------------------
       #region Private ---------------------------------------------------------------------------
       private CreatePowerElement clCreatePowerElement = new CreatePowerElement();
+      private LoadPowers clLoadPowers = new LoadPowers();
       private CustomControlStyles usCustomControlStyles = new CustomControlStyles();
       
       enum DefaultItemEnum { enDefault, enCustom };
@@ -202,8 +203,9 @@ namespace IAM.CharacterSheet
       /// <param name="wrppnl">Wrappanel to create object on</param>
       private void DiscectSheetPowersXML(XElement ePage, object wrppnl)
       {
+         int i = 0;
          foreach (XElement ePower in Globals.TemporaryData.SelectedCharacterStats.Descendants(ePage.Element("menuTitle").Value))
-            (wrppnl as Panel).Children.Add(clCreatePowerElement.CreateElement());
+            (wrppnl as Panel).Children.Add(clCreatePowerElement.CreateElement(i++, ePage.Element("menuTitle").Value));
       }
 
       /// <summary>
@@ -588,8 +590,13 @@ namespace IAM.CharacterSheet
                // for powers
                if (ePage.Element("powers") != null)
                {
-                  foreach (XElement eValue in ePage.Element("powers").Descendants(ePage.Element("menuTitle").Value.ToString()))
+                  int itemcount = 0;
+
+                  foreach (XElement eValue in Globals.TemporaryData.SelectedCharacterPowers.Descendants(ePage.Element("menuTitle").Value.ToString()))
                   {
+                     Expander expndr = (Expander)FindGridElement((Panel)objgrd, ePage.Element("menuTitle").Value.ToString() + "_" + itemcount++.ToString() + "_expndr", "Expander");
+                     if (expndr != null)
+                        clLoadPowers.InsertPowerInformation(expndr, eValue);
                   }
                }
             }
