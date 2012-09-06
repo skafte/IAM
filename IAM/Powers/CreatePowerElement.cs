@@ -76,10 +76,6 @@ namespace IAM.Powers
          return stckpnl;
       }
 
-      /// <summary>
-      /// 
-      /// </summary>
-      /// <param name="*pnl"></param>
       #region Create body sections -----------------------------------------------------------------
       #region Intro ------------------------------------------------------------------------------------
       private static void CreatePowerBody_Intro(StackPanel stckpnl)
@@ -428,6 +424,12 @@ namespace IAM.Powers
       #endregion --------------------------------------------------------------------------------
 
       #region Public ----------------------------------------------------------------------------
+      /// <summary>
+      /// public function that created a power element
+      /// </summary>
+      /// <param name="itemcount">used to uniquily identify the element</param>
+      /// <param name="powertype">used to uniquily identify the element</param>
+      /// <returns>created power element</returns>
       public Expander CreateElement(int itemcount = 0, string powertype = "power")
       {
          Expander expndr = new Expander();
