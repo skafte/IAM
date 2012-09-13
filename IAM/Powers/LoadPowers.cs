@@ -22,7 +22,7 @@ namespace IAM.Powers
       #region Properties --------------------------------------------------------------------
       #region Private ---------------------------------------------------------------------------
       private int amount = 10;
-      private string User;
+      private string User;             // Name of user type
       #endregion --------------------------------------------------------------------------------
       #endregion ----------------------------------------------------------------------------
 
@@ -827,33 +827,37 @@ namespace IAM.Powers
          {
             MirrorText_txtbx.Visibility = Visibility.Visible;
 
-            foreach (XElement eCrossRef in ePower.Parent.Elements("powercrossRef"))
+            foreach (XElement eCrossRef in ePower.Parent.Element("crossRefPowers").Elements("charms"))
             {
-               if (ePower.Element("crossRef").Element("name").Value == eCrossRef.Element(User).Element("name").Value)
+               if ((ePower.Element("crossRef").Element("type").Value == eCrossRef.Element("user").Value) &&
+                   (ePower.Element("crossRef").Element("skill").Value == eCrossRef.Element("skill").Element("name").Value) &&
+                   (ePower.Element("crossRef").Element("name").Value == eCrossRef.Element("name").Value))
                {
-                  if (MirrorText_txtbx.Text != "")          // if multiple crossrefs
-                     MirrorText_txtbx.Text += "\n";
-                  MirrorText_txtbx.Text += "   " + eCrossRef.Element(User).Element("description").Value;
+                  string mirrortext = "   " + eCrossRef.Element("description").Value;
 
-                  foreach (XElement eErrata in eCrossRef.Element(User).Elements("errata"))
+                  foreach (XElement eErrata in eCrossRef.Elements("errata"))
                   {
-                     switch (eErrata.Element("todo").Value)
+                     if (eErrata.Element("description") != null)
                      {
-                        case "replace":
-                           if (eErrata.Element("description") != null)
-                              MirrorText_txtbx.Text = "   " + eErrata.Element("description").Value;
-                           break;
-                        case "add":
-                           if (eErrata.Element("description") != null)
-                              MirrorText_txtbx.Text += "\n" + "   " + eErrata.Element("description").Value;
-                           break;
-                        default:
-                           break;
+                        switch (eErrata.Element("todo").Value)
+                        {
+                           case "replace":
+                              mirrortext = "   " + eErrata.Element("description").Value;
+                              break;
+                           case "add":
+                              mirrortext += "\n   " + eErrata.Element("description").Value;
+                              break;
+                           default:
+                              break;
+                        }
                      }
-
                      if (eErrata.Element("errText") != null)
-                        MirrorText_txtbx.Text += "\n" + "Errata text: " + eErrata.Element("errText").Value;
+                        mirrortext += "\n" + "Errata text: " + eErrata.Element("errText").Value;
                   }
+
+                  if (MirrorText_txtbx.Text != "")          // if multiple crossrefs
+                     mirrortext = "\n" + mirrortext;
+                  MirrorText_txtbx.Text += mirrortext;
                }
             }
          }
@@ -1000,7 +1004,7 @@ namespace IAM.Powers
       /// </summary>
       /// <param name="expndr">Power element</param>
       /// <param name="ePower">XML data for power</param>
-      /// <param name="user">Name of user</param>
+      /// <param name="user">Name of user type</param>
       public void InsertPowerInformationController(Expander expndr, XElement ePower, string user)
       {
          User = user;
