@@ -827,7 +827,7 @@ namespace IAM.Powers
          {
             MirrorText_txtbx.Visibility = Visibility.Visible;
 
-            foreach (XElement eCrossRef in ePower.Parent.Element("crossRefPowers").Elements("charms"))
+            foreach (XElement eCrossRef in ePower.Parent.Element("crossRefPowers_" + ePower.Name).Elements(ePower.Name))
             {
                if ((ePower.Element("crossRef").Element("type").Value == eCrossRef.Element("user").Value) &&
                    (ePower.Element("crossRef").Element("skill").Value == eCrossRef.Element("skill").Element("name").Value) &&

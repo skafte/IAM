@@ -49,11 +49,11 @@ namespace IAM.CharacterSheet
       /// </summary>
       public void findCharacterCrossRefPowers()
       {
-         XElement CrossRefPowers = new XElement("crossRefPowers");
          XElement CrossRefPower = new XElement("body");
 
          foreach (string powerType in Globals.TemporaryData.SelectedCharacterStats.Descendants("powers").Attributes("type"))              // get the power type name, for each type of power
          {
+            XElement CrossRefPowers = new XElement("crossRefPowers_" + powerType);
             foreach (XElement eSheetPowerCrossRef in Globals.TemporaryData.SelectedCharacterPowers.Descendants(powerType).Elements("crossRef"))   // get each crossRef
             {
                foreach (XElement eFilePowers in Globals.TemporaryData.PowersXMLFiles)                                                     // search through all the XML data files after power matching the crossRef
@@ -70,8 +70,8 @@ namespace IAM.CharacterSheet
                   }
                }
             }
+            Globals.TemporaryData.SelectedCharacterPowers.Element("body").Add(CrossRefPowers);
          }
-         Globals.TemporaryData.SelectedCharacterPowers.Element("body").Add(CrossRefPowers);
       }
 
       /// <summary>
