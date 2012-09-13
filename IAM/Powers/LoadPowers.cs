@@ -29,7 +29,7 @@ namespace IAM.Powers
       #region Methods -----------------------------------------------------------------------
       #region Private ---------------------------------------------------------------------------
       #region Insert data ---------------------------------------------------------------------------
-      private void DataIntoPowerBody_Intro(StackPanel bd_stckpnl, XElement ePower, string action)
+      private void DataIntoPowerBody_Intro(StackPanel body_stckpnl, XElement ePower, string action)
       {
          TextBlock CreatorValue = new TextBlock();
          TextBlock ReferenceValue = new TextBlock();
@@ -37,7 +37,7 @@ namespace IAM.Powers
          TextBlock DurationValue = new TextBlock();
          TextBlock TypeValue = new TextBlock();
 
-         foreach (object outerobj in bd_stckpnl.Children)
+         foreach (object outerobj in body_stckpnl.Children)
          {
             if ((outerobj.GetType().Name == "WrapPanel") && (((outerobj as WrapPanel).Tag.ToString() == "Intro_wrppnl") || ((outerobj as WrapPanel).Tag.ToString() == "CostDurationType_wrppnl")))
             {
@@ -173,7 +173,7 @@ namespace IAM.Powers
          }
       }
 
-      private void DataIntoPowerBody_Mins(StackPanel bd_stckpnl, XElement ePower, string action)
+      private void DataIntoPowerBody_Mins(StackPanel body_stckpnl, XElement ePower, string action)
       {
          if (ePower.Elements("skill").Any())
          {
@@ -186,7 +186,7 @@ namespace IAM.Powers
                MinsValue[i] = new TextBlock();
             }
 
-            foreach (object outerobj in bd_stckpnl.Children)
+            foreach (object outerobj in body_stckpnl.Children)
             {
                if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Mins_wrppnl"))
                {
@@ -281,7 +281,7 @@ namespace IAM.Powers
          }
          else if (action == "none")
          {
-            foreach (object outerobj in bd_stckpnl.Children)
+            foreach (object outerobj in body_stckpnl.Children)
             {
                if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Mins_wrppnl"))
                {
@@ -292,7 +292,7 @@ namespace IAM.Powers
          }
       }
 
-      private void DataIntoPowerBody_Keyword(StackPanel bd_stckpnl, XElement ePower, string action)
+      private void DataIntoPowerBody_Keyword(StackPanel body_stckpnl, XElement ePower, string action)
       {
          if (ePower.Elements("keyword").Any())
          {
@@ -301,7 +301,7 @@ namespace IAM.Powers
             for (int i = 0; i < amount; i++)
                KeywordsValue[i] = new TextBlock();
 
-            foreach (object outerobj in bd_stckpnl.Children)
+            foreach (object outerobj in body_stckpnl.Children)
             {
                if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Keywords_wrppnl"))
                {
@@ -366,7 +366,7 @@ namespace IAM.Powers
          }
          else if (action == "none")
          {
-            foreach (object outerobj in bd_stckpnl.Children)
+            foreach (object outerobj in body_stckpnl.Children)
             {
                if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Keywords_wrppnl"))
                {
@@ -377,7 +377,7 @@ namespace IAM.Powers
          }
       }
 
-      private void DataIntoPowerBody_Prerequest(StackPanel bd_stckpnl, XElement ePower, string action)
+      private void DataIntoPowerBody_Prerequest(StackPanel body_stckpnl, XElement ePower, string action)
       {
          if (ePower.Elements("prerequest").Any())
          {
@@ -386,7 +386,7 @@ namespace IAM.Powers
             for (int i = 0; i < amount; i++)
                PrerequestValue[i] = new TextBlock();
 
-            foreach (object outerobj in bd_stckpnl.Children)
+            foreach (object outerobj in body_stckpnl.Children)
             {
                if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Prerequest_wrppnl"))
                {
@@ -481,7 +481,7 @@ namespace IAM.Powers
          }
          else if (action == "none")
          {
-            foreach (object outerobj in bd_stckpnl.Children)
+            foreach (object outerobj in body_stckpnl.Children)
             {
                if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Prerequest_wrppnl"))
                {
@@ -492,7 +492,7 @@ namespace IAM.Powers
          }
       }
 
-      private void DataIntoPowerBody_Merged(StackPanel bd_stckpnl, XElement ePower, string action)
+      private void DataIntoPowerBody_Merged(StackPanel body_stckpnl, XElement ePower, string action)
       {
          if (ePower.Elements("merged").Any())
          {
@@ -501,7 +501,7 @@ namespace IAM.Powers
             for (int i = 0; i < amount; i++)
                MergedValue[i] = new TextBlock();
 
-            foreach (object outerobj in bd_stckpnl.Children)
+            foreach (object outerobj in body_stckpnl.Children)
             {
                if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Merged_wrppnl"))
                {
@@ -566,7 +566,7 @@ namespace IAM.Powers
          }
          else if (action == "none")
          {
-            foreach (object outerobj in bd_stckpnl.Children)
+            foreach (object outerobj in body_stckpnl.Children)
             {
                if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Merged_wrppnl"))
                {
@@ -577,7 +577,7 @@ namespace IAM.Powers
          }
       }
 
-      private void DataIntoPowerBody_Martial(StackPanel bd_stckpnl, XElement ePower, string action)
+      private void DataIntoPowerBody_Martial(StackPanel body_stckpnl, XElement ePower, string action)
       {
          if (ePower.Elements("martial").Any())
          {
@@ -586,7 +586,7 @@ namespace IAM.Powers
             for (int i = 0; i < amount; i++)
                MartialValue[i] = new TextBlock();
 
-            foreach (object outerobj in bd_stckpnl.Children)
+            foreach (object outerobj in body_stckpnl.Children)
             {
                if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Martial_wrppnl"))
                {
@@ -651,7 +651,7 @@ namespace IAM.Powers
          }
          else if (action == "none")
          {
-            foreach (object outerobj in bd_stckpnl.Children)
+            foreach (object outerobj in body_stckpnl.Children)
             {
                if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Martial_wrppnl"))
                {
@@ -662,7 +662,7 @@ namespace IAM.Powers
          }
       }
 
-      private void DataIntoPowerBody_MartialReady(StackPanel bd_stckpnl, XElement ePower, string action)
+      private void DataIntoPowerBody_MartialReady(StackPanel body_stckpnl, XElement ePower, string action)
       {
          if (ePower.Elements("martialReady").Any())
          {
@@ -671,7 +671,7 @@ namespace IAM.Powers
             for (int i = 0; i < amount; i++)
                MartialReadyValue[i] = new TextBlock();
 
-            foreach (object outerobj in bd_stckpnl.Children)
+            foreach (object outerobj in body_stckpnl.Children)
             {
                if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "MartialReady_wrppnl"))
                {
@@ -736,7 +736,7 @@ namespace IAM.Powers
          }
          else if (action == "none")
          {
-            foreach (object outerobj in bd_stckpnl.Children)
+            foreach (object outerobj in body_stckpnl.Children)
             {
                if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "MartialReady_wrppnl"))
                {
@@ -747,11 +747,11 @@ namespace IAM.Powers
          }
       }
 
-      private void DataIntoPowerBody_Description(StackPanel bd_stckpnl, XElement ePower, string action)
+      private void DataIntoPowerBody_Description(StackPanel body_stckpnl, XElement ePower, string action)
       {
          TextBox DescriptionText = new TextBox();
 
-         foreach (object outerobj in bd_stckpnl.Children)
+         foreach (object outerobj in body_stckpnl.Children)
          {
             if ((outerobj.GetType().Name == "TextBox") && ((outerobj as TextBox).Tag.ToString() == "DescriptionText_txtbx"))
             {
@@ -781,13 +781,13 @@ namespace IAM.Powers
             DescriptionText.Text = "-";
       }
 
-      private void DataIntoPowerBody_Submodule(StackPanel bd_stckpnl, XElement ePower, string action)
+      private void DataIntoPowerBody_Submodule(StackPanel body_stckpnl, XElement ePower, string action)
       {
          if (ePower.Elements("submodule").Any())
          {
             TextBox SubmoduleText = new TextBox();
 
-            foreach (object outerobj in bd_stckpnl.Children)
+            foreach (object outerobj in body_stckpnl.Children)
             {
                if ((outerobj.GetType().Name == "TextBox") && ((outerobj as TextBox).Tag.ToString() == "SubmoduleText_txtbx"))
                {
@@ -842,7 +842,7 @@ namespace IAM.Powers
          }
          else if (action == "none")
          {
-            foreach (object outerobj in bd_stckpnl.Children)
+            foreach (object outerobj in body_stckpnl.Children)
             {
                if ((outerobj.GetType().Name == "TextBox") && ((outerobj as TextBox).Tag.ToString() == "SubmoduleText_txtbx"))
                {
@@ -853,29 +853,32 @@ namespace IAM.Powers
          }
       }
 
-      private void DataIntoPowerBody_CrossRef(StackPanel bd_stckpnl, XElement ePower, string action)
+      private void DataIntoPowerBody_CrossRef(StackPanel body_stckpnl, XElement ePower, string action)
       {
+         TextBox MirrorText_txtbx = new TextBox();
+
+         // find objects to use
+         foreach (object outerobj in body_stckpnl.Children)
+         {
+            if ((outerobj.GetType().Name == "TextBox") && ((outerobj as TextBox).Tag.ToString() == "MirrorText_txtbx"))
+            {
+               MirrorText_txtbx = (outerobj as TextBox);
+               break;
+            }
+         }
+
+         // Insert data in objects
          if (ePower.Elements("crossRef").Any())
          {
-            TextBox MirrorText = new TextBox();
-
-            foreach (object outerobj in bd_stckpnl.Children)
-            {
-               if ((outerobj.GetType().Name == "TextBox") && ((outerobj as TextBox).Tag.ToString() == "MirrorText_txtbx"))
-               {
-                  MirrorText = (outerobj as TextBox);
-                  break;
-               }
-            }
-            MirrorText.Visibility = Visibility.Visible;
+            MirrorText_txtbx.Visibility = Visibility.Visible;
 
             foreach (XElement eCrossRef in ePower.Parent.Elements("powercrossRef"))
             {
                if (ePower.Element("crossRef").Element("name").Value == eCrossRef.Element(User).Element("name").Value)
                {
-                  if (MirrorText.Text != "")          // if multiple crossrefs
-                     MirrorText.Text += "\n";
-                  MirrorText.Text += "   " + eCrossRef.Element(User).Element("description").Value;
+                  if (MirrorText_txtbx.Text != "")          // if multiple crossrefs
+                     MirrorText_txtbx.Text += "\n";
+                  MirrorText_txtbx.Text += "   " + eCrossRef.Element(User).Element("description").Value;
 
                   foreach (XElement eErrata in eCrossRef.Element(User).Elements("errata"))
                   {
@@ -883,123 +886,144 @@ namespace IAM.Powers
                      {
                         case "replace":
                            if (eErrata.Element("description") != null)
-                              MirrorText.Text = "   " + eErrata.Element("description").Value;
+                              MirrorText_txtbx.Text = "   " + eErrata.Element("description").Value;
                            break;
                         case "add":
                            if (eErrata.Element("description") != null)
-                              MirrorText.Text += "\n" + "   " + eErrata.Element("description").Value;
+                              MirrorText_txtbx.Text += "\n" + "   " + eErrata.Element("description").Value;
                            break;
                         default:
                            break;
                      }
 
                      if (eErrata.Element("errText") != null)
-                        MirrorText.Text += "\n" + "Errata text: " + eErrata.Element("errText").Value;
+                        MirrorText_txtbx.Text += "\n" + "Errata text: " + eErrata.Element("errText").Value;
                   }
                }
             }
          }
          else if (action == "none")
-         {
-            foreach (object outerobj in bd_stckpnl.Children)
-            {
-               if ((outerobj.GetType().Name == "TextBox") && ((outerobj as TextBox).Tag.ToString() == "MirrorText_txtbx"))
-               {
-                  (outerobj as TextBox).Visibility = Visibility.Collapsed;
-                  break;
-               }
-            }
-         }
+            MirrorText_txtbx.Visibility = Visibility.Collapsed;
       }
 
-      private void DataIntoPowerBody_ErrataText(StackPanel bd_stckpnl, XElement ePower, string action)
+      private void DataIntoPowerBody_ErrataTxtVersion(StackPanel body_stckpnl, XElement ePower, string action)
       {
-         if (ePower.Elements("errText").Any())
-         {
-            TextBox ErrataText = new TextBox();
+         TextBlock VersionObject_txtblck = new TextBlock();
+         TextBox ErrataText_txtbx = new TextBox();
 
-            foreach (object outerobj in bd_stckpnl.Children)
+         // find objects to use
+         foreach (object outerobj in body_stckpnl.Children)
+         {
+            if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Intro_wrppnl"))
             {
-               if ((outerobj.GetType().Name == "TextBox") && ((outerobj as TextBox).Tag.ToString() == "ErrataText_txtbx"))
+               foreach (object innerobj in (outerobj as WrapPanel).Children)
                {
-                  ErrataText = (outerobj as TextBox);
-                  break;
+                  if ((innerobj.GetType().Name == "TextBlock") && ((innerobj as TextBlock).Tag.ToString() == "VersionOfValue_txtblck"))
+                  {
+                     VersionObject_txtblck = (innerobj as TextBlock);
+                     break;
+                  }
                }
             }
+            if ((outerobj.GetType().Name == "TextBox") && ((outerobj as TextBox).Tag.ToString() == "ErrataText_txtbx"))
+               ErrataText_txtbx = (outerobj as TextBox);
+         }
 
+         // Insert data in objects
+         if (action != "none")
+            VersionObject_txtblck.Text = ePower.Element("date").Value;
+
+         if (ePower.Elements("errText").Any())
+         {
             if (action != "add")
-               ErrataText.Text = "";
+               ErrataText_txtbx.Text = "";
 
             foreach (XElement eErrata in ePower.Elements("errText"))
             {
-               if (ErrataText.Text != "")
-                  ErrataText.Text += "\n";
-               ErrataText.Text += "Errata text: " + eErrata.Value;
+               if (ErrataText_txtbx.Text != "")
+                  ErrataText_txtbx.Text += "\n";
+               ErrataText_txtbx.Text += "Errata text: " + eErrata.Value;
             }
 
-            if (ErrataText.Text == "")
-               ErrataText.Visibility = Visibility.Collapsed;
+            if (ErrataText_txtbx.Text == "")
+               ErrataText_txtbx.Visibility = Visibility.Collapsed;
             else
-               ErrataText.Visibility = Visibility.Visible;
+               ErrataText_txtbx.Visibility = Visibility.Visible;
          }
          else if (action == "none")
          {
-            foreach (object outerobj in bd_stckpnl.Children)
-            {
-               if ((outerobj.GetType().Name == "TextBox") && ((outerobj as TextBox).Tag.ToString() == "ErrataText_txtbx"))
-               {
-                  (outerobj as TextBox).Visibility = Visibility.Collapsed;
-                  break;
-               }
-            }
+            VersionObject_txtblck.Text = "Original text";
+            ErrataText_txtbx.Visibility = Visibility.Collapsed;
          }
       }
 
-      private void DataIntoPowerBody_Comment(StackPanel bd_stckpnl, XElement ePower, string action)
+      private void DataIntoPowerBody_Comment(StackPanel body_stckpnl, XElement ePower, string action)
       {
+         TextBox CommentText_txtbx = new TextBox();
+
+         // find objects to use
+         foreach (object outerobj in body_stckpnl.Children)
+         {
+            if ((outerobj.GetType().Name == "TextBox") && ((outerobj as TextBox).Tag.ToString() == "CommentText_txtbx"))
+            {
+               CommentText_txtbx = (outerobj as TextBox);
+               break;
+            }
+         }
+
+         // Insert data in objects
          if (ePower.Elements("comment").Any())
          {
-            TextBox CommentText = new TextBox();
-
-            foreach (object outerobj in bd_stckpnl.Children)
-            {
-               if ((outerobj.GetType().Name == "TextBox") && ((outerobj as TextBox).Tag.ToString() == "CommentText_txtbx"))
-               {
-                  CommentText = (outerobj as TextBox);
-                  break;
-               }
-            }
-
             if (action != "add")
-               CommentText.Text = "";
+               CommentText_txtbx.Text = "";
 
             foreach (XElement eComment in ePower.Elements("comment"))
             {
-               if (CommentText.Text != "")
-                  CommentText.Text += "\n";
-               CommentText.Text += "Comment: " + eComment.Value;
+               if (CommentText_txtbx.Text != "")
+                  CommentText_txtbx.Text += "\n";
+               CommentText_txtbx.Text += "Comment: " + eComment.Value;
             }
 
-            if (CommentText.Text == "")
-               CommentText.Visibility = Visibility.Collapsed;
+            if (CommentText_txtbx.Text == "")
+               CommentText_txtbx.Visibility = Visibility.Collapsed;
             else
-               CommentText.Visibility = Visibility.Visible;
+               CommentText_txtbx.Visibility = Visibility.Visible;
          }
          else if (action == "none")
-         {
-            foreach (object outerobj in bd_stckpnl.Children)
-            {
-               if ((outerobj.GetType().Name == "TextBox") && ((outerobj as TextBox).Tag.ToString() == "CommentText_txtbx"))
-               {
-                  (outerobj as TextBox).Visibility = Visibility.Collapsed;
-                  break;
-               }
-            }
-         }
+            CommentText_txtbx.Visibility = Visibility.Collapsed;
       }
       #endregion ------------------------------------------------------------------------------------
-      
+
       #region helper functions ----------------------------------------------------------------------
+      /// <summary>
+      /// Collection of calls to all the insert data functions
+      /// </summary>
+      /// <param name="body_stckpnl">Power element</param>
+      /// <param name="ePower">XML data for power</param>
+      /// <param name="action">How to insert data: none=No existing data, add=add to already existing data, replace=replace existing data</param>
+      private void InsertPowerInfomation(StackPanel body_stckpnl, XElement ePower, string action)
+      {
+         DataIntoPowerBody_Intro(body_stckpnl, ePower, action);
+         DataIntoPowerBody_Mins(body_stckpnl, ePower, action);
+         DataIntoPowerBody_Keyword(body_stckpnl, ePower, action);
+         DataIntoPowerBody_Prerequest(body_stckpnl, ePower, action);
+         DataIntoPowerBody_Merged(body_stckpnl, ePower, action);
+         DataIntoPowerBody_Martial(body_stckpnl, ePower, action);
+         DataIntoPowerBody_MartialReady(body_stckpnl, ePower, action);
+         DataIntoPowerBody_Description(body_stckpnl, ePower, action);
+         DataIntoPowerBody_Submodule(body_stckpnl, ePower, action);
+         DataIntoPowerBody_CrossRef(body_stckpnl, ePower, action);
+         DataIntoPowerBody_ErrataTxtVersion(body_stckpnl, ePower, action);
+         DataIntoPowerBody_Comment(body_stckpnl, ePower, action);
+      }
+
+      /// <summary>
+      /// Insert extra words inbetween prerequests if they exist
+      /// </summary>
+      /// <param name="PrerequestValue">Array of all prerequest TextBlocks</param>
+      /// <param name="k">Number currently selected prerequest TextBlock</param>
+      /// <param name="sName">Prerequest text</param>
+      /// <param name="LastOfOr">Are there any more prerequsts to this list of "or" prerequests</param>
       private static void InsertPrerequest(TextBlock[] PrerequestValue, int k, string sName, bool LastOfOr)
       {
          if ((k > 1) && (LastOfOr))
@@ -1016,31 +1040,28 @@ namespace IAM.Powers
       #endregion --------------------------------------------------------------------------------
 
       #region Public ----------------------------------------------------------------------------
-      public void InsertPowerInformation(Expander expndr, XElement ePower, string user)
+      /// <summary>
+      /// Function that will fill in all the fields in a power element
+      /// </summary>
+      /// <param name="expndr">Power element</param>
+      /// <param name="ePower">XML data for power</param>
+      /// <param name="user">Name of user</param>
+      public void InsertPowerInformationController(Expander expndr, XElement ePower, string user)
       {
          User = user;
 
          // set header
          (expndr.Header as Label).Content = ePower.Element("name").Value;
 
-         string action = "none";       // er ikke sikker påhvad denne string er til endnu
-
          // set body
          StackPanel body_stckpnl = new StackPanel();
          body_stckpnl = (expndr.Content as StackPanel);
+         InsertPowerInfomation(body_stckpnl, ePower, "none");
 
-         DataIntoPowerBody_Intro(body_stckpnl, ePower, action);
-         DataIntoPowerBody_Mins(body_stckpnl, ePower, action);
-         DataIntoPowerBody_Keyword(body_stckpnl, ePower, action);
-         DataIntoPowerBody_Prerequest(body_stckpnl, ePower, action);
-         DataIntoPowerBody_Merged(body_stckpnl, ePower, action);
-         DataIntoPowerBody_Martial(body_stckpnl, ePower, action);
-         DataIntoPowerBody_MartialReady(body_stckpnl, ePower, action);
-         DataIntoPowerBody_Description(body_stckpnl, ePower, action);
-         DataIntoPowerBody_Submodule(body_stckpnl, ePower, action);
-         DataIntoPowerBody_CrossRef(body_stckpnl, ePower, action);
-         DataIntoPowerBody_ErrataText(body_stckpnl, ePower, action);
-         DataIntoPowerBody_Comment(body_stckpnl, ePower, action);
+         foreach (XElement eErrata in ePower.Elements("errata"))
+         {
+            InsertPowerInfomation(body_stckpnl, eErrata, eErrata.Element("todo").Value);
+         }
       }
       #endregion ---------------------------------------------------------------------------------
       #endregion ----------------------------------------------------------------------------
