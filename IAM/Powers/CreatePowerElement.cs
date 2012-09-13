@@ -125,7 +125,7 @@ namespace IAM.Powers
          VersionOfTitle_txtblck.Tag = "VersionOfTitle_txtblck";
          VersionOfValue_txtblck.Tag = "VersionOfValue_txtblck";
          VersionOfTitle_txtblck.Text = "Version of:";
-         VersionOfValue_txtblck.Text = "Original text";
+         VersionOfValue_txtblck.Text = "-";
          VersionOfTitle_txtblck.FontWeight = FontWeights.Bold;
          VersionOfTitle_txtblck.Margin = new Thickness(0, 0, 3, 0);
          VersionOfValue_txtblck.Margin = new Thickness(0, 0, 8, 0);
