@@ -79,6 +79,7 @@ namespace IAM
          this.clWebClientManager.gotCharacterStats += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterStats);
          this.clWebClientManager.gotCharacterPowerFiles += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterPowerFiles);
          this.clWebClientManager.gotCharacterPowerCrossRefs += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterPowerCrossRefs);
+         this.clWebClientManager.gotCharacterPowerKeywords += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterPowerKeywords);
          this.clWebClientManager.gotEmptyCharacterSheet += new WebClientManager.fromWebClientHandler(clWebClientManager_gotEmptyCharacterSheet);
       }
 
@@ -351,13 +352,10 @@ namespace IAM
          Globals.TemporaryData.PowersXMLFiles.Add(document.Element("body"));
          if (--Globals.TemporaryData.FilesStillToLoad == 0)
          {
-            if (clGetPowers.findCharacterPowers())
-            {
-               Globals.ResetTemporaryData("PowersXMLFiles");
-               clWebClientManager.PrepareFilePaths("Get character power crossRefs", "", Globals.TemporaryData.SelectedCharacterPowers);
-            }
-            else
-               clWebClientManager.PrepareFilePaths("Get empty character sheet", Globals.TemporaryData.SelectedCharacterStats.Element("body").Attribute("type").Value.ToString());
+            clGetPowers.findCharacterPowers();
+            Globals.ResetTemporaryData("PowersXMLFiles");
+
+            clWebClientManager.PrepareFilePaths("Get character power crossRefs", "", Globals.TemporaryData.SelectedCharacterPowers);
          }
       }
 
@@ -372,8 +370,23 @@ namespace IAM
          if (--Globals.TemporaryData.FilesStillToLoad == 0)
          {
             clGetPowers.findCharacterCrossRefPowers();
-            clWebClientManager.PrepareFilePaths("Get empty character sheet", Globals.TemporaryData.SelectedCharacterStats.Element("body").Attribute("type").Value.ToString());
+            Globals.ResetTemporaryData("PowersXMLFiles");
+
+            clWebClientManager.PrepareFilePaths("Get character power keywords", "", Globals.TemporaryData.SelectedCharacterPowers);
          }
+      }
+
+      /// <summary>
+      /// Get and temporarely store power keyword data and will call function to process data
+      /// </summary>
+      /// <param name="document">XML with power keywords</param>
+      private void clWebClientManager_gotCharacterPowerKeywords(XDocument document)
+      {
+         Globals.TemporaryData.PowersXMLFiles.Add(document.Element("body"));
+         clGetPowers.findCharacterPowerKeywords();
+         Globals.ResetTemporaryData("PowersXMLFiles");
+
+         clWebClientManager.PrepareFilePaths("Get empty character sheet", Globals.TemporaryData.SelectedCharacterStats.Element("body").Attribute("type").Value.ToString());
       }
 
       /// <summary>
