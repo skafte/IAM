@@ -13,6 +13,7 @@ using System.Linq;
 
 using IAM;
 using IAM.FileIO;
+using System.Collections.Generic;
 
 namespace IAM.CharacterSheet
 {
@@ -22,7 +23,7 @@ namespace IAM.CharacterSheet
       /// Will find the specific powers belonging to the selected sheet
       /// </summary>
       /// <returns>true: if and crossRef powers are needed, else return false</returns>
-      public bool findCharacterPowers()
+      public void findCharacterPowers()
       {
          foreach (XElement eSheetPowerList in Globals.TemporaryData.SelectedCharacterStats.Descendants("powers"))       // get all the power "pages" from the sheet
          {
@@ -41,10 +42,6 @@ namespace IAM.CharacterSheet
                }
             }
          }
-
-         if (Globals.TemporaryData.SelectedCharacterPowers.ToString().Contains("crossRef"))
-            return true;
-         return false;
       }
 
       /// <summary>
@@ -62,10 +59,10 @@ namespace IAM.CharacterSheet
                foreach (XElement eFilePowers in Globals.TemporaryData.PowersXMLFiles)                                                     // search through all the XML data files after power matching the crossRef
                {
                   CrossRefPower.ReplaceAll(from vCrossRefPower in eFilePowers.Descendants(powerType)
-                                    where ((eSheetPowerCrossRef.Element("type").Value == eFilePowers.Attribute("user").Value) &&
-                                           (eSheetPowerCrossRef.Element("name").Value == vCrossRefPower.Element("name").Value) &&
-                                           (eSheetPowerCrossRef.Element("skill").Value == vCrossRefPower.Element("skill").Element("name").Value))
-                                    select vCrossRefPower);
+                                           where ((eSheetPowerCrossRef.Element("type").Value == eFilePowers.Attribute("user").Value) &&
+                                                  (eSheetPowerCrossRef.Element("name").Value == vCrossRefPower.Element("name").Value) &&
+                                                  (eSheetPowerCrossRef.Element("skill").Value == vCrossRefPower.Element("skill").Element("name").Value))
+                                           select vCrossRefPower);
                   if (CrossRefPower.Value != "")
                   {
                      CrossRefPower.Element(powerType).Add(new XElement("user", eFilePowers.Attribute("user").Value));
@@ -75,6 +72,34 @@ namespace IAM.CharacterSheet
             }
          }
          Globals.TemporaryData.SelectedCharacterPowers.Element("body").Add(CrossRefPowers);
+      }
+
+      /// <summary>
+      /// Will find all needed keywords and add them to SelectedCharacterPowers
+      /// </summary>
+      public void findCharacterPowerKeywords()
+      {
+
+         foreach (string powerType in Globals.TemporaryData.SelectedCharacterStats.Descendants("powers").Attributes("type"))
+         {
+            XElement PowerKeywords = new XElement("powerKeywords_" + powerType);
+
+            foreach (XElement eFileKeywords in Globals.TemporaryData.PowersXMLFiles)
+            {
+               if (eFileKeywords.Attribute("type").Value == powerType)
+               {
+                  ((from vKeywords in Globals.TemporaryData.SelectedCharacterPowers.Descendants("keyword")
+                    select vKeywords.Value).Distinct().ToList()).ForEach(delegate(string keywordname)
+                  {
+                     PowerKeywords.Add(from vKeywords in eFileKeywords.Descendants("keyword")
+                                       where keywordname.Contains(vKeywords.Element("name").Value)
+                                       select vKeywords);
+                  });
+               }
+            }
+
+            Globals.TemporaryData.SelectedCharacterPowers.Element("body").Add(PowerKeywords);
+         }
       }
    }
 }
