@@ -596,7 +596,7 @@ namespace IAM.CharacterSheet
                   {
                      Expander expndr = (Expander)FindGridElement((Panel)objgrd, ePage.Element("menuTitle").Value.ToString() + "_" + itemcount++.ToString() + "_expndr", "Expander");
                      if (expndr != null)
-                        clLoadPowers.InsertPowerInformation(expndr, eValue, ePage.Element("menuTitle").Value.ToString());
+                        clLoadPowers.InsertPowerInformationController(expndr, eValue, ePage.Element("menuTitle").Value.ToString());
                   }
                }
             }
