@@ -53,6 +53,7 @@ namespace IAM.CharacterSheet
       public void findCharacterCrossRefPowers()
       {
          XElement CrossRefPowers = new XElement("crossRefPowers");
+         XElement CrossRefPower = new XElement("body");
 
          foreach (string powerType in Globals.TemporaryData.SelectedCharacterStats.Descendants("powers").Attributes("type"))              // get the power type name, for each type of power
          {
@@ -60,11 +61,16 @@ namespace IAM.CharacterSheet
             {
                foreach (XElement eFilePowers in Globals.TemporaryData.PowersXMLFiles)                                                     // search through all the XML data files after power matching the crossRef
                {
-                  CrossRefPowers.Add(from vCrossRefPower in eFilePowers.Descendants(powerType)
-                                                               where ((eSheetPowerCrossRef.Element("type").Value == eFilePowers.Attribute("user").Value) &&
-                                                                      (eSheetPowerCrossRef.Element("name").Value == vCrossRefPower.Element("name").Value) &&
-                                                                      (eSheetPowerCrossRef.Element("skill").Value == vCrossRefPower.Element("skill").Element("name").Value))
-                                                               select vCrossRefPower);
+                  CrossRefPower.ReplaceAll(from vCrossRefPower in eFilePowers.Descendants(powerType)
+                                    where ((eSheetPowerCrossRef.Element("type").Value == eFilePowers.Attribute("user").Value) &&
+                                           (eSheetPowerCrossRef.Element("name").Value == vCrossRefPower.Element("name").Value) &&
+                                           (eSheetPowerCrossRef.Element("skill").Value == vCrossRefPower.Element("skill").Element("name").Value))
+                                    select vCrossRefPower);
+                  if (CrossRefPower.Value != "")
+                  {
+                     CrossRefPower.Element(powerType).Add(new XElement("user", eFilePowers.Attribute("user").Value));
+                     CrossRefPowers.Add(CrossRefPower.FirstNode);
+                  }
                }
             }
          }
