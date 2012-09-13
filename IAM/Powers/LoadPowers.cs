@@ -314,11 +314,27 @@ namespace IAM.Powers
                }
             }
 
-            foreach (XElement eKey in ePower.Elements("keyword"))
+            foreach (XElement eKeyword in ePower.Elements("keyword"))
             {
                if (k > 0)
                   KeywordsValue[k - 1].Text += ",";
-               KeywordsValue[k].Text = eKey.Value;
+               KeywordsValue[k].Text = eKeyword.Value;
+
+               // set ToolTip
+               XElement keyworddescription = new XElement("body");
+               TextBlock tooltip_txtblck = new TextBlock();
+               if (ePower.Name != "errata")
+                  keyworddescription.Add((from vKeyword in Globals.TemporaryData.SelectedCharacterPowers.Element("body").Element("powerKeywords_" + ePower.Name.ToString()).Descendants("keyword")
+                                          where eKeyword.Value.Contains(vKeyword.Element("name").Value)
+                                          select vKeyword.Element("description").Value));
+               else
+                  keyworddescription.Add((from vKeyword in Globals.TemporaryData.SelectedCharacterPowers.Element("body").Element("powerKeywords_" + ePower.Parent.Name.ToString()).Descendants("keyword")
+                                          where eKeyword.Value.Contains(vKeyword.Element("name").Value)
+                                          select vKeyword.Element("description").Value));
+               tooltip_txtblck.Text = keyworddescription.Value;
+               tooltip_txtblck.MaxWidth = 400;
+               tooltip_txtblck.TextWrapping = TextWrapping.Wrap;
+               ToolTipService.SetToolTip(KeywordsValue[k], tooltip_txtblck);
 
                k++;
             }

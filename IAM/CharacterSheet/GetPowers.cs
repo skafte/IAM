@@ -79,6 +79,7 @@ namespace IAM.CharacterSheet
       /// </summary>
       public void findCharacterPowerKeywords()
       {
+         XElement PowerKeyword = new XElement("body");
 
          foreach (string powerType in Globals.TemporaryData.SelectedCharacterStats.Descendants("powers").Attributes("type"))
          {
@@ -91,9 +92,14 @@ namespace IAM.CharacterSheet
                   ((from vKeywords in Globals.TemporaryData.SelectedCharacterPowers.Descendants("keyword")
                     select vKeywords.Value).Distinct().ToList()).ForEach(delegate(string keywordname)
                   {
-                     PowerKeywords.Add(from vKeywords in eFileKeywords.Descendants("keyword")
-                                       where keywordname.Contains(vKeywords.Element("name").Value)
-                                       select vKeywords);
+                     PowerKeyword.ReplaceAll(from vKeywords in eFileKeywords.Descendants("keyword")
+                                             where keywordname.Contains(vKeywords.Element("name").Value)
+                                             select vKeywords);
+
+                     if ((new XElement("body", (from vKeyword in PowerKeywords.Descendants("name")
+                                                where (vKeyword.Value == PowerKeyword.Element("keyword").Element("name").Value)
+                                                select vKeyword))).Value == "")
+                        PowerKeywords.Add(PowerKeyword.FirstNode);
                   });
                }
             }
