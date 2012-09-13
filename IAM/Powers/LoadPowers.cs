@@ -28,15 +28,22 @@ namespace IAM.Powers
 
       #region Methods -----------------------------------------------------------------------
       #region Private ---------------------------------------------------------------------------
+      /// <summary>
+      /// Collection of calls to all the insert data functions
+      /// </summary>
+      /// <param name="body_stckpnl">Power element</param>
+      /// <param name="ePower">XML data for power</param>
+      /// <param name="action">How to insert data: none=No existing data, add=add to already existing data, replace=replace existing data</param>
       #region Insert data ---------------------------------------------------------------------------
       private void DataIntoPowerBody_Intro(StackPanel body_stckpnl, XElement ePower, string action)
       {
-         TextBlock CreatorValue = new TextBlock();
-         TextBlock ReferenceValue = new TextBlock();
-         TextBlock CostValue = new TextBlock();
-         TextBlock DurationValue = new TextBlock();
-         TextBlock TypeValue = new TextBlock();
+         TextBlock CreatorValue_txtblck = new TextBlock();
+         TextBlock ReferenceValue_txtblck = new TextBlock();
+         TextBlock CostValue_txtblck = new TextBlock();
+         TextBlock DurationValue_txtblck = new TextBlock();
+         TextBlock TypeValue_txtblck = new TextBlock();
 
+         // find objects to use
          foreach (object outerobj in body_stckpnl.Children)
          {
             if ((outerobj.GetType().Name == "WrapPanel") && (((outerobj as WrapPanel).Tag.ToString() == "Intro_wrppnl") || ((outerobj as WrapPanel).Tag.ToString() == "CostDurationType_wrppnl")))
@@ -48,19 +55,19 @@ namespace IAM.Powers
                      switch ((innerobj as TextBlock).Tag.ToString())
                      {
                         case "CreatorValue_txtblck":
-                           CreatorValue = (innerobj as TextBlock);
+                           CreatorValue_txtblck = (innerobj as TextBlock);
                            break;
                         case "ReferenceValue_txtblck":
-                           ReferenceValue = (innerobj as TextBlock);
+                           ReferenceValue_txtblck = (innerobj as TextBlock);
                            break;
                         case "CostValue_txtblck":
-                           CostValue = (innerobj as TextBlock);
+                           CostValue_txtblck = (innerobj as TextBlock);
                            break;
                         case "DurationValue_txtblck":
-                           DurationValue = (innerobj as TextBlock);
+                           DurationValue_txtblck = (innerobj as TextBlock);
                            break;
                         case "TypeValue_txtblck":
-                           TypeValue = (innerobj as TextBlock);
+                           TypeValue_txtblck = (innerobj as TextBlock);
                            break;
                         default:
                            break;
@@ -70,103 +77,55 @@ namespace IAM.Powers
             }
          }
 
+         // Insert data in objects
+         string sCreator = "";
+         string sReference = "";
+         string sCost = "";
+         string sDuration = "";
+         string sType = "";
+         if (ePower.Element("creator") != null)
+            sCreator = ePower.Element("creator").Value;
+         if (ePower.Element("reference") != null)
+            sReference = ePower.Element("reference").Value;
+         if (ePower.Element("cost") != null)
+            sCost = ePower.Element("cost").Value;
+         if (ePower.Element("duration") != null)
+            sDuration = ePower.Element("duration").Value;
+         if (ePower.Element("type") != null)
+            sType = ePower.Element("type").Value;
+
          switch (action)
          {
             case "none":
-               try
-               {
-                  CreatorValue.Text = ePower.Element("creator").Value;
-               }
-               catch
-               {
-                  CreatorValue.Text = "-";
-               }
-               try
-               {
-                  ReferenceValue.Text = ePower.Element("reference").Value;
-               }
-               catch
-               {
-                  ReferenceValue.Text = "-";
-               }
-               try
-               {
-                  CostValue.Text = ePower.Element("cost").Value;
-               }
-               catch
-               {
-                  CostValue.Text = "-";
-               }
-               try
-               {
-                  DurationValue.Text = ePower.Element("duration").Value;
-               }
-               catch
-               {
-                  DurationValue.Text = "-";
-               }
-               try
-               {
-                  TypeValue.Text = ePower.Element("type").Value;
-               }
-               catch
-               {
-                  TypeValue.Text = "-";
-               }
+               CreatorValue_txtblck.Text = "-";
+               if (sCreator != "")
+                  CreatorValue_txtblck.Text = sCreator;
+               ReferenceValue_txtblck.Text = "-";
+               if (sReference != "")
+                  ReferenceValue_txtblck.Text = sReference;
+               CostValue_txtblck.Text = "-";
+               if (sCost != "")
+                  CostValue_txtblck.Text = sCost;
+               DurationValue_txtblck.Text = "-";
+               if (sDuration != "")
+                  DurationValue_txtblck.Text = sDuration;
+               TypeValue_txtblck.Text = "-";
+               if (sType != "")
+                  TypeValue_txtblck.Text = sType;
                break;
             case "replace":
-               try
-               {
-                  CreatorValue.Text = ePower.Element("creator").Value;
-               }
-               catch { }
-               try
-               {
-                  ReferenceValue.Text = ePower.Element("reference").Value;
-               }
-               catch { }
-               try
-               {
-                  CostValue.Text = ePower.Element("cost").Value;
-               }
-               catch { }
-               try
-               {
-                  DurationValue.Text = ePower.Element("duration").Value;
-               }
-               catch { }
-               try
-               {
-                  TypeValue.Text = ePower.Element("type").Value;
-               }
-               catch { }
+               CreatorValue_txtblck.Text = sCreator;
+               ReferenceValue_txtblck.Text = sReference;
+               CostValue_txtblck.Text = sCost;
+               DurationValue_txtblck.Text = sDuration;
+               TypeValue_txtblck.Text = sType;
                break;
             case "add":
-               try
-               {
-                  CreatorValue.Text += " " + ePower.Element("creator").Value;
-               }
-               catch { }
-               try
-               {
-                  ReferenceValue.Text += " " + ePower.Element("reference").Value;
-               }
-               catch { }
-               try
-               {
-                  CostValue.Text += " " + ePower.Element("cost").Value;
-               }
-               catch { }
-               try
-               {
-                  DurationValue.Text += " " + ePower.Element("duration").Value;
-               }
-               catch { }
-               try
-               {
-                  TypeValue.Text += " " + ePower.Element("type").Value;
-               }
-               catch { }
+               CreatorValue_txtblck.Text += " " + sCreator;
+               ReferenceValue_txtblck.Text += " " + sReference;
+               CostValue_txtblck.Text += " " + sCost;
+               DurationValue_txtblck.Text += " " + sDuration;
+               TypeValue_txtblck.Text += " " + sType;
                break;
             default:
                break;
@@ -175,32 +134,36 @@ namespace IAM.Powers
 
       private void DataIntoPowerBody_Mins(StackPanel body_stckpnl, XElement ePower, string action)
       {
-         if (ePower.Elements("skill").Any())
+         WrapPanel Mins_wrppnl = new WrapPanel();
+         TextBlock MinsTitle_txtblck = new TextBlock();
+         TextBlock[] MinsName_txtblck = new TextBlock[amount];
+         TextBlock[] MinsValue_txtblck = new TextBlock[amount];
+         for (int i = 0; i < amount; i++)
          {
-            TextBlock MinsTitle = new TextBlock();
-            TextBlock[] MinsName = new TextBlock[amount];
-            TextBlock[] MinsValue = new TextBlock[amount];
-            for (int i = 0; i < amount; i++)
-            {
-               MinsName[i] = new TextBlock();
-               MinsValue[i] = new TextBlock();
-            }
+            MinsName_txtblck[i] = new TextBlock();
+            MinsValue_txtblck[i] = new TextBlock();
+         }
 
-            foreach (object outerobj in body_stckpnl.Children)
+         // find objects to use
+         foreach (object outerobj in body_stckpnl.Children)
+         {
+            if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Mins_wrppnl"))
             {
-               if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Mins_wrppnl"))
+               Mins_wrppnl = (outerobj as WrapPanel);
+
+               if (ePower.Elements("skill").Any())
                {
-                  foreach (object innerobj in (outerobj as WrapPanel).Children)
+                  foreach (object innerobj in Mins_wrppnl.Children)
                   {
                      if (innerobj.GetType().Name == "TextBlock")
                      {
                         if ((innerobj as TextBlock).Tag.ToString() == "MinsTitle_txtblck")
-                           MinsTitle = (innerobj as TextBlock);
+                           MinsTitle_txtblck = (innerobj as TextBlock);
                         else if ((innerobj as TextBlock).Tag.ToString().Contains("MinsName_txtblck"))
                         {
                            try
                            {
-                              MinsName[int.Parse((innerobj as TextBlock).Tag.ToString().Remove(0, "MinsName_txtblck".Length))] = (innerobj as TextBlock);
+                              MinsName_txtblck[int.Parse((innerobj as TextBlock).Tag.ToString().Remove(0, "MinsName_txtblck".Length))] = (innerobj as TextBlock);
                            }
                            catch (Exception)
                            { }
@@ -209,36 +172,41 @@ namespace IAM.Powers
                         {
                            try
                            {
-                              MinsValue[int.Parse((innerobj as TextBlock).Tag.ToString().Remove(0, "MinsValue_txtblck".Length))] = (innerobj as TextBlock);
+                              MinsValue_txtblck[int.Parse((innerobj as TextBlock).Tag.ToString().Remove(0, "MinsValue_txtblck".Length))] = (innerobj as TextBlock);
                            }
                            catch (Exception)
                            { }
                         }
                      }
                   }
-
-                  (outerobj as WrapPanel).Visibility = Visibility.Visible;
-                  break;
                }
+
+               break;
             }
+         }
+
+         // Insert data in objects
+         if (ePower.Elements("skill").Any())
+         {
+            Mins_wrppnl.Visibility = Visibility.Visible;
 
             if (action == "none")                                                       // start by cleaning all values, if first created
             {
                for (int i = 0; i < amount; i++)
                {
-                  MinsName[i].Text = "";
-                  MinsValue[i].Text = "";
+                  MinsName_txtblck[i].Text = "";
+                  MinsValue_txtblck[i].Text = "";
                }
             }
 
             int k = 0;
-            MinsTitle.Text = "Mins:";
+            MinsTitle_txtblck.Text = "Mins:";
 
             if (action == "add")                                                    // find last entry, to add after
             {
                for (int i = 0; i < amount; i++)
                {
-                  if (MinsName[i].Text != "")
+                  if (MinsName_txtblck[i].Text != "")
                      k++;
                }
             }
@@ -251,17 +219,17 @@ namespace IAM.Powers
                      if (eSkillOK.Value == User)
                      {
                         if (k > 0)
-                           MinsValue[k - 1].Text += ",";
-                        MinsName[k].Text = eSkill.Element("name").Value;
-                        MinsValue[k].Text = eSkill.Element("value").Value;
+                           MinsValue_txtblck[k - 1].Text += ",";
+                        MinsName_txtblck[k].Text = eSkill.Element("name").Value;
+                        MinsValue_txtblck[k].Text = eSkill.Element("value").Value;
                      }
                }
                else
                {
                   if (k > 0)
-                     MinsValue[k - 1].Text += ",";
-                  MinsName[k].Text = eSkill.Element("name").Value;
-                  MinsValue[k].Text = eSkill.Element("value").Value;
+                     MinsValue_txtblck[k - 1].Text += ",";
+                  MinsName_txtblck[k].Text = eSkill.Element("name").Value;
+                  MinsValue_txtblck[k].Text = eSkill.Element("value").Value;
                }
 
                k++;
@@ -273,39 +241,34 @@ namespace IAM.Powers
                {
                   if (i >= k)
                   {
-                     MinsName[i].Text = "";
-                     MinsValue[i].Text = "";
+                     MinsName_txtblck[i].Text = "";
+                     MinsValue_txtblck[i].Text = "";
                   }
                }
             }
          }
          else if (action == "none")
-         {
-            foreach (object outerobj in body_stckpnl.Children)
-            {
-               if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Mins_wrppnl"))
-               {
-                  (outerobj as WrapPanel).Visibility = Visibility.Collapsed;
-                  break;
-               }
-            }
-         }
+            Mins_wrppnl.Visibility = Visibility.Collapsed;
       }
 
       private void DataIntoPowerBody_Keyword(StackPanel body_stckpnl, XElement ePower, string action)
       {
-         if (ePower.Elements("keyword").Any())
-         {
-            TextBlock KeywordsTitle = new TextBlock();
-            TextBlock[] KeywordsValue = new TextBlock[amount];
-            for (int i = 0; i < amount; i++)
-               KeywordsValue[i] = new TextBlock();
+         WrapPanel Keywords_wrppnl = new WrapPanel();
+         TextBlock KeywordsTitle = new TextBlock();
+         TextBlock[] KeywordsValue = new TextBlock[amount];
+         for (int i = 0; i < amount; i++)
+            KeywordsValue[i] = new TextBlock();
 
-            foreach (object outerobj in body_stckpnl.Children)
+         // find objects to use
+         foreach (object outerobj in body_stckpnl.Children)
+         {
+            if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Keywords_wrppnl"))
             {
-               if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Keywords_wrppnl"))
+               Keywords_wrppnl = (outerobj as WrapPanel);
+
+               if (ePower.Elements("keyword").Any())
                {
-                  foreach (object innerobj in (outerobj as WrapPanel).Children)
+                  foreach (object innerobj in Keywords_wrppnl.Children)
                   {
                      if (innerobj.GetType().Name == "TextBlock")
                      {
@@ -322,11 +285,16 @@ namespace IAM.Powers
                         }
                      }
                   }
-
-                  (outerobj as WrapPanel).Visibility = Visibility.Visible;
-                  break;
                }
+
+               break;
             }
+         }
+
+         // Insert data in objects
+         if (ePower.Elements("keyword").Any())
+         {
+            Keywords_wrppnl.Visibility = Visibility.Visible;
 
             if (action == "none")                                                       // start by cleaning all values, if first created
             {
@@ -365,70 +333,70 @@ namespace IAM.Powers
             }
          }
          else if (action == "none")
-         {
-            foreach (object outerobj in body_stckpnl.Children)
-            {
-               if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Keywords_wrppnl"))
-               {
-                  (outerobj as WrapPanel).Visibility = Visibility.Collapsed;
-                  break;
-               }
-            }
-         }
+            Keywords_wrppnl.Visibility = Visibility.Collapsed;
       }
 
       private void DataIntoPowerBody_Prerequest(StackPanel body_stckpnl, XElement ePower, string action)
       {
-         if (ePower.Elements("prerequest").Any())
-         {
-            TextBlock PrerequestTitle = new TextBlock();
-            TextBlock[] PrerequestValue = new TextBlock[amount];
-            for (int i = 0; i < amount; i++)
-               PrerequestValue[i] = new TextBlock();
+         WrapPanel Prerequest_wrppnl = new WrapPanel();
+         TextBlock PrerequestTitle_txtblck = new TextBlock();
+         TextBlock[] PrerequestValue_txtblck = new TextBlock[amount];
+         for (int i = 0; i < amount; i++)
+            PrerequestValue_txtblck[i] = new TextBlock();
 
-            foreach (object outerobj in body_stckpnl.Children)
+         // find objects to use
+         foreach (object outerobj in body_stckpnl.Children)
+         {
+            if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Prerequest_wrppnl"))
             {
-               if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Prerequest_wrppnl"))
+               Prerequest_wrppnl = (outerobj as WrapPanel);
+
+               if (ePower.Elements("prerequest").Any())
                {
-                  foreach (object innerobj in (outerobj as WrapPanel).Children)
+                  foreach (object innerobj in Prerequest_wrppnl.Children)
                   {
                      if (innerobj.GetType().Name == "TextBlock")
                      {
                         if ((innerobj as TextBlock).Tag.ToString() == "PrerequestTitle_txtblck")
-                           PrerequestTitle = (innerobj as TextBlock);
+                           PrerequestTitle_txtblck = (innerobj as TextBlock);
                         else if ((innerobj as TextBlock).Tag.ToString().Contains("PrerequestValue_txtblck"))
                         {
                            try
                            {
-                              PrerequestValue[int.Parse((innerobj as TextBlock).Tag.ToString().Remove(0, "PrerequestValue_txtblck".Length))] = (innerobj as TextBlock);
+                              PrerequestValue_txtblck[int.Parse((innerobj as TextBlock).Tag.ToString().Remove(0, "PrerequestValue_txtblck".Length))] = (innerobj as TextBlock);
                            }
                            catch (Exception)
                            { }
                         }
                      }
                   }
-
-                  (outerobj as WrapPanel).Visibility = Visibility.Visible;
-                  break;
                }
+
+               break;
             }
+         }
+
+         // Insert data in objects
+         if (ePower.Elements("prerequest").Any())
+         {
+            Prerequest_wrppnl.Visibility = Visibility.Visible;
 
             if (action == "none")                                                       // start by cleaning all values, if first created
             {
                for (int i = 0; i < amount; i++)
-                  PrerequestValue[i].Text = "";
+                  PrerequestValue_txtblck[i].Text = "";
             }
 
             int k = 0;
             string sName, number;
             bool WasLastOr = false;
-            PrerequestTitle.Text = "Prerequest:";
+            PrerequestTitle_txtblck.Text = "Prerequest:";
 
             if (action == "add")                                                    // find last entry, to add after
             {
                for (int i = 0; i < amount; i++)
                {
-                  if (PrerequestValue[i].Text != "")
+                  if (PrerequestValue_txtblck[i].Text != "")
                      k++;
                }
             }
@@ -447,101 +415,101 @@ namespace IAM.Powers
                {
                   sName = "any " + ePre.Element("anyXof").Value + " of the following: " + sName;
                   if (WasLastOr)
-                     InsertPrerequest(PrerequestValue, k, sName, true);
+                     InsertPrerequest(PrerequestValue_txtblck, k, sName, true);
                   else
-                     InsertPrerequest(PrerequestValue, k, sName, false);
+                     InsertPrerequest(PrerequestValue_txtblck, k, sName, false);
                   WasLastOr = false;
                }
                else if ((ePre.Element("or") != null) && (ePre.Element("or").Value != ""))
                {
-                  InsertPrerequest(PrerequestValue, k, sName, false);
+                  InsertPrerequest(PrerequestValue_txtblck, k, sName, false);
                   WasLastOr = true;
                }
                else
                {
                   if (WasLastOr)
-                     InsertPrerequest(PrerequestValue, k, sName, true);
+                     InsertPrerequest(PrerequestValue_txtblck, k, sName, true);
                   else
-                     InsertPrerequest(PrerequestValue, k, sName, false);
+                     InsertPrerequest(PrerequestValue_txtblck, k, sName, false);
                   WasLastOr = false;
                }
                k++;
             }
             if (WasLastOr)
-               InsertPrerequest(PrerequestValue, k, "", true);
+               InsertPrerequest(PrerequestValue_txtblck, k, "", true);
 
             if (action == "replace")
             {
                for (int i = 0; i < amount; i++)
                {
                   if (i >= k)
-                     PrerequestValue[i].Text = "";
+                     PrerequestValue_txtblck[i].Text = "";
                }
             }
          }
          else if (action == "none")
-         {
-            foreach (object outerobj in body_stckpnl.Children)
-            {
-               if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Prerequest_wrppnl"))
-               {
-                  (outerobj as WrapPanel).Visibility = Visibility.Collapsed;
-                  break;
-               }
-            }
-         }
+            Prerequest_wrppnl.Visibility = Visibility.Collapsed;
       }
 
       private void DataIntoPowerBody_Merged(StackPanel body_stckpnl, XElement ePower, string action)
       {
-         if (ePower.Elements("merged").Any())
-         {
-            TextBlock MergedTitle = new TextBlock();
-            TextBlock[] MergedValue = new TextBlock[amount];
-            for (int i = 0; i < amount; i++)
-               MergedValue[i] = new TextBlock();
+         WrapPanel Merged_wrppnl = new WrapPanel();
+         TextBlock MergedTitle_txtblck = new TextBlock();
+         TextBlock[] MergedValue_txtblck = new TextBlock[amount];
+         for (int i = 0; i < amount; i++)
+            MergedValue_txtblck[i] = new TextBlock();
 
-            foreach (object outerobj in body_stckpnl.Children)
+         // find objects to use
+         foreach (object outerobj in body_stckpnl.Children)
+         {
+            if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Merged_wrppnl"))
             {
-               if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Merged_wrppnl"))
+               Merged_wrppnl = (outerobj as WrapPanel);
+
+               if (ePower.Elements("merged").Any())
                {
-                  foreach (object innerobj in (outerobj as WrapPanel).Children)
+                  foreach (object innerobj in Merged_wrppnl.Children)
                   {
                      if (innerobj.GetType().Name == "TextBlock")
                      {
                         if ((innerobj as TextBlock).Tag.ToString() == "MergedTitle_txtblck")
-                           MergedTitle = (innerobj as TextBlock);
+                           MergedTitle_txtblck = (innerobj as TextBlock);
                         else if ((innerobj as TextBlock).Tag.ToString().Contains("MergedValue_txtblck"))
                         {
                            try
                            {
-                              MergedValue[int.Parse((innerobj as TextBlock).Tag.ToString().Remove(0, "MergedValue_txtblck".Length))] = (innerobj as TextBlock);
+                              MergedValue_txtblck[int.Parse((innerobj as TextBlock).Tag.ToString().Remove(0, "MergedValue_txtblck".Length))] = (innerobj as TextBlock);
                            }
                            catch (Exception)
                            { }
                         }
                      }
                   }
-
-                  (outerobj as WrapPanel).Visibility = Visibility.Visible;
-                  break;
                }
+
+               break;
             }
+         }
+
+         // Insert data in objects
+         if (ePower.Elements("merged").Any())
+         {
+            Merged_wrppnl.Visibility = Visibility.Visible;
 
             if (action == "none")                                                       // start by cleaning all values, if first created
             {
                for (int i = 0; i < amount; i++)
-                  MergedValue[i].Text = "";
+                  MergedValue_txtblck[i].Text = "";
             }
 
             int k = 0;
-            MergedTitle.Text = "Merged:";
+            MergedTitle_txtblck.Text = "Merged:";
 
             if (action == "add")                                                    // find last entry, to add after
             {
                for (int i = 0; i < amount; i++)
                {
-                  if (MergedValue[i].Text != "")
+                  if (MergedValue_txtblck[i].Text != "")
                      k++;
                }
             }
@@ -549,8 +517,8 @@ namespace IAM.Powers
             foreach (XElement eMer in ePower.Elements("merged"))
             {
                if (k > 0)
-                  MergedValue[k - 1].Text += ",";
-               MergedValue[k].Text = eMer.Element("name").Value + " (" + eMer.Element("skill").Value + ")";
+                  MergedValue_txtblck[k - 1].Text += ",";
+               MergedValue_txtblck[k].Text = eMer.Element("name").Value + " (" + eMer.Element("skill").Value + ")";
 
                k++;
             }
@@ -560,73 +528,73 @@ namespace IAM.Powers
                for (int i = 0; i < amount; i++)
                {
                   if (i >= k)
-                     MergedValue[i].Text = "";
+                     MergedValue_txtblck[i].Text = "";
                }
             }
          }
          else if (action == "none")
-         {
-            foreach (object outerobj in body_stckpnl.Children)
-            {
-               if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Merged_wrppnl"))
-               {
-                  (outerobj as WrapPanel).Visibility = Visibility.Collapsed;
-                  break;
-               }
-            }
-         }
+            Merged_wrppnl.Visibility = Visibility.Collapsed;
       }
 
       private void DataIntoPowerBody_Martial(StackPanel body_stckpnl, XElement ePower, string action)
       {
-         if (ePower.Elements("martial").Any())
-         {
-            TextBlock MartialTitle = new TextBlock();
-            TextBlock[] MartialValue = new TextBlock[amount];
-            for (int i = 0; i < amount; i++)
-               MartialValue[i] = new TextBlock();
+         WrapPanel Martial_wrppnl = new WrapPanel();
+         TextBlock MartialTitle_txtblck = new TextBlock();
+         TextBlock[] MartialValue_txtblck = new TextBlock[amount];
+         for (int i = 0; i < amount; i++)
+            MartialValue_txtblck[i] = new TextBlock();
 
-            foreach (object outerobj in body_stckpnl.Children)
+         // find objects to use
+         foreach (object outerobj in body_stckpnl.Children)
+         {
+            if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Martial_wrppnl"))
             {
-               if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Martial_wrppnl"))
+               Martial_wrppnl = (outerobj as WrapPanel);
+
+               if (ePower.Elements("martial").Any())
                {
-                  foreach (object innerobj in (outerobj as WrapPanel).Children)
+                  foreach (object innerobj in Martial_wrppnl.Children)
                   {
                      if (innerobj.GetType().Name == "TextBlock")
                      {
                         if ((innerobj as TextBlock).Tag.ToString() == "MartialTitle_txtblck")
-                           MartialTitle = (innerobj as TextBlock);
+                           MartialTitle_txtblck = (innerobj as TextBlock);
                         else if ((innerobj as TextBlock).Tag.ToString().Contains("MartialValue_txtblck"))
                         {
                            try
                            {
-                              MartialValue[int.Parse((innerobj as TextBlock).Tag.ToString().Remove(0, "MartialValue_txtblck".Length))] = (innerobj as TextBlock);
+                              MartialValue_txtblck[int.Parse((innerobj as TextBlock).Tag.ToString().Remove(0, "MartialValue_txtblck".Length))] = (innerobj as TextBlock);
                            }
                            catch (Exception)
                            { }
                         }
                      }
                   }
-
-                  (outerobj as WrapPanel).Visibility = Visibility.Visible;
-                  break;
                }
+
+               break;
             }
+         }
+
+         // Insert data in objects
+         if (ePower.Elements("martial").Any())
+         {
+            Martial_wrppnl.Visibility = Visibility.Visible;
 
             if (action == "none")                                                       // start by cleaning all values, if first created
             {
                for (int i = 0; i < amount; i++)
-                  MartialValue[i].Text = "";
+                  MartialValue_txtblck[i].Text = "";
             }
 
             int k = 0;
-            MartialTitle.Text = "Martial:";
+            MartialTitle_txtblck.Text = "Martial:";
 
             if (action == "add")                                                    // find last entry, to add after
             {
                for (int i = 0; i < amount; i++)
                {
-                  if (MartialValue[i].Text != "")
+                  if (MartialValue_txtblck[i].Text != "")
                      k++;
                }
             }
@@ -634,8 +602,8 @@ namespace IAM.Powers
             foreach (XElement eMar in ePower.Elements("martial"))
             {
                if (k > 0)
-                  MartialValue[k - 1].Text += ",";
-               MartialValue[k].Text = eMar.Value;
+                  MartialValue_txtblck[k - 1].Text += ",";
+               MartialValue_txtblck[k].Text = eMar.Value;
 
                k++;
             }
@@ -645,73 +613,73 @@ namespace IAM.Powers
                for (int i = 0; i < amount; i++)
                {
                   if (i >= k)
-                     MartialValue[i].Text = "";
+                     MartialValue_txtblck[i].Text = "";
                }
             }
          }
          else if (action == "none")
-         {
-            foreach (object outerobj in body_stckpnl.Children)
-            {
-               if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "Martial_wrppnl"))
-               {
-                  (outerobj as WrapPanel).Visibility = Visibility.Collapsed;
-                  break;
-               }
-            }
-         }
+            Martial_wrppnl.Visibility = Visibility.Collapsed;
       }
 
       private void DataIntoPowerBody_MartialReady(StackPanel body_stckpnl, XElement ePower, string action)
       {
-         if (ePower.Elements("martialReady").Any())
-         {
-            TextBlock MartialReadyTitle = new TextBlock();
-            TextBlock[] MartialReadyValue = new TextBlock[amount];
-            for (int i = 0; i < amount; i++)
-               MartialReadyValue[i] = new TextBlock();
+         WrapPanel MartialReady_wrppnl = new WrapPanel();
+         TextBlock MartialReadyTitle_txtblck = new TextBlock();
+         TextBlock[] MartialReadyValue_txtblck = new TextBlock[amount];
+         for (int i = 0; i < amount; i++)
+            MartialReadyValue_txtblck[i] = new TextBlock();
 
-            foreach (object outerobj in body_stckpnl.Children)
+         // find objects to use
+         foreach (object outerobj in body_stckpnl.Children)
+         {
+            if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "MartialReady_wrppnl"))
             {
-               if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "MartialReady_wrppnl"))
+               MartialReady_wrppnl = (outerobj as WrapPanel);
+
+               if (ePower.Elements("martialReady").Any())
                {
-                  foreach (object innerobj in (outerobj as WrapPanel).Children)
+                  foreach (object innerobj in MartialReady_wrppnl.Children)
                   {
                      if (innerobj.GetType().Name == "TextBlock")
                      {
                         if ((innerobj as TextBlock).Tag.ToString() == "MartialReadyTitle_txtblck")
-                           MartialReadyTitle = (innerobj as TextBlock);
+                           MartialReadyTitle_txtblck = (innerobj as TextBlock);
                         else if ((innerobj as TextBlock).Tag.ToString().Contains("MartialReadyValue_txtblck"))
                         {
                            try
                            {
-                              MartialReadyValue[int.Parse((innerobj as TextBlock).Tag.ToString().Remove(0, "MartialReadyValue_txtblck".Length))] = (innerobj as TextBlock);
+                              MartialReadyValue_txtblck[int.Parse((innerobj as TextBlock).Tag.ToString().Remove(0, "MartialReadyValue_txtblck".Length))] = (innerobj as TextBlock);
                            }
                            catch (Exception)
                            { }
                         }
                      }
                   }
-
-                  (outerobj as WrapPanel).Visibility = Visibility.Visible;
-                  break;
                }
+
+               break;
             }
+         }
+
+         // Insert data in objects
+         if (ePower.Elements("martialReady").Any())
+         {
+            MartialReady_wrppnl.Visibility = Visibility.Visible;
 
             if (action == "none")                                                       // start by cleaning all values, if first created
             {
                for (int i = 0; i < amount; i++)
-                  MartialReadyValue[i].Text = "";
+                  MartialReadyValue_txtblck[i].Text = "";
             }
 
             int k = 0;
-            MartialReadyTitle.Text = "Martial Ready:";
+            MartialReadyTitle_txtblck.Text = "Martial Ready:";
 
             if (action == "add")                                                    // find last entry, to add after
             {
                for (int i = 0; i < amount; i++)
                {
-                  if (MartialReadyValue[i].Text != "")
+                  if (MartialReadyValue_txtblck[i].Text != "")
                      k++;
                }
             }
@@ -719,8 +687,8 @@ namespace IAM.Powers
             foreach (XElement eMR in ePower.Elements("martialReady"))
             {
                if (k > 0)
-                  MartialReadyValue[k - 1].Text += ",";
-               MartialReadyValue[k].Text = eMR.Value;
+                  MartialReadyValue_txtblck[k - 1].Text += ",";
+               MartialReadyValue_txtblck[k].Text = eMR.Value;
 
                k++;
             }
@@ -730,127 +698,114 @@ namespace IAM.Powers
                for (int i = 0; i < amount; i++)
                {
                   if (i >= k)
-                     MartialReadyValue[i].Text = "";
+                     MartialReadyValue_txtblck[i].Text = "";
                }
             }
          }
          else if (action == "none")
-         {
-            foreach (object outerobj in body_stckpnl.Children)
-            {
-               if ((outerobj.GetType().Name == "WrapPanel") && ((outerobj as WrapPanel).Tag.ToString() == "MartialReady_wrppnl"))
-               {
-                  (outerobj as WrapPanel).Visibility = Visibility.Collapsed;
-                  break;
-               }
-            }
-         }
+            MartialReady_wrppnl.Visibility = Visibility.Collapsed;
       }
 
       private void DataIntoPowerBody_Description(StackPanel body_stckpnl, XElement ePower, string action)
       {
-         TextBox DescriptionText = new TextBox();
+         TextBox DescriptionText_txtbx = new TextBox();
 
+         // find objects to use
          foreach (object outerobj in body_stckpnl.Children)
          {
             if ((outerobj.GetType().Name == "TextBox") && ((outerobj as TextBox).Tag.ToString() == "DescriptionText_txtbx"))
             {
-               DescriptionText = (outerobj as TextBox);
+               DescriptionText_txtbx = (outerobj as TextBox);
                break;
             }
          }
 
+         // Insert data in objects
          if (ePower.Elements("description").Any())
          {
             switch (action)
             {
                case "none":
-                  DescriptionText.Text = "   " + ePower.Element("description").Value;
+                  DescriptionText_txtbx.Text = "   " + ePower.Element("description").Value;
                   break;
                case "replace":
-                  DescriptionText.Text = "   " + ePower.Element("description").Value;
+                  DescriptionText_txtbx.Text = "   " + ePower.Element("description").Value;
                   break;
                case "add":
-                  DescriptionText.Text += "\n" + ePower.Element("description").Value;
+                  DescriptionText_txtbx.Text += "\n" + ePower.Element("description").Value;
                   break;
                default:
                   break;
             }
          }
          else if (action == "none")
-            DescriptionText.Text = "-";
+            DescriptionText_txtbx.Text = "-";
       }
 
       private void DataIntoPowerBody_Submodule(StackPanel body_stckpnl, XElement ePower, string action)
       {
+         TextBox SubmoduleText_txtbx = new TextBox();
+
+         // find objects to use
+         foreach (object outerobj in body_stckpnl.Children)
+         {
+            if ((outerobj.GetType().Name == "TextBox") && ((outerobj as TextBox).Tag.ToString() == "SubmoduleText_txtbx"))
+            {
+               SubmoduleText_txtbx = (outerobj as TextBox);
+               break;
+            }
+         }
+
+         // Insert data in objects
          if (ePower.Elements("submodule").Any())
          {
-            TextBox SubmoduleText = new TextBox();
-
-            foreach (object outerobj in body_stckpnl.Children)
-            {
-               if ((outerobj.GetType().Name == "TextBox") && ((outerobj as TextBox).Tag.ToString() == "SubmoduleText_txtbx"))
-               {
-                  SubmoduleText = (outerobj as TextBox);
-                  break;
-               }
-            }
-            SubmoduleText.Visibility = Visibility.Visible;
+            SubmoduleText_txtbx.Visibility = Visibility.Visible;
             if (action != "add")
-               SubmoduleText.Text = "";
+               SubmoduleText_txtbx.Text = "";
 
             foreach (XElement eSub in ePower.Elements("submodule"))
             {
-               if (((action == "add") && (SubmoduleText.Text != "")) || ((action != "add") && (eSub != ePower.Elements("submodule").First())))
-                  SubmoduleText.Text += "\n";
+               if (((action == "add") && (SubmoduleText_txtbx.Text != "")) || ((action != "add") && (eSub != ePower.Elements("submodule").First())))
+                  SubmoduleText_txtbx.Text += "\n";
 
-               SubmoduleText.Text += "   " + eSub.Element("name").Value;
+               SubmoduleText_txtbx.Text += "   " + eSub.Element("name").Value;
                if (((eSub.Elements("skill").Any()) && (eSub.Element("skill").Value != "")) || ((eSub.Elements("xpcost").Any()) && (eSub.Element("xpcost").Value != "")))
                {
-                  SubmoduleText.Text += " (";
+                  SubmoduleText_txtbx.Text += " (";
                   foreach (XElement eMin in eSub.Elements("skill"))
                   {
                      if (eMin == eSub.Elements("skill").First())
-                        SubmoduleText.Text += eMin.Element("name").Value + " " + eMin.Element("value").Value;
+                        SubmoduleText_txtbx.Text += eMin.Element("name").Value + " " + eMin.Element("value").Value;
                      else
-                        SubmoduleText.Text += ", " + eMin.Element("name").Value + " " + eMin.Element("value").Value;
+                        SubmoduleText_txtbx.Text += ", " + eMin.Element("name").Value + " " + eMin.Element("value").Value;
                   }
                   if ((eSub.Elements("xpcost").Any()) && (eSub.Element("xpcost").Value != ""))
                   {
                      if ((eSub.Elements("skill").Any()) && (eSub.Element("skill").Value != ""))
-                        SubmoduleText.Text += ", ";
-                     SubmoduleText.Text += eSub.Element("xpcost").Value + "xp";
+                        SubmoduleText_txtbx.Text += ", ";
+                     SubmoduleText_txtbx.Text += eSub.Element("xpcost").Value + "xp";
                   }
-                  SubmoduleText.Text += "): " + "\n";
+                  SubmoduleText_txtbx.Text += "): " + "\n";
                }
                else
-                  SubmoduleText.Text += "\n";
+                  SubmoduleText_txtbx.Text += "\n";
 
                if ((eSub.Elements("prerequest").Any()) && (eSub.Element("prerequest").Value != ""))
                {
-                  SubmoduleText.Text += "Prerequest: ";
+                  SubmoduleText_txtbx.Text += "Prerequest: ";
                   foreach (XElement ePre in eSub.Elements("prerequest"))
                   {
-                     SubmoduleText.Text += ePre.Element("name").Value;
+                     SubmoduleText_txtbx.Text += ePre.Element("name").Value;
                      if (ePre != eSub.Elements("prerequest").Last())
-                        SubmoduleText.Text += ", ";
+                        SubmoduleText_txtbx.Text += ", ";
                   }
-                  SubmoduleText.Text += "\n";
+                  SubmoduleText_txtbx.Text += "\n";
                }
-               SubmoduleText.Text += eSub.Element("description").Value;
+               SubmoduleText_txtbx.Text += eSub.Element("description").Value;
             }
          }
          else if (action == "none")
-         {
-            foreach (object outerobj in body_stckpnl.Children)
-            {
-               if ((outerobj.GetType().Name == "TextBox") && ((outerobj as TextBox).Tag.ToString() == "SubmoduleText_txtbx"))
-               {
-                  (outerobj as TextBox).Visibility = Visibility.Collapsed;
-                  break;
-               }
-            }
-         }
+            SubmoduleText_txtbx.Visibility = Visibility.Collapsed;
       }
 
       private void DataIntoPowerBody_CrossRef(StackPanel body_stckpnl, XElement ePower, string action)
