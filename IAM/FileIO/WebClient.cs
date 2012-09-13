@@ -31,7 +31,7 @@ namespace IAM.FileIO
       getListOfGames, getListOfCharacters, getListOfEquipment, getListOfPowers,
       getTypesOfEquipment, getTypesOfPower,
       // Character sheet informations
-      getCharacterStats, getCharacterPowerFiles, getCharacterPowerCrossRefs, getEmptyCharacterSheet
+      getCharacterStats, getCharacterPowerFiles, getCharacterPowerCrossRefs, getCharacterPowerKeywords, getEmptyCharacterSheet
             
       };
       int FileProcessTask;
@@ -53,6 +53,7 @@ namespace IAM.FileIO
       public event fromWebClientHandler gotCharacterStats;
       public event fromWebClientHandler gotCharacterPowerFiles;
       public event fromWebClientHandler gotCharacterPowerCrossRefs;
+      public event fromWebClientHandler gotCharacterPowerKeywords;
       public event fromWebClientHandler gotEmptyCharacterSheet;
       #endregion ------------------------------------------------------------------------------------
       #endregion --------------------------------------------------------------------------------
@@ -77,15 +78,15 @@ namespace IAM.FileIO
                break;
             case "Get list of characters":
                FileProcessTask = (int)FileProcessEnum.getListOfCharacters;
-               LoadFile("./" + Globals.GameInformation.SelectedGame + "/characters/index_Characters.xml");
+               LoadFile("./" + Globals.GameInformation.SelectedGame + "/characters/index_characters.xml");
                break;
             case "Get list of equipment":
                FileProcessTask = (int)FileProcessEnum.getListOfEquipment;
-               LoadFile("./" + Globals.GameInformation.SelectedGame + "/equipment/index_Equipment.xml");
+               LoadFile("./" + Globals.GameInformation.SelectedGame + "/equipment/index_equipment.xml");
                break;
             case "Get list of powers":
                FileProcessTask = (int)FileProcessEnum.getListOfPowers;
-               LoadFile("./" + Globals.GameInformation.SelectedGame + "/powers/index_Powers.xml");
+               LoadFile("./" + Globals.GameInformation.SelectedGame + "/powers/index_powers.xml");
                break;
             case "Get types of equipment":
                FileProcessTask = (int)FileProcessEnum.getTypesOfEquipment;
@@ -106,11 +107,11 @@ namespace IAM.FileIO
 
                foreach (XElement ePowerName in document.Descendants("powers"))
                {
-                  string powerType = ePowerName.Attribute("type").Value.ToString();
+                  string powerType = ePowerName.Attribute("type").Value;
 
                   // find single power types
                   List<string> PowerIndex = (from vTypes in ePowerName.Descendants(powerType)
-                                                   select vTypes.Element("type").Value).Distinct().ToList();
+                                             select vTypes.Element("type").Value).Distinct().ToList();
                   PowerIndex.AddRange(Globals.GameInformation.PowerIndexForAll.ElementAt(Globals.GameInformation.PowerIndex.IndexOf(powerType)));  // find general powers
                   PowerIndex.Remove("");                                                          // Cleanup of list
 
@@ -139,6 +140,21 @@ namespace IAM.FileIO
                      UserFiles.Add(parentName + ": " + typeName);                                                                // add file to has been called to load list
                      Globals.TemporaryData.FilesStillToLoad++;                                                                   // NB. because FilesStillToLoad isn't set the exact number from the start it can potentially be counter down to 0 (and new new functions called) before all files are send to loading
                      LoadFile("./" + Globals.GameInformation.SelectedGame + "/powers/" + parentName + "/" + typeName + ".xml");
+                  }
+               }
+               break;
+            case "Get character power keywords":
+               FileProcessTask = (int)FileProcessEnum.getCharacterPowerKeywords;
+               Globals.TemporaryData.FilesStillToLoad = 0;
+
+               //string powerType = "";
+               foreach (string ePowerType in Globals.TemporaryData.SelectedCharacterStats.Descendants("powers").Attributes("type"))
+               {
+                  if ((from vKeywords in Globals.TemporaryData.SelectedCharacterPowers.Descendants(ePowerType).Elements("keyword")
+                       select vKeywords.Value).ToList().Count > 0)
+                  {
+                     Globals.TemporaryData.FilesStillToLoad++;
+                     LoadFile("./" + Globals.GameInformation.SelectedGame + "/mechanic/" + ePowerType + "_keywords.xml");
                   }
                }
                break;
@@ -201,6 +217,9 @@ namespace IAM.FileIO
                   break;
                case (int)FileProcessEnum.getCharacterPowerCrossRefs:
                   this.gotCharacterPowerCrossRefs(XDocument.Load(e.Result));
+                  break;
+               case (int)FileProcessEnum.getCharacterPowerKeywords:
+                  this.gotCharacterPowerKeywords(XDocument.Load(e.Result));
                   break;
                case (int)FileProcessEnum.getEmptyCharacterSheet:
                   this.gotEmptyCharacterSheet(XDocument.Load(e.Result));
