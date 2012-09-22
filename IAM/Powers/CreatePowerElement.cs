@@ -20,6 +20,7 @@ namespace IAM.Powers
       #region Properties --------------------------------------------------------------------
       #region Private ---------------------------------------------------------------------------
       private int amount = 10;
+      private CustomControlStyles usCustomControlStyles = new CustomControlStyles();
       #endregion --------------------------------------------------------------------------------
       #endregion ----------------------------------------------------------------------------
 
@@ -136,8 +137,8 @@ namespace IAM.Powers
          Button VersionOfNext_btn = new Button();
          VersionOfPre_btn.Tag = "VersionOfPre_btn";
          VersionOfNext_btn.Tag = "VersionOfNext_btn";
-         VersionOfPre_btn.Style = Globals.ObjectStyles.Button_Up;
-         VersionOfNext_btn.Style = Globals.ObjectStyles.Button_Down;
+         //VersionOfPre_btn.Style = Globals.ObjectStyles.Button_Up;
+         //VersionOfNext_btn.Style = Globals.ObjectStyles.Button_Down;
          VersionOfPre_btn.Height = 8;
          VersionOfPre_btn.Width = 11;
          VersionOfNext_btn.Height = 8;
@@ -345,7 +346,7 @@ namespace IAM.Powers
          DescriptionText_txtbx.Tag = "DescriptionText_txtbx";
          DescriptionText_txtbx.IsReadOnly = true;                        // set style to one without a disable color
          DescriptionText_txtbx.TextWrapping = TextWrapping.Wrap;
-         DescriptionText_txtbx.Style = Globals.ObjectStyles.Textbox;
+         //DescriptionText_txtbx.Style = Globals.ObjectStyles.Textbox;
          DescriptionText_txtbx.Background = new SolidColorBrush(Colors.White);
          DescriptionText_txtbx.BorderBrush = null;
          DescriptionText_txtbx.Padding = new Thickness(0);
@@ -361,7 +362,7 @@ namespace IAM.Powers
          SubmoduleText_txtbx.Tag = "SubmoduleText_txtbx";
          SubmoduleText_txtbx.IsReadOnly = true;                        // set style to one without a disable color
          SubmoduleText_txtbx.TextWrapping = TextWrapping.Wrap;
-         SubmoduleText_txtbx.Style = Globals.ObjectStyles.Textbox;
+         //SubmoduleText_txtbx.Style = Globals.ObjectStyles.Textbox;
          SubmoduleText_txtbx.Background = new SolidColorBrush(Color.FromArgb(byte.Parse("63"), byte.Parse("210"), byte.Parse("210"), byte.Parse("210")));
          SubmoduleText_txtbx.BorderBrush = null;
          SubmoduleText_txtbx.Padding = new Thickness(0);
@@ -377,7 +378,7 @@ namespace IAM.Powers
          MirrorText_txtbx.Tag = "MirrorText_txtbx";
          MirrorText_txtbx.IsReadOnly = true;                        // set style to one without a disable color
          MirrorText_txtbx.TextWrapping = TextWrapping.Wrap;
-         MirrorText_txtbx.Style = Globals.ObjectStyles.Textbox;
+         //MirrorText_txtbx.Style = Globals.ObjectStyles.Textbox;
          MirrorText_txtbx.Background = new SolidColorBrush(Color.FromArgb(byte.Parse("63"), byte.Parse("210"), byte.Parse("210"), byte.Parse("210")));
          MirrorText_txtbx.BorderBrush = null;
          MirrorText_txtbx.Padding = new Thickness(0);
@@ -393,7 +394,7 @@ namespace IAM.Powers
          ErrataText_txtbx.Tag = "ErrataText_txtbx";
          ErrataText_txtbx.IsReadOnly = true;                        // set style to one without a disable color
          ErrataText_txtbx.TextWrapping = TextWrapping.Wrap;
-         ErrataText_txtbx.Style = Globals.ObjectStyles.Textbox;
+         //ErrataText_txtbx.Style = Globals.ObjectStyles.Textbox;
          ErrataText_txtbx.Background = new SolidColorBrush(Color.FromArgb(byte.Parse("63"), byte.Parse("192"), byte.Parse("192"), byte.Parse("210")));
          ErrataText_txtbx.BorderBrush = null;
          ErrataText_txtbx.Padding = new Thickness(0);
@@ -409,7 +410,7 @@ namespace IAM.Powers
          CommentText_txtbx.Tag = "CommentText_txtbx";
          CommentText_txtbx.IsReadOnly = true;                        // set style to one without a disable color
          CommentText_txtbx.TextWrapping = TextWrapping.Wrap;
-         CommentText_txtbx.Style = Globals.ObjectStyles.Textbox;
+         //CommentText_txtbx.Style = Globals.ObjectStyles.Textbox;
          CommentText_txtbx.Background = new SolidColorBrush(Color.FromArgb(byte.Parse("252"), byte.Parse("41"), byte.Parse("41"), byte.Parse("47")));
          CommentText_txtbx.Foreground = new SolidColorBrush(Colors.White);
          CommentText_txtbx.BorderBrush = null;
