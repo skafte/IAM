@@ -40,9 +40,8 @@ namespace IAM
          LoadingData_bsind.IsBusy = true;
 
          SetGUI();
-         SetData();
          SetEvents();
-         SetStyles();
+         LoadCustomObjectsLayout();
 
          clWebClientManager.PrepareFilePaths("Get list of games");
       }
@@ -63,9 +62,6 @@ namespace IAM
          ShowCollapsMenues("All");
       }
 
-      private void SetData()
-      { }
-
       private void SetEvents()
       {
          // Startup loading of informations
@@ -83,11 +79,9 @@ namespace IAM
          this.clWebClientManager.gotEmptyCharacterSheet += new WebClientManager.fromWebClientHandler(clWebClientManager_gotEmptyCharacterSheet);
       }
 
-      private void SetStyles()
+      private void LoadCustomObjectsLayout()
       {
-         Globals.ObjectStyles.Button_Down = (Style)this.Resources["ButtonStyleDown"];
-         Globals.ObjectStyles.Button_Up = (Style)this.Resources["ButtonStyleUp"];
-         Globals.ObjectStyles.Textbox = (Style)this.Resources["TextBoxStyle"];
+        // clWebClientManager.PrepareFilePaths("Load custom objects");
       }
       #endregion ----------------------------------------------------------------------------
 

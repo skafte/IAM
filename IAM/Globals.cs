@@ -226,13 +226,13 @@ namespace IAM
       /// <summary>
       /// Styles to put on objects
       /// </summary>
-      public struct ObjectStyles
+      public struct CustomObjects
       {
-         static private Style textbox = new Style();
-         static private Style button_up = new Style();
-         static private Style button_down = new Style();
+         static private string textbox = "";
+         static private string button_up = "";
+         static private string button_down = "";
 
-         static public Style Textbox
+         static public string Textbox
          {
             get
             {
@@ -243,7 +243,7 @@ namespace IAM
                textbox = value;
             }
          }
-         static public Style Button_Up
+         static public string Button_Up
          {
             get
             {
@@ -254,7 +254,7 @@ namespace IAM
                button_up = value;
             }
          }
-         static public Style Button_Down
+         static public string Button_Down
          {
             get
             {
