@@ -49,12 +49,12 @@ namespace IAM
          LoadingData_bsind.Visibility = Visibility.Visible;
 
          // Collaps all grids in Grid_grd, to make sure there ain't an visible grids from the design process
-         ShowCollapsGrids("", Grid_grd, false);
-         foreach (object obj in Grid_grd.Children)
-         {
-            if (obj.GetType().Name == "Grid")
-               ShowCollapsGrids("", (obj as Grid), false);
-         }
+         //ShowCollapsGrids("", Grid_grd, false);
+         //foreach (object obj in Grid_grd.Children)
+         //{
+         //   if (obj.GetType().Name == "Grid")
+         //      ShowCollapsGrids("", (obj as Grid), false);
+         //}
 
          ShowCollapsGrids("GameSelection_grd", UserMenu_grd, true);
          ShowCollapsMenues("All");
@@ -109,23 +109,23 @@ namespace IAM
       /// </summary>
       private void SecondaryMenu_lstbx_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
       {
-         if (sender is ListBox)
-         {
-            switch ((sender as ListBox).Name)
-            {
-               case "CharacterSheetMenu_lstbx":
-                  ShowCollapsGrids(CharacterSheetMenu_lstbx.SelectedItem.ToString() + "_grd", CharacterSheetOuter_grd, true);
-                  break;
-               case "EquipmentLibraryMenu_lstbx":
-                  ShowCollapsGrids(EquipmentLibraryMenu_lstbx.SelectedItem.ToString() + "_grd", EquipmentsOuter_grd, true);
-                  break;
-               case "PowerLibraryMenu_lstbx":
-                  ShowCollapsGrids(PowerLibraryMenu_lstbx.SelectedItem.ToString() + "_grd", PowersOuter_grd, true);
-                  break;
-               default:
-                  break;
-            }
-         }
+         //if (sender is ListBox)
+         //{
+         //   switch ((sender as ListBox).Name)
+         //   {
+         //      case "CharacterSheetMenu_lstbx":
+         //         ShowCollapsGrids(CharacterSheetMenu_lstbx.SelectedItem.ToString() + "_grd", CharacterSheetOuter_grd, true);
+         //         break;
+         //      case "EquipmentLibraryMenu_lstbx":
+         //         ShowCollapsGrids(EquipmentLibraryMenu_lstbx.SelectedItem.ToString() + "_grd", EquipmentsOuter_grd, true);
+         //         break;
+         //      case "PowerLibraryMenu_lstbx":
+         //         ShowCollapsGrids(PowerLibraryMenu_lstbx.SelectedItem.ToString() + "_grd", PowersOuter_grd, true);
+         //         break;
+         //      default:
+         //         break;
+         //   }
+         //}
       }
 
       /// <summary>
@@ -134,13 +134,13 @@ namespace IAM
       /// </summary>
       private void UserMenu_lstbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
       {
-         if (UserMenu_lstbx.SelectedIndex != -1)
-         {
-            if ((UserMenu_lstbx.SelectedItem as ListBoxItem).Name.Contains("Selection"))
-               ShowCollapsGrids((UserMenu_lstbx.SelectedItem as ListBoxItem).Name.ToString() + "_grd", UserMenu_grd, true);
-            else if ((UserMenu_lstbx.SelectedItem as ListBoxItem).Name.Contains("Library"))
-               ShowCollapsMenues((UserMenu_lstbx.SelectedItem as ListBoxItem).Name.ToString() + "Menu_expndr");
-         }
+         //if (UserMenu_lstbx.SelectedIndex != -1)
+         //{
+         //   if ((UserMenu_lstbx.SelectedItem as ListBoxItem).Name.Contains("Selection"))
+         //      ShowCollapsGrids((UserMenu_lstbx.SelectedItem as ListBoxItem).Name.ToString() + "_grd", UserMenu_grd, true);
+         //   else if ((UserMenu_lstbx.SelectedItem as ListBoxItem).Name.Contains("Library"))
+         //      ShowCollapsMenues((UserMenu_lstbx.SelectedItem as ListBoxItem).Name.ToString() + "Menu_expndr");
+         //}
       }
 
       /// <summary>
@@ -166,22 +166,22 @@ namespace IAM
       {
          LoadingData_bsind.IsBusy = true;
 
-         string name = CharacterList_lstbx.SelectedValue.ToString();
-         CharacterName_txtbx.Text = "";                              // name on Character menu
-         for (int i = 0; i < name.Length; i++)
-         {
-            if (!((name[i].ToString().Equals(" ")) && (name[i + 1].ToString().Equals("("))))                 // TODO: this will cause problems if no " (" exist
-            {
-               CharacterName_txtbx.Text += name[i] + "\n";
-            }
-            else
-            {
-               CharacterName_txtbx.Text = CharacterName_txtbx.Text.Remove(CharacterName_txtbx.Text.Length - 1);    // remove last /n
-               break;
-            }
-         }
+         //string name = CharacterList_lstbx.SelectedValue.ToString();
+         //CharacterName_txtbx.Text = "";                              // name on Character menu
+         //for (int i = 0; i < name.Length; i++)
+         //{
+         //   if (!((name[i].ToString().Equals(" ")) && (name[i + 1].ToString().Equals("("))))                 // TODO: this will cause problems if no " (" exist
+         //   {
+         //      CharacterName_txtbx.Text += name[i] + "\n";
+         //   }
+         //   else
+         //   {
+         //      CharacterName_txtbx.Text = CharacterName_txtbx.Text.Remove(CharacterName_txtbx.Text.Length - 1);    // remove last /n
+         //      break;
+         //   }
+         //}
 
-         clWebClientManager.PrepareFilePaths("Get character stats", CharacterList_lstbx.SelectedValue.ToString());
+         //clWebClientManager.PrepareFilePaths("Get character stats", CharacterList_lstbx.SelectedValue.ToString());
       }
 
       /// <summary>
@@ -207,7 +207,7 @@ namespace IAM
 
          foreach (XElement eGame in document.Descendants("game"))
             GameList_lstbx.Items.Add(eGame.Value);
-
+         
          LoadingData_bsind.IsBusy = false;
       }
 
@@ -218,30 +218,30 @@ namespace IAM
       /// <param name="document">Index over characters</param>
       private void clWebClientManager_gotListOfCharacters(XDocument document)
       {
-         CharacterList_lstbx.Items.Clear();
+         //CharacterList_lstbx.Items.Clear();
 
-         string itemToAdd;
+         //string itemToAdd;
 
-         foreach (XElement eChar in document.Descendants("character"))
-         {
-            itemToAdd = eChar.Element("name").Value;
+         //foreach (XElement eChar in document.Descendants("character"))
+         //{
+         //   itemToAdd = eChar.Element("name").Value;
 
-            if (eChar.Element("type") != null)
-            {
-               itemToAdd += " (";
+         //   if (eChar.Element("type") != null)
+         //   {
+         //      itemToAdd += " (";
 
-               foreach (XElement eType in eChar.Descendants("type"))       // list all types (caste, clan...)
-                  itemToAdd += eType.Value + ", ";
+         //      foreach (XElement eType in eChar.Descendants("type"))       // list all types (caste, clan...)
+         //         itemToAdd += eType.Value + ", ";
 
-               itemToAdd = itemToAdd.Remove(itemToAdd.Length - 2);         // remove last, inused, comma
-               itemToAdd += ")";
-            }
+         //      itemToAdd = itemToAdd.Remove(itemToAdd.Length - 2);         // remove last, inused, comma
+         //      itemToAdd += ")";
+         //   }
 
-            CharacterList_lstbx.Items.Add(itemToAdd);
-         }
+         //   CharacterList_lstbx.Items.Add(itemToAdd);
+         //}
 
-         // next step in loading process after selecting a game
-         clWebClientManager.PrepareFilePaths("Get list of equipment");
+         //// next step in loading process after selecting a game
+         //clWebClientManager.PrepareFilePaths("Get list of equipment");
       }
 
       /// <summary>
@@ -251,14 +251,14 @@ namespace IAM
       /// <param name="document">Index over equipment list</param>
       private void clWebClientManager_gotListOfEquipment(XDocument document)
       {
-         EquipmentLibraryMenu_lstbx.Items.Clear();
+         //EquipmentLibraryMenu_lstbx.Items.Clear();
 
-         Globals.TemporaryData.FilesStillToLoad = document.Descendants("equipment").Count();
-         foreach (XElement eEquipment in document.Descendants("equipment"))
-         {
-            clWebClientManager.PrepareFilePaths("Get types of equipment", eEquipment.Value);
-            EquipmentLibraryMenu_lstbx.Items.Add(eEquipment.Value);
-         }
+         //Globals.TemporaryData.FilesStillToLoad = document.Descendants("equipment").Count();
+         //foreach (XElement eEquipment in document.Descendants("equipment"))
+         //{
+         //   clWebClientManager.PrepareFilePaths("Get types of equipment", eEquipment.Value);
+         //   EquipmentLibraryMenu_lstbx.Items.Add(eEquipment.Value);
+         //}
       }
       /// <summary>
       /// Specific equipment types loaded from database
@@ -287,14 +287,14 @@ namespace IAM
       /// <param name="document">Index over power list</param>
       private void clWebClientManager_gotListOfPowers(XDocument document)
       {
-         PowerLibraryMenu_lstbx.Items.Clear();
+         //PowerLibraryMenu_lstbx.Items.Clear();
 
-         Globals.TemporaryData.FilesStillToLoad = document.Descendants("power").Count();
-         foreach (XElement ePower in document.Descendants("power"))
-         {
-            clWebClientManager.PrepareFilePaths("Get types of power", ePower.Value);
-            PowerLibraryMenu_lstbx.Items.Add(ePower.Value);
-         }
+         //Globals.TemporaryData.FilesStillToLoad = document.Descendants("power").Count();
+         //foreach (XElement ePower in document.Descendants("power"))
+         //{
+         //   clWebClientManager.PrepareFilePaths("Get types of power", ePower.Value);
+         //   PowerLibraryMenu_lstbx.Items.Add(ePower.Value);
+         //}
       }
       /// <summary>
       /// Specific power types loaded from database
@@ -387,19 +387,19 @@ namespace IAM
       private void clWebClientManager_gotEmptyCharacterSheet(XDocument document)
       {
          // fill in character sheet menu
-         CharacterSheetMenu_lstbx.Items.Clear();
+         //CharacterSheetMenu_lstbx.Items.Clear();
 
-         foreach (XElement ePage in document.Descendants("page"))
-            CharacterSheetMenu_lstbx.Items.Add(ePage.Element("menuTitle").Value);
+         //foreach (XElement ePage in document.Descendants("page"))
+         //   CharacterSheetMenu_lstbx.Items.Add(ePage.Element("menuTitle").Value);
 
-         // create sheet layout
-         clCreateSheet.GetEmptySheets(document, CharacterSheet_grd);
+         //// create sheet layout
+         //clCreateSheet.GetEmptySheets(document, CharacterSheet_grd);
 
-         // fill in stats
-         if (Globals.TemporaryData.SelectedCharacterStats.ToString() != "")
-            clCreateSheet.InsertStats(CharacterSheet_grd);
+         //// fill in stats
+         //if (Globals.TemporaryData.SelectedCharacterStats.ToString() != "")
+         //   clCreateSheet.InsertStats(CharacterSheet_grd);
 
-         SheetFinished();
+         //SheetFinished();
       }
       #endregion --------------------------------------------------------------------------------
 
@@ -428,21 +428,21 @@ namespace IAM
       /// <param name="DoPrimaryGrid">Recursive ShowCollapsGrids with ParentGrid=Grid_grd and VisualGrid=ParentGrid</param>
       private void ShowCollapsGrids(string VisualGrid, Grid ParentGrid, bool DoPrimaryGrid)
       {
-         if (DoPrimaryGrid)
-            ShowCollapsGrids(ParentGrid.Name.ToString(), Grid_grd, false);
+         //if (DoPrimaryGrid)
+         //   ShowCollapsGrids(ParentGrid.Name.ToString(), Grid_grd, false);
 
-         foreach (object obj in ParentGrid.Children)
-         {
-            if (obj.GetType().Name == "Grid")
-            {
-               if ((obj as Grid).Name == VisualGrid)
-                  (obj as Grid).Visibility = Visibility.Visible;
-               else
-                  (obj as Grid).Visibility = Visibility.Collapsed;
-            }
-            else if ((obj.GetType().Name == "ScrollViewer") && (DoPrimaryGrid))
-               ShowCollapsGrids(VisualGrid, ((obj as ScrollViewer).Content as Grid), false);
-         }
+         //foreach (object obj in ParentGrid.Children)
+         //{
+         //   if (obj.GetType().Name == "Grid")
+         //   {
+         //      if ((obj as Grid).Name == VisualGrid)
+         //         (obj as Grid).Visibility = Visibility.Visible;
+         //      else
+         //         (obj as Grid).Visibility = Visibility.Collapsed;
+         //   }
+         //   else if ((obj.GetType().Name == "ScrollViewer") && (DoPrimaryGrid))
+         //      ShowCollapsGrids(VisualGrid, ((obj as ScrollViewer).Content as Grid), false);
+         //}
       }
 
       /// <summary>
@@ -452,21 +452,21 @@ namespace IAM
       /// <param name="VisualMenu">Expander menu not to collaps, if = 'All menues' UserMenu_expndr will also be collapsed</param>
       private void ShowCollapsMenues(string VisualMenu)
       {
-         foreach (object obj in MainMenu_stckpnl.Children)
-         {
-            if (obj.GetType().Name == "Expander")
-            {
-               if ((obj as Expander).Name == VisualMenu)
-               {
-                  (obj as Expander).IsExpanded = true;
-                  (obj as Expander).Visibility = Visibility.Visible;
-               }
-               else if (((obj as Expander).Name == "UserMenu_expndr") && (VisualMenu != "All menues"))
-                  (obj as Expander).Visibility = Visibility.Visible;
-               else
-                  (obj as Expander).Visibility = Visibility.Collapsed;
-            }
-         }
+         //foreach (object obj in MainMenu_stckpnl.Children)
+         //{
+         //   if (obj.GetType().Name == "Expander")
+         //   {
+         //      if ((obj as Expander).Name == VisualMenu)
+         //      {
+         //         (obj as Expander).IsExpanded = true;
+         //         (obj as Expander).Visibility = Visibility.Visible;
+         //      }
+         //      else if (((obj as Expander).Name == "UserMenu_expndr") && (VisualMenu != "All menues"))
+         //         (obj as Expander).Visibility = Visibility.Visible;
+         //      else
+         //         (obj as Expander).Visibility = Visibility.Collapsed;
+         //   }
+         //}
       }
 
       /// <summary>
@@ -474,9 +474,9 @@ namespace IAM
       /// </summary>
       private void SheetFinished()
       {
-         ShowCollapsMenues("CharacterSheetMenu_expndr");
-         CharacterSheetMenu_lstbx.SelectedIndex = 0;
-         LoadingData_bsind.IsBusy = false;
+         //ShowCollapsMenues("CharacterSheetMenu_expndr");
+         //CharacterSheetMenu_lstbx.SelectedIndex = 0;
+         //LoadingData_bsind.IsBusy = false;
       }
       #endregion ------------------------------------------------------------------------------------
       #endregion --------------------------------------------------------------------------------
