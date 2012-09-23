@@ -39,7 +39,6 @@ namespace IAM
 
          SetGUI();
          SetEvents();
-         LoadCustomObjectsLayout();
 
          clWebClientManager.PrepareFilePaths("Get list of games");
       }
