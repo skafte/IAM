@@ -222,50 +222,6 @@ namespace IAM
             }
          }
       }
-
-      /// <summary>
-      /// Styles to put on objects
-      /// </summary>
-      public struct CustomObjects
-      {
-         static private string textbox = "";
-         static private string button_up = "";
-         static private string button_down = "";
-
-         static public string Textbox
-         {
-            get
-            {
-               return textbox;
-            }
-            set
-            {
-               textbox = value;
-            }
-         }
-         static public string Button_Up
-         {
-            get
-            {
-               return button_up;
-            }
-            set
-            {
-               button_up = value;
-            }
-         }
-         static public string Button_Down
-         {
-            get
-            {
-               return button_down;
-            }
-            set
-            {
-               button_down = value;
-            }
-         }
-      }
       #endregion ----------------------------------------------------------------------------
    }
 }

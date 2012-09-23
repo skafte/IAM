@@ -27,8 +27,6 @@ namespace IAM
       private WebClientManager clWebClientManager = new WebClientManager();
       private DisplayPowers clDisplayPowers = new DisplayPowers();
       private LoadPowers clLoadPowers = new LoadPowers();
-
-      // int LibrariesToLoad = 0;           // used to know when all [X].xml files are loaded
       #endregion --------------------------------------------------------------------------------
       #endregion ----------------------------------------------------------------------------
 
@@ -77,11 +75,6 @@ namespace IAM
          this.clWebClientManager.gotCharacterPowerCrossRefs += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterPowerCrossRefs);
          this.clWebClientManager.gotCharacterPowerKeywords += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterPowerKeywords);
          this.clWebClientManager.gotEmptyCharacterSheet += new WebClientManager.fromWebClientHandler(clWebClientManager_gotEmptyCharacterSheet);
-      }
-
-      private void LoadCustomObjectsLayout()
-      {
-        // clWebClientManager.PrepareFilePaths("Load custom objects");
       }
       #endregion ----------------------------------------------------------------------------
 
