@@ -79,7 +79,7 @@ namespace IAM.Powers
 
       #region Create body sections -----------------------------------------------------------------
       #region Intro ------------------------------------------------------------------------------------
-      private static void CreatePowerBody_Intro(StackPanel stckpnl)
+      private void CreatePowerBody_Intro(StackPanel stckpnl)
       {
          WrapPanel Intro_wrppnl = new WrapPanel();
          Intro_wrppnl.Tag = "Intro_wrppnl";
@@ -89,7 +89,7 @@ namespace IAM.Powers
          stckpnl.Children.Add(Intro_wrppnl);
       }
 
-      private static void CreatePowerBody_Title(WrapPanel Intro_wrppnl)
+      private void CreatePowerBody_Title(WrapPanel Intro_wrppnl)
       {
          TextBlock CreatorTitle_txtblck = new TextBlock();
          TextBlock CreatorValue_txtblck = new TextBlock();
@@ -104,7 +104,7 @@ namespace IAM.Powers
          Intro_wrppnl.Children.Add(CreatorValue_txtblck);
       }
 
-      private static void CreaPowerBody_Reference(WrapPanel Intro_wrppnl)
+      private void CreaPowerBody_Reference(WrapPanel Intro_wrppnl)
       {
          TextBlock ReferenceTitle_txtblck = new TextBlock();
          TextBlock ReferenceValue_txtblck = new TextBlock();
@@ -119,7 +119,7 @@ namespace IAM.Powers
          Intro_wrppnl.Children.Add(ReferenceValue_txtblck);
       }
 
-      private static void CreatePowerBody_VersionOf(WrapPanel Intro_wrppnl)
+      private void CreatePowerBody_VersionOf(WrapPanel Intro_wrppnl)
       {
          TextBlock VersionOfTitle_txtblck = new TextBlock();
          TextBlock VersionOfValue_txtblck = new TextBlock();
@@ -137,8 +137,8 @@ namespace IAM.Powers
          Button VersionOfNext_btn = new Button();
          VersionOfPre_btn.Tag = "VersionOfPre_btn";
          VersionOfNext_btn.Tag = "VersionOfNext_btn";
-         //VersionOfPre_btn.Style = Globals.ObjectStyles.Button_Up;
-         //VersionOfNext_btn.Style = Globals.ObjectStyles.Button_Down;
+         VersionOfPre_btn.Style = (Style)usCustomControlStyles.Resources["Custom_ButtonStyle_UpArrow"];
+         VersionOfNext_btn.Style = (Style)usCustomControlStyles.Resources["Custom_ButtonStyle_DownArrow"];
          VersionOfPre_btn.Height = 8;
          VersionOfPre_btn.Width = 11;
          VersionOfNext_btn.Height = 8;
@@ -152,7 +152,7 @@ namespace IAM.Powers
       #endregion ---------------------------------------------------------------------------------------
 
       #region CostDurationType -------------------------------------------------------------------------
-      private static void CreatePowerBody_CostDurationType(StackPanel stckpnl)
+      private void CreatePowerBody_CostDurationType(StackPanel stckpnl)
       {
          WrapPanel CostDurationType_wrppnl = new WrapPanel();
          CostDurationType_wrppnl.Tag = "CostDurationType_wrppnl";
@@ -162,7 +162,7 @@ namespace IAM.Powers
          stckpnl.Children.Add(CostDurationType_wrppnl);
       }
 
-      private static void CreatePowerBody_Cost(WrapPanel CostDurationType_wrppnl)
+      private void CreatePowerBody_Cost(WrapPanel CostDurationType_wrppnl)
       {
          TextBlock CostTitle_txtblck = new TextBlock();
          TextBlock CostValue_txtblck = new TextBlock();
@@ -177,7 +177,7 @@ namespace IAM.Powers
          CostDurationType_wrppnl.Children.Add(CostValue_txtblck);
       }
 
-      private static void CreatePowerBody_Duration(WrapPanel CostDurationType_wrppnl)
+      private void CreatePowerBody_Duration(WrapPanel CostDurationType_wrppnl)
       {
          TextBlock DurationTitle_txtblck = new TextBlock();
          TextBlock DurationValue_txtblck = new TextBlock();
@@ -192,7 +192,7 @@ namespace IAM.Powers
          CostDurationType_wrppnl.Children.Add(DurationValue_txtblck);
       }
 
-      private static void CreatePowerBody_Type(WrapPanel CostDurationType_wrppnl)
+      private void CreatePowerBody_Type(WrapPanel CostDurationType_wrppnl)
       {
          TextBlock TypeTitle_txtblck = new TextBlock();
          TextBlock TypeValue_txtblck = new TextBlock();
@@ -340,13 +340,13 @@ namespace IAM.Powers
          stckpnl.Children.Add(MartialReady_wrppnl);
       }
 
-      private static void CreatePowerBody_Description(StackPanel stckpnl)
+      private void CreatePowerBody_Description(StackPanel stckpnl)
       {
          TextBox DescriptionText_txtbx = new TextBox();
          DescriptionText_txtbx.Tag = "DescriptionText_txtbx";
-         DescriptionText_txtbx.IsReadOnly = true;                        // set style to one without a disable color
+         DescriptionText_txtbx.IsReadOnly = true;
          DescriptionText_txtbx.TextWrapping = TextWrapping.Wrap;
-         //DescriptionText_txtbx.Style = Globals.ObjectStyles.Textbox;
+         DescriptionText_txtbx.Style = (Style)usCustomControlStyles.Resources["Custom_TextBoxStyle"];
          DescriptionText_txtbx.Background = new SolidColorBrush(Colors.White);
          DescriptionText_txtbx.BorderBrush = null;
          DescriptionText_txtbx.Padding = new Thickness(0);
@@ -356,13 +356,13 @@ namespace IAM.Powers
          stckpnl.Children.Add(DescriptionText_txtbx);
       }
 
-      private static void CreatePowerBody_Submodule(StackPanel stckpnl)
+      private void CreatePowerBody_Submodule(StackPanel stckpnl)
       {
          TextBox SubmoduleText_txtbx = new TextBox();
          SubmoduleText_txtbx.Tag = "SubmoduleText_txtbx";
-         SubmoduleText_txtbx.IsReadOnly = true;                        // set style to one without a disable color
+         SubmoduleText_txtbx.IsReadOnly = true;
          SubmoduleText_txtbx.TextWrapping = TextWrapping.Wrap;
-         //SubmoduleText_txtbx.Style = Globals.ObjectStyles.Textbox;
+         SubmoduleText_txtbx.Style = (Style)usCustomControlStyles.Resources["Custom_TextBoxStyle"];
          SubmoduleText_txtbx.Background = new SolidColorBrush(Color.FromArgb(byte.Parse("63"), byte.Parse("210"), byte.Parse("210"), byte.Parse("210")));
          SubmoduleText_txtbx.BorderBrush = null;
          SubmoduleText_txtbx.Padding = new Thickness(0);
@@ -372,13 +372,13 @@ namespace IAM.Powers
          stckpnl.Children.Add(SubmoduleText_txtbx);
       }
 
-      private static void CreatePowerBody_Mirror(StackPanel stckpnl)
+      private void CreatePowerBody_Mirror(StackPanel stckpnl)
       {
          TextBox MirrorText_txtbx = new TextBox();
          MirrorText_txtbx.Tag = "MirrorText_txtbx";
-         MirrorText_txtbx.IsReadOnly = true;                        // set style to one without a disable color
+         MirrorText_txtbx.IsReadOnly = true;
          MirrorText_txtbx.TextWrapping = TextWrapping.Wrap;
-         //MirrorText_txtbx.Style = Globals.ObjectStyles.Textbox;
+         MirrorText_txtbx.Style = (Style)usCustomControlStyles.Resources["Custom_TextBoxStyle"];
          MirrorText_txtbx.Background = new SolidColorBrush(Color.FromArgb(byte.Parse("63"), byte.Parse("210"), byte.Parse("210"), byte.Parse("210")));
          MirrorText_txtbx.BorderBrush = null;
          MirrorText_txtbx.Padding = new Thickness(0);
@@ -388,13 +388,13 @@ namespace IAM.Powers
          stckpnl.Children.Add(MirrorText_txtbx);
       }
 
-      private static void CreatePowerBody_Errata(StackPanel stckpnl)
+      private void CreatePowerBody_Errata(StackPanel stckpnl)
       {
          TextBox ErrataText_txtbx = new TextBox();
          ErrataText_txtbx.Tag = "ErrataText_txtbx";
-         ErrataText_txtbx.IsReadOnly = true;                        // set style to one without a disable color
+         ErrataText_txtbx.IsReadOnly = true;
          ErrataText_txtbx.TextWrapping = TextWrapping.Wrap;
-         //ErrataText_txtbx.Style = Globals.ObjectStyles.Textbox;
+         ErrataText_txtbx.Style = (Style)usCustomControlStyles.Resources["Custom_TextBoxStyle"];
          ErrataText_txtbx.Background = new SolidColorBrush(Color.FromArgb(byte.Parse("63"), byte.Parse("192"), byte.Parse("192"), byte.Parse("210")));
          ErrataText_txtbx.BorderBrush = null;
          ErrataText_txtbx.Padding = new Thickness(0);
@@ -404,13 +404,13 @@ namespace IAM.Powers
          stckpnl.Children.Add(ErrataText_txtbx);
       }
 
-      private static void CreatePowerBody_Comment(StackPanel stckpnl)
+      private void CreatePowerBody_Comment(StackPanel stckpnl)
       {
          TextBox CommentText_txtbx = new TextBox();
          CommentText_txtbx.Tag = "CommentText_txtbx";
-         CommentText_txtbx.IsReadOnly = true;                        // set style to one without a disable color
+         CommentText_txtbx.IsReadOnly = true;
          CommentText_txtbx.TextWrapping = TextWrapping.Wrap;
-         //CommentText_txtbx.Style = Globals.ObjectStyles.Textbox;
+         CommentText_txtbx.Style = (Style)usCustomControlStyles.Resources["Custom_TextBoxStyle"];
          CommentText_txtbx.Background = new SolidColorBrush(Color.FromArgb(byte.Parse("252"), byte.Parse("41"), byte.Parse("41"), byte.Parse("47")));
          CommentText_txtbx.Foreground = new SolidColorBrush(Colors.White);
          CommentText_txtbx.BorderBrush = null;
