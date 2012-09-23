@@ -12,143 +12,35 @@
    d:DesignHeight="300" d:DesignWidth="400">
 
    <Grid x:Name="LayoutRoot" Background="White">
-      <Grid.ColumnDefinitions>
-         <ColumnDefinition Width="Auto"/>
-         <ColumnDefinition Width="0.709*"/>
-      </Grid.ColumnDefinitions>
-      <Grid x:Name="Grid_grd" Grid.Column="1" Margin="0,20,5,20">
-         <Grid x:Name="UserMenu_grd">
-            <Grid x:Name="CharacterSelection_grd" Visibility="Collapsed">
-               <Grid.ColumnDefinitions>
-                  <ColumnDefinition MinWidth="100" Width="Auto"/>
-                  <ColumnDefinition MinWidth="100" Width="Auto"/>
-                  <ColumnDefinition Width="Auto"/>
-               </Grid.ColumnDefinitions>
-               <sdk:Label HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,5,0" Content="Select Character:"/>
-               <Button x:Name="NewChar_btn" Grid.Column="2" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="5" Width="30" VerticalAlignment="Top" Visibility="Collapsed" Click="NewChar_btn_Click">
-                  <TextBox TextWrapping="Wrap" Text="C&#xa;r&#xa;e&#xa;a&#xa;t&#xa;e&#xa;&#xa;N&#xa;e&#xa;w&#xa;&#xa;C&#xa;h&#xa;a&#xa;r&#xa;a&#xa;c&#xa;t&#xa;e&#xa;r" TextAlignment="Center" FontSize="9.333" IsReadOnly="True" IsTabStop="False" SelectionBackground="#00444444" SelectionForeground="Transparent" Background="Transparent" BorderBrush="#00000000" CaretBrush="#00000000" BorderThickness="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Padding="0" />
-               </Button>
-               <ListBox x:Name="CharacterList_lstbx" Margin="5,22,5,0" VerticalAlignment="Top" SelectionChanged="CharacterList_lstbx_SelectionChanged"/>
-            </Grid>
-            <Grid x:Name="GameSelection_grd">
-               <Grid.ColumnDefinitions>
-                  <ColumnDefinition Width="Auto"/>
-                  <ColumnDefinition Width="Auto"/>
-               </Grid.ColumnDefinitions>
-               <sdk:Label VerticalAlignment="Top" Margin="5,5,5,0" Content="Select a Game:" d:LayoutOverrides="Width"/>
-               <ListBox x:Name="GameList_lstbx" Background="#FF47484D" Margin="5,22,5,0" VerticalAlignment="Top" SelectionChanged="GamesList_lstbx_SelectionChanged" Foreground="White">
-                  <ListBox.BorderBrush>
-                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="#FFB1B6BA" Offset="0"/>
-                        <GradientStop Color="#FF8399A9" Offset="0.375"/>
-                        <GradientStop Color="#FF8D9499" Offset="0.375"/>
-                        <GradientStop Color="#FF65737E" Offset="1"/>
-                     </LinearGradientBrush>
-                  </ListBox.BorderBrush>
-               </ListBox>
-            </Grid>
-         </Grid>
-         <Grid x:Name="CharacterSheetOuter_grd" Visibility="Collapsed">
-            <ScrollViewer x:Name="CharacterSheet_scrllvwr" ScrollViewer.VerticalScrollBarVisibility="Auto" Padding="0" BorderBrush="{x:Null}" BorderThickness="0">
-               <Grid x:Name="CharacterSheet_grd" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
-            </ScrollViewer>
-         </Grid>
-         <Grid x:Name="PowersOuter_grd" Visibility="Collapsed">
-            <ScrollViewer x:Name="Powers_scrllvwr" BorderThickness="0" BorderBrush="{x:Null}">
-               <Grid x:Name="Powers_grd"/>
-            </ScrollViewer>
-         </Grid>
-         <Grid x:Name="EquipmentsOuter_grd" Visibility="Collapsed">
-            <ScrollViewer x:Name="Equipments_scrllvwr" BorderThickness="0" BorderBrush="{x:Null}">
-               <Grid x:Name="Equipments_grd"/>
-            </ScrollViewer>
-         </Grid>
+      <Grid x:Name="UserMenu_grd">
+      	<Grid.ColumnDefinitions>
+      		<ColumnDefinition Width="Auto"/>
+      		<ColumnDefinition Width="37*"/>
+      	</Grid.ColumnDefinitions>
+      	<Grid x:Name="GameSelection_grd" Background="#FF414349">
+      		<Grid.RowDefinitions>
+      			<RowDefinition Height="60"/>
+      			<RowDefinition MinHeight="30"/>
+      		</Grid.RowDefinitions>
+      		<sdk:Label VerticalAlignment="Bottom" Margin="40,0,20,0" Content="Select a Game" FontFamily="Segoe UI" FontSize="26.667" Height="36" Foreground="{StaticResource HeaderBrush}"/>
+      		<ListBox x:Name="GameList_lstbx" VerticalAlignment="Top" SelectionChanged="GamesList_lstbx_SelectionChanged" Grid.Row="1" Margin="40,0,20,0" Foreground="White" FontFamily="/IAM;component/Fonts/Fonts.zip#Segoe UI" FontSize="18.667" Background="{x:Null}" BorderBrush="{x:Null}"/>
+      	</Grid>
       </Grid>
-      <StackPanel x:Name="MainMenu_stckpnl" Margin="5,20,10,20" Orientation="Horizontal">
-         <toolkit:Expander x:Name="UserMenu_expndr" ExpandDirection="Left" d:LayoutOverrides="Width" HorizontalAlignment="Left" Expanded="Expanders_ExpandCollaps" IsExpanded="False" Background="White">
-            <toolkit:Expander.BorderBrush>
-               <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                  <GradientStop Color="#FFA3AEB9" Offset="0"/>
-                  <GradientStop Color="#FF8399A9" Offset="0.375"/>
-                  <GradientStop Color="#FF718597" Offset="0.375"/>
-                  <GradientStop Color="#FF617584" Offset="1"/>
-               </LinearGradientBrush>
-            </toolkit:Expander.BorderBrush>
-            <toolkit:Expander.Header>
-               <StackPanel d:LayoutOverrides="Height" VerticalAlignment="Top" Width="16">
-                  <TextBox TextWrapping="Wrap" Text="M&#xa;e&#xa;n&#xa;u" TextAlignment="Center" FontSize="9.333" IsReadOnly="True" IsTabStop="False" BorderThickness="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Padding="0" Background="Black" Foreground="White" BorderBrush="{x:Null}" UseLayoutRounding="True" />
-               </StackPanel>
-            </toolkit:Expander.Header>
-            <Grid>
-               <ListBox x:Name="UserMenu_lstbx" HorizontalAlignment="Left" SelectionChanged="UserMenu_lstbx_SelectionChanged" VerticalAlignment="Top" Margin="2,0" Background="{x:Null}" BorderBrush="{x:Null}">
-                  <ListBoxItem x:Name="GameSelection" Content="Game selection"/>
-                  <ListBoxItem x:Name="CharacterSelection" Content="Character Selection"/>
-                  <ListBoxItem x:Name="EquipmentLibrary" Content="Equipment Library"/>
-                  <ListBoxItem x:Name="PowerLibrary" Content="Power Library"/>
-               </ListBox>
-            </Grid>
-         </toolkit:Expander>
-         <toolkit:Expander x:Name="CharacterSheetMenu_expndr" ExpandDirection="Left" HorizontalAlignment="Left" Expanded="Expanders_ExpandCollaps" Background="White">
-            <toolkit:Expander.BorderBrush>
-               <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                  <GradientStop Color="#FFA3AEB9" Offset="0"/>
-                  <GradientStop Color="#FF8399A9" Offset="0.375"/>
-                  <GradientStop Color="#FF718597" Offset="0.375"/>
-                  <GradientStop Color="#FF617584" Offset="1"/>
-               </LinearGradientBrush>
-            </toolkit:Expander.BorderBrush>
-            <toolkit:Expander.Header>
-               <StackPanel VerticalAlignment="Top">
-                  <TextBox x:Name="CharacterName_txtbx" TextWrapping="Wrap" Text="C&#xa;h&#xa;a&#xa;r&#xa;a&#xa;c&#xa;t&#xa;e&#xa;r&#xa;&#xa;N&#xa;a&#xa;m&#xa;e" TextAlignment="Center" FontSize="9.333" IsReadOnly="True" IsTabStop="False" Background="Black" BorderThickness="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Padding="0" Foreground="White" />
-                  <Button Margin="0,3,0,0">
-                     <TextBox TextWrapping="Wrap" Text="C&#xa;a&#xa;n&#xa;c&#xa;e&#xa;l" TextAlignment="Center" FontSize="9.333" IsReadOnly="True" IsTabStop="False" SelectionBackground="#00444444" SelectionForeground="Transparent" Background="Transparent" BorderBrush="#00000000" CaretBrush="#00000000" BorderThickness="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Padding="0" />
-                  </Button>
-                  <Button Margin="0,3,0,0">
-                     <TextBox TextWrapping="Wrap" Text="S&#xa;a&#xa;v&#xa;e" TextAlignment="Center" FontSize="9.333" IsReadOnly="True" IsTabStop="False" SelectionBackground="#00444444" SelectionForeground="Transparent" Background="Transparent" BorderBrush="#00000000" CaretBrush="#00000000" BorderThickness="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Padding="0" />
-                  </Button>
-               </StackPanel>
-            </toolkit:Expander.Header>
-            <Grid>
-               <ListBox x:Name="CharacterSheetMenu_lstbx" SelectionChanged="SecondaryMenu_lstbx_SelectionChanged" HorizontalContentAlignment="Left" VerticalAlignment="Top" Margin="2,0" BorderBrush="{x:Null}" />
-            </Grid>
-         </toolkit:Expander>
-         <toolkit:Expander x:Name="PowerLibraryMenu_expndr" ExpandDirection="Left" HorizontalAlignment="Left" Expanded="Expanders_ExpandCollaps" Background="White" IsExpanded="False">
-            <toolkit:Expander.BorderBrush>
-               <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                  <GradientStop Color="#FFA3AEB9" Offset="0"/>
-                  <GradientStop Color="#FF8399A9" Offset="0.375"/>
-                  <GradientStop Color="#FF718597" Offset="0.375"/>
-                  <GradientStop Color="#FF617584" Offset="1"/>
-               </LinearGradientBrush>
-            </toolkit:Expander.BorderBrush>
-            <toolkit:Expander.Header>
-               <StackPanel d:LayoutOverrides="Height" VerticalAlignment="Top" Width="16">
-                  <TextBox TextWrapping="Wrap" Text="P&#xa;o&#xa;w&#xa;e&#xa;r&#xa;&#xa;L&#xa;i&#xa;b&#xa;r&#xa;a&#xa;r&#xa;y" TextAlignment="Center" FontSize="9.333" IsReadOnly="True" IsTabStop="False" Background="Black" BorderThickness="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Padding="0" Foreground="White" />
-               </StackPanel>
-            </toolkit:Expander.Header>
-            <Grid>
-               <ListBox x:Name="PowerLibraryMenu_lstbx" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2,0" Background="{x:Null}" BorderBrush="{x:Null}"/>
-            </Grid>
-         </toolkit:Expander>
-         <toolkit:Expander x:Name="EquipmentLibraryMenu_expndr" ExpandDirection="Left" HorizontalAlignment="Left" Expanded="Expanders_ExpandCollaps" Background="White" IsExpanded="False">
-            <toolkit:Expander.BorderBrush>
-               <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                  <GradientStop Color="#FFA3AEB9" Offset="0"/>
-                  <GradientStop Color="#FF8399A9" Offset="0.375"/>
-                  <GradientStop Color="#FF718597" Offset="0.375"/>
-                  <GradientStop Color="#FF617584" Offset="1"/>
-               </LinearGradientBrush>
-            </toolkit:Expander.BorderBrush>
-            <toolkit:Expander.Header>
-               <StackPanel d:LayoutOverrides="Height" VerticalAlignment="Top" Width="16">
-                  <TextBox TextWrapping="Wrap" Text="E&#xa;q&#xa;u&#xa;i&#xa;p&#xa;m&#xa;e&#xa;n&#xa;t&#xa;&#xa;L&#xa;i&#xa;b&#xa;r&#xa;a&#xa;r&#xa;y" TextAlignment="Center" FontSize="9.333" IsReadOnly="True" IsTabStop="False" BorderThickness="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Padding="0" Background="Black" Foreground="White" />
-               </StackPanel>
-            </toolkit:Expander.Header>
-            <Grid>
-               <ListBox x:Name="EquipmentLibraryMenu_lstbx" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2,0" Background="{x:Null}" BorderBrush="{x:Null}"/>
-            </Grid>
-         </toolkit:Expander>
-      </StackPanel>
-      <toolkit:BusyIndicator x:Name="LoadingData_bsind" BusyContent="Loading data, Please wait..." IsBusy="True" Grid.ColumnSpan="2" Visibility="Collapsed" />
+      <Grid x:Name="CharacterSheetOuter_grd" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="0,0,5,40">
+      	<ScrollViewer x:Name="CharacterSheet_scrllvwr" ScrollViewer.VerticalScrollBarVisibility="Auto" Padding="0" BorderBrush="{x:Null}" BorderThickness="0">
+      		<Grid x:Name="CharacterSheet_grd" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+      	</ScrollViewer>
+      </Grid>
+      <Grid x:Name="PowersOuter_grd" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="0,0,5,40">
+      	<ScrollViewer x:Name="Powers_scrllvwr" BorderThickness="0" BorderBrush="{x:Null}">
+      		<Grid x:Name="Powers_grd"/>
+      	</ScrollViewer>
+      </Grid>
+      <Grid x:Name="EquipmentsOuter_grd" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="0,0,5,40">
+      	<ScrollViewer x:Name="Equipments_scrllvwr" BorderThickness="0" BorderBrush="{x:Null}">
+      		<Grid x:Name="Equipments_grd"/>
+      	</ScrollViewer>
+      </Grid>
+      <toolkit:BusyIndicator x:Name="LoadingData_bsind" BusyContent="Loading data, Please wait..." IsBusy="True" Visibility="Collapsed" Margin="0,0,395,260" Grid.ColumnSpan="2" />
    </Grid>
 </UserControl>
