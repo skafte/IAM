@@ -14,10 +14,10 @@
    <Grid x:Name="LayoutRoot" Background="White">
       <Grid x:Name="UserMenu_grd">
       	<Grid.ColumnDefinitions>
-      		<ColumnDefinition Width="Auto"/>
-      		<ColumnDefinition Width="37*"/>
+      		<ColumnDefinition MaxWidth="300" Width="Auto"/>
+      		<ColumnDefinition/>
       	</Grid.ColumnDefinitions>
-      	<Grid x:Name="GameSelection_grd" Background="#FF414349">
+      	<Grid x:Name="GameSelection_grd" Background="#FF414349" MaxWidth="300">
       		<Grid.RowDefinitions>
       			<RowDefinition Height="60"/>
       			<RowDefinition MinHeight="30"/>
@@ -25,7 +25,32 @@
       		<sdk:Label VerticalAlignment="Bottom" Margin="40,0,20,0" Content="Select a Game" FontFamily="Segoe UI" FontSize="26.667" Height="36" Foreground="{StaticResource HeaderBrush}"/>
       		<ListBox x:Name="GameList_lstbx" VerticalAlignment="Top" SelectionChanged="GamesList_lstbx_SelectionChanged" Grid.Row="1" Margin="40,0,20,0" Foreground="White" FontFamily="/IAM;component/Fonts/Fonts.zip#Segoe UI" FontSize="18.667" Background="{x:Null}" BorderBrush="{x:Null}"/>
       	</Grid>
+      	<Grid Grid.Column="1" ScrollViewer.HorizontalScrollBarVisibility="Auto" Margin="20,0,20,20">
+      		<ScrollViewer HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalScrollBarVisibility="Disabled" Style="{StaticResource Custom_ScrollViewerStyle}" HorizontalScrollBarVisibility="Auto">
+      			<Grid ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+      				<Grid.RowDefinitions>
+      					<RowDefinition Height="60"/>
+      					<RowDefinition/>
+      				</Grid.RowDefinitions>
+      				<sdk:Label Foreground="{StaticResource HeaderBrush}" Content="Characters" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+      				<toolkit:WrapPanel Orientation="Vertical" Grid.Row="1">
+      					<Button Content="Button" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,10,10" Height="73"/>
+      					<Button Content="Button" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,10,10" Height="73"/>
+      					<Button Content="Button" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,10,10" Height="73"/>
+      					<Button Content="Button" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,10,10" Height="73"/>
+      					<Button Content="Button" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,10,10" Height="73"/>
+      					<Button Content="Button" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,10,10"/>
+      					<Button Content="Button" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,10,10"/>
+      					<Button Content="Button" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,10,10"/>
+      					<Button Content="Button" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,10,10"/>
+      					<Button Content="Button" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,10,10"/>
+      					<Button Content="Button" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,10,10"/>
+      				</toolkit:WrapPanel>
+      			</Grid>
+      		</ScrollViewer>
+      	</Grid>
       </Grid>
+      <StackPanel x:Name="UserMenu_stckpnl" Orientation="Horizontal"/>
       <Grid x:Name="CharacterSheetOuter_grd" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="0,0,5,40">
       	<ScrollViewer x:Name="CharacterSheet_scrllvwr" ScrollViewer.VerticalScrollBarVisibility="Auto" Padding="0" BorderBrush="{x:Null}" BorderThickness="0">
       		<Grid x:Name="CharacterSheet_grd" ScrollViewer.VerticalScrollBarVisibility="Auto"/>

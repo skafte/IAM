@@ -56,8 +56,8 @@ namespace IAM
          //      ShowCollapsGrids("", (obj as Grid), false);
          //}
 
-         ShowCollapsGrids("GameSelection_grd", UserMenu_grd, true);
-         ShowCollapsMenues("All");
+         //ShowCollapsGrids("GameSelection_grd", UserMenu_grd, true);
+         //ShowCollapsMenues("All");
       }
 
       private void SetEvents()
@@ -107,8 +107,8 @@ namespace IAM
       /// <summary>
       /// Open the grid corrosponding to the selected menu point
       /// </summary>
-      private void SecondaryMenu_lstbx_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
-      {
+      //private void SecondaryMenu_lstbx_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+      //{
          //if (sender is ListBox)
          //{
          //   switch ((sender as ListBox).Name)
@@ -126,14 +126,14 @@ namespace IAM
          //         break;
          //   }
          //}
-      }
+      //}
 
       /// <summary>
       /// If selection name contains 'Selection' then the corrosponding grid will be opened
       /// else if it contains 'Library' then it will open that secondary menu
       /// </summary>
-      private void UserMenu_lstbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
-      {
+      //private void UserMenu_lstbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
+      //{
          //if (UserMenu_lstbx.SelectedIndex != -1)
          //{
          //   if ((UserMenu_lstbx.SelectedItem as ListBoxItem).Name.Contains("Selection"))
@@ -141,7 +141,7 @@ namespace IAM
          //   else if ((UserMenu_lstbx.SelectedItem as ListBoxItem).Name.Contains("Library"))
          //      ShowCollapsMenues((UserMenu_lstbx.SelectedItem as ListBoxItem).Name.ToString() + "Menu_expndr");
          //}
-      }
+      //}
 
       /// <summary>
       /// When a game has been selected, this will start the chain of data to be loaded in order to setup all the grids connected to that game
