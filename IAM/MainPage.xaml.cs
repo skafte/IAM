@@ -27,6 +27,7 @@ namespace IAM
       private WebClientManager clWebClientManager = new WebClientManager();
       private DisplayPowers clDisplayPowers = new DisplayPowers();
       private LoadPowers clLoadPowers = new LoadPowers();
+      private CreatePowerElement clCreatePowerElement = new CreatePowerElement();
       #endregion --------------------------------------------------------------------------------
       #endregion ----------------------------------------------------------------------------
 
@@ -61,6 +62,7 @@ namespace IAM
 
       private void SetEvents()
       {
+         // from WebClient
          // Startup loading of informations
          this.clWebClientManager.gotListOfGames += new WebClientManager.fromWebClientHandler(clWebClientManager_gotListOfGames);
          this.clWebClientManager.gotListOfCharacters += new WebClientManager.fromWebClientHandler(clWebClientManager_gotListOfCharacters);
@@ -74,6 +76,9 @@ namespace IAM
          this.clWebClientManager.gotCharacterPowerCrossRefs += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterPowerCrossRefs);
          this.clWebClientManager.gotCharacterPowerKeywords += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterPowerKeywords);
          this.clWebClientManager.gotEmptyCharacterSheet += new WebClientManager.fromWebClientHandler(clWebClientManager_gotEmptyCharacterSheet);
+
+         // from CreatePowerElement
+         this.clCreatePowerElement.Version_btn_click += clCreatePowerElement_Version_btn_click;
       }
       #endregion ----------------------------------------------------------------------------
 
@@ -190,7 +195,7 @@ namespace IAM
 
       #endregion --------------------------------------------------------------------------------
 
-      #region from WebClientManager--------------------------------------------------------------
+      #region from WebClient --------------------------------------------------------------------
       /// <summary>
       /// Games loaded from database
       /// Filling games into GameList_lstbx
@@ -395,6 +400,18 @@ namespace IAM
             clCreateSheet.InsertStats(CharacterSheet_grd);
 
          SheetFinished();
+      }
+      #endregion --------------------------------------------------------------------------------
+
+      #region from CreatePowerElement -----------------------------------------------------------
+      /// <summary>
+      /// Trigger whenever one of the version buttons in a power element have been clicked
+      /// </summary>
+      /// <param name="sender">This button object</param>
+      /// <param name="e"></param>
+      private void clCreatePowerElement_Version_btn_click(object sender, RoutedEventArgs e)
+      {
+         throw new NotImplementedException();
       }
 
       #endregion --------------------------------------------------------------------------------

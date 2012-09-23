@@ -10,17 +10,25 @@ using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Expression.Controls;
 using Microsoft.Expression.Media;
+//using System.ComponentModel;
 
 using IAM;
 
 namespace IAM.Powers
 {
-   public class CreatePowerElement
+   public class CreatePowerElement //: INotifyPropertyChanged
    {
       #region Properties --------------------------------------------------------------------
       #region Private ---------------------------------------------------------------------------
       private int amount = 10;
       private CustomControlStyles usCustomControlStyles = new CustomControlStyles();
+      #endregion --------------------------------------------------------------------------------
+
+      #region Events ----------------------------------------------------------------------------
+      public delegate void fromPowerElementHandler(object sender, RoutedEventArgs e);
+      #region Event Signatures ----------------------------------------------------------------------
+      public event fromPowerElementHandler Version_btn_click;
+      #endregion ------------------------------------------------------------------------------------
       #endregion --------------------------------------------------------------------------------
       #endregion ----------------------------------------------------------------------------
 
@@ -132,6 +140,7 @@ namespace IAM.Powers
          VersionOfValue_txtblck.Margin = new Thickness(0, 0, 8, 0);
          Intro_wrppnl.Children.Add(VersionOfTitle_txtblck);
          Intro_wrppnl.Children.Add(VersionOfValue_txtblck);
+
          StackPanel VersionOf_stckpnl = new StackPanel();
          Button VersionOfPre_btn = new Button();
          Button VersionOfNext_btn = new Button();
@@ -143,8 +152,10 @@ namespace IAM.Powers
          VersionOfPre_btn.Width = 11;
          VersionOfNext_btn.Height = 8;
          VersionOfNext_btn.Width = 11;
-         VersionOfNext_btn.IsEnabled = false;
          VersionOfPre_btn.IsEnabled = false;
+         VersionOfNext_btn.IsEnabled = false;
+         VersionOfPre_btn.Click += VersionOf_btn_Click;
+         VersionOfNext_btn.Click += VersionOf_btn_Click;
          VersionOf_stckpnl.Children.Add(VersionOfPre_btn);
          VersionOf_stckpnl.Children.Add(VersionOfNext_btn);
          Intro_wrppnl.Children.Add(VersionOf_stckpnl);
@@ -421,6 +432,13 @@ namespace IAM.Powers
          stckpnl.Children.Add(CommentText_txtbx);
       }
       #endregion ---------------------------------------------------------------------------------------
+      #endregion -----------------------------------------------------------------------------------
+
+      #region Events -------------------------------------------------------------------------------
+      private void VersionOf_btn_Click(object sender, RoutedEventArgs e)
+      {
+         this.Version_btn_click(sender, e);
+      }
       #endregion -----------------------------------------------------------------------------------
       #endregion --------------------------------------------------------------------------------
 
