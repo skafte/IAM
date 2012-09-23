@@ -25,7 +25,6 @@ namespace IAM.CharacterSheet
       #region Private ---------------------------------------------------------------------------
       private CreatePowerElement clCreatePowerElement = new CreatePowerElement();
       private LoadPowers clLoadPowers = new LoadPowers();
-      private CustomControlStyles usCustomControlStyles = new CustomControlStyles();
       
       enum DefaultItemEnum { enDefault, enCustom };
       enum CreateItemEnum { enColumn, enRow, enComboBox, enDot, enLabel, enLabelTitle, enNumericUpDown, enTextBox, enPowerBox };
@@ -433,10 +432,10 @@ namespace IAM.CharacterSheet
             switch (eValue.Element("look").Value)
             {
                case "dot":
-                  (obj as Rating).ItemContainerStyle = (Style)usCustomControlStyles.Resources["RatingItemStyleDot"];
+                  (obj as Rating).ItemContainerStyle = (Application.Current.Resources["RatingItemStyleDot"] as Style);
                   break;
                case "square":
-                  (obj as Rating).ItemContainerStyle = (Style)usCustomControlStyles.Resources["RatingItemStyleSquare"];
+                  (obj as Rating).ItemContainerStyle = (Application.Current.Resources["RatingItemStyleSquare"] as Style);
                   break;
                default:
                   break;

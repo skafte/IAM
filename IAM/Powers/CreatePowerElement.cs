@@ -21,7 +21,6 @@ namespace IAM.Powers
       #region Properties --------------------------------------------------------------------
       #region Private ---------------------------------------------------------------------------
       private int amount = 10;
-      private CustomControlStyles usCustomControlStyles = new CustomControlStyles();
       #endregion --------------------------------------------------------------------------------
 
       #region Events ----------------------------------------------------------------------------
@@ -146,8 +145,8 @@ namespace IAM.Powers
          Button VersionOfNext_btn = new Button();
          VersionOfPre_btn.Tag = "VersionOfPre_btn";
          VersionOfNext_btn.Tag = "VersionOfNext_btn";
-         VersionOfPre_btn.Style = (Style)usCustomControlStyles.Resources["Custom_ButtonStyle_UpArrow"];
-         VersionOfNext_btn.Style = (Style)usCustomControlStyles.Resources["Custom_ButtonStyle_DownArrow"];
+         VersionOfPre_btn.Style = (Application.Current.Resources["Custom_ButtonStyle_UpArrow"] as Style);
+         VersionOfNext_btn.Style = (Application.Current.Resources["Custom_ButtonStyle_DownArrow"] as Style);
          VersionOfPre_btn.Height = 8;
          VersionOfPre_btn.Width = 11;
          VersionOfNext_btn.Height = 8;
@@ -357,7 +356,7 @@ namespace IAM.Powers
          DescriptionText_txtbx.Tag = "DescriptionText_txtbx";
          DescriptionText_txtbx.IsReadOnly = true;
          DescriptionText_txtbx.TextWrapping = TextWrapping.Wrap;
-         DescriptionText_txtbx.Style = (Style)usCustomControlStyles.Resources["Custom_TextBoxStyle"];
+         DescriptionText_txtbx.Style = (Application.Current.Resources["Custom_TextBoxStyle"] as Style);
          DescriptionText_txtbx.Background = new SolidColorBrush(Colors.White);
          DescriptionText_txtbx.BorderBrush = null;
          DescriptionText_txtbx.Padding = new Thickness(0);
@@ -373,7 +372,7 @@ namespace IAM.Powers
          SubmoduleText_txtbx.Tag = "SubmoduleText_txtbx";
          SubmoduleText_txtbx.IsReadOnly = true;
          SubmoduleText_txtbx.TextWrapping = TextWrapping.Wrap;
-         SubmoduleText_txtbx.Style = (Style)usCustomControlStyles.Resources["Custom_TextBoxStyle"];
+         SubmoduleText_txtbx.Style = (Application.Current.Resources["Custom_TextBoxStyle"] as Style);
          SubmoduleText_txtbx.Background = new SolidColorBrush(Color.FromArgb(byte.Parse("63"), byte.Parse("210"), byte.Parse("210"), byte.Parse("210")));
          SubmoduleText_txtbx.BorderBrush = null;
          SubmoduleText_txtbx.Padding = new Thickness(0);
@@ -389,7 +388,7 @@ namespace IAM.Powers
          MirrorText_txtbx.Tag = "MirrorText_txtbx";
          MirrorText_txtbx.IsReadOnly = true;
          MirrorText_txtbx.TextWrapping = TextWrapping.Wrap;
-         MirrorText_txtbx.Style = (Style)usCustomControlStyles.Resources["Custom_TextBoxStyle"];
+         MirrorText_txtbx.Style = (Application.Current.Resources["Custom_TextBoxStyle"] as Style);
          MirrorText_txtbx.Background = new SolidColorBrush(Color.FromArgb(byte.Parse("63"), byte.Parse("210"), byte.Parse("210"), byte.Parse("210")));
          MirrorText_txtbx.BorderBrush = null;
          MirrorText_txtbx.Padding = new Thickness(0);
@@ -405,7 +404,7 @@ namespace IAM.Powers
          ErrataText_txtbx.Tag = "ErrataText_txtbx";
          ErrataText_txtbx.IsReadOnly = true;
          ErrataText_txtbx.TextWrapping = TextWrapping.Wrap;
-         ErrataText_txtbx.Style = (Style)usCustomControlStyles.Resources["Custom_TextBoxStyle"];
+         ErrataText_txtbx.Style = (Application.Current.Resources["Custom_TextBoxStyle"] as Style);
          ErrataText_txtbx.Background = new SolidColorBrush(Color.FromArgb(byte.Parse("63"), byte.Parse("192"), byte.Parse("192"), byte.Parse("210")));
          ErrataText_txtbx.BorderBrush = null;
          ErrataText_txtbx.Padding = new Thickness(0);
@@ -421,7 +420,7 @@ namespace IAM.Powers
          CommentText_txtbx.Tag = "CommentText_txtbx";
          CommentText_txtbx.IsReadOnly = true;
          CommentText_txtbx.TextWrapping = TextWrapping.Wrap;
-         CommentText_txtbx.Style = (Style)usCustomControlStyles.Resources["Custom_TextBoxStyle"];
+         CommentText_txtbx.Style = (Application.Current.Resources["Custom_TextBoxStyle"] as Style);
          CommentText_txtbx.Background = new SolidColorBrush(Color.FromArgb(byte.Parse("252"), byte.Parse("41"), byte.Parse("41"), byte.Parse("47")));
          CommentText_txtbx.Foreground = new SolidColorBrush(Colors.White);
          CommentText_txtbx.BorderBrush = null;
