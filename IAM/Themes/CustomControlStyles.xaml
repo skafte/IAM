@@ -983,10 +983,10 @@
                               </VisualStateGroup>
                            </VisualStateManager.VisualStateGroups>
                            <Grid x:Name="ThumbVisual" Margin="0,1,0,1">
-                              <Rectangle x:Name="Background" Fill="#FF1F3B53" RadiusY="2" RadiusX="2" StrokeThickness="1"/>
+                              <Rectangle x:Name="Background" RadiusY="2" RadiusX="2" StrokeThickness="1" Stroke="#99282F3B"/>
                               <Rectangle x:Name="BackgroundMouseOver" Fill="#FF448DCA" Opacity="0" RadiusY="2" RadiusX="2" Stroke="#00000000" StrokeThickness="1"/>
                               <Rectangle x:Name="BackgroundPressed" Fill="#FF448DCA" Opacity="0" RadiusY="2" RadiusX="2" Stroke="#00000000" StrokeThickness="1"/>
-                              <Rectangle x:Name="BackgroundGradient" Margin="1" RadiusY="1" RadiusX="1" Stroke="#FFFFFFFF" StrokeThickness="1"/>
+                              <Rectangle x:Name="BackgroundGradient" Margin="1" RadiusY="1" RadiusX="1" StrokeThickness="1" Fill="#FF333333"/>
                               <Rectangle x:Name="Highlight" IsHitTestVisible="false" Margin="1" Opacity="0" RadiusY="1" RadiusX="1" Stroke="#FF6DBDD1" StrokeThickness="1"/>
                            </Grid>
                         </Grid>
