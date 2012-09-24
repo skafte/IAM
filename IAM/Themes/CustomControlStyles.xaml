@@ -747,9 +747,6 @@
                                        <DoubleAnimation Duration="0:0:0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="Background"/>
                                        <DoubleAnimation Duration="0:0:0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="BackgroundGradient"/>
                                        <DoubleAnimation Duration="0:0:0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="BackgroundMouseOver"/>
-                                       <ColorAnimation Duration="0" To="#7FFFFFFF" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Color)" Storyboard.TargetName="BackgroundGradient"/>
-                                       <ColorAnimation Duration="0" To="#CCFFFFFF" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="BackgroundGradient"/>
-                                       <ColorAnimation Duration="0" To="#F2FFFFFF" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="BackgroundGradient"/>
                                     </Storyboard>
                                  </VisualState>
                                  <VisualState x:Name="Pressed">
@@ -758,10 +755,6 @@
                                        <DoubleAnimation Duration="0:0:0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="BackgroundGradient"/>
                                        <DoubleAnimation Duration="0:0:0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="BackgroundPressed"/>
                                        <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Highlight"/>
-                                       <ColorAnimation Duration="0" To="#6BFFFFFF" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Color)" Storyboard.TargetName="BackgroundGradient"/>
-                                       <ColorAnimation Duration="0" To="#C6FFFFFF" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="BackgroundGradient"/>
-                                       <ColorAnimation Duration="0" To="#EAFFFFFF" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="BackgroundGradient"/>
-                                       <ColorAnimation Duration="0" To="#F4FFFFFF" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="BackgroundGradient"/>
                                     </Storyboard>
                                  </VisualState>
                                  <VisualState x:Name="Disabled">
@@ -771,34 +764,12 @@
                                  </VisualState>
                               </VisualStateGroup>
                            </VisualStateManager.VisualStateGroups>
-                           <Rectangle x:Name="Background" Fill="#FF1F3B53" Opacity="0" RadiusY="2" RadiusX="2" StrokeThickness="1">
-                              <Rectangle.Stroke>
-                                 <LinearGradientBrush EndPoint=".5,1" StartPoint=".5,0">
-                                    <GradientStop Color="#FF647480" Offset="1"/>
-                                    <GradientStop Color="#FFAEB7BF" Offset="0"/>
-                                    <GradientStop Color="#FF919EA7" Offset="0.35"/>
-                                    <GradientStop Color="#FF7A8A99" Offset="0.35"/>
-                                 </LinearGradientBrush>
-                              </Rectangle.Stroke>
-                           </Rectangle>
+                           <Rectangle x:Name="Background" Opacity="0" RadiusY="2" RadiusX="2" StrokeThickness="1"/>
                            <Rectangle x:Name="BackgroundMouseOver" Fill="#FF448DCA" Opacity="0" RadiusY="2" RadiusX="2" Stroke="#00000000" StrokeThickness="1"/>
                            <Rectangle x:Name="BackgroundPressed" Fill="#FF448DCA" Opacity="0" RadiusY="2" RadiusX="2" Stroke="#00000000" StrokeThickness="1"/>
-                           <Rectangle x:Name="BackgroundGradient" Margin="1" Opacity="0" RadiusY="1" RadiusX="1" Stroke="#FFFFFFFF" StrokeThickness="1">
-                              <Rectangle.Fill>
-                                 <LinearGradientBrush EndPoint=".7,1" StartPoint=".7,0">
-                                    <GradientStop Color="#FFFFFFFF" Offset="0.013"/>
-                                    <GradientStop Color="#F9FFFFFF" Offset="0.375"/>
-                                    <GradientStop Color="#E5FFFFFF" Offset="0.603"/>
-                                    <GradientStop Color="#C6FFFFFF" Offset="1"/>
-                                 </LinearGradientBrush>
-                              </Rectangle.Fill>
-                           </Rectangle>
+                           <Rectangle x:Name="BackgroundGradient" Margin="1" Opacity="0" RadiusY="1" RadiusX="1" StrokeThickness="1"/>
                            <Rectangle x:Name="Highlight" IsHitTestVisible="false" Margin="1" Opacity="0" RadiusY="1" RadiusX="1" Stroke="#FF6DBDD1" StrokeThickness="1"/>
-                           <Path Data="F1 M 110.692,342.252L 110.692,352.682L 104.594,347.467L 110.692,342.252 Z " Height="8" Stretch="Uniform" Width="4">
-                              <Path.Fill>
-                                 <SolidColorBrush x:Name="ButtonColor" Color="#FF333333"/>
-                              </Path.Fill>
-                           </Path>
+                           <Path Data="F1 M 110.692,342.252L 110.692,352.682L 104.594,347.467L 110.692,342.252 Z " Height="8" Stretch="Uniform" Width="4" Fill="#FF333333"/>
                            <Rectangle x:Name="DisabledElement" Fill="#FFFFFFFF" Opacity="0" RadiusY="2" RadiusX="2"/>
                         </Grid>
                      </ControlTemplate>
