@@ -1394,8 +1394,8 @@
    </Style>
 
    <Style x:Key="Custom_ButtonStyle_Generic" TargetType="Button">
-      <Setter Property="Background" Value="#FF4B99DA"/>
-      <Setter Property="Foreground" Value="#FF000000"/>
+      <Setter Property="Background" Value="#FF3E4B57"/>
+      <Setter Property="Foreground" Value="#FFFFFFFF"/>
       <Setter Property="BorderThickness" Value="0"/>
       <Setter Property="BorderBrush" Value="{x:Null}" />
       <Setter Property="Template">
@@ -1404,29 +1404,30 @@
                <Grid>
                   <VisualStateManager.VisualStateGroups>
                      <VisualStateGroup x:Name="CommonStates">
-                        <VisualState x:Name="Normal">
-                           <Storyboard>
-                              <ColorAnimation Duration="0" To="#FF4B99DA" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" Storyboard.TargetName="BackgroundAnimation" d:IsOptimized="True"/>
-                           </Storyboard>
-                        </VisualState>
-                        <VisualState x:Name="MouseOver">
-                           <Storyboard>
-                              <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="BackgroundAnimation"/>
-                           </Storyboard>
-                        </VisualState>
-                        <VisualState x:Name="Pressed">
-                           <Storyboard>
-                              <ColorAnimation Duration="0" To="#FF4D5051" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" Storyboard.TargetName="Background"/>
-                              <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="BackgroundAnimation"/>
-                              <ColorAnimation Duration="0" To="#7F686670" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" Storyboard.TargetName="BackgroundAnimation" d:IsOptimized="True"/>
-                           </Storyboard>
-                        </VisualState>
-                        <VisualState x:Name="Disabled">
-                           <Storyboard>
-                              <DoubleAnimation Duration="0" To=".55" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="DisabledVisualElement"/>
-                           </Storyboard>
-                        </VisualState>
-                     </VisualStateGroup>
+                  		<VisualState x:Name="Normal">
+                  			<Storyboard>
+                  				<ColorAnimation Duration="0" To="#FF4B99DA" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" Storyboard.TargetName="BackgroundAnimation" d:IsOptimized="True"/>
+                  			</Storyboard>
+                  		</VisualState>
+                  		<VisualState x:Name="MouseOver">
+                  			<Storyboard>
+                  				<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="BackgroundAnimation"/>
+                  				<ColorAnimation Duration="0" To="#7F686670" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" Storyboard.TargetName="BackgroundAnimation" d:IsOptimized="True"/>
+                  			</Storyboard>
+                  		</VisualState>
+                  		<VisualState x:Name="Pressed">
+                  			<Storyboard>
+                  				<ColorAnimation Duration="0" To="#FF4D5051" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" Storyboard.TargetName="Background"/>
+                  				<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="BackgroundAnimation"/>
+                  				<ColorAnimation Duration="0" To="#FF3E4657" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" Storyboard.TargetName="BackgroundAnimation" d:IsOptimized="True"/>
+                  			</Storyboard>
+                  		</VisualState>
+                  		<VisualState x:Name="Disabled">
+                  			<Storyboard>
+                  				<DoubleAnimation Duration="0" To=".55" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="DisabledVisualElement"/>
+                  			</Storyboard>
+                  		</VisualState>
+                  	</VisualStateGroup>
                      <VisualStateGroup x:Name="FocusStates">
                         <VisualState x:Name="Focused">
                            <Storyboard>
@@ -1442,13 +1443,16 @@
                      </Grid>
                   </Border>
                   <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                  <Rectangle x:Name="DisabledVisualElement" Fill="#FFFFFFFF" IsHitTestVisible="false" Opacity="0" RadiusY="3" RadiusX="3"/>
-                  <Rectangle x:Name="FocusVisualElement" IsHitTestVisible="false" Margin="1" Opacity="0" RadiusY="2" RadiusX="2" Stroke="#FF6DBDD1" StrokeThickness="1"/>
+                  <Rectangle x:Name="DisabledVisualElement" Fill="#FFFFFFFF" IsHitTestVisible="false" Opacity="0"/>
+                  <Rectangle x:Name="FocusVisualElement" IsHitTestVisible="false"/>
                </Grid>
             </ControlTemplate>
          </Setter.Value>
       </Setter>
-      <Setter Property="MinWidth" Value="60"/>
-      <Setter Property="MinHeight" Value="60"/>
+      <Setter Property="MinWidth" Value="120"/>
+      <Setter Property="MinHeight" Value="80"/>
+      <Setter Property="FontFamily" Value="/IAM;component/Fonts/Fonts.zip#Segoe UI"/>
+      <Setter Property="FontSize" Value="16"/>
+      <Setter Property="Padding" Value="10"/>
    </Style>
 </ResourceDictionary>
