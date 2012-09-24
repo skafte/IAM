@@ -869,8 +869,7 @@
                                  </LinearGradientBrush>
                               </Rectangle.Stroke>
                            </Rectangle>
-                           <Rectangle x:Name="BackgroundMouseOver" Fill="#FF448DCA" Opacity="0" RadiusY="2" RadiusX="2" Stroke="#00000000" StrokeThickness="1"/>
-                           <Rectangle x:Name="BackgroundPressed" Fill="#FF448DCA" Opacity="0" RadiusY="2" RadiusX="2" Stroke="#00000000" StrokeThickness="1"/>
+                           <Rectangle x:Name="BackgroundAnimation" Fill="#FF448DCA" Opacity="0" RadiusY="2" RadiusX="2" Stroke="#00000000" StrokeThickness="1"/>
                            <Rectangle x:Name="BackgroundGradient" Margin="1" Opacity="0" RadiusY="1" RadiusX="1" Stroke="#FFFFFFFF" StrokeThickness="1">
                               <Rectangle.Fill>
                                  <LinearGradientBrush EndPoint="1,.7" StartPoint="0,.7">
