@@ -960,7 +960,7 @@
                         </Grid>
                      </ControlTemplate>
                      <ControlTemplate x:Key="HorizontalThumbTemplate" TargetType="Thumb">
-                        <Grid>
+                        <Grid Height="8" HorizontalAlignment="Center">
                            <VisualStateManager.VisualStateGroups>
                               <VisualStateGroup x:Name="CommonStates">
                                  <VisualState x:Name="Normal"/>
