@@ -28,47 +28,29 @@
       	<Grid Grid.Column="1" ScrollViewer.HorizontalScrollBarVisibility="Auto" Margin="20,0,20,20">
       		<ScrollViewer x:Name="scrollViewer" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalScrollBarVisibility="Disabled" Style="{StaticResource Custom_ScrollViewerStyle}" HorizontalScrollBarVisibility="Auto">
       			<StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
-      				<Grid x:Name="CharacterMenu_grd" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="{Binding ViewportHeight, ElementName=scrollViewer}" Margin="0,0,40,0">
+      				<Grid x:Name="CharacterMenu_grd" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="{Binding ViewportHeight, ElementName=scrollViewer}" Margin="0,0,40,0" Visibility="Collapsed">
       					<Grid.RowDefinitions>
       						<RowDefinition Height="60"/>
       						<RowDefinition/>
       					</Grid.RowDefinitions>
       					<sdk:Label Foreground="{StaticResource HeaderBrush}" Content="Characters" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
-      					<toolkit:WrapPanel Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20">
-      						<Button Content="Aroan (Solar, Night)" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,20,20"/>
-      						<Button Content="Cal Winters" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,20,20"/>
-      						<Button Content="Fabian" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,20,20"/>
-      						<Button Content="Ghenga" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,20,20"/>
-      						<Button Content="Jasper Amilar" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,20,20"/>
-      						<Button Content="Nanine Darko" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,20,20"/>
-      						<Button Content="Springflower in Fire" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,20,20"/>
-      						<Button Content="Zannan Arroway" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,20,20"/>
-      					</toolkit:WrapPanel>
+      					<toolkit:WrapPanel x:Name="CharacterMenu_wrppnl" Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20"/>
       				</Grid>
-      				<Grid x:Name="PowerMenu_grd" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="{Binding ViewportHeight, ElementName=scrollViewer}" Margin="0,0,40,0">
+      				<Grid x:Name="PowerMenu_grd" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="{Binding ViewportHeight, ElementName=scrollViewer}" Margin="0,0,40,0" Visibility="Collapsed">
       					<Grid.RowDefinitions>
       						<RowDefinition Height="60"/>
       						<RowDefinition/>
       					</Grid.RowDefinitions>
       					<sdk:Label Foreground="{StaticResource HeaderBrush}" Content="Powers" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
-      					<toolkit:WrapPanel Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20">
-      						<Button Content="Charms" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,20,20"/>
-      						<Button Content="Sorcery" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,20,20"/>
-      						<Button Content="Thaumaturgy" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,20,20"/>
-      					</toolkit:WrapPanel>
+      					<toolkit:WrapPanel x:Name="PowerMenu_wrppnl" Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20"/>
       				</Grid>
-      				<Grid x:Name="EquipmentMenu_grd" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="{Binding ViewportHeight, ElementName=scrollViewer}">
+      				<Grid x:Name="EquipmentMenu_grd" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="{Binding ViewportHeight, ElementName=scrollViewer}" Visibility="Collapsed">
       					<Grid.RowDefinitions>
       						<RowDefinition Height="60"/>
       						<RowDefinition/>
       					</Grid.RowDefinitions>
       					<sdk:Label Foreground="{StaticResource HeaderBrush}" Content="Equipment" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
-      					<toolkit:WrapPanel Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20">
-      						<Button Content="Artifacts" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,20,20"/>
-      						<Button Content="Mundane equipment" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,20,20"/>
-      						<Button Content="Weapons" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,20,20"/>
-      						<Button Content="Artifact weapons" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0,0,20,20"/>
-      					</toolkit:WrapPanel>
+      					<toolkit:WrapPanel x:Name="EquipmentMenu_wrppnl" Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20"/>
       				</Grid>
       			</StackPanel>
       		</ScrollViewer>
