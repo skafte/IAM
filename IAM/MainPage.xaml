@@ -72,6 +72,6 @@
       		<Grid x:Name="Equipments_grd"/>
       	</ScrollViewer>
       </Grid>
-      <toolkit:BusyIndicator x:Name="LoadingData_bsind" BusyContent="Loading data, Please wait..." IsBusy="True" Visibility="Collapsed" Margin="0,0,395,260" Grid.ColumnSpan="2" />
+      <toolkit:BusyIndicator x:Name="LoadingData_bsind" BusyContent="Loading data, Please wait..." IsBusy="True" Visibility="Collapsed" />
    </Grid>
 </UserControl>
