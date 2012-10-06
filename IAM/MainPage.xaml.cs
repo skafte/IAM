@@ -67,9 +67,9 @@ namespace IAM
          this.clWebClientManager.gotListOfGames += new WebClientManager.fromWebClientHandler(clWebClientManager_gotListOfGames);
          this.clWebClientManager.gotListOfCharacters += new WebClientManager.fromWebClientHandler(clWebClientManager_gotListOfCharacters);
          this.clWebClientManager.gotListOfEquipment += new WebClientManager.fromWebClientHandler(clWebClientManager_gotListOfEquipment);
-         //this.clWebClientManager.gotTypesOfEquipment += new WebClientManager.fromWebClientHandler(clWebClientManager_gotTypesOfEquipment);
+         this.clWebClientManager.gotTypesOfEquipment += new WebClientManager.fromWebClientHandler(clWebClientManager_gotTypesOfEquipment);
          this.clWebClientManager.gotListOfPowers += new WebClientManager.fromWebClientHandler(clWebClientManager_gotListOfPowers);
-         //this.clWebClientManager.gotTypesOfPower += new WebClientManager.fromWebClientHandler(clWebClientManager_gotTypesOfPower);
+         this.clWebClientManager.gotTypesOfPower += new WebClientManager.fromWebClientHandler(clWebClientManager_gotTypesOfPower);
          // Character sheet informations
          this.clWebClientManager.gotCharacterStats += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterStats);
          this.clWebClientManager.gotCharacterPowerFiles += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterPowerFiles);
@@ -221,31 +221,8 @@ namespace IAM
          CharacterMenu_grd.Visibility = Visibility.Visible;
          CharacterMenu_wrppnl.Children.Clear();
 
-         string itemToAdd;
          foreach (XElement eCharacter in document.Descendants("character"))
-         {
-            // get characters name and stuff
-            itemToAdd = eCharacter.Element("name").Value;
-            if (eCharacter.Element("type") != null)
-            {
-               itemToAdd += "\n";
-
-               foreach (XElement eType in eCharacter.Descendants("type"))       // list all types (caste, clan...)
-                  itemToAdd += eType.Value + ", ";
-
-               itemToAdd = itemToAdd.Remove(itemToAdd.Length - 2);         // remove last, inused, comma
-            }
-
-            // create button
-            TextBox txtbx = new TextBox();
-            txtbx.Style = (Application.Current.Resources["Custom_TextBoxStyle_Generic"] as Style);
-            txtbx.Text = itemToAdd;
-            Button btn = new Button();
-            btn.Style = (Application.Current.Resources["Custom_ButtonStyle_Generic"] as Style);
-            btn.Content = txtbx;
-
-            CharacterMenu_wrppnl.Children.Add(btn);
-         }
+            CharacterMenu_wrppnl.Children.Add(CreateAndFillButton(eCharacter));
 
          // next step in loading process after selecting a game
          clWebClientManager.PrepareFilePaths("Get list of equipment");
@@ -261,64 +238,33 @@ namespace IAM
          EquipmentMenu_grd.Visibility = Visibility.Visible;
          EquipmentMenu_wrppnl.Children.Clear();
 
-         string itemToAdd;
-         foreach (XElement eCharacter in document.Descendants("equipment"))
+         Globals.TemporaryData.FilesStillToLoad = document.Descendants("equipment").Count();
+         foreach (XElement eEquipment in document.Descendants("equipment"))
          {
-            // get characters name and stuff
-            itemToAdd = eCharacter.Element("name").Value;
-            if (eCharacter.Element("type") != null)
-            {
-               itemToAdd += "\n";
+            EquipmentMenu_wrppnl.Children.Add(CreateAndFillButton(eEquipment));
 
-               foreach (XElement eType in eCharacter.Descendants("type"))       // list all types (caste, clan...)
-                  itemToAdd += eType.Value + ", ";
-
-               itemToAdd = itemToAdd.Remove(itemToAdd.Length - 2);         // remove last, inused, comma
-            }
-
-            // create button
-            TextBox txtbx = new TextBox();
-            txtbx.Style = (Application.Current.Resources["Custom_TextBoxStyle_Generic"] as Style);
-            txtbx.Text = itemToAdd;
-            Button btn = new Button();
-            btn.Style = (Application.Current.Resources["Custom_ButtonStyle_Generic"] as Style);
-            btn.Content = txtbx;
-
-            EquipmentMenu_wrppnl.Children.Add(btn);
+            clWebClientManager.PrepareFilePaths("Get types of equipment", eEquipment.Element("name").Value);
          }
-
-         // next step in loading process after selecting a game
-         clWebClientManager.PrepareFilePaths("Get list of powers");
-         LoadingData_bsind.IsBusy = false;
-
-         //EquipmentLibraryMenu_lstbx.Items.Clear();
-
-         //Globals.TemporaryData.FilesStillToLoad = document.Descendants("equipment").Count();
-         //foreach (XElement eEquipment in document.Descendants("equipment"))
-         //{
-         //   clWebClientManager.PrepareFilePaths("Get types of equipment", eEquipment.Value);
-         //   EquipmentLibraryMenu_lstbx.Items.Add(eEquipment.Value);
-         //}
       }
       /// <summary>
       /// Specific equipment types loaded from database
       /// </summary>
       /// <param name="document">Index over specific equipment types</param>
-      // private void clWebClientManager_gotTypesOfEquipment(XDocument document)
-      // {
-      // List<string> single = (from vTypes in document.Descendants("singles").Elements("type")
-      // select vTypes.Value).Distinct().ToList();
-      // List<string> forall = (from vTypes in document.Descendants("forall").Elements("type")
-      // select vTypes.Value).Distinct().ToList();
-      // Globals.GameInformation.EquipmentIndex.Add(document.Element("body").Element("title").Value);
-      // Globals.GameInformation.EquipmentIndexSingle.Add(single);
-      // Globals.GameInformation.EquipmentIndexForAll.Add(forall);
+      private void clWebClientManager_gotTypesOfEquipment(XDocument document)
+      {
+         List<string> single = (from vTypes in document.Descendants("singles").Elements("type")
+                                select vTypes.Value).Distinct().ToList();
+         List<string> forall = (from vTypes in document.Descendants("forall").Elements("type")
+                                select vTypes.Value).Distinct().ToList();
+         Globals.GameInformation.EquipmentIndex.Add(document.Element("body").Element("title").Value);
+         Globals.GameInformation.EquipmentIndexSingle.Add(single);
+         Globals.GameInformation.EquipmentIndexForAll.Add(forall);
 
-      // Globals.TemporaryData.FilesStillToLoad--;
-      // if (Globals.TemporaryData.FilesStillToLoad == 0)
-      // // last step in loading process after selecting a game
-      // clWebClientManager.PrepareFilePaths("Get list of powers");
-      // }
+         Globals.TemporaryData.FilesStillToLoad--;
+         if (Globals.TemporaryData.FilesStillToLoad == 0)
+            // last step in loading process after selecting a game
+            clWebClientManager.PrepareFilePaths("Get list of powers");
+      }
 
       /// <summary>
       /// Power list loaded from database
@@ -327,36 +273,38 @@ namespace IAM
       /// <param name="document">Index over power list</param>
       private void clWebClientManager_gotListOfPowers(XDocument document)
       {
-         //PowerLibraryMenu_lstbx.Items.Clear();
+         PowerMenu_grd.Visibility = Visibility.Visible;
+         PowerMenu_wrppnl.Children.Clear();
 
-         //Globals.TemporaryData.FilesStillToLoad = document.Descendants("power").Count();
-         //foreach (XElement ePower in document.Descendants("power"))
-         //{
-         //   clWebClientManager.PrepareFilePaths("Get types of power", ePower.Value);
-         //   PowerLibraryMenu_lstbx.Items.Add(ePower.Value);
-         //}
+         Globals.TemporaryData.FilesStillToLoad = document.Descendants("power").Count();
+         foreach (XElement ePower in document.Descendants("power"))
+         {
+            PowerMenu_wrppnl.Children.Add(CreateAndFillButton(ePower));
+
+            clWebClientManager.PrepareFilePaths("Get types of power", ePower.Element("name").Value);
+         }
       }
       /// <summary>
       /// Specific power types loaded from database
       /// </summary>
       /// <param name="document">Index over specific power types</param>
-      // private void clWebClientManager_gotTypesOfPower(XDocument document)
-      // {
-      // List<string> single = (from vTypes in document.Descendants("singles").Elements("type")
-      // select vTypes.Value).Distinct().ToList();
-      // List<string> forall = (from vTypes in document.Descendants("forall").Elements("type")
-      // select vTypes.Value).Distinct().ToList();
-      // Globals.GameInformation.PowerIndex.Add(document.Element("body").Element("title").Value);
-      // Globals.GameInformation.PowerIndexSingle.Add(single);
-      // Globals.GameInformation.PowerIndexForAll.Add(forall);
+      private void clWebClientManager_gotTypesOfPower(XDocument document)
+      {
+         List<string> single = (from vTypes in document.Descendants("singles").Elements("type")
+                                select vTypes.Value).Distinct().ToList();
+         List<string> forall = (from vTypes in document.Descendants("forall").Elements("type")
+                                select vTypes.Value).Distinct().ToList();
+         Globals.GameInformation.PowerIndex.Add(document.Element("body").Element("title").Value);
+         Globals.GameInformation.PowerIndexSingle.Add(single);
+         Globals.GameInformation.PowerIndexForAll.Add(forall);
 
-      // Globals.TemporaryData.FilesStillToLoad--;
-      // if (Globals.TemporaryData.FilesStillToLoad == 0)
-      // {
-      // ShowCollapsMenues("UserMenu_expndr");
-      // LoadingData_bsind.IsBusy = false;
-      // }
-      // }
+         Globals.TemporaryData.FilesStillToLoad--;
+         if (Globals.TemporaryData.FilesStillToLoad == 0)
+         {
+            ShowCollapsMenues("UserMenu_expndr");
+            LoadingData_bsind.IsBusy = false;
+         }
+      }
 
       /// <summary>
       /// Save stats for later use before calling for a sheet layout to that type of character
@@ -459,6 +407,35 @@ namespace IAM
 
       #region Methods -----------------------------------------------------------------------
       #region Private ---------------------------------------------------------------------------
+      /// <summary>
+      /// Create and set text of a menu button
+      /// </summary>
+      /// <param name="eButtonText">XElement button text</param>
+      /// <returns>The finished button element</returns>
+      private Button CreateAndFillButton(XElement eButtonText)
+      {
+         // get characters name and stuff
+         string itemToAdd = eButtonText.Element("name").Value;
+         if (eButtonText.Element("type") != null)
+         {
+            itemToAdd += "\n";
+
+            foreach (XElement eType in eButtonText.Descendants("type"))       // list all types (caste, clan...)
+               itemToAdd += eType.Value + ", ";
+
+            itemToAdd = itemToAdd.Remove(itemToAdd.Length - 2);         // remove last, inused, comma
+         }
+
+         // create button
+         TextBox txtbx = new TextBox();
+         txtbx.Style = (Application.Current.Resources["Custom_TextBoxStyle_Generic"] as Style);
+         txtbx.Text = itemToAdd;
+         Button btn = new Button();
+         btn.Style = (Application.Current.Resources["Custom_ButtonStyle_Generic"] as Style);
+         btn.Content = txtbx;
+
+         return btn;
+      }
       #region ShowHide ------------------------------------------------------------------------------
       /// <summary>
       /// Collaps all child-grids in ParentGrid, except VisualGrid
