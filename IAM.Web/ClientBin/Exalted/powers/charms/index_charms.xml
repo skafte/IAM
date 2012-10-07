@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<body>
+	<title>charms</title>
+	<singles>
+		<type>Abyssals</type>
+		<type>Alchemicals</type>
+		<type>Dragon Kings</type>
+		<type>Dragon-Blooded</type>
+		<type>Fair Folk</type>
+		<type>Ghosts</type>
+		<type>Green Sun Princes</type>
+		<type>Lunars</type>
+		<type>Mountain Folk</type>
+		<type>Sidereals</type>
+		<type>Solars</type>
+		<type>Spirits</type>
+	</singles>
+	<forall>
+		<type>general</type>
+		<type>Martial Arts, Celestial</type>
+		<type>Martial Arts, Sidereal</type>
+		<type>Martial Arts, Terrestrial</type>
+	</forall>
+	
+	<!--
+	<singles>
+		<type>test type</type>
+		<type>test type 2</type>
+	</singles>
+	<forall>
+	</forall>
+	-->
+</body>

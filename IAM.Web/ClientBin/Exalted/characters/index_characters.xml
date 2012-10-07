@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<body>
+	<character>
+		<name>Aroan</name>
+		<type>Solar</type>
+		<type>Night</type>
+	</character>
+	<character>
+		<name>Cal</name>
+		<type>Solar</type>
+		<type>Night</type>
+	</character>
+</body>

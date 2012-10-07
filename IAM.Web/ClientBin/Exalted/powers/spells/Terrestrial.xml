@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<body type="spells">
+    <spells>
+        <name>River Reflects Desire</name>
+        <creator>White Wolf</creator>
+        <reference>Glories of the Most High - Luna, page 27</reference>
+        <cost>3m or 5m</cost>
+        <skill>
+            <name>Appearance</name>
+            <value>5</value>
+            <primary>true</primary>
+        </skill>
+        <skill>
+            <name>Essence</name>
+            <value>3</value>
+        </skill>
+        <type>Reflexive</type>
+        <duration>One scene</duration>
+        <prerequest>
+            <name>Any Appearance Excellency</name>
+        </prerequest>
+        <prerequest>
+            <name>New Friend Aroma</name>
+        </prerequest>
+        <description>This Charm may be activated as soon as a specific individual catches sight of the Lunar. Rather than seeing the Steward for who she really is, the target instead perceives the Lunar to be the person she most wishes to see at that moment. This unnatural Illusion effect costs two Willpower points to shake off for the rest of the scene. If the Lunar pays three motes, then only her target perceives her to be anyone other than herself. For a cost of five motes, all characters present perceive the Lunar as the target of the Charm does. The Steward does not automatically know who her target believes her to be.
+   This Charm's three-mote version may be invoked against a different target even when the Exalt is already disguised, though only the savviest Lunar tricksters are able to convincingly impersonate multiple unknown individuals at once.</description>
+    </spells>
+</body>

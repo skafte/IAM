@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<body>
+	<equipment>
+      <name>armors, artifact</name>
+   </equipment>
+	<equipment>
+      <name>armors, mundane</name>
+   </equipment>
+	<equipment>
+      <name>equipment, artifact</name>
+   </equipment>
+	<equipment>
+      <name>equipment, mundane</name>
+   </equipment>
+	<equipment>
+      <name>weapons, artifact</name>
+   </equipment>
+	<equipment>
+      <name>weapons, mundane</name>
+   </equipment>
+</body>

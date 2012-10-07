@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<body>
+	<power>
+      <name>charms</name>
+   </power>
+	<power>
+      <name>spells</name>
+   </power>
+	<power>
+      <name>thaumaturgy</name>
+   </power>
+</body>
