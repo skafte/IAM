@@ -415,7 +415,11 @@ namespace IAM
       private Button CreateAndFillButton(XElement eButtonText)
       {
          // get characters name and stuff
-         string itemToAdd = eButtonText.Element("name").Value;
+         string itemToAdd = eButtonText.Element("name").Value.ToString();
+         itemToAdd = ToUpperCaseProper(itemToAdd);
+
+
+
          if (eButtonText.Element("type") != null)
          {
             itemToAdd += "\n";
@@ -435,6 +439,21 @@ namespace IAM
          btn.Content = txtbx;
 
          return btn;
+      }
+
+      private static string ToUpperCaseProper(string toConvert)
+      {
+         char FirstLetter = ' ';
+         string haveConverted = "";
+         foreach (char SecondLetter in toConvert)
+         {
+            if (FirstLetter == ' ')
+               haveConverted += SecondLetter.ToString().ToUpper();
+            else
+               haveConverted += SecondLetter.ToString();
+            FirstLetter = SecondLetter;
+         }
+         return haveConverted;
       }
       #region ShowHide ------------------------------------------------------------------------------
       /// <summary>
