@@ -7,9 +7,11 @@
    xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
    xmlns:System="clr-namespace:System;assembly=mscorlib"
    xmlns:System_Windows_Controls_Primitives="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls.Input.Toolkit"
+   xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
    mc:Ignorable="d">
 
-   <SolidColorBrush x:Key="HeaderBrush" Color="#FF3D709B"/>
+   <SolidColorBrush x:Key="Brush_Header" Color="#FF3D709B"/>
+   <SolidColorBrush x:Key="Brush_Background" Color="#FF414349"/>
 
    <Style x:Key="Custom_RatingItemStyleSquare" TargetType="toolkit:RatingItem">
       <Setter Property="BorderBrush" Value="#FF545454"/>
@@ -1614,4 +1616,42 @@
    		</Setter.Value>
    	</Setter>
    </Style>
+	<Style x:Key="Custom_ButtonStyle_Back" TargetType="Button">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<Grid>
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Pressed">
+									<Storyboard>
+										<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Pressed_state" d:IsOptimized="True"/>
+										<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Normal_state" d:IsOptimized="True"/>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="MouseOver">
+									<Storyboard>
+										<DoubleAnimation Duration="0" To="0.1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Pressed_state" d:IsOptimized="True"/>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Normal">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="Pressed_state">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="&#xE0B3;"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Disabled"/>
+							</VisualStateGroup>
+							<VisualStateGroup x:Name="FocusStates">
+								<VisualState x:Name="Focused"/>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+						<sdk:Label x:Name="Pressed_state" Content="&#xE0B3;" FontWeight="Bold" FontSize="32" FontFamily="Segoe UI Symbol" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Foreground="{StaticResource Brush_Header}" Opacity="0"/>
+						<sdk:Label x:Name="Normal_state" Content="&#xE0BA;" FontWeight="Bold" FontSize="32" FontFamily="Segoe UI Symbol" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Foreground="{StaticResource Brush_Header}"/>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
 </ResourceDictionary>
