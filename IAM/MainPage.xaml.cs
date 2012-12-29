@@ -49,7 +49,7 @@ namespace IAM
          LoadingData_bsind.Visibility = Visibility.Visible;
 
          // Collaps all grids except the menu, to make sure there ain't an visible grids from the design process
-         ShowCollapsGrids(UserMenu_grd.Name);
+         ShowCollapsOuterGrids(UserMenu_grd.Name, LayoutRoot);
       }
 
       private void SetEvents()
@@ -102,42 +102,62 @@ namespace IAM
       /// </summary>
       private void Back_btn_Click(object sender, System.Windows.RoutedEventArgs e)
       {
-         ShowCollapsGrids(UserMenu_grd.Name);
+         ShowCollapsOuterGrids(UserMenu_grd.Name, LayoutRoot);
       }
 
-      private void AppBar_grd_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
-      {
-         AppBar_grd.Visibility = Visibility.Collapsed;
-      }
-
+      /// <summary>
+      /// Open App bar
+      /// </summary>
       private void AppBarCollapsed_grd_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
       {
          AppBar_grd.Visibility = Visibility.Visible;
       }
 
       /// <summary>
+      /// Close App bar
+      /// </summary>
+      private void AppBar_grd_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
+      {
+         AppBar_grd.Visibility = Visibility.Collapsed;
+      }
+
+      /// <summary>
+      /// Hide selection menu panel and show Unhide button
+      /// </summary>
+      /// <param name="sender">Used to find panel/button to hide/show</param>
+      private void Selection_Hide_btn_Click(object sender, System.Windows.RoutedEventArgs e)
+      {
+         ((sender as Button).Parent as Grid).Visibility = Visibility.Collapsed;
+         ((((sender as Button).Parent as Grid).Parent as Grid).FindName((sender as Button).Name.Replace("Hide", "Unhide")) as Button).Visibility = Visibility.Visible;         
+      }
+
+      /// <summary>
+      /// Unhide selection menu panel and hide Unhdie button
+      /// </summary>
+      /// <param name="sender">Used to find panel/button to show/hide</param>
+      private void Selection_Unhide_btn_Click(object sender, System.Windows.RoutedEventArgs e)
+      {
+         (sender as Button).Visibility = Visibility.Collapsed;
+         (((sender as Button).Parent as Grid).FindName((sender as Button).Name.Replace("Unhide_btn", "grd")) as Grid).Visibility = Visibility.Visible;
+      }
+
+      /// <summary>
       /// Open the grid corrosponding to the selected menu point
       /// </summary>
-      //private void SecondaryMenu_lstbx_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
-      //{
-         //if (sender is ListBox)
-         //{
-         //   switch ((sender as ListBox).Name)
-         //   {
-         //      case "CharacterSheetMenu_lstbx":
-         //         ShowCollapsGrids(CharacterSheetMenu_lstbx.SelectedItem.ToString() + "_grd", CharacterSheetOuter_grd, true);
-         //         break;
-         //      case "EquipmentLibraryMenu_lstbx":
-         //         ShowCollapsGrids(EquipmentLibraryMenu_lstbx.SelectedItem.ToString() + "_grd", EquipmentsOuter_grd, true);
-         //         break;
-         //      case "PowerLibraryMenu_lstbx":
-         //         ShowCollapsGrids(PowerLibraryMenu_lstbx.SelectedItem.ToString() + "_grd", PowersOuter_grd, true);
-         //         break;
-         //      default:
-         //         break;
-         //   }
-         //}
-      //}
+      private void SecondaryMenu_lstbx_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+      {
+         if (sender is ListBox)
+         {
+            switch ((sender as ListBox).Name)
+            {
+               case "CharacterSheetMenu_lstbx":
+                  ShowCollapsOuterGrids(CharacterSheetMenu_lstbx.SelectedItem.ToString() + "_grd", CharacterSheetInner_grd);
+                  break;
+               default:
+                  break;
+            }
+         }
+      }
 
       /// <summary>
       /// If selection name contains 'Selection' then the corrosponding grid will be opened
@@ -181,9 +201,13 @@ namespace IAM
          // get and format character name to match file name
          string characterName = ((sender as Button).Content as TextBox).Text;
          if (characterName.Contains("\n"))
+         {
+            CharacterName_lbl.Content = characterName.Substring(0, characterName.IndexOf("\n"));
             characterName = characterName.Replace("\n", " (") + ")";
+         }
+         else
+            CharacterName_lbl.Content = characterName;
 
-         CharacterName_lbl.Content = characterName;
          clWebClientManager.PrepareFilePaths("Get character stats", characterName);
       }
 
@@ -194,7 +218,8 @@ namespace IAM
       private void PowerMenu_wrppnl_btn_Click(object sender, RoutedEventArgs e)
       {
          LoadingData_bsind.IsBusy = true;
-         ShowCollapsGrids(PowersOuter_grd.Name);
+         PowerName_lbl.Content = ((sender as Button).Content as TextBox).Text;
+         ShowCollapsOuterGrids(PowerLibraryOuter_grd.Name, LayoutRoot);
 
          LoadingData_bsind.IsBusy = false;
       }
@@ -206,7 +231,8 @@ namespace IAM
       private void EquipmentMenu_wrppnl_btn_Click(object sender, RoutedEventArgs e)
       {
          LoadingData_bsind.IsBusy = true;
-         ShowCollapsGrids(EquipmentsOuter_grd.Name);
+         EquipmentName_lbl.Content = ((sender as Button).Content as TextBox).Text;
+         ShowCollapsOuterGrids(EquipmentLibraryOuter_grd.Name, LayoutRoot);
 
          LoadingData_bsind.IsBusy = false;
       }
@@ -429,12 +455,12 @@ namespace IAM
          foreach (XElement ePage in document.Descendants("page"))
             CharacterSheetMenu_lstbx.Items.Add(ePage.Element("menuTitle").Value);
 
-         //// create sheet layout
-         //clCreateSheet.GetEmptySheets(document, CharacterSheet_grd);
+         // create sheet layout
+         clCreateSheet.GetEmptySheets(document, CharacterSheetInner_grd);
 
-         //// fill in stats
-         //if (Globals.TemporaryData.SelectedCharacterStats.ToString() != "")
-         //   clCreateSheet.InsertStats(CharacterSheet_grd);
+         // fill in stats
+         if (Globals.TemporaryData.SelectedCharacterStats.ToString() != "")
+            clCreateSheet.InsertStats(CharacterSheetInner_grd);
 
          SheetFinished();
       }
@@ -522,15 +548,15 @@ namespace IAM
       /// Collaps all child-grids in ParentGrid, except VisualGrid
       /// </summary>
       /// <param name="VisualGrid">Name of grid to show</param>
-      private void ShowCollapsGrids(string VisualGrid)
+      private void ShowCollapsOuterGrids(string VisualGrid, Grid ParentGrid)
       {
-         foreach (object obj in LayoutRoot.Children)
+         foreach (object obj in ParentGrid.Children)
          {
             if (obj.GetType().Name == "Grid")
             {
                if ((obj as Grid).Name == VisualGrid)
                   (obj as Grid).Visibility = Visibility.Visible;
-               else if ((obj as Grid).Name != "AppBarCollapsed_grd")
+               else if ((obj as Grid).Name != "AppBarCollapsed_grd")    // should always be "visible"
                   (obj as Grid).Visibility = Visibility.Collapsed;
             }
          }
@@ -570,7 +596,7 @@ namespace IAM
       /// </summary>
       private void SheetFinished()
       {
-         ShowCollapsGrids(CharacterSheetOuter_grd.Name);
+         ShowCollapsOuterGrids(CharacterSheetOuter_grd.Name, LayoutRoot);
          CharacterSheetMenu_lstbx.SelectedIndex = 0;
          LoadingData_bsind.IsBusy = false;
       }

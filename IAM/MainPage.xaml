@@ -57,30 +57,49 @@
       	</Grid>
       </Grid>
       <Grid x:Name="CharacterSheetOuter_grd" Grid.ColumnSpan="2" Margin="0" Visibility="Collapsed">
+      	<Grid.ColumnDefinitions>
+      		<ColumnDefinition MaxWidth="300" Width="Auto" MinWidth="60"/>
+      		<ColumnDefinition/>
+      	</Grid.ColumnDefinitions>
+      	<Button x:Name="CharacterSheetSelection_Unhide_btn" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="Selection_Unhide_btn_Click" Style="{StaticResource Custom_ButtonStyle_Unhide}" Grid.Column="1" Margin="-43,0,0,5" Visibility="Collapsed"/>
+      	<Grid x:Name="CharacterSheetSelection_grd" MaxWidth="300" Background="{StaticResource Brush_Background}">
+      		<Grid.RowDefinitions>
+      			<RowDefinition Height="60"/>
+      			<RowDefinition MinHeight="30"/>
+      		</Grid.RowDefinitions>
+      		<sdk:Label x:Name="CharacterName_lbl" VerticalAlignment="Bottom" Margin="60,0,20,0" Content="[character name]" FontFamily="Segoe UI" FontSize="26.667" Height="36" Foreground="{StaticResource Brush_Header}"/>
+      		<ListBox x:Name="CharacterSheetMenu_lstbx" VerticalAlignment="Top" Grid.Row="1" Margin="60,0,20,0" Foreground="White" FontFamily="/IAM;component/Fonts/Fonts.zip#Segoe UI" FontSize="18.667" Background="{x:Null}" BorderBrush="{x:Null}" SelectionChanged="SecondaryMenu_lstbx_SelectionChanged"/>
+      		<Button x:Name="CharacterSheetSelection_Hide_btn" HorizontalAlignment="Right" VerticalAlignment="Bottom" Style="{StaticResource Custom_ButtonStyle_Hide}" Grid.Row="1" Click="Selection_Hide_btn_Click" Margin="0,0,0,5"/>
+      	</Grid>
+      	<Grid ScrollViewer.HorizontalScrollBarVisibility="Auto" Margin="20,0,20,20" Grid.Column="1">
+      		<ScrollViewer x:Name="CharacterSheet_scrllvwr" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalScrollBarVisibility="Disabled" Style="{StaticResource Custom_ScrollViewerStyle}" HorizontalScrollBarVisibility="Auto">
+      			<Grid x:Name="CharacterSheetInner_grd" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+      		</ScrollViewer>
+      	</Grid>
+      </Grid>
+      <Grid x:Name="PowerLibraryOuter_grd" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="0,0,5,0">
       	<Grid.RowDefinitions>
       		<RowDefinition Height="60"/>
       		<RowDefinition/>
       	</Grid.RowDefinitions>
-      	<sdk:Label x:Name="CharacterName_lbl" VerticalAlignment="Bottom" Content="[Character Name]" FontFamily="Segoe UI" FontSize="26.667" Height="36" Foreground="{StaticResource Brush_Header}" Margin="60,0,0,0"/>
-      	<ScrollViewer x:Name="CharacterSheet_scrllvwr" ScrollViewer.VerticalScrollBarVisibility="Auto" Padding="0" BorderBrush="{x:Null}" BorderThickness="0" Grid.Row="1">
-      		<Grid x:Name="CharacterSheet_grd" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+      	<sdk:Label x:Name="PowerName_lbl" VerticalAlignment="Bottom" Margin="60,0,20,0" Content="[power name]" FontFamily="Segoe UI" FontSize="26.667" Height="36" Foreground="{StaticResource Brush_Header}"/>
+      	<ScrollViewer x:Name="PowerLibrary_scrllvwr" BorderThickness="0" BorderBrush="{x:Null}" Grid.Row="1">
+      		<Grid x:Name="PowerLibraryInner_grd"/>
          </ScrollViewer>
       </Grid>
-      <Grid x:Name="PowersOuter_grd" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="0,0,5,0">
-      	<ScrollViewer x:Name="Powers_scrllvwr" BorderThickness="0" BorderBrush="{x:Null}">
-      		<Grid x:Name="Powers_grd"/>
-         </ScrollViewer>
-      </Grid>
-      <Grid x:Name="EquipmentsOuter_grd" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="0,0,5,0">
-      	<ScrollViewer x:Name="Equipments_scrllvwr" BorderThickness="0" BorderBrush="{x:Null}">
-      		<Grid x:Name="Equipments_grd"/>
+      <Grid x:Name="EquipmentLibraryOuter_grd" Grid.ColumnSpan="2" Margin="0,0,5,0" Visibility="Collapsed">
+      	<Grid.RowDefinitions>
+      		<RowDefinition Height="60"/>
+      		<RowDefinition/>
+      	</Grid.RowDefinitions>
+      	<sdk:Label x:Name="EquipmentName_lbl" VerticalAlignment="Bottom" Margin="60,0,20,0" Content="[equipment name]" FontFamily="Segoe UI" FontSize="26.667" Height="36" Foreground="{StaticResource Brush_Header}"/>
+      	<ScrollViewer x:Name="EquipmentLibrary_scrllvwr" BorderThickness="0" BorderBrush="{x:Null}" Grid.Row="1">
+      		<Grid x:Name="EquipmentLibraryInner_grd"/>
          </ScrollViewer>
       </Grid>
       <Button x:Name="Back_btn" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource Custom_ButtonStyle_Back}" Margin="5,10,0,0" Click="Back_btn_Click"/>
       <Grid x:Name="AppBarCollapsed_grd" VerticalAlignment="Bottom" Height="10" MouseEnter="AppBarCollapsed_grd_MouseEnter" Background="#00000000" Opacity="0.01"/>
-      <Grid x:Name="AppBar_grd" Height="60" VerticalAlignment="Bottom" Background="#FF3A3E4B" MouseLeave="AppBar_grd_MouseLeave">
-      	<ListBox x:Name="CharacterSheetMenu_lstbx" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="100" Background="{x:Null}"/>
-      </Grid>
+      <Grid x:Name="AppBar_grd" Height="60" VerticalAlignment="Bottom" Background="#FF3A3E4B" MouseLeave="AppBar_grd_MouseLeave" Visibility="Collapsed"/>
       <toolkit:BusyIndicator x:Name="LoadingData_bsind" BusyContent="Loading data, Please wait..." IsBusy="True" Visibility="Collapsed" />
    </Grid>
 </UserControl>
