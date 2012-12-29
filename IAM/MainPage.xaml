@@ -56,21 +56,20 @@
       		</ScrollViewer>
       	</Grid>
       </Grid>
-      <StackPanel x:Name="UserMenu_stckpnl" Orientation="Horizontal"/>
-      <Grid x:Name="CharacterSheetOuter_grd" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="0,0,5,40">
+      <Grid x:Name="CharacterSheetOuter_grd" Grid.ColumnSpan="2" Margin="0,0,5,40" Visibility="Collapsed">
       	<ScrollViewer x:Name="CharacterSheet_scrllvwr" ScrollViewer.VerticalScrollBarVisibility="Auto" Padding="0" BorderBrush="{x:Null}" BorderThickness="0">
       		<Grid x:Name="CharacterSheet_grd" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
-      	</ScrollViewer>
+         </ScrollViewer>
       </Grid>
       <Grid x:Name="PowersOuter_grd" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="0,0,5,40">
       	<ScrollViewer x:Name="Powers_scrllvwr" BorderThickness="0" BorderBrush="{x:Null}">
       		<Grid x:Name="Powers_grd"/>
-      	</ScrollViewer>
+         </ScrollViewer>
       </Grid>
       <Grid x:Name="EquipmentsOuter_grd" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="0,0,5,40">
       	<ScrollViewer x:Name="Equipments_scrllvwr" BorderThickness="0" BorderBrush="{x:Null}">
       		<Grid x:Name="Equipments_grd"/>
-      	</ScrollViewer>
+         </ScrollViewer>
       </Grid>
       <toolkit:BusyIndicator x:Name="LoadingData_bsind" BusyContent="Loading data, Please wait..." IsBusy="True" Visibility="Collapsed" />
    </Grid>
