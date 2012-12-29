@@ -904,14 +904,45 @@ Uncover the truth behind Aroan's former DB officer as well as dealing with any c
 			</row>
 		</column>
 	</page>
-    	<page>
+	<page>
 		<menuTitle>charms</menuTitle>
-		<powers type="charms">
+		<powers type="charms" user="Solars">
 			<charms>
-				<name>Transcendent Hero's Meditation</name>
+				<name>Second (Ability) Excellency - Essence Triumphant</name>
+				<type>Solars</type>
+				<skill>(Ability)</skill>
+				<trueSkill>Athletics</trueSkill>
+			</charms>
+			<charms>
+				<name>Dipping Swallow Defense</name>
+				<type>Solars</type>
+				<skill>Melee</skill>
+			</charms>
+			<charms>
+				<name>Invincible Ego Shield</name>
 				<type>Solars</type>
 				<skill>Integrity</skill>
 			</charms>
+			<charms>
+				<name>Demure Carp Feint</name>
+				<type></type>
+				<skill>Martial Arts</skill>
+			</charms>
+			<charms>
+				<name>Fiery Solar Chakram</name>
+				<type>Solars</type>
+				<skill>Thrown</skill>
+			</charms>
+		</powers>
+	</page>
+	<page>
+		<menuTitle>spells</menuTitle>
+		<powers type="spells" user="Solars">
+			<spells>
+				<name>Invisible Statue Spirit</name>
+				<type></type>
+				<skill>Stealth</skill>
+			</spells>
 		</powers>
 	</page>
 </body>
