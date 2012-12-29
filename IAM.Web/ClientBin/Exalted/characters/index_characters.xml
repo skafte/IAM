@@ -10,4 +10,7 @@
 		<type>Solar</type>
 		<type>Night</type>
 	</character>
+	<character>
+		<name>Bob</name>
+	</character>
 </body>

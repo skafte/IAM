@@ -169,6 +169,13 @@ namespace IAM
          LoadingData_bsind.IsBusy = true;
          ShowCollapsGrids(CharacterSheetOuter_grd.Name);
 
+         // get and format character name to match file name
+         string characterName = ((sender as Button).Content as TextBox).Text;
+         if (characterName.Contains("\n"))
+            characterName = characterName.Replace("\n", " (") + ")";
+
+         clWebClientManager.PrepareFilePaths("Get character stats", characterName);
+
          LoadingData_bsind.IsBusy = false;
       }
 
