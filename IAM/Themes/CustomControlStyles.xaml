@@ -11,6 +11,8 @@
    mc:Ignorable="d">
 
    <SolidColorBrush x:Key="Brush_Header" Color="#FF3D709B"/>
+   <SolidColorBrush x:Key="Brush_Header_MouseOver" Color="#FF5D8AB0"/>
+   <SolidColorBrush x:Key="Brush_Header_Pressed" Color="#FF1C65A2"/>
    <SolidColorBrush x:Key="Brush_Background" Color="#FF414349"/>
 
    <Style x:Key="Custom_RatingItemStyleSquare" TargetType="toolkit:RatingItem">
@@ -1625,33 +1627,98 @@
 							<VisualStateGroup x:Name="CommonStates">
 								<VisualState x:Name="Pressed">
 									<Storyboard>
-										<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Pressed_state" d:IsOptimized="True"/>
-										<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Normal_state" d:IsOptimized="True"/>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.Foreground)" Storyboard.TargetName="Normal_state">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Brush_Header_Pressed}"/>
+										</ObjectAnimationUsingKeyFrames>
 									</Storyboard>
 								</VisualState>
 								<VisualState x:Name="MouseOver">
 									<Storyboard>
-										<DoubleAnimation Duration="0" To="0.1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Pressed_state" d:IsOptimized="True"/>
-									</Storyboard>
-								</VisualState>
-								<VisualState x:Name="Normal">
-									<Storyboard>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="Pressed_state">
-											<DiscreteObjectKeyFrame KeyTime="0" Value="&#xE0B3;"/>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.Foreground)" Storyboard.TargetName="Normal_state">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Brush_Header_MouseOver}"/>
 										</ObjectAnimationUsingKeyFrames>
 									</Storyboard>
 								</VisualState>
+								<VisualState x:Name="Normal"/>
 								<VisualState x:Name="Disabled"/>
 							</VisualStateGroup>
 							<VisualStateGroup x:Name="FocusStates">
 								<VisualState x:Name="Focused"/>
 							</VisualStateGroup>
 						</VisualStateManager.VisualStateGroups>
-						<sdk:Label x:Name="Pressed_state" Content="&#xE0B3;" FontWeight="Bold" FontSize="32" FontFamily="Segoe UI Symbol" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Foreground="{StaticResource Brush_Header}" Opacity="0"/>
 						<sdk:Label x:Name="Normal_state" Content="&#xE0BA;" FontWeight="Bold" FontSize="32" FontFamily="Segoe UI Symbol" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Foreground="{StaticResource Brush_Header}"/>
 					</Grid>
 				</ControlTemplate>
 			</Setter.Value>
 		</Setter>
+	</Style>
+	<Style x:Key="Custom_ButtonStyle_Hide" TargetType="Button">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<Grid>
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Pressed">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.Foreground)" Storyboard.TargetName="Normal_state">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Brush_Header_Pressed}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="MouseOver">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.Foreground)" Storyboard.TargetName="Normal_state">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Brush_Header_MouseOver}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Normal"/>
+								<VisualState x:Name="Disabled"/>
+							</VisualStateGroup>
+							<VisualStateGroup x:Name="FocusStates">
+								<VisualState x:Name="Focused"/>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+						<sdk:Label x:Name="Normal_state" Content="&#xE127;" FontWeight="Bold" FontSize="32" FontFamily="Segoe UI Symbol" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Foreground="{StaticResource Brush_Header}"/>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style x:Key="Custom_ButtonStyle_Unhide" TargetType="Button">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<Grid>
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Pressed">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.Foreground)" Storyboard.TargetName="Normal_state">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Brush_Header_Pressed}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="MouseOver">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.Foreground)" Storyboard.TargetName="Normal_state">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Brush_Header_MouseOver}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Normal"/>
+								<VisualState x:Name="Disabled"/>
+							</VisualStateGroup>
+							<VisualStateGroup x:Name="FocusStates">
+								<VisualState x:Name="Focused"/>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+						<sdk:Label x:Name="Normal_state" Content="&#xE1C0;" FontWeight="Bold" FontSize="32" FontFamily="Segoe UI Symbol" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Foreground="{StaticResource Brush_Header}"/>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="Foreground" Value="{StaticResource Brush_Header_Pressed}"/>
 	</Style>
 </ResourceDictionary>
