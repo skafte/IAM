@@ -87,20 +87,21 @@ namespace IAM
       /// <summary>
       /// Making sure all other Menu expanders except the selected one collapses
       /// </summary>
-      private void Expanders_ExpandCollaps(object sender, System.Windows.RoutedEventArgs e)
-      {
-         if (sender is Expander)
-         {
-            foreach (object obj in ((sender as Expander).Parent as StackPanel).Children)
-            {
-               if (obj is Expander)
-               {
-                  if (obj != sender)
-                     (obj as Expander).IsExpanded = false;
-               }
-            }
-         }
-      }
+      //private void Expanders_ExpandCollaps(object sender, System.Windows.RoutedEventArgs e)
+      //{
+      //   if (sender is Expander)
+      //   {
+      //      foreach (object obj in ((sender as Expander).Parent as StackPanel).Children)
+      //      {
+      //         if (obj is Expander)
+      //         {
+      //            if (obj != sender)
+      //               (obj as Expander).IsExpanded = false;
+      //         }
+      //      }
+      //   }
+      //}
+
       #endregion --------------------------------------------------------------------------------
 
       #region from XAML -------------------------------------------------------------------------
@@ -160,11 +161,47 @@ namespace IAM
       }
 
       /// <summary>
-      /// Event that will open the selected character sheet
+      /// Event that will switch to CharacterSheetOuter_grd and open the clicked character sheet
       /// </summary>
-      private void CharacterList_lstbx_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+      /// <param name="sender">Clicked on button</param>
+      private void CharacterMenu_wrppnl_btn_Click(object sender, RoutedEventArgs e)
       {
          LoadingData_bsind.IsBusy = true;
+         ShowCollapsGrids(CharacterSheetOuter_grd.Name);
+
+         LoadingData_bsind.IsBusy = false;
+      }
+
+      /// <summary>
+      /// Event that will switch to PowersOuter_grd and load the clicked power list and graph
+      /// </summary>
+      /// <param name="sender">Clicked on button</param>
+      private void PowerMenu_wrppnl_btn_Click(object sender, RoutedEventArgs e)
+      {
+         LoadingData_bsind.IsBusy = true;
+         ShowCollapsGrids(PowersOuter_grd.Name);
+
+         LoadingData_bsind.IsBusy = false;
+      }
+
+      /// <summary>
+      /// Event that will switch to EquipmentsOuter_grd and load the clicked equipment list
+      /// </summary>
+      /// <param name="sender">Clicked on button</param>
+      private void EquipmentMenu_wrppnl_btn_Click(object sender, RoutedEventArgs e)
+      {
+         LoadingData_bsind.IsBusy = true;
+         ShowCollapsGrids(EquipmentsOuter_grd.Name);
+
+         LoadingData_bsind.IsBusy = false;
+      }
+
+      /// <summary>
+      /// Event that will open the selected character sheet
+      /// </summary>
+      //void CharacterList_lstbx_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+      //{
+      //   LoadingData_bsind.IsBusy = true;
 
          //string name = CharacterList_lstbx.SelectedValue.ToString();
          //CharacterName_txtbx.Text = "";                              // name on Character menu
@@ -182,7 +219,7 @@ namespace IAM
          //}
 
          //clWebClientManager.PrepareFilePaths("Get character stats", CharacterList_lstbx.SelectedValue.ToString());
-      }
+      //}
 
       /// <summary>
       /// Event that will open a new, empty character sheet
@@ -222,7 +259,7 @@ namespace IAM
          CharacterMenu_wrppnl.Children.Clear();
 
          foreach (XElement eCharacter in document.Descendants("character"))
-            CharacterMenu_wrppnl.Children.Add(CreateAndFillButton(eCharacter));
+            CreateAndFillButton(eCharacter, CharacterMenu_wrppnl);
 
          // next step in loading process after selecting a game
          clWebClientManager.PrepareFilePaths("Get list of equipment");
@@ -241,7 +278,7 @@ namespace IAM
          Globals.TemporaryData.FilesStillToLoad = document.Descendants("equipment").Count();
          foreach (XElement eEquipment in document.Descendants("equipment"))
          {
-            EquipmentMenu_wrppnl.Children.Add(CreateAndFillButton(eEquipment));
+            CreateAndFillButton(eEquipment, EquipmentMenu_wrppnl);
 
             clWebClientManager.PrepareFilePaths("Get types of equipment", eEquipment.Element("name").Value);
          }
@@ -279,7 +316,7 @@ namespace IAM
          Globals.TemporaryData.FilesStillToLoad = document.Descendants("power").Count();
          foreach (XElement ePower in document.Descendants("power"))
          {
-            PowerMenu_wrppnl.Children.Add(CreateAndFillButton(ePower));
+            CreateAndFillButton(ePower, PowerMenu_wrppnl);
 
             clWebClientManager.PrepareFilePaths("Get types of power", ePower.Element("name").Value);
          }
@@ -300,10 +337,7 @@ namespace IAM
 
          Globals.TemporaryData.FilesStillToLoad--;
          if (Globals.TemporaryData.FilesStillToLoad == 0)
-         {
-            ShowCollapsMenues("UserMenu_expndr");
             LoadingData_bsind.IsBusy = false;
-         }
       }
 
       /// <summary>
@@ -412,21 +446,19 @@ namespace IAM
       /// </summary>
       /// <param name="eButtonText">XElement button text</param>
       /// <returns>The finished button element</returns>
-      private Button CreateAndFillButton(XElement eButtonText)
+      private void CreateAndFillButton(XElement eButtonText, WrapPanel ParentPanel)
       {
          // get characters name and stuff
          string itemToAdd = eButtonText.Element("name").Value.ToString();
          itemToAdd = ToUpperCaseProper(itemToAdd);
 
-
-
+         // insert extra info
          if (eButtonText.Element("type") != null)
          {
             itemToAdd += "\n";
 
             foreach (XElement eType in eButtonText.Descendants("type"))       // list all types (caste, clan...)
                itemToAdd += eType.Value + ", ";
-
             itemToAdd = itemToAdd.Remove(itemToAdd.Length - 2);         // remove last, inused, comma
          }
 
@@ -438,7 +470,21 @@ namespace IAM
          btn.Style = (Application.Current.Resources["Custom_ButtonStyle_Generic"] as Style);
          btn.Content = txtbx;
 
-         return btn;
+         // set click event
+         switch (ParentPanel.Name)
+         {
+            case "CharacterMenu_wrppnl":
+               btn.Click += new RoutedEventHandler(CharacterMenu_wrppnl_btn_Click);
+               break;
+            case "PowerMenu_wrppnl":
+               btn.Click += new RoutedEventHandler(PowerMenu_wrppnl_btn_Click);
+               break;
+            case "EquipmentMenu_wrppnl":
+               btn.Click += new RoutedEventHandler(EquipmentMenu_wrppnl_btn_Click);
+               break;
+         }
+
+         ParentPanel.Children.Add(btn);
       }
 
       private static string ToUpperCaseProper(string toConvert)
@@ -455,30 +501,24 @@ namespace IAM
          }
          return haveConverted;
       }
+
       #region ShowHide ------------------------------------------------------------------------------
       /// <summary>
       /// Collaps all child-grids in ParentGrid, except VisualGrid
       /// </summary>
-      /// <param name="VisualGrid">Selected grid to show</param>
-      /// <param name="ParentGrid">Parent grid</param>
-      /// <param name="DoPrimaryGrid">Recursive ShowCollapsGrids with ParentGrid=Grid_grd and VisualGrid=ParentGrid</param>
-      private void ShowCollapsGrids(string VisualGrid, Grid ParentGrid, bool DoPrimaryGrid)
+      /// <param name="VisualGrid">Name of grid to show</param>
+      private void ShowCollapsGrids(string VisualGrid)
       {
-         //if (DoPrimaryGrid)
-         //   ShowCollapsGrids(ParentGrid.Name.ToString(), Grid_grd, false);
-
-         //foreach (object obj in ParentGrid.Children)
-         //{
-         //   if (obj.GetType().Name == "Grid")
-         //   {
-         //      if ((obj as Grid).Name == VisualGrid)
-         //         (obj as Grid).Visibility = Visibility.Visible;
-         //      else
-         //         (obj as Grid).Visibility = Visibility.Collapsed;
-         //   }
-         //   else if ((obj.GetType().Name == "ScrollViewer") && (DoPrimaryGrid))
-         //      ShowCollapsGrids(VisualGrid, ((obj as ScrollViewer).Content as Grid), false);
-         //}
+         foreach (object obj in LayoutRoot.Children)
+         {
+            if (obj.GetType().Name == "Grid")
+            {
+               if ((obj as Grid).Name == VisualGrid)
+                  (obj as Grid).Visibility = Visibility.Visible;
+               else
+                  (obj as Grid).Visibility = Visibility.Collapsed;
+            }
+         }
       }
 
       /// <summary>
@@ -486,8 +526,8 @@ namespace IAM
       /// UserMenu_expndr will never be collaped
       /// </summary>
       /// <param name="VisualMenu">Expander menu not to collaps, if = 'All menues' UserMenu_expndr will also be collapsed</param>
-      private void ShowCollapsMenues(string VisualMenu)
-      {
+      //private void ShowCollapsMenues(string VisualMenu)
+      //{
          //foreach (object obj in MainMenu_stckpnl.Children)
          //{
          //   if (obj.GetType().Name == "Expander")
@@ -503,17 +543,17 @@ namespace IAM
          //         (obj as Expander).Visibility = Visibility.Collapsed;
          //   }
          //}
-      }
+      //}
 
       /// <summary>
       /// Display the first page of the character sheet after it is loaded
       /// </summary>
-      private void SheetFinished()
-      {
+      //private void SheetFinished()
+      //{
          //ShowCollapsMenues("CharacterSheetMenu_expndr");
          //CharacterSheetMenu_lstbx.SelectedIndex = 0;
          //LoadingData_bsind.IsBusy = false;
-      }
+      //}
       #endregion ------------------------------------------------------------------------------------
       #endregion --------------------------------------------------------------------------------
       #endregion ----------------------------------------------------------------------------
