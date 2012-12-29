@@ -12,18 +12,18 @@
    d:DesignHeight="300" d:DesignWidth="400">
 
    <Grid x:Name="LayoutRoot" Background="White">
-      <Grid x:Name="UserMenu_grd">
+      <Grid x:Name="UserMenu_grd" Margin="0">
       	<Grid.ColumnDefinitions>
       		<ColumnDefinition MaxWidth="300" Width="Auto"/>
       		<ColumnDefinition/>
       	</Grid.ColumnDefinitions>
-      	<Grid x:Name="GameSelection_grd" Background="#FF414349" MaxWidth="300">
+      	<Grid x:Name="GameSelection_grd" MaxWidth="300" Background="{StaticResource Brush_Background}">
       		<Grid.RowDefinitions>
       			<RowDefinition Height="60"/>
       			<RowDefinition MinHeight="30"/>
       		</Grid.RowDefinitions>
-      		<sdk:Label VerticalAlignment="Bottom" Margin="40,0,20,0" Content="Select a Game" FontFamily="Segoe UI" FontSize="26.667" Height="36" Foreground="{StaticResource HeaderBrush}"/>
-      		<ListBox x:Name="GameList_lstbx" VerticalAlignment="Top" SelectionChanged="GamesList_lstbx_SelectionChanged" Grid.Row="1" Margin="40,0,20,0" Foreground="White" FontFamily="/IAM;component/Fonts/Fonts.zip#Segoe UI" FontSize="18.667" Background="{x:Null}" BorderBrush="{x:Null}"/>
+      		<sdk:Label VerticalAlignment="Bottom" Margin="60,0,20,0" Content="Select a Game" FontFamily="Segoe UI" FontSize="26.667" Height="36" Foreground="{StaticResource Brush_Header}"/>
+      		<ListBox x:Name="GameList_lstbx" VerticalAlignment="Top" SelectionChanged="GamesList_lstbx_SelectionChanged" Grid.Row="1" Margin="60,0,20,0" Foreground="White" FontFamily="/IAM;component/Fonts/Fonts.zip#Segoe UI" FontSize="18.667" Background="{x:Null}" BorderBrush="{x:Null}"/>
       	</Grid>
       	<Grid Grid.Column="1" ScrollViewer.HorizontalScrollBarVisibility="Auto" Margin="20,0,20,20">
       		<ScrollViewer x:Name="scrollViewer" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalScrollBarVisibility="Disabled" Style="{StaticResource Custom_ScrollViewerStyle}" HorizontalScrollBarVisibility="Auto">
@@ -33,7 +33,7 @@
       						<RowDefinition Height="60"/>
       						<RowDefinition/>
       					</Grid.RowDefinitions>
-      					<sdk:Label Foreground="{StaticResource HeaderBrush}" Content="Characters" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+      					<sdk:Label Foreground="{StaticResource Brush_Header}" Content="Characters" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
       					<toolkit:WrapPanel x:Name="CharacterMenu_wrppnl" Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20"/>
       				</Grid>
       				<Grid x:Name="PowerMenu_grd" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="{Binding ViewportHeight, ElementName=scrollViewer}" Margin="0,0,40,0" Visibility="Collapsed">
@@ -41,7 +41,7 @@
       						<RowDefinition Height="60"/>
       						<RowDefinition/>
       					</Grid.RowDefinitions>
-      					<sdk:Label Foreground="{StaticResource HeaderBrush}" Content="Powers" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+      					<sdk:Label Foreground="{StaticResource Brush_Header}" Content="Powers" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
       					<toolkit:WrapPanel x:Name="PowerMenu_wrppnl" Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20"/>
       				</Grid>
       				<Grid x:Name="EquipmentMenu_grd" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="{Binding ViewportHeight, ElementName=scrollViewer}" Visibility="Collapsed">
@@ -49,27 +49,37 @@
       						<RowDefinition Height="60"/>
       						<RowDefinition/>
       					</Grid.RowDefinitions>
-      					<sdk:Label Foreground="{StaticResource HeaderBrush}" Content="Equipment" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+      					<sdk:Label Foreground="{StaticResource Brush_Header}" Content="Equipment" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
       					<toolkit:WrapPanel x:Name="EquipmentMenu_wrppnl" Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20"/>
       				</Grid>
       			</StackPanel>
       		</ScrollViewer>
       	</Grid>
       </Grid>
-      <Grid x:Name="CharacterSheetOuter_grd" Grid.ColumnSpan="2" Margin="0,0,5,40" Visibility="Collapsed">
-      	<ScrollViewer x:Name="CharacterSheet_scrllvwr" ScrollViewer.VerticalScrollBarVisibility="Auto" Padding="0" BorderBrush="{x:Null}" BorderThickness="0">
+      <Grid x:Name="CharacterSheetOuter_grd" Grid.ColumnSpan="2" Margin="0" Visibility="Collapsed">
+      	<Grid.RowDefinitions>
+      		<RowDefinition Height="60"/>
+      		<RowDefinition/>
+      	</Grid.RowDefinitions>
+      	<sdk:Label x:Name="CharacterName_lbl" VerticalAlignment="Bottom" Content="[Character Name]" FontFamily="Segoe UI" FontSize="26.667" Height="36" Foreground="{StaticResource Brush_Header}" Margin="60,0,0,0"/>
+      	<ScrollViewer x:Name="CharacterSheet_scrllvwr" ScrollViewer.VerticalScrollBarVisibility="Auto" Padding="0" BorderBrush="{x:Null}" BorderThickness="0" Grid.Row="1">
       		<Grid x:Name="CharacterSheet_grd" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
          </ScrollViewer>
       </Grid>
-      <Grid x:Name="PowersOuter_grd" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="0,0,5,40">
+      <Grid x:Name="PowersOuter_grd" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="0,0,5,0">
       	<ScrollViewer x:Name="Powers_scrllvwr" BorderThickness="0" BorderBrush="{x:Null}">
       		<Grid x:Name="Powers_grd"/>
          </ScrollViewer>
       </Grid>
-      <Grid x:Name="EquipmentsOuter_grd" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="0,0,5,40">
+      <Grid x:Name="EquipmentsOuter_grd" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="0,0,5,0">
       	<ScrollViewer x:Name="Equipments_scrllvwr" BorderThickness="0" BorderBrush="{x:Null}">
       		<Grid x:Name="Equipments_grd"/>
          </ScrollViewer>
+      </Grid>
+      <Button x:Name="Back_btn" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource Custom_ButtonStyle_Back}" Margin="5,10,0,0" Click="Back_btn_Click"/>
+      <Grid x:Name="AppBarCollapsed_grd" VerticalAlignment="Bottom" Height="10" MouseEnter="AppBarCollapsed_grd_MouseEnter" Background="#00000000" Opacity="0.01"/>
+      <Grid x:Name="AppBar_grd" Height="60" VerticalAlignment="Bottom" Background="#FF3A3E4B" MouseLeave="AppBar_grd_MouseLeave">
+      	<ListBox x:Name="CharacterSheetMenu_lstbx" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="100" Background="{x:Null}"/>
       </Grid>
       <toolkit:BusyIndicator x:Name="LoadingData_bsind" BusyContent="Loading data, Please wait..." IsBusy="True" Visibility="Collapsed" />
    </Grid>

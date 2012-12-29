@@ -48,16 +48,8 @@ namespace IAM
       {
          LoadingData_bsind.Visibility = Visibility.Visible;
 
-         // Collaps all grids in Grid_grd, to make sure there ain't an visible grids from the design process
-         //ShowCollapsGrids("", Grid_grd, false);
-         //foreach (object obj in Grid_grd.Children)
-         //{
-         //   if (obj.GetType().Name == "Grid")
-         //      ShowCollapsGrids("", (obj as Grid), false);
-         //}
-
-         //ShowCollapsGrids("GameSelection_grd", UserMenu_grd, true);
-         //ShowCollapsMenues("All");
+         // Collaps all grids except the menu, to make sure there ain't an visible grids from the design process
+         ShowCollapsGrids(UserMenu_grd.Name);
       }
 
       private void SetEvents()
@@ -105,6 +97,24 @@ namespace IAM
       #endregion --------------------------------------------------------------------------------
 
       #region from XAML -------------------------------------------------------------------------
+      /// <summary>
+      /// Jumps back to last grid
+      /// </summary>
+      private void Back_btn_Click(object sender, System.Windows.RoutedEventArgs e)
+      {
+         ShowCollapsGrids(UserMenu_grd.Name);
+      }
+
+      private void AppBar_grd_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
+      {
+         AppBar_grd.Visibility = Visibility.Collapsed;
+      }
+
+      private void AppBarCollapsed_grd_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+      {
+         AppBar_grd.Visibility = Visibility.Visible;
+      }
+
       /// <summary>
       /// Open the grid corrosponding to the selected menu point
       /// </summary>
@@ -167,16 +177,14 @@ namespace IAM
       private void CharacterMenu_wrppnl_btn_Click(object sender, RoutedEventArgs e)
       {
          LoadingData_bsind.IsBusy = true;
-         ShowCollapsGrids(CharacterSheetOuter_grd.Name);
 
          // get and format character name to match file name
          string characterName = ((sender as Button).Content as TextBox).Text;
          if (characterName.Contains("\n"))
             characterName = characterName.Replace("\n", " (") + ")";
 
+         CharacterName_lbl.Content = characterName;
          clWebClientManager.PrepareFilePaths("Get character stats", characterName);
-
-         LoadingData_bsind.IsBusy = false;
       }
 
       /// <summary>
@@ -416,10 +424,10 @@ namespace IAM
       private void clWebClientManager_gotEmptyCharacterSheet(XDocument document)
       {
          // fill in character sheet menu
-         //CharacterSheetMenu_lstbx.Items.Clear();
+         CharacterSheetMenu_lstbx.Items.Clear();
 
-         //foreach (XElement ePage in document.Descendants("page"))
-         //   CharacterSheetMenu_lstbx.Items.Add(ePage.Element("menuTitle").Value);
+         foreach (XElement ePage in document.Descendants("page"))
+            CharacterSheetMenu_lstbx.Items.Add(ePage.Element("menuTitle").Value);
 
          //// create sheet layout
          //clCreateSheet.GetEmptySheets(document, CharacterSheet_grd);
@@ -428,7 +436,7 @@ namespace IAM
          //if (Globals.TemporaryData.SelectedCharacterStats.ToString() != "")
          //   clCreateSheet.InsertStats(CharacterSheet_grd);
 
-         //SheetFinished();
+         SheetFinished();
       }
       #endregion --------------------------------------------------------------------------------
 
@@ -522,10 +530,15 @@ namespace IAM
             {
                if ((obj as Grid).Name == VisualGrid)
                   (obj as Grid).Visibility = Visibility.Visible;
-               else
+               else if ((obj as Grid).Name != "AppBarCollapsed_grd")
                   (obj as Grid).Visibility = Visibility.Collapsed;
             }
          }
+
+         if (VisualGrid == "UserMenu_grd")
+            Back_btn.Visibility = Visibility.Collapsed;
+         else
+            Back_btn.Visibility = Visibility.Visible;
       }
 
       /// <summary>
@@ -555,12 +568,12 @@ namespace IAM
       /// <summary>
       /// Display the first page of the character sheet after it is loaded
       /// </summary>
-      //private void SheetFinished()
-      //{
-         //ShowCollapsMenues("CharacterSheetMenu_expndr");
-         //CharacterSheetMenu_lstbx.SelectedIndex = 0;
-         //LoadingData_bsind.IsBusy = false;
-      //}
+      private void SheetFinished()
+      {
+         ShowCollapsGrids(CharacterSheetOuter_grd.Name);
+         CharacterSheetMenu_lstbx.SelectedIndex = 0;
+         LoadingData_bsind.IsBusy = false;
+      }
       #endregion ------------------------------------------------------------------------------------
       #endregion --------------------------------------------------------------------------------
       #endregion ----------------------------------------------------------------------------
