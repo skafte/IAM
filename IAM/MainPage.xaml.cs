@@ -82,7 +82,7 @@ namespace IAM
       private void Back_btn_Click(object sender, System.Windows.RoutedEventArgs e)
       {
          ShowCollapsOuterGrids(UserMenu_grd.Name, LayoutRoot);
-         throw new NotImplementedException();
+         // TODO: throw new NotImplementedException();
       }
 
       /// <summary>
@@ -192,62 +192,6 @@ namespace IAM
                break;
          }
       }
-
-      /// <summary>
-      /// Event that will switch to CharacterSheetOuter_grd and open the clicked character sheet
-      /// </summary>
-      /// <param name="sender">Clicked on button</param>
-      private void UserMenu_Character(object sender)
-      {
-
-         // get and format character name to match file name
-         string characterName = ((sender as Button).Content as TextBox).Text;
-         if (characterName.Contains("\n"))
-         {
-            CharacterName_lbl.Content = characterName.Substring(0, characterName.IndexOf("\n"));
-            characterName = characterName.Replace("\n", " (") + ")";
-         }
-         else
-            CharacterName_lbl.Content = characterName;
-
-         clWebClientManager.PrepareFilePaths("Get character stats", characterName);
-      }
-
-      /// <summary>
-      /// Event that will switch to PowersOuter_grd and load the clicked power list and graph
-      /// </summary>
-      /// <param name="sender">Clicked on button</param>
-      private void UserMenu_Power(object sender)
-      {
-         LoadingData_bsind.IsBusy = true;
-         PowerName_lbl.Content = ((sender as Button).Content as TextBox).Text;
-         ShowCollapsOuterGrids(PowerLibraryOuter_grd.Name, LayoutRoot);
-
-         LoadingData_bsind.IsBusy = false;
-      }
-
-      /// <summary>
-      /// Event that will switch to EquipmentsOuter_grd and load the clicked equipment list
-      /// </summary>
-      /// <param name="sender">Clicked on button</param>
-      private void UserMenu_Equipment(object sender)
-      {
-         LoadingData_bsind.IsBusy = true;
-         EquipmentName_lbl.Content = ((sender as Button).Content as TextBox).Text;
-         ShowCollapsOuterGrids(EquipmentLibraryOuter_grd.Name, LayoutRoot);
-
-         LoadingData_bsind.IsBusy = false;
-      }
-
-      /// <summary>
-      /// Event that will open a new, empty character sheet
-      /// </summary>
-      private void NewChar_btn_Click(object sender, System.Windows.RoutedEventArgs e)
-      {
-         // TODO: Create all the stuff for a new blank character
-         throw new NotImplementedException();
-      }
-
       #endregion --------------------------------------------------------------------------------
 
       #region from WebClient --------------------------------------------------------------------
@@ -506,7 +450,64 @@ namespace IAM
          return haveConverted;
       }
 
+      /// <summary>
+      /// Display the first page of the character sheet after it is loaded
+      /// </summary>
+      private void SheetFinished()
+      {
+         ShowCollapsOuterGrids(CharacterSheetOuter_grd.Name, LayoutRoot);
+         CharacterSheetMenu_lstbx.SelectedIndex = 0;
+         LoadingData_bsind.IsBusy = false;
+      }
+
       #region ShowHide ------------------------------------------------------------------------------
+
+      /// <summary>
+      /// Event that will switch to CharacterSheetOuter_grd and open the clicked character sheet
+      /// </summary>
+      /// <param name="sender">Clicked on button</param>
+      private void UserMenu_Character(object sender)
+      {
+
+         // get and format character name to match file name
+         string characterName = ((sender as Button).Content as TextBox).Text;
+         if (characterName.Contains("\n"))
+         {
+            CharacterName_lbl.Content = characterName.Substring(0, characterName.IndexOf("\n"));
+            characterName = characterName.Replace("\n", " (") + ")";
+         }
+         else
+            CharacterName_lbl.Content = characterName;
+
+         clWebClientManager.PrepareFilePaths("Get character stats", characterName);
+      }
+
+      /// <summary>
+      /// Event that will switch to PowersOuter_grd and load the clicked power list and graph
+      /// </summary>
+      /// <param name="sender">Clicked on button</param>
+      private void UserMenu_Power(object sender)
+      {
+         LoadingData_bsind.IsBusy = true;
+         PowerName_lbl.Content = ((sender as Button).Content as TextBox).Text;
+         ShowCollapsOuterGrids(PowerLibraryOuter_grd.Name, LayoutRoot);
+
+         LoadingData_bsind.IsBusy = false;
+      }
+
+      /// <summary>
+      /// Event that will switch to EquipmentsOuter_grd and load the clicked equipment list
+      /// </summary>
+      /// <param name="sender">Clicked on button</param>
+      private void UserMenu_Equipment(object sender)
+      {
+         LoadingData_bsind.IsBusy = true;
+         EquipmentName_lbl.Content = ((sender as Button).Content as TextBox).Text;
+         ShowCollapsOuterGrids(EquipmentLibraryOuter_grd.Name, LayoutRoot);
+
+         LoadingData_bsind.IsBusy = false;
+      }
+
       /// <summary>
       /// Collaps all child-grids in ParentGrid, except VisualGrid
       /// </summary>
@@ -528,16 +529,6 @@ namespace IAM
             Back_btn.Visibility = Visibility.Collapsed;
          else
             Back_btn.Visibility = Visibility.Visible;
-      }
-
-      /// <summary>
-      /// Display the first page of the character sheet after it is loaded
-      /// </summary>
-      private void SheetFinished()
-      {
-         ShowCollapsOuterGrids(CharacterSheetOuter_grd.Name, LayoutRoot);
-         CharacterSheetMenu_lstbx.SelectedIndex = 0;
-         LoadingData_bsind.IsBusy = false;
       }
       #endregion ------------------------------------------------------------------------------------
       #endregion --------------------------------------------------------------------------------
