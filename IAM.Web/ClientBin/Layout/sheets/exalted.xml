@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<body>
+	<attribute_default>
+      <item>
+         <type>textline</type>
+         <readonly>true</readonly>
+         <default_value />
+      </item>
+      <item>
+         <type>dot</type>
+         <look>square</look>
+         <max_value>5</max_value>
+         <default_value>1</default_value>
+      </item>
+   </attribute_default>
+	<attribute_as_primary>
+      <item>
+         <type>dot</type>
+         <look>square</look>
+         <max_value>1</max_value>
+         <default_value>0</default_value>
+      </item>
+      <item>
+         <type>textline</type>
+         <readonly>true</readonly>
+         <default_value />
+      </item>
+      <item>
+         <type>dot</type>
+         <look>square</look>
+         <max_value>5</max_value>
+         <default_value>1</default_value>
+      </item>
+   </attribute_as_primary>
+	<ability_as_primary>
+      <item>
+         <type>dot</type>
+         <look>square</look>
+         <max_value>1</max_value>
+         <default_value>0</default_value>
+      </item>
+      <item>
+         <type>textline</type>
+         <readonly>true</readonly>
+         <default_value />
+      </item>
+      <item>
+         <type>dot</type>
+         <look>square</look>
+         <max_value>5</max_value>
+         <default_value>0</default_value>
+      </item>
+   </attributes_as_primary>
+</body>
