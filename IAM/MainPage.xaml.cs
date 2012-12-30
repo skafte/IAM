@@ -40,6 +40,7 @@ namespace IAM
 
          SetGUI();
          SetEvents();
+         SetData();
 
          clWebClientManager.PrepareFilePaths("Get list of games");
       }
@@ -71,6 +72,14 @@ namespace IAM
 
          // from CreatePowerElement
          this.clCreatePowerElement.Version_btn_click += clCreatePowerElement_Version_btn_click;
+      }
+
+      private void SetData()
+      {
+         AppBar_grd.Tag = 1;
+         CharmBar_grd.Tag = 2;
+         NavigationBar_grd.Tag = 1;
+         Unused_Bar_grd.Tag = 0;
       }
       #endregion ----------------------------------------------------------------------------
 
