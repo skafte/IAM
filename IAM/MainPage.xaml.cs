@@ -75,34 +75,14 @@ namespace IAM
       #endregion ----------------------------------------------------------------------------
 
       #region Events ------------------------------------------------------------------------
-      #region internal --------------------------------------------------------------------------
-      /// <summary>
-      /// Making sure all other Menu expanders except the selected one collapses
-      /// </summary>
-      //private void Expanders_ExpandCollaps(object sender, System.Windows.RoutedEventArgs e)
-      //{
-      //   if (sender is Expander)
-      //   {
-      //      foreach (object obj in ((sender as Expander).Parent as StackPanel).Children)
-      //      {
-      //         if (obj is Expander)
-      //         {
-      //            if (obj != sender)
-      //               (obj as Expander).IsExpanded = false;
-      //         }
-      //      }
-      //   }
-      //}
-
-      #endregion --------------------------------------------------------------------------------
-
       #region from XAML -------------------------------------------------------------------------
       /// <summary>
-      /// Jumps back to last grid
+      /// Jumps back to last grid - or at least that is what it is suppose to do, doesn't do it yet
       /// </summary>
       private void Back_btn_Click(object sender, System.Windows.RoutedEventArgs e)
       {
          ShowCollapsOuterGrids(UserMenu_grd.Name, LayoutRoot);
+         throw new NotImplementedException();
       }
 
       /// <summary>
@@ -158,21 +138,6 @@ namespace IAM
             }
          }
       }
-
-      /// <summary>
-      /// If selection name contains 'Selection' then the corrosponding grid will be opened
-      /// else if it contains 'Library' then it will open that secondary menu
-      /// </summary>
-      //private void UserMenu_lstbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
-      //{
-         //if (UserMenu_lstbx.SelectedIndex != -1)
-         //{
-         //   if ((UserMenu_lstbx.SelectedItem as ListBoxItem).Name.Contains("Selection"))
-         //      ShowCollapsGrids((UserMenu_lstbx.SelectedItem as ListBoxItem).Name.ToString() + "_grd", UserMenu_grd, true);
-         //   else if ((UserMenu_lstbx.SelectedItem as ListBoxItem).Name.Contains("Library"))
-         //      ShowCollapsMenues((UserMenu_lstbx.SelectedItem as ListBoxItem).Name.ToString() + "Menu_expndr");
-         //}
-      //}
 
       /// <summary>
       /// When a game has been selected, this will start the chain of data to be loaded in order to setup all the grids connected to that game
@@ -236,31 +201,6 @@ namespace IAM
 
          LoadingData_bsind.IsBusy = false;
       }
-
-      /// <summary>
-      /// Event that will open the selected character sheet
-      /// </summary>
-      //void CharacterList_lstbx_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
-      //{
-      //   LoadingData_bsind.IsBusy = true;
-
-         //string name = CharacterList_lstbx.SelectedValue.ToString();
-         //CharacterName_txtbx.Text = "";                              // name on Character menu
-         //for (int i = 0; i < name.Length; i++)
-         //{
-         //   if (!((name[i].ToString().Equals(" ")) && (name[i + 1].ToString().Equals("("))))                 // TODO: this will cause problems if no " (" exist
-         //   {
-         //      CharacterName_txtbx.Text += name[i] + "\n";
-         //   }
-         //   else
-         //   {
-         //      CharacterName_txtbx.Text = CharacterName_txtbx.Text.Remove(CharacterName_txtbx.Text.Length - 1);    // remove last /n
-         //      break;
-         //   }
-         //}
-
-         //clWebClientManager.PrepareFilePaths("Get character stats", CharacterList_lstbx.SelectedValue.ToString());
-      //}
 
       /// <summary>
       /// Event that will open a new, empty character sheet
@@ -340,8 +280,7 @@ namespace IAM
 
          Globals.TemporaryData.FilesStillToLoad--;
          if (Globals.TemporaryData.FilesStillToLoad == 0)
-            // last step in loading process after selecting a game
-            clWebClientManager.PrepareFilePaths("Get list of powers");
+            clWebClientManager.PrepareFilePaths("Get list of powers");        // last step in loading process after selecting a game
       }
 
       /// <summary>
@@ -566,30 +505,6 @@ namespace IAM
          else
             Back_btn.Visibility = Visibility.Visible;
       }
-
-      /// <summary>
-      /// Collaps all Expander Menues.
-      /// UserMenu_expndr will never be collaped
-      /// </summary>
-      /// <param name="VisualMenu">Expander menu not to collaps, if = 'All menues' UserMenu_expndr will also be collapsed</param>
-      //private void ShowCollapsMenues(string VisualMenu)
-      //{
-         //foreach (object obj in MainMenu_stckpnl.Children)
-         //{
-         //   if (obj.GetType().Name == "Expander")
-         //   {
-         //      if ((obj as Expander).Name == VisualMenu)
-         //      {
-         //         (obj as Expander).IsExpanded = true;
-         //         (obj as Expander).Visibility = Visibility.Visible;
-         //      }
-         //      else if (((obj as Expander).Name == "UserMenu_expndr") && (VisualMenu != "All menues"))
-         //         (obj as Expander).Visibility = Visibility.Visible;
-         //      else
-         //         (obj as Expander).Visibility = Visibility.Collapsed;
-         //   }
-         //}
-      //}
 
       /// <summary>
       /// Display the first page of the character sheet after it is loaded
