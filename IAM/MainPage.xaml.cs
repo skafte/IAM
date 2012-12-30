@@ -106,12 +106,12 @@ namespace IAM
 
       private void CharmSearch_btn_Click(object sender, System.Windows.RoutedEventArgs e)
       {
-         // TODO: Add event handler implementation here.
+         throw new NotImplementedException();
       }
 
       private void CharmSettings_btn_Click(object sender, System.Windows.RoutedEventArgs e)
       {
-         // TODO: Add event handler implementation here.
+         throw new NotImplementedException();
       }
 
       /// <summary>
@@ -169,12 +169,36 @@ namespace IAM
       }
 
       /// <summary>
+      /// Event that will switch to the right []Outer_grd and open the clicked page
+      /// </summary>
+      /// <param name="sender">Clicked on button</param>
+      private void UserMenu_btn_Clicked(object sender, RoutedEventArgs e)
+      {
+         LoadingData_bsind.IsBusy = true;
+
+         switch (((sender as Button).Parent as WrapPanel).Name)
+         {
+            case "CharacterMenu_wrppnl":
+               UserMenu_Character(sender);
+               break;
+            case "PowerMenu_wrppnl":
+               UserMenu_Power(sender);
+               break;
+            case "EquipmentMenu_wrppnl":
+               UserMenu_Equipment(sender);
+               break;
+            default:
+               LoadingData_bsind.IsBusy = false;
+               break;
+         }
+      }
+
+      /// <summary>
       /// Event that will switch to CharacterSheetOuter_grd and open the clicked character sheet
       /// </summary>
       /// <param name="sender">Clicked on button</param>
-      private void CharacterMenu_wrppnl_btn_Click(object sender, RoutedEventArgs e)
+      private void UserMenu_Character(object sender)
       {
-         LoadingData_bsind.IsBusy = true;
 
          // get and format character name to match file name
          string characterName = ((sender as Button).Content as TextBox).Text;
@@ -193,7 +217,7 @@ namespace IAM
       /// Event that will switch to PowersOuter_grd and load the clicked power list and graph
       /// </summary>
       /// <param name="sender">Clicked on button</param>
-      private void PowerMenu_wrppnl_btn_Click(object sender, RoutedEventArgs e)
+      private void UserMenu_Power(object sender)
       {
          LoadingData_bsind.IsBusy = true;
          PowerName_lbl.Content = ((sender as Button).Content as TextBox).Text;
@@ -206,7 +230,7 @@ namespace IAM
       /// Event that will switch to EquipmentsOuter_grd and load the clicked equipment list
       /// </summary>
       /// <param name="sender">Clicked on button</param>
-      private void EquipmentMenu_wrppnl_btn_Click(object sender, RoutedEventArgs e)
+      private void UserMenu_Equipment(object sender)
       {
          LoadingData_bsind.IsBusy = true;
          EquipmentName_lbl.Content = ((sender as Button).Content as TextBox).Text;
@@ -462,20 +486,7 @@ namespace IAM
          Button btn = new Button();
          btn.Style = (Application.Current.Resources["Custom_ButtonStyle_Generic"] as Style);
          btn.Content = txtbx;
-
-         // set click event
-         switch (ParentPanel.Name)
-         {
-            case "CharacterMenu_wrppnl":
-               btn.Click += new RoutedEventHandler(CharacterMenu_wrppnl_btn_Click);
-               break;
-            case "PowerMenu_wrppnl":
-               btn.Click += new RoutedEventHandler(PowerMenu_wrppnl_btn_Click);
-               break;
-            case "EquipmentMenu_wrppnl":
-               btn.Click += new RoutedEventHandler(EquipmentMenu_wrppnl_btn_Click);
-               break;
-         }
+         btn.Click += new RoutedEventHandler(UserMenu_btn_Clicked);
 
          ParentPanel.Children.Add(btn);
       }
