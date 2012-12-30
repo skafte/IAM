@@ -86,32 +86,50 @@ namespace IAM
       }
 
       /// <summary>
-      /// Open App bar
+      /// Open side-bar
       /// </summary>
       private void BarCollapsed_grd_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
       {
          var grd = ((sender as Grid).Parent as Grid).FindName((sender as Grid).Name.Replace("Collapsed", ""));
 
-         if ((grd as Grid).Children.Count > 0)             // might need to be a higher number
+         if ((int)(grd as Grid).Tag >= 2)             // might need to be a higher number
             (grd as Grid).Visibility = Visibility.Visible;
       }
 
       /// <summary>
-      /// Close App bar
+      /// Close side-bar
       /// </summary>
       private void Bar_grd_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
       {
          (sender as Grid).Visibility = Visibility.Collapsed;
       }
 
+      /// <summary>
+      /// Go to Search menu
+      /// </summary>
       private void CharmSearch_btn_Click(object sender, System.Windows.RoutedEventArgs e)
       {
          throw new NotImplementedException();
       }
 
+      /// <summary>
+      /// Go to settings menu
+      /// </summary>
       private void CharmSettings_btn_Click(object sender, System.Windows.RoutedEventArgs e)
       {
          throw new NotImplementedException();
+      }
+
+      /// <summary>
+      /// Will jump to grid for selected button
+      /// </summary>
+      /// <param name="sender">Navigation button clicked</param>
+      /// <param name="e"></param>
+      private void NagivationBar_btn_click(object sender, System.Windows.RoutedEventArgs e)
+      {
+         LoadingData_bsind.IsBusy = true;
+         ShowCollapsOuterGrids((sender as Button).Tag.ToString().Replace("Menu_wrppnl", "Outer_grd"), LayoutRoot);
+         LoadingData_bsind.IsBusy = false;
       }
 
       /// <summary>
@@ -176,21 +194,26 @@ namespace IAM
       {
          LoadingData_bsind.IsBusy = true;
 
-         switch (((sender as Button).Parent as WrapPanel).Name)
+         if (AddNavigationBarButton(sender))
          {
-            case "CharacterMenu_wrppnl":
-               UserMenu_Character(sender);
-               break;
-            case "PowerMenu_wrppnl":
-               UserMenu_Power(sender);
-               break;
-            case "EquipmentMenu_wrppnl":
-               UserMenu_Equipment(sender);
-               break;
-            default:
-               LoadingData_bsind.IsBusy = false;
-               throw new IAM.UnknownObjectException("This Object should not exist: " + sender.ToString());
+            switch (((sender as Button).Parent as WrapPanel).Name)
+            {
+               case "CharacterSheetMenu_wrppnl":
+                  UserMenu_Character(sender);
+                  break;
+               case "PowerLibraryMenu_wrppnl":
+                  UserMenu_Power(sender);
+                  break;
+               case "EquipmentLibraryMenu_wrppnl":
+                  UserMenu_Equipment(sender);
+                  break;
+               default:
+                  LoadingData_bsind.IsBusy = false;
+                  throw new IAM.UnknownObjectException("This Object should not exist: " + sender.ToString());
+            }
          }
+         else
+            NagivationBar_btn_click(sender, e);
       }
       #endregion --------------------------------------------------------------------------------
 
@@ -218,10 +241,10 @@ namespace IAM
       private void clWebClientManager_gotListOfCharacters(XDocument document)
       {
          CharacterMenu_grd.Visibility = Visibility.Visible;
-         CharacterMenu_wrppnl.Children.Clear();
+         CharacterSheetMenu_wrppnl.Children.Clear();
 
          foreach (XElement eCharacter in document.Descendants("character"))
-            CreateAndFillButton(eCharacter, CharacterMenu_wrppnl);
+            CreateAndFillButton(eCharacter, CharacterSheetMenu_wrppnl);
 
          // next step in loading process after selecting a game
          clWebClientManager.PrepareFilePaths("Get list of equipment");
@@ -235,12 +258,12 @@ namespace IAM
       private void clWebClientManager_gotListOfEquipment(XDocument document)
       {
          EquipmentMenu_grd.Visibility = Visibility.Visible;
-         EquipmentMenu_wrppnl.Children.Clear();
+         EquipmentLibraryMenu_wrppnl.Children.Clear();
 
          Globals.TemporaryData.FilesStillToLoad = document.Descendants("equipment").Count();
          foreach (XElement eEquipment in document.Descendants("equipment"))
          {
-            CreateAndFillButton(eEquipment, EquipmentMenu_wrppnl);
+            CreateAndFillButton(eEquipment, EquipmentLibraryMenu_wrppnl);
 
             clWebClientManager.PrepareFilePaths("Get types of equipment", eEquipment.Element("name").Value);
          }
@@ -272,12 +295,12 @@ namespace IAM
       private void clWebClientManager_gotListOfPowers(XDocument document)
       {
          PowerMenu_grd.Visibility = Visibility.Visible;
-         PowerMenu_wrppnl.Children.Clear();
+         PowerLibraryMenu_wrppnl.Children.Clear();
 
          Globals.TemporaryData.FilesStillToLoad = document.Descendants("power").Count();
          foreach (XElement ePower in document.Descendants("power"))
          {
-            CreateAndFillButton(ePower, PowerMenu_wrppnl);
+            CreateAndFillButton(ePower, PowerLibraryMenu_wrppnl);
 
             clWebClientManager.PrepareFilePaths("Get types of power", ePower.Element("name").Value);
          }
@@ -431,6 +454,7 @@ namespace IAM
          btn.Style = (Application.Current.Resources["Custom_ButtonStyle_Generic"] as Style);
          btn.Content = txtbx;
          btn.Click += new RoutedEventHandler(UserMenu_btn_Clicked);
+         btn.Tag = ParentPanel.Name;
 
          ParentPanel.Children.Add(btn);
       }
@@ -460,8 +484,32 @@ namespace IAM
          LoadingData_bsind.IsBusy = false;
       }
 
-      #region ShowHide ------------------------------------------------------------------------------
+      private bool AddNavigationBarButton(object sender)
+      {
+         if ((from vButton in NavigationBar_stckpnl.Children                              // make sure button doesn't already exist
+              where (((vButton as Button).Content as TextBox).Text == ((sender as Button).Content as TextBox).Text)
+              select vButton).ToList().Count == 0)
+         {
+            // create button
+            TextBox txtbx = new TextBox();
+            txtbx.Style = (Application.Current.Resources["Custom_TextBoxStyle_Generic"] as Style);
+            txtbx.Text = ((sender as Button).Content as TextBox).Text;
+            Button btn = new Button();
+            btn.Style = (Application.Current.Resources["Custom_ButtonStyle_Generic"] as Style);
+            btn.Content = txtbx;
+            btn.Click += new RoutedEventHandler(NagivationBar_btn_click);
+            btn.Tag = (sender as Button).Tag;
 
+            NavigationBar_stckpnl.Children.Add(btn);
+            NavigationBar_grd.Tag = int.Parse(NavigationBar_grd.Tag.ToString()) + 1;
+
+            return true;
+         }
+
+         return false;
+      }
+
+      #region ShowHide ------------------------------------------------------------------------------
       /// <summary>
       /// Event that will switch to CharacterSheetOuter_grd and open the clicked character sheet
       /// </summary>

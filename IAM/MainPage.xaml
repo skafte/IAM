@@ -35,7 +35,7 @@
       						<RowDefinition/>
       					</Grid.RowDefinitions>
       					<sdk:Label Foreground="{StaticResource Brush_Header}" Content="Characters" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
-      					<toolkit:WrapPanel x:Name="CharacterMenu_wrppnl" Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20"/>
+      					<toolkit:WrapPanel x:Name="CharacterSheetMenu_wrppnl" Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20"/>
       				</Grid>
       				<Grid x:Name="PowerMenu_grd" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="{Binding ViewportHeight, ElementName=scrollViewer}" Margin="0,0,40,0" Visibility="Collapsed">
       					<Grid.RowDefinitions>
@@ -43,7 +43,7 @@
       						<RowDefinition/>
       					</Grid.RowDefinitions>
       					<sdk:Label Foreground="{StaticResource Brush_Header}" Content="Powers" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
-      					<toolkit:WrapPanel x:Name="PowerMenu_wrppnl" Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20"/>
+      					<toolkit:WrapPanel x:Name="PowerLibraryMenu_wrppnl" Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20"/>
       				</Grid>
       				<Grid x:Name="EquipmentMenu_grd" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="{Binding ViewportHeight, ElementName=scrollViewer}" Visibility="Collapsed">
       					<Grid.RowDefinitions>
@@ -51,7 +51,7 @@
       						<RowDefinition/>
       					</Grid.RowDefinitions>
       					<sdk:Label Foreground="{StaticResource Brush_Header}" Content="Equipment" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
-      					<toolkit:WrapPanel x:Name="EquipmentMenu_wrppnl" Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20"/>
+      					<toolkit:WrapPanel x:Name="EquipmentLibraryMenu_wrppnl" Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20"/>
       				</Grid>
       			</StackPanel>
       		</ScrollViewer>
@@ -102,8 +102,8 @@
       <Grid x:Name="AppBarCollapsed_grd" VerticalAlignment="Bottom" Height="10" MouseEnter="BarCollapsed_grd_MouseEnter" Background="#00000000" Opacity="0.01"/>
       <Grid x:Name="CharmBarCollapsed_grd" Height="10" MouseEnter="BarCollapsed_grd_MouseEnter" Background="#00000000" Opacity="0.01" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="10"/>
       <Grid x:Name="NavigationBarCollapsed_grd" VerticalAlignment="Top" Height="10" MouseEnter="BarCollapsed_grd_MouseEnter" Background="#00000000" Opacity="0.01"/>
-      <Grid x:Name="AppBar_grd" Height="60" VerticalAlignment="Bottom" Background="#FF3A3E4B" MouseLeave="Bar_grd_MouseLeave" Visibility="Collapsed"/>
-      <Grid x:Name="CharmBar_grd" Background="#FF3E4B57" MouseLeave="Bar_grd_MouseLeave" HorizontalAlignment="Right" Width="80" Visibility="Collapsed">
+      <Grid x:Name="AppBar_grd" Height="60" VerticalAlignment="Bottom" Background="#FF3A3E4B" MouseLeave="Bar_grd_MouseLeave" Visibility="Collapsed" Tag="0"/>
+      <Grid x:Name="CharmBar_grd" Background="#FF3E4B57" MouseLeave="Bar_grd_MouseLeave" HorizontalAlignment="Right" Width="80" Visibility="Collapsed" Tag="2">
       	<StackPanel VerticalAlignment="Center">
       		<Button x:Name="CharmSearch_btn" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0" MinWidth="0" MinHeight="0" Background="#FF3E4B57" Height="85" Click="CharmSearch_btn_Click">
       			<StackPanel>
@@ -119,9 +119,15 @@
       		</Button>
       	</StackPanel>
       </Grid>
-      <Grid x:Name="NavigationBar_grd" Height="60" VerticalAlignment="Top" Background="#FF3A3E4B" MouseLeave="Bar_grd_MouseLeave" Visibility="Collapsed"/>
+      <Grid x:Name="NavigationBar_grd" Height="110" VerticalAlignment="Top" Background="#FF3A3E4B" MouseLeave="Bar_grd_MouseLeave" Tag="1">
+      	<StackPanel x:Name="NavigationBar_stckpnl" HorizontalAlignment="Left" Margin="10,10,10,0" Orientation="Horizontal" UseLayoutRounding="True">
+      		<Button x:Name="NavigationBar_UserMenu_btn" Width="75" Style="{StaticResource Custom_ButtonStyle_Generic}" Click="NagivationBar_btn_click" Tag="UserMenu_grd">
+      			<TextBox TextWrapping="Wrap" Text="Home" Style="{StaticResource Custom_TextBoxStyle_Generic}"/>
+      		</Button>
+      	</StackPanel>
+      </Grid>
       <Grid x:Name="Unused_BarCollapsed_grd" MouseEnter="BarCollapsed_grd_MouseEnter" Background="#00000000" Opacity="0.01" HorizontalAlignment="Left" Width="10" Visibility="Collapsed"/>
-      <Grid x:Name="Unused_Bar_grd" Background="#FF3A3E4B" MouseLeave="Bar_grd_MouseLeave" HorizontalAlignment="Left" Width="60" Visibility="Collapsed"/>
+      <Grid x:Name="Unused_Bar_grd" Background="#FF3A3E4B" MouseLeave="Bar_grd_MouseLeave" HorizontalAlignment="Left" Width="60" Visibility="Collapsed" Tag="0"/>
       <toolkit:BusyIndicator x:Name="LoadingData_bsind" BusyContent="Loading data, Please wait..." IsBusy="True" Visibility="Collapsed" />
    </Grid>
 </UserControl>
