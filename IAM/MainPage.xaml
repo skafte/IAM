@@ -6,9 +6,10 @@
    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
    xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
 	xmlns:System="clr-namespace:System;assembly=mscorlib"
+   xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+   xmlns:Views="clr-namespace:Microsoft.Internal.Pivot.Views;assembly=System.Windows.Controls.Pivot"
    x:Class="IAM.MainPage"
    mc:Ignorable="d"
-   xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
    d:DesignHeight="300" d:DesignWidth="400">
 
    <Grid x:Name="LayoutRoot" Background="White">
@@ -98,8 +99,29 @@
          </ScrollViewer>
       </Grid>
       <Button x:Name="Back_btn" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource Custom_ButtonStyle_Back}" Margin="5,10,0,0" Click="Back_btn_Click"/>
-      <Grid x:Name="AppBarCollapsed_grd" VerticalAlignment="Bottom" Height="10" MouseEnter="AppBarCollapsed_grd_MouseEnter" Background="#00000000" Opacity="0.01"/>
-      <Grid x:Name="AppBar_grd" Height="60" VerticalAlignment="Bottom" Background="#FF3A3E4B" MouseLeave="AppBar_grd_MouseLeave" Visibility="Collapsed"/>
+      <Grid x:Name="AppBarCollapsed_grd" VerticalAlignment="Bottom" Height="10" MouseEnter="BarCollapsed_grd_MouseEnter" Background="#00000000" Opacity="0.01"/>
+      <Grid x:Name="CharmBarCollapsed_grd" Height="10" MouseEnter="BarCollapsed_grd_MouseEnter" Background="#00000000" Opacity="0.01" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="10"/>
+      <Grid x:Name="NavigationBarCollapsed_grd" VerticalAlignment="Top" Height="10" MouseEnter="BarCollapsed_grd_MouseEnter" Background="#00000000" Opacity="0.01"/>
+      <Grid x:Name="AppBar_grd" Height="60" VerticalAlignment="Bottom" Background="#FF3A3E4B" MouseLeave="Bar_grd_MouseLeave" Visibility="Collapsed"/>
+      <Grid x:Name="CharmBar_grd" Background="#FF3E4B57" MouseLeave="Bar_grd_MouseLeave" HorizontalAlignment="Right" Width="80" Visibility="Collapsed">
+      	<StackPanel VerticalAlignment="Center">
+      		<Button x:Name="CharmSearch_btn" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0" MinWidth="0" MinHeight="0" Background="#FF3E4B57" Height="85" Click="CharmSearch_btn_Click">
+      			<StackPanel>
+      				<sdk:Label Content="&#xE094;" Margin="0,-18,0,-14" FontSize="53.333" FontFamily="Segoe UI Symbol" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+      				<sdk:Label Content="Search" HorizontalContentAlignment="Stretch" FontSize="16" FontFamily="Segoe UI Light" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+      			</StackPanel>
+      		</Button>
+      		<Button x:Name="CharmSettings_btn" Style="{StaticResource Custom_ButtonStyle_Generic}" Margin="0" MinWidth="0" MinHeight="0" Background="#FF3E4B57" Height="85" Click="CharmSettings_btn_Click">
+      			<StackPanel>
+      				<sdk:Label Content="&#xE115;" Margin="0,-10,0,-5" FontSize="40" FontFamily="Segoe UI Symbol" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+      				<sdk:Label Content="Settings" HorizontalContentAlignment="Center" FontSize="16" FontFamily="Segoe UI Light" VerticalAlignment="Center"/>
+      			</StackPanel>
+      		</Button>
+      	</StackPanel>
+      </Grid>
+      <Grid x:Name="NavigationBar_grd" Height="60" VerticalAlignment="Top" Background="#FF3A3E4B" MouseLeave="Bar_grd_MouseLeave" Visibility="Collapsed"/>
+      <Grid x:Name="Unused_BarCollapsed_grd" MouseEnter="BarCollapsed_grd_MouseEnter" Background="#00000000" Opacity="0.01" HorizontalAlignment="Left" Width="10" Visibility="Collapsed"/>
+      <Grid x:Name="Unused_Bar_grd" Background="#FF3A3E4B" MouseLeave="Bar_grd_MouseLeave" HorizontalAlignment="Left" Width="60" Visibility="Collapsed"/>
       <toolkit:BusyIndicator x:Name="LoadingData_bsind" BusyContent="Loading data, Please wait..." IsBusy="True" Visibility="Collapsed" />
    </Grid>
 </UserControl>

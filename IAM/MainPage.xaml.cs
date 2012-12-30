@@ -88,17 +88,30 @@ namespace IAM
       /// <summary>
       /// Open App bar
       /// </summary>
-      private void AppBarCollapsed_grd_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+      private void BarCollapsed_grd_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
       {
-         AppBar_grd.Visibility = Visibility.Visible;
+         var grd = ((sender as Grid).Parent as Grid).FindName((sender as Grid).Name.Replace("Collapsed", ""));
+
+         if ((grd as Grid).Children.Count > 0)             // might need to be a higher number
+            (grd as Grid).Visibility = Visibility.Visible;
       }
 
       /// <summary>
       /// Close App bar
       /// </summary>
-      private void AppBar_grd_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
+      private void Bar_grd_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
       {
-         AppBar_grd.Visibility = Visibility.Collapsed;
+         (sender as Grid).Visibility = Visibility.Collapsed;
+      }
+
+      private void CharmSearch_btn_Click(object sender, System.Windows.RoutedEventArgs e)
+      {
+         // TODO: Add event handler implementation here.
+      }
+
+      private void CharmSettings_btn_Click(object sender, System.Windows.RoutedEventArgs e)
+      {
+         // TODO: Add event handler implementation here.
       }
 
       /// <summary>
@@ -495,7 +508,7 @@ namespace IAM
             {
                if ((obj as Grid).Name == VisualGrid)
                   (obj as Grid).Visibility = Visibility.Visible;
-               else if ((obj as Grid).Name != "AppBarCollapsed_grd")    // should always be "visible"
+               else if (!(obj as Grid).Name.Contains("Collapsed_grd"))    // should always be "visible"
                   (obj as Grid).Visibility = Visibility.Collapsed;
             }
          }
