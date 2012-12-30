@@ -189,7 +189,7 @@ namespace IAM
                break;
             default:
                LoadingData_bsind.IsBusy = false;
-               break;
+               throw new IAM.UnknownObjectException("This Object should not exist: " + sender.ToString());
          }
       }
       #endregion --------------------------------------------------------------------------------
