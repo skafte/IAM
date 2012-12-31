@@ -128,8 +128,7 @@
    As a statue, the character is nearly invulnerable to harm. He has armor of 20L/30B, with a Hardness rating of 20L/20B, and he is treated as a First Age material for purposes of resisting Charms, spells or artifacts that inflict damage on objects. He heals damage at the rate of 2B or 1L per day, but remains a broken and lifeless jade statue if he suffers health levels sufficient to kill him normally. Hunger, thirst and suffocation do not affect a character under the auspices of this Charm, and his age is actually reduced by the number of months spent in this state.
    When a character emerges from slumber, he is fully rested, healed and has access to full reserves of Willpower and Essence (minus any recent injuries suffered but not healed and the motes committed to the Charm's duration). All mundane toxins and diseases are purged by the Charm, but supernatural poisons and maladies remain as efficacious as they were at the time of transmogrification.
    Use of this Charm is not without risk. The total isolation inflicted by it can be maddening, even for the Enlightened. Roll the Jadeborn's Willpower, with a difficulty equal to the number of months spent crystallized. (This difficulty can be adjusted downward if others interact with the character - even if in a one-sided fashion). If the roll fails, the character gains an obsession that must be dealt with. The Storyteller chooses the obsession, which generally should not be complimentary to the character's current Motivation and Intimacies. On a botch, the character also loses a dot of permanent Willpower.
-   Time spent transformed can count as training time for Mental Attributes or Essence but cannot be used for raising any other traits that require training time. The only way to end Eternal Jade Rejuvenation prematurely is through Emerald (or greater) Countermagic or Obsidian Countermagic. These spells shatter the enchantment, leaving the Jadeborn injured and near death, having suffered enough levels of unsoakable aggravated damage to leave him with only two health levels remaining when he awakens (six ticks later).
-      </description>
+   Time spent transformed can count as training time for Mental Attributes or Essence but cannot be used for raising any other traits that require training time. The only way to end Eternal Jade Rejuvenation prematurely is through Emerald (or greater) Countermagic or Obsidian Countermagic. These spells shatter the enchantment, leaving the Jadeborn injured and near death, having suffered enough levels of unsoakable aggravated damage to leave him with only two health levels remaining when he awakens (six ticks later).</description>
    </charms>
    <charms>
       <name>Darkness-Piercing Technique</name>
@@ -222,8 +221,7 @@
    Conviction: The Worker's commitment to his superiors (or personal values, if Enlightened) becomes total and unwavering. The Jadeborn adds half his Conviction to his Dodge MDV and one-third of his Conviction to his Parry MDV (rounded up in each case) for the duration of the Charm. His MDV cannot drop below this base level plus one through any method. (A character with Conviction 5 could not have a Dodge MDV lower than 4 or a Parry MDV lower than 3). This enhanced MDV is useful only against social attacks (natural or unnatural) that would lead to a betrayal of the character's true loyalties, which should be much more broadly interpreted for Enlightened characters. Against unnatural mental influences that bypass the normal social combat system, the Jadeborn's player receives a reflexive (Conviction + Essence) roll, against a difficulty equal to the opposing character's Essence, for the character to ignore the effect. Invoking this defense costs one Willpower if the opposing character's Essence is higher than that of the Jadeborn.
    Temperance: The Jadeborn becomes an intuitive master of project management. He can determine nearly at a glance what tools will be required, how many hours of labor are needed, what obstructions are likely to impede progress, the complexity of the project and myriad other variables and problems that can affect a given task.
    In game terms, the Worker's player knows the final difficulty of any roll, after all modifiers (and will know the value of any meaningful modifiers), as well as the granted information. His planning and insight also add bonus dice equal to his Temperance rating (rounded up) to all non-social actions that have a task duration of two actions or more, as long as he spends a full action considering the task in advance, as a simple action. This bonus does not stack with itself for longer planning efforts.
-   Valor: The Worker steels himself against privation, adding half his Valor rating to all Resistance-based dice pools to withstand fatigue or environmental conditions.
-      </description>
+   Valor: The Worker steels himself against privation, adding half his Valor rating to all Resistance-based dice pools to withstand fatigue or environmental conditions.</description>
    </charms>
    <charms>
       <name>Harvest Multiplying Labor</name>
@@ -251,8 +249,7 @@
       <description>Harvest Multiplying Labor is essential to maintaining the food supplies of the Mountain Folk. When invoked, the Charm accelerates the healthy growth of crops and livestock. Before this Charm can be invoked, the Jadeborn must spend a day inspecting and tending (feeding, watering, fertilizing, etc.) the agricultural products she intends to improve. The Charm must be invoked for either livestock or crops. A single use cannot affect both.
    The maximum amount of livestock affected by a single use of this Charm is equal to (the Jadeborn's Essence x 10) health levels. These livestock must be non-sentient (Intelligence 1), non-magical and either domesticated or penned for the purposes of domestication. Livestock blessed by this Charm grow rapidly, bulking up to 25 percent larger than normal over the course of a month and are treated as having the Large pox (see Exalted, p. 288), and they are unusually fecund for their species. Also add one automatic success to all rolls for them to resist disease, toxin or injury. These benefits last for the rest of the animal's life, but unfortunately, the life span of livestock affected by this Charm is cut in half. Affected animals produce twice as much useful meat as normal when slaughtered, or produce twice as many eggs or milk as they normally would over the course of their lives.
    The maximum area of crops a single invocation of this Charm can affect is one acre (plus one additional acre if the Jadeborn has a permanent Essence of 4 or higher). Crops affected by the Charm grow rapidly and with great vigor, pushing aside weeds and other parasites, and shrugging off most insects or other problems. They are immune to mundane blights and diseases but are affected normally by magical ailments. The harvest yield of fields affected by this Charm will normally be up to twice what they would normally be in bountiful years. Extended use of this Charm on the same fields, with no change in planting or process, will eventually drain fields of their vitality, however. The Mountain Folk are careful to let fields lie fallow in between plantings of various crops to give their soil (and their spirits) time to recover.
-   Crops and animals can benefit from only a single application of this Charm and will ignore all subsequent activations. This Charm is not compatible with Earth Yields Abundance (or other Charms or effects that increase crop yield, fertility, etc.). Only the first Charm cast will have any effect on a given section of fields/animal.
-      </description>
+   Crops and animals can benefit from only a single application of this Charm and will ignore all subsequent activations. This Charm is not compatible with Earth Yields Abundance (or other Charms or effects that increase crop yield, fertility, etc.). Only the first Charm cast will have any effect on a given section of fields/animal.</description>
    </charms>
    <charms>
       <name>Essence Aligning Treatment</name>
@@ -305,8 +302,7 @@
       </prerequest>
       <description>The Enlightened Worker places his hands in the dirt of a sown field or lays them upon an immature animal. Verdant green Essence flows from him into the soil or the creature, limning the limits of the croplands to be affected or suffusing the beast in an aura of power. Wherever the light touches, life springs forth.
    Croplands burst forth with life as whatever crops desired erupt from the tilled soil, growing at a vastly accelerated rate, so that by the end of the day, where there stood only turned loam, bountiful fields of crops in the prime of their harvestable life stand instead. Such a rate of growth is neither natural nor sustainable, and these crops will last but a single week before they succumb to age and wither at a natural pace, but foods harvested during that time will be healthy and nourishing. The region affected by a single invocation of this Charm can be no more than (Compassion x 5) acres in size, but it may be any shape desired.
-   Animals touched by this Charm grow to full maturity in the span of a day, during which time they are wracked with pain and mostly helpless. The Charm's effects on the creature are identical to those of Harvest Multiplying Labor (including the halved life span). Only Jadeborn with an Essence of 5 can target sentient or magical animals with this Charm, and mortals (or other Jadeborn) cannot be targeted at all. Under all circumstances, the animal retains the mental faculties and abilities of its true age and will still require training as normal for a creature of its age.
-      </description>
+   Animals touched by this Charm grow to full maturity in the span of a day, during which time they are wracked with pain and mostly helpless. The Charm's effects on the creature are identical to those of Harvest Multiplying Labor (including the halved life span). Only Jadeborn with an Essence of 5 can target sentient or magical animals with this Charm, and mortals (or other Jadeborn) cannot be targeted at all. Under all circumstances, the animal retains the mental faculties and abilities of its true age and will still require training as normal for a creature of its age.</description>
    </charms>
    <charms>
       <name>Faithful Servant's Mien</name>
@@ -335,8 +331,7 @@
       <description>The Jadeborn takes on the aspect of a humble servant, subsuming his own desires and wishes beneath the duties of servitude. Doing so allows him to oblige the requirements of his duties with maximum efficiency and removes any chance of pursuing his own goals during his off-duty hours.
    For the duration of the Charm, the character gains the Motivation "Serve my Master/Liege/Employer well" - which replaces his original Motivation for the duration of the Charm. For the duration of the Charm, the character also gains an Intimacy toward the master to whom his Motivation pertains. Enlightened Mountain Folk who use this Charm become obedient to the idea of servitude to their species and the greater good of the Mountain Folk or to the idea of social order and stability, if not the existing social hierarchy as it stands.
    Any Willpower rewarded for taking actions that advances the character's Motivation while under the direct supervision of a recognized superior is doubled. The character must, however, spend a Willpower to take any action that is not in direct accord with his Motivation, other than basic life survival tasks (eating, resting, defending himself, etc.). This should be treated as a supernatural compulsion to obey the imposed Motivation.
-   As a final benefit, players of Jadeborn using this Charm gain a one-die bonus on all rolls made for the character to fulfill his duty or to defend a recognized superior. This die bonus does not apply to tasks the Mountain Folk has taken of his own accord, only those he has been ordered to take. Enlightened Mountain Folk gain this bonus die on tasks taken in advancement of the Jadeborn even over their own wishes or desires.
-      </description>
+   As a final benefit, players of Jadeborn using this Charm gain a one-die bonus on all rolls made for the character to fulfill his duty or to defend a recognized superior. This die bonus does not apply to tasks the Mountain Folk has taken of his own accord, only those he has been ordered to take. Enlightened Mountain Folk gain this bonus die on tasks taken in advancement of the Jadeborn even over their own wishes or desires.</description>
    </charms>
    <charms>
       <name>Eidetic Recollection Discipline</name>
@@ -362,8 +357,7 @@
          </trouble>
       </prerequest>
       <description>Upon invoking this Charm, a Worker can flawlessly recollect any piece of information, event or sensation she has ever witnessed, read or experienced. With but a moment's concentration, she can replay the event as if reliving it or recite information without error. This mnemonic boost grants the character a single automatic success on any subsequent Ability roll that is partially or wholly based on memorization or recall (correctly formulating a thaumaturgical ward or precisely reciting a ritual greeting, for example).
-   Players whose characters have this Charm should take good notes or be willing to accept the (potentially) less-than-eidetic and occasionally flawed memories and notes of the Storyteller.
-      </description>
+   Players whose characters have this Charm should take good notes or be willing to accept the (potentially) less-than-eidetic and occasionally flawed memories and notes of the Storyteller.</description>
    </charms>
    <charms>
       <name>Obedience Inculcation Method</name>
@@ -396,8 +390,7 @@
    If this sudden decrease results in a Willpower of 3 or less, the subject gains a new Motivation ("Faithfully and dutifully serve my master/liege/employer/superiors in all ways") and at least one new Intimacy ("Protect and serve my superiors"). The subject becomes servile and passive and will accept the Jadeborn - or anyone the user of the Charm designates - as his superior. If the subject's Willpower does not drop below 3, he retains free will, to the capacity of his diminished Willpower. If the Jadeborn desires, she may use this Charm again to ensure complicity.
    The effects of this Charm are not permanent. For Mountain Folk, mortals, God-Bloods (of all sorts), Unenlightened Mountain Folk, Dragon Kings and other, similar species or types, dots of the subject's Willpower return at the rate of one dot per month. The subject regains his former Motivation, Intimacies, etc. once his Willpower rises to 4 or higher (or to his normal rating, whichever is higher). Exalts, Enlightened Mountain Folk, spirits and other beings of comparable magical prowess regain a dot of Willpower every week. Chaos Seers, curiously enough, regain a Willpower dot every day that they are under the influence of this Charm. Alternatively, Emerald Countermagic (or its equivalent) can break the compulsion immediately, returning all within the countermagic's radius of effect to their former selves. Sorcerers cannot free themselves in this fashion, however.
    This Charm cannot affect beings with a higher Essence than that of the character using the Charm, and it cannot affect the Fair Folk, demons, ghosts or other beings from beyond Creation. Gods (of any sort) and elementals add one to their Essence to determine if they can be affected by this Charm. Using this Charm on any mortal, Exalt or god is an egregious violation of the Great Geas (see pp. 38-39).
-   This Charm is normally used as a combination of punishment and reeducation, for those recalcitrant Workers or Warriors deemed salvageable by the Conclave. It is illegal to use this Charm on another Enlightened Jadeborn without the direct authorization of the Conclave, but it has certainly been known to happen, as the crime is considered quite a bit less serious than murder. Chaos Seers are always subjected to this Charm before being transported any significant distance, to help alleviate any chances of escape or disaster.
-      </description>
+   This Charm is normally used as a combination of punishment and reeducation, for those recalcitrant Workers or Warriors deemed salvageable by the Conclave. It is illegal to use this Charm on another Enlightened Jadeborn without the direct authorization of the Conclave, but it has certainly been known to happen, as the crime is considered quite a bit less serious than murder. Chaos Seers are always subjected to this Charm before being transported any significant distance, to help alleviate any chances of escape or disaster.</description>
    </charms>
    <charms>
       <name>Incomparable Efficiency Trance</name>
@@ -423,8 +416,7 @@
          </trouble>
       </prerequest>
       <description>The Worker concentrates his will upon a single physical task that will take more than one long tick to accomplish. For as long as he concentrates solely upon this task, he increases his pace by a factor equal to his Essence.
-   Mountain Folk invoking this Charm do not appear to move much faster than before. They simply work with inhuman economy of motion and precision, with no wasted energy or time in their actions. If the Jadeborn takes any other action, takes a break or otherwise interrupts his efforts, the trance ends immediately.
-      </description>
+   Mountain Folk invoking this Charm do not appear to move much faster than before. They simply work with inhuman economy of motion and precision, with no wasted energy or time in their actions. If the Jadeborn takes any other action, takes a break or otherwise interrupts his efforts, the trance ends immediately.</description>
    </charms>
    <charms>
       <name>Hundred Tool Technique</name>
@@ -450,8 +442,7 @@
          </trouble>
       </prerequest>
       <description>With the application of this Charm, a Worker can replicate most common tools with his bare hands. The Charm does not actually change a Jadeborn's limbs in any way (except to inure them to pain and harden them as necessary), but it allows feats that seem impossible. The Jadeborn can turn screws with her fingernails, pound nails with her fist, saw boards with the edge of her hand, plane surfaces with her palm, et cetera.
-   The Charm is perfect in its emulation, and it adds one bonus die to any roll (usually, but not always, Craft) that could be aided through its use. Hundred Tool Technique cannot emulate weapons or make changes quickly enough to be used as one, but various implements (and their emulations) can be used to aid hostile interrogations, if the Jadeborn is so inclined.
-      </description>
+   The Charm is perfect in its emulation, and it adds one bonus die to any roll (usually, but not always, Craft) that could be aided through its use. Hundred Tool Technique cannot emulate weapons or make changes quickly enough to be used as one, but various implements (and their emulations) can be used to aid hostile interrogations, if the Jadeborn is so inclined.</description>
    </charms>
    <charms>
       <name>Transcendent Efficacy Instruction</name>
@@ -527,8 +518,7 @@
          </trouble>
       </prerequest>
       <description>As creations of Autochthon, every Jadeborn carries in her soul an impression of the Great Maker, which she can call upon to aid her mastery of all things under his purview - all mechanical or magical devices. For most Jadeborn, this is the closest they ever come to understanding the majesty of Enlightenment, flawlessly and instinctively working the mechanisms and controls of even the most complex machines. The character using this Charm may substitute her Valor for an Ability rating in a single roll, as long as that roll concerns operating or understanding some mechanism or device - normally Craft or Lore, but occasionally Occult or some other Ability. It specifically does n ot allow the user to replace her combat Abilities with Valor. If a character's Ability already exceeds her Valor, instead add half her Valor rating (rounded up) as bonus dice to the task.
-   For the purposes of this Charm, nearly any device more complex than a hand drill - magical or strictly mundane in operation - counts as a mechanism for determining whether or not Industry and Forge Wisdom works with it.
-      </description>
+   For the purposes of this Charm, nearly any device more complex than a hand drill - magical or strictly mundane in operation - counts as a mechanism for determining whether or not Industry and Forge Wisdom works with it.</description>
    </charms>
    <charms>
       <name>Crucible Of Earthblood</name>
@@ -556,8 +546,7 @@
       <description>Their minds patterned in some small fashion after the design of the Great Maker's, the Enlightened Workers look past mechanism and design to the inner fire that lies at the heart of all industry. This Charm is part alchemy, part blacksmithing and part enchantment, allowing the Jadeborn to stoke a great forge fire or bonfire with Essence as part of a five-minute ritual until it becomes the primordial essence of Fire.
    Fires enchanted by the Crucible of Earthblood burn with temperatures beyond comprehension, quickly reducing to ash and slag any furnace or container not made of one of the magical materials. Those foolish enough to expose themselves to this obliterating white flame without suitable protection suffer 20A damage every five ticks.
    Although fully capable of annihilating any industrial waste or other unwanted materials, the fires have potent constructive purposes. In the crucible, gold smelts and is purified into orichalcum, silver flows and becomes moonsilver, diamonds melt into pools of adamant, and mixed ores refine themselves into precious jade. Only soulsteel and starmetal are beyond the reach of the Jadeborn with the use of this Charm.
-   Only one tenth of the materials fed to the Crucible of Earthblood's flames remain as their purified form. Making 10 pounds of orichalcum requires 100 pounds of pure gold; the remainder is consumed in the process of forging. Only 10 pounds of material can be processed every five minutes (yielding one pound of magical materials). The Resources cost (in mundane gold, silver, etc.) to provide the raw materials needed for an artifact (discounting any special ingredients needed - see The Books of Sorcery, Vol. III - Oadenol's Codex, pp. 19-27) is equal to (Artifact rating + 2). As a result, all but lesser wonders are beyond the purview of most individuals to create on their own.
-      </description>
+   Only one tenth of the materials fed to the Crucible of Earthblood's flames remain as their purified form. Making 10 pounds of orichalcum requires 100 pounds of pure gold; the remainder is consumed in the process of forging. Only 10 pounds of material can be processed every five minutes (yielding one pound of magical materials). The Resources cost (in mundane gold, silver, etc.) to provide the raw materials needed for an artifact (discounting any special ingredients needed - see The Books of Sorcery, Vol. III - Oadenol's Codex, pp. 19-27) is equal to (Artifact rating + 2). As a result, all but lesser wonders are beyond the purview of most individuals to create on their own.</description>
    </charms>
    <charms>
       <name>Earthen Insight Method</name>
@@ -584,8 +573,7 @@
       </prerequest>
       <description>The Worker's thoughts reach out, casting forth for familiar patterns in the earth that surrounds him. He can use this Charm in one of two ways, either to seek out concentrations of specific minerals or to map the area surrounding him.
    In the first function, the Worker can choose any specific earth-based material, mineral or geological structure he has ever touched or encountered (including specific ores or metals, different types of stone or geological formations, gemstones or nearly anything else of a specific earthen nature). If any form of that substance or formation exists within a radius equal to (Essence x 25) yards, he senses the direction and distance to - but not quality or quantity of - the largest concentration of it from his present position.
-   If used for mapping purposes, this Charm provides a snapshot image of the terrain within the same radius. The Jadeborn does not get a detailed map - only a three-dimensional mental representation of what areas are filled with earth, and which are clear. A given passage could still be flooded with water, stale or contaminated air or Darkbrood invaders. This Charm works only underground.
-      </description>
+   If used for mapping purposes, this Charm provides a snapshot image of the terrain within the same radius. The Jadeborn does not get a detailed map - only a three-dimensional mental representation of what areas are filled with earth, and which are clear. A given passage could still be flooded with water, stale or contaminated air or Darkbrood invaders. This Charm works only underground.</description>
    </charms>
    <charms>
       <name>Stone-Breaking Touch</name>
@@ -630,8 +618,7 @@
          <name>Stone-Breaking Touch</name>
       </prerequest>
       <description>The Worker concentrates, closes his eyes and walks confidently into - and through - barriers of solid stone or other earthworks. As he strides, the earth gives way like water flowing around a swimmer, hardening back to its usual configuration and immobility in his wake. For the duration of the Charm, he can move through any earthen obstruction at his normal ground movement rate, half walking, half swimming, without needing to breathe. Movement is possible in any direction, and although his eyes must remain closed, he remains aware of his surroundings in a fashion identical  to the mapping function of Earthen Insight Method. The Jadeborn may continue to pay eight motes at the end of each hour to extend the duration of the Charm, but should he fail to do so - or should the duration otherwise come to an end - while he's still encased in earth, he is entombed in the rock. Without near-immediate outside help or access to some other magic, he will suffocate as normal.
-   A Jadeborn can use this ability to drop and secure objects safely in solid stone, but he cannot under any circumstance carry (or force) passengers into the earth with him, regardless of carrying capacity. The Charm is strictly singular, affecting only the invoker.
-      </description>
+   A Jadeborn can use this ability to drop and secure objects safely in solid stone, but he cannot under any circumstance carry (or force) passengers into the earth with him, regardless of carrying capacity. The Charm is strictly singular, affecting only the invoker.</description>
    </charms>
    <charms>
       <name>Parting Stone Blessing</name>
@@ -683,8 +670,7 @@
       </prerequest>
       <description>With imperious gestures and grandiose directions, the Jadeborn summons the very earth around him to life, commanding its form and structure through force of will and Essence.This Charm can impose only very rough and crude changes upon the stone it works upon, without finesse or subtlety, but within this limitation, the Mountain Folk's control is near absolute. She can raise up supporting pillars, bring cavern roofs crashing down, open up passages or tunnels, or bridge or seal chasms. No natural stone wall can match her will. Fortifications crumble as if made of children's blocks or eggshells.
    This Charm costs two Willpower, plus one mote for every three cubic yards of earth shifted or altered by the user. The effects of this Charm are inexorable, but slow. Only one cubic yard is shifted per tick, slow enough that agile (or even merely mobile) characters can usually get out of the way of the changing terrain in time. If for some reason a character is incapable of escaping, she will suffer 8L/2 overwhelming and piercing damage every three ticks that she remains in the chaotic, shifting area. Storytellers should keep in mind that this terrain movement is not at all sudden and give players ample time to relocate their characters out of the way or create some ingenious shelter.
-   Attempting to use this Charm to counteract the effects of other earth-moving effects such as the spell Raising the Earth's Bones (see The Books of Sorcery, Vol. II - The White Treatise, p. 56) or the Battlefield Engineering Protocols of the Earth Dragon armor (see The Books of Sorcery, Vol. I - Wonders of the Lost Age, p. 86) - or vice versa - is treated as an example of Unstoppable Force, Immovable Object (see Exalted, p. 179) and calls for an opposed roll of (Essence + Craft [Earth]). In general, spells add one bonus die per circle (+1 for Emerald, +2 for Sapphire, +3 for Adamant), while artifacts add dice equal to (Artifact rating / 3, rounded up).
-      </description>
+   Attempting to use this Charm to counteract the effects of other earth-moving effects such as the spell Raising the Earth's Bones (see The Books of Sorcery, Vol. II - The White Treatise, p. 56) or the Battlefield Engineering Protocols of the Earth Dragon armor (see The Books of Sorcery, Vol. I - Wonders of the Lost Age, p. 86) - or vice versa - is treated as an example of Unstoppable Force, Immovable Object (see Exalted, p. 179) and calls for an opposed roll of (Essence + Craft [Earth]). In general, spells add one bonus die per circle (+1 for Emerald, +2 for Sapphire, +3 for Adamant), while artifacts add dice equal to (Artifact rating / 3, rounded up).</description>
    </charms>
    <charms>
       <name>Worker Pattern Mastery</name>
@@ -728,8 +714,7 @@
 • Must have at least one existing Worker Pattern Charm as a direct or ultimate prerequisite
 • Should follow the themes of the Worker Pattern, particularly in regards to practicality (based on craftsmanship and servitude)
 • Should interact with either the Virtues or the elements (particularly Earth or Fire)
-   Although additions to the Pattern can eventually filter down to the point where Unenlightened Mountain Folk can learn them, custom Charms created in play should generally be available to only other Enlightened Jadeborn who have also achieved Worker Pattern Mastery.
-      </description>
+   Although additions to the Pattern can eventually filter down to the point where Unenlightened Mountain Folk can learn them, custom Charms created in play should generally be available to only other Enlightened Jadeborn who have also achieved Worker Pattern Mastery.</description>
    </charms>
    <charms>
       <name>(Virtue)-Bolstering Meditation</name>
@@ -762,8 +747,7 @@
    Compassion: The unit adds one to its Might score as long as it is in a defensive formation (Storyteller's judgement), and can double this bonus to +2 Might once every 10 long ticks, for the space of one long tick.
    Conviction: The unit is nigh unstoppable in battle. Add one to the unit's Magnitude for purposes of taking and inflicting damage, but for no other purposes.
    Temperance: Harsh terrain and treacherous conditions make little difference to the Mountain Folk. Add two to the unit's Endurance, and halve penalties inflicted on the unit because of terrain, environmental factors and the like.
-   Valor: Add half the unit's unmodified Magnitude to its Morale. If this bonus raises the unit's Morale above 6, the unit is treated as having perfect Morale (and does not make any sort of Morale check). Casualties inflicted to the unit that decrease Magnitude reduce the Morale bonus accordingly. If a unit suffers enough casualties that its Morale drops below 6, it again suffers Morale effects normally, beginning on the next long tick.
-      </description>
+   Valor: Add half the unit's unmodified Magnitude to its Morale. If this bonus raises the unit's Morale above 6, the unit is treated as having perfect Morale (and does not make any sort of Morale check). Casualties inflicted to the unit that decrease Magnitude reduce the Morale bonus accordingly. If a unit suffers enough casualties that its Morale drops below 6, it again suffers Morale effects normally, beginning on the next long tick.</description>
    </charms>
    <charms>
       <name>(Color) Jade Transformation</name>
@@ -795,8 +779,7 @@
    Blue: (Prerequisite: Conviction-Bolstering Meditation): The character's resonance with Air renders her light and deft. She subtracts an amount equal to her Conviction from her total fatigue penalty (from armor or other encumbering possessions), doubles her usual leaping and jumping distances and halves the actual distance of any falls suffered for purposes of determining damage inflicted by impact.
    Green: (Prerequisite: Compassion-Bolstering Meditation): The Warrior resonates with the healing vitality of Wood, regenerating one level of bashing damage every 10 ticks and one lethal level of damage every hour.
    Red: (Prerequisite: Valor-Bolstering Meditation): The character resonates with the passion and fury of Fire, gaining total immunity to all natural sources of heat and flame. The character adds an amount equal to her Valor to her lethal soak against magical sources of flame. Additionally, the character gains some of the speed and grace of flame as well, adding bonus dice to her player's Join Battle roll equal to half her Valor (rounded up).
-   White: (Prerequisite: All four (Virtue)-Bolstering Meditations): Embodying the harmony and balance that is Earth, the character adds (highest Virtue + Essence) to her natural bashing and lethal soak values and gains a Hardness rating equal to one-half that amount (on top of that normally provided by this Charm). Additionally, her jade-like body becomes a natural weapon, causing lethal damage unless she chooses to pull her blows. Finally, she cannot be stunned, knocked down, tackled or thrown, nor does she suffer knock-back from any natural external source. This defense does not grant her the ability to withstand Charm-based effects that induce these conditions, nor does it inure her to the hazards of poorly executed maneuvers.
-      </description>
+   White: (Prerequisite: All four (Virtue)-Bolstering Meditations): Embodying the harmony and balance that is Earth, the character adds (highest Virtue + Essence) to her natural bashing and lethal soak values and gains a Hardness rating equal to one-half that amount (on top of that normally provided by this Charm). Additionally, her jade-like body becomes a natural weapon, causing lethal damage unless she chooses to pull her blows. Finally, she cannot be stunned, knocked down, tackled or thrown, nor does she suffer knock-back from any natural external source. This defense does not grant her the ability to withstand Charm-based effects that induce these conditions, nor does it inure her to the hazards of poorly executed maneuvers.</description>
    </charms>
    <charms>
       <name>Fivefold Embodiment Of (Color) Jade</name>
@@ -821,8 +804,7 @@
          <name>(Color) Jade Transformation</name>
       </prerequest>
       <description>Lesser Warriors can briefly assume aspects of their heritage, but veterans wear their inheritance openly - permanently taking on the aspects of the jade from which they are all birthed. For each purchase of this Charm, the character permanently gains the effects of one of the (Color) Jade Transformation Charms that he has already mastered. The Dexterity bonus gained through Black Jade Transformation is considered part of his natural rating for all purposes, including raising the trait with experience. This modification may raise the Attribute above its normal limit.
-   The permanent modifications made by this Charm are not compatible with the temporary changes wrought by (Color) Jade Transformation. The character may not stack both Charms for the same color of jade, although different versions of the permanent and temporary Charms may be stacked together (though not their base soaks). A Jadeborn character may not learn this Charm more times than he has dots of Essence, and Exalts may not learn this Charm through any fashion.
-      </description>
+   The permanent modifications made by this Charm are not compatible with the temporary changes wrought by (Color) Jade Transformation. The character may not stack both Charms for the same color of jade, although different versions of the permanent and temporary Charms may be stacked together (though not their base soaks). A Jadeborn character may not learn this Charm more times than he has dots of Essence, and Exalts may not learn this Charm through any fashion.</description>
    </charms>
    <charms>
       <name>Arsenal-Enhancing Technique</name>
@@ -850,8 +832,7 @@
       <description>The one surety about members of the Warrior Caste is that they know their weapons and armor. With the invocation of this Charm and a brief period of reverential care and maintenance, the Jadeborn can briefly stoke the least god that exists in his arms or armor to life, imploring it to enact efforts normally beyond conventional weapons.
    The primary effect of this Charm is to temporarily transform mundane equipment into superior equipment (see Exalted, pp. 365-366). When invoked, the weapon or armor becomes equal to exceptional hardware, gaining bonus points that may be allocated as the Mountain Folk sees fit. If cast upon conventional clothing, that clothing becomes exceptional as well, hard-wearing and durable, and granting minor defensive benefits (+2L/1B soak), without mobility or fatigue penalties.
    Normally, this Charm lasts for one day, but when invoked, the Jadeborn may chose to spend two experience points (if she has any available) to make the effect permanent. Already exceptional equipment becomes perfect when subjected to this Charm - and may be made permanently perfect through the expenditure of two experience points. (Perfect clothing is extremely durable and lightweight for its type, with +3L/2B soak, and no mobility penalty or fatigue value). Only permanently exceptional (through craftsmanship or this Charm) equipment can be made permanently perfect.
-   This Charm can also be used to enchant magical weapons, granting them the same bonuses endowed upon mundane weapons, but the Charm cannot be stacked to make such a weapon "perfect", nor may experience be spent to make the Charm's effects permanent. This Charm has no effect on perfect equipment, except to shine and clean it and make its least god truly happy with the weapon or armor's owner.
-      </description>
+   This Charm can also be used to enchant magical weapons, granting them the same bonuses endowed upon mundane weapons, but the Charm cannot be stacked to make such a weapon "perfect", nor may experience be spent to make the Charm's effects permanent. This Charm has no effect on perfect equipment, except to shine and clean it and make its least god truly happy with the weapon or armor's owner.</description>
    </charms>
    <charms>
       <name>Battle Trance Focus</name>
@@ -877,8 +858,7 @@
          </trouble>
       </prerequest>
       <description>The Warrior concentrates, focusing his mind and will upon the purposes of war and the science of violence. The Jadeborn's heart and soul thus hardened against the perils of combat, his player adds the character's Essence or half of his Conviction rating (rounded up), whichever is higher, to his attack dice pools, and half that value to the character's DV.
-   While in this state, the character's single-minded focus upon warcraft inflicts a penalty equal to his Conviction or his Essence (whichever is higher) to all dice rolls his player makes for him that are not combat related. Rolls that are indirectly combat related (Stealth, for example) are not enhanced or penalized. When there is any question as to whether a roll is combat related or not, the Storyteller makes the final decision, but she should allow players ample leeway in justifying how a roll might be combat related.
-      </description>
+   While in this state, the character's single-minded focus upon warcraft inflicts a penalty equal to his Conviction or his Essence (whichever is higher) to all dice rolls his player makes for him that are not combat related. Rolls that are indirectly combat related (Stealth, for example) are not enhanced or penalized. When there is any question as to whether a roll is combat related or not, the Storyteller makes the final decision, but she should allow players ample leeway in justifying how a roll might be combat related.</description>
    </charms>
    <charms>
       <name>Precision Onslaught Method</name>
@@ -931,8 +911,7 @@
       <description>The Jadeborn draws upon the furious power of the earth's blood. With a touch of his blade to the stony earth, burning Essence erupts from the ground, enveloping the weapon in a coruscating halo of orange radiance. That halo quickly cools to a dim glow that is uncomfortably warm to those around the Warrior but does not set objects alight at a touch.
    As long as the enchantment remains in effect, the blade's repressed fury awakens whenever the Mountain Folk strikes a blow, adding his Valor to the weapon's base damage and setting fire to anything flammable he strikes. While this enchantment is in effect, the weapon cannot be used to inflict bashing damage.
    Additionally, as long as the enchantment is active, the weapon inflicts lethal damage equal to the Jadeborn's Valor every tick to anyone else who tries to touch or wield it. The player of anyone who attempts to use the weapon other than the Jadeborn who enchanted it must successfully make a reflexive (Stamina + Resistance) roll, difficulty 4, for her character every action or she drops the weapon from the searing agony.
-   Normally, this enchantment can be used only with melee weapons. A character using a (Color) Jade Transformation Charm or Living Jewel Armor, however - or one who knows one or more of the Fivefold Embodiment of (Color) Jade Charms - may invoke this Charm and imbue his jade flesh or crystalline exoskeleton with the smoldering power of magma. All of the character's attacks become lethal (and cannot inflict bashing damage) and add the character's Valor as normal. If any of these transformational Charms should end before Charring Magma Blade's normal duration would, Charring Magma Blade ends immediately as well.
-      </description>
+   Normally, this enchantment can be used only with melee weapons. A character using a (Color) Jade Transformation Charm or Living Jewel Armor, however - or one who knows one or more of the Fivefold Embodiment of (Color) Jade Charms - may invoke this Charm and imbue his jade flesh or crystalline exoskeleton with the smoldering power of magma. All of the character's attacks become lethal (and cannot inflict bashing damage) and add the character's Valor as normal. If any of these transformational Charms should end before Charring Magma Blade's normal duration would, Charring Magma Blade ends immediately as well.</description>
    </charms>
    <charms>
       <name>Living Jewel Armor</name>
@@ -960,8 +939,7 @@
       <description>The character weaves a lattice of crystalline Essence around herself, transforming it into a glittering armored exoskeleton that subsumes into itself any protective garments the character is wearing. Living Jewel Armor confers lethal and bashing soak equal to its creator's Essence, plus the soak of any assimilated armor. The armor has a Hardness rating equal to the base Hardness of the user's armor, plus half her Essence (rounded up). The exoskeleton's mobility penalty and fatigue value are equal to half those of any armor the character had been wearing (if any).
    Finally, the armor absorbs and deflects part of the damage of Essence-based attacks that do not have a physical component. (This includes Charms such as Phantom Arrow Technique and Spirit Weapons, and weapon attacks such as that of an Essence cannon or the ranged attack of a skirmish pike, but not Charms that have the Elemental keyword, for example). Against such attacks, the exoskeleton's soak and hardness are doubled, and each point of soaked damage allows the Warrior's player to roll one die. For each success scored, the character regains one mote of Essence.
    Offensively, the armor's various edges, spikes and blades make potent weapons, adding one to the Accuracy, 2L to the Damage and one to the Rate of any unarmed attacks made. Additionally, anyone who strikes the character with an unarmed attack suffers 5L damage from the various spikes and quills.
-   Lastly, the exoskeleton adds one to the character's Strength for the duration of the Charm. This bonus dot is considered part of the character's natural Strength rating.
-      </description>
+   Lastly, the exoskeleton adds one to the character's Strength for the duration of the Charm. This bonus dot is considered part of the character's natural Strength rating.</description>
    </charms>
    <charms>
       <name>Reforging Travail Of The Veteran</name>
@@ -985,8 +963,7 @@
          <name>Arsenal-Enhancing Technique</name>
       </prerequest>
       <description>Where lesser Warriors forge blades and armor, Enlightened generals forge minds and bodies. By applying judicious amounts of Essence, rigorous amounts of training -and no small amount of physical exertion on the part of her trainees - the Warrior improves the quality of her troops. To use this Charm, the Warrior first gathers a band of trainees, all of whom must have an Essence of 3 or less, and takes them to a remote or secluded area with room in which to conduct basic combat maneuvers. She must commit one mote for every dot of Essence they possess between them. (This amount is doubled for any non-Mountain Folk in her training group).
-   The trainees conduct training sessions under the evoker's tutelage for at least 15 hours each day, learning the art and science of war. For every day of exercises, the trainees gain one "phantom" experience point. These points are banked separately from a character's normal pool of experience (if any). At the end of the week, the trainees spend the experience points they have gained without regard for training times. The instructor's player designates and prioritizes how these points must be spent. Valid choices for this pool of points include - Valor, Warrior Pattern Charms, Physical Attributes, Wits or any Ability figuratively marked "This trait is important in combat". A Warrior cannot train any Ability, Attribute or Charm that she does not possess herself, and traits cannot be raised higher than the Warrior's own rating in them. Affected characters use their experience points to raise traits to the listed levels, spending phantom points first. Any phantom points left over after traits are raised are lost, unless the character begins a new session of training almost immediately (within two days). A character cannot undergo more than (his Willpower + Essence) sessions of training under this Charm in a single year. Phantom experience points are treated as experience point debt, and must be paid off as normal.
-      </description>
+   The trainees conduct training sessions under the evoker's tutelage for at least 15 hours each day, learning the art and science of war. For every day of exercises, the trainees gain one "phantom" experience point. These points are banked separately from a character's normal pool of experience (if any). At the end of the week, the trainees spend the experience points they have gained without regard for training times. The instructor's player designates and prioritizes how these points must be spent. Valid choices for this pool of points include - Valor, Warrior Pattern Charms, Physical Attributes, Wits or any Ability figuratively marked "This trait is important in combat". A Warrior cannot train any Ability, Attribute or Charm that she does not possess herself, and traits cannot be raised higher than the Warrior's own rating in them. Affected characters use their experience points to raise traits to the listed levels, spending phantom points first. Any phantom points left over after traits are raised are lost, unless the character begins a new session of training almost immediately (within two days). A character cannot undergo more than (his Willpower + Essence) sessions of training under this Charm in a single year. Phantom experience points are treated as experience point debt, and must be paid off as normal.</description>
    </charms>
    <charms>
       <name>Great Maker's Champion</name>
@@ -1016,8 +993,7 @@
 • +1 Might
 • One automatic success on all Morale checks
    Units opposing the Jadeborn's forces suffer a corresponding penalty to these values. Additionally, if enemy forces seek to directly oppose the Jadeborn general (through the use of heroes, sorcerers, etc.), the penalty to their attacks increases to equal the Jadeborn's Valor.
-   Units may benefit from only one instance of this Charm at a time. As units enter or leave the radius of effect, they gain or lose benefits/penalties without hindrance (this can happen multiple times over the course of a battle). If the Warrior dies, the Charm ends instantly. This Charm's penalties have no effect on units that are not subject to morale effects (such as automatons, certain undead forces, those whose Valor has been raised to supernatural levels, etc.).
-      </description>
+   Units may benefit from only one instance of this Charm at a time. As units enter or leave the radius of effect, they gain or lose benefits/penalties without hindrance (this can happen multiple times over the course of a battle). If the Warrior dies, the Charm ends instantly. This Charm's penalties have no effect on units that are not subject to morale effects (such as automatons, certain undead forces, those whose Valor has been raised to supernatural levels, etc.).</description>
    </charms>
    <charms>
       <name>Diamond-Shattering Blow</name>
@@ -1041,8 +1017,7 @@
       </prerequest>
       <description>With a single moment of precise clarity and absolute calm, the Jadeborn launches a single attack of preternatural force and accuracy. If she strikes an inanimate object, she adds (Temperance + Essence) to the base damage, and the attack ignores soak altogether. (Objects of First Age manufacture - vehicle hulls, certain pieces of construction, etc. - gain their full soak score, but the attack gains the Overwhelming tag with a value equal to the Mountain Folk's Temperance). Against an animate target, the attack ignores and destroys any non-magical armor the target is wearing, but adds no additional damage to the strike.
    A Warrior may also use this Charm to directly target an opponent's weapon. This is a called shot with a difficulty of 3 that may be dodged normally. If parried, the attack automatically succeeds. Success destroys any non-magical weapon and sends any magical weapon flying from the wielder's hands as an automatic disarm attempt.
-   This Charm can normally be used only with weapons, however characters using a transformation Charm (such as Living Jewel Armor) may use this Charm with unarmed attacks. Using this Charm with a non-magical weapon against First Age materials or artifact weapons will shatter that weapon in the process of delivering the blow.
-      </description>
+   This Charm can normally be used only with weapons, however characters using a transformation Charm (such as Living Jewel Armor) may use this Charm with unarmed attacks. Using this Charm with a non-magical weapon against First Age materials or artifact weapons will shatter that weapon in the process of delivering the blow.</description>
    </charms>
    <charms>
       <name>Inescapable Volcano Stance</name>
@@ -1136,8 +1111,7 @@
       <description>The Artisan attunes herself to the patterns of Essence that surround her, attuning her senses to the flows and eddies of Creation. In this state, the Jadeborn perceives the supernatural more clearly than the natural, seeing all things not as objects or people, but as whorls and eddies and constructs of Essence.
    While this enchantment is active, she can distinguish demesnes, manses and dragon lines, which glow in the color of their aspect. (Water Essence appears midnight blue, Air is sky blue, Fire is red, Wood is forest green, and Earth is chalk white. Lunar Essence gleams argent, Solar is golden, Sidereal produces a shifting chromatic pattern, and Abyssal Essence is pitch black). Artifacts and Essence users (including the Exalted, the Mountain Folk, the Dragon Kings, mortal thaumaturges who have learned to unlock their Essence, etc.) appear to be limned by their dominant Essence. (Dragon Kings appear limned with a shifting red hue, while Jadeborn are typically Earth-aspected, and mortals have always-shifting patterns that favor the elemental hues). Charms and spells appear as complex patterns of Essence, each unique. Animate creatures throw off a vague, indistinct aura of no discernible pattern or color, barely greater than Creation's background aura. This is sufficient, however, to reduce vision penalties to that of murky vision in most cases.
    The Artisan using this Charm sees immaterial beings and sanctum entrances clearly, and she might recognize the pattern of standing Essence constructs (whether permanent spells, constructed wards or the like) or Charms or spells as they are invoked, as long as she has encountered them before.
-   Lastly, the Jadeborn's player may add the character's Essence to any Awareness rolls made to counteract mundane Stealth attempts. This Charm specifically does not provide any bonus to counteract magical Stealth enhancements or to reveal any magically concealed effects or objects.
-      </description>
+   Lastly, the Jadeborn's player may add the character's Essence to any Awareness rolls made to counteract mundane Stealth attempts. This Charm specifically does not provide any bonus to counteract magical Stealth enhancements or to reveal any magically concealed effects or objects.</description>
    </charms>
    <charms>
       <name>Interconnection's Eye</name>
@@ -1160,8 +1134,7 @@
          <name>Unfolding Pattern Intuition</name>
       </prerequest>
       <description>The Jadeborn naturally excel at seeing patterns in all things. This Charm enhances this natural talent to supernatural levels, allowing the Mountain Folk to see beyond apparent randomness to the underlying association and order. For every mote spent on this Charm, the difficulty of any roll to notice hidden patterns is reduced by one, to a maximum reduction of the character's lowest Virtue, though never below difficulty 1.
-   The purview of this Charm is broad and should be in-terpreted in similar fashion. In conjunction with Awareness, it can be used to detect hidden trigger plates in a pattern of floor tiles. Used with Linguistics, it can be used to see the pattern of a language's drift over the centuries - or to see (if not understand) hidden codes and phrases in a missive. Storytellers should adjudicate each use of this Charm on a case-by-case basis, but should generally give the benefit of the doubt in its use, particularly if the description of its use would qualify normally for a stunt bonus.
-      </description>
+   The purview of this Charm is broad and should be in-terpreted in similar fashion. In conjunction with Awareness, it can be used to detect hidden trigger plates in a pattern of floor tiles. Used with Linguistics, it can be used to see the pattern of a language's drift over the centuries - or to see (if not understand) hidden codes and phrases in a missive. Storytellers should adjudicate each use of this Charm on a case-by-case basis, but should generally give the benefit of the doubt in its use, particularly if the description of its use would qualify normally for a stunt bonus.</description>
    </charms>
    <charms>
       <name>Supernal Awareness Of All</name>
@@ -1228,8 +1201,7 @@
          <name>Unfolding Pattern Intuition</name>
       </prerequest>
       <description>This Charm begins a brief cascade known alternately as the Lower Earth Path or the Art of Shaping. The Artisan lays her hand upon any object of earth and infuses it with her Essence, sculpting it according to her will. The character may not expend more (Essence x 2) motes, but she may affect portions of a larger structure. As her Essence expands (at the rate of one cubic yard per tick), stone and soil liquefies and reshapes itself to reflect her wishes. Even if constructed using weak materials such as sand or dust, the final result has supernatural tensile strength, making impossible structures feasible with this Charm. Structures made from weak materials remain transient, however, lasting only one scene. Therefore, while a Jadeborn Artisan might create a chasm-spanning bridge out of shifting sand, it will last only a short while before it collapses.
-   This Charm requires more than simple will. A knowledge of stonework and sculpture is needed to get the most out of its power. When invoking this Charm, the Jadeborn's player rolls (Intelligence + Craft [Earth]). The base difficulty depends on the material -1 for sand, dirt or dust; 2 for hard-packed soil or clay; 3 for stone or metal; 4 for crystal. The difficulty is rises by one for crude changes (breaking a hole in a wall, collapsing a ceiling), two for complex changes (raising stone bars to imprison someone) or three for extremely complex or artistic changes (recreating complex clockworks or carving a beautiful sculpture from memory). This Charm cannot be used to affect magical materials, nor may it be used directly as an attack, although it can be used against ceilings, pillars or other structural details with possibly catastrophic results.
-      </description>
+   This Charm requires more than simple will. A knowledge of stonework and sculpture is needed to get the most out of its power. When invoking this Charm, the Jadeborn's player rolls (Intelligence + Craft [Earth]). The base difficulty depends on the material -1 for sand, dirt or dust; 2 for hard-packed soil or clay; 3 for stone or metal; 4 for crystal. The difficulty is rises by one for crude changes (breaking a hole in a wall, collapsing a ceiling), two for complex changes (raising stone bars to imprison someone) or three for extremely complex or artistic changes (recreating complex clockworks or carving a beautiful sculpture from memory). This Charm cannot be used to affect magical materials, nor may it be used directly as an attack, although it can be used against ceilings, pillars or other structural details with possibly catastrophic results.</description>
    </charms>
    <charms>
       <name>Shaping Mind Concentration</name>
@@ -1297,8 +1269,7 @@
       </prerequest>
       <description>This Charm begins the cascade known as the Higher Earth Path, or the Path of Geomancy. With this Charm, the Jadeborn learns to channel Essence more efficiently through auspicious meditative postures. These stances serve two purposes.
    First, the Jadeborn can spend 10 motes to force instant attunement with a manse or demesne by standing within its boundaries and imposing her will upon it. If the place of power has no beings attuned to it, this process is automatic. Otherwise, the Jadeborn's player must roll (Intelligence + Lore) against a difficulty equal to the highest Essence of any being attuned to the place of power. On a botch, the harmonic feedback inflicts unsoakable lethal damage equal to the difference between the Jadeborn's Essence and the highest attuned Essence (minimum one level). On a failure, the character merely wastes Essence. Success leaves all previous attunements in place, with the Artisan joining the group. Regardless of success or failure, all beings attuned to the place know that another has attempted to claim it.
-   Second, this Charm speeds the rate of Essence recovery through meditation. For a cost of one mote, the character can spend an hour meditating in a rigorous series of postures. At the end of the hour, roll the character's Temperance. She regains eight motes of Essence, plus one for every success rolled.
-      </description>
+   Second, this Charm speeds the rate of Essence recovery through meditation. For a cost of one mote, the character can spend an hour meditating in a rigorous series of postures. At the end of the hour, roll the character's Temperance. She regains eight motes of Essence, plus one for every success rolled.</description>
    </charms>
    <charms>
       <name>Manse Body Technique</name>
@@ -1323,8 +1294,7 @@
          <name>Living Earth Meditation</name>
       </prerequest>
       <description>The Artisan reforges and strengthens his bonds with the vast wellsprings of Essence that lie at the core of Creation. While underground, he regains a number of motes per hour equal to his Essence, regardless of his activity level. This added mote recovery is in addition to any motes regained through normal respiration, hearthstones or the effects of other Charms, artifacts, et cetera.
-   Mountain Folk with an Essence of 4 or higher may purchase this Charm a second time, doubling the recovery rate granted. The Charm may not be purchased more than twice.
-      </description>
+   Mountain Folk with an Essence of 4 or higher may purchase this Charm a second time, doubling the recovery rate granted. The Charm may not be purchased more than twice.</description>
    </charms>
    <charms>
       <name>Essence-Transfer Technique</name>
@@ -1349,8 +1319,7 @@
       </prerequest>
       <description>With a touch and concentration, an Artisan can donate or drain motes from a target. He cannot do so as part of a striking attack, but this Charm can be used in conjunction with a successful clinch. Each activation may transfer a number of motes up to the Essence of the target or the Jadeborn (whichever is lower). Jadeborn cannot use this Charm on beings that lack an Essence pool.
    An alternative use of this Charm allows the Jadeborn to store motes of Essence in flawless crystals. At any one time, each crystal can store a number of motes equal to the crystal's Resources cost. It takes five motes to store a single mote in the crystal, but this Essence cost does not have to be paid all at once. After a number of minutes equal to the charge already gathered, however, any motes spent but not yet converted to a stored mote are lost. (For example, a stone with three motes stored and three motes spent toward storing a fourth mote, will lose that fractional charge after three minutes).
-   Motes are stored indefinitely unless the stone is brought to the surface and not kept in an Essence-rich environment (such as carried along a dragon line, or kept within the boundaries of a manse or demesne). Stones left unattended in the surface world lose one stored mote per week. Any being with an Essence pool can draw motes from a crystal, but a character may tap only one crystal within five ticks, and the user can draw only a number of motes equal to his Essence within that same time period.
-      </description>
+   Motes are stored indefinitely unless the stone is brought to the surface and not kept in an Essence-rich environment (such as carried along a dragon line, or kept within the boundaries of a manse or demesne). Stones left unattended in the surface world lose one stored mote per week. Any being with an Essence pool can draw motes from a crystal, but a character may tap only one crystal within five ticks, and the user can draw only a number of motes equal to his Essence within that same time period.</description>
    </charms>
    <charms>
       <name>Essence-Focusing Concentration</name>
@@ -1376,8 +1345,7 @@
       <description>The Artisan extends her will into the earth, channeling and absorbing its ambient Essence and focusing it into herself. For a brief moment, she manifests an anima banner, furious and blazing, as bright as that of an iconic Solar, but without any totemic expression of her true self.
    If the Artisan is standing within a manse or demesne to which she is attuned (or holds the hearthstone of a manse to which she is attuned), she may drain as many dots as desired from that site's rating. Each drained dot costs one Willpower and restores 10 motes to her Essence pool, which may temporarily raise her pool above her normal maximum. These excess motes drain from her pool at the rate of one mote per tick. Sites of power recover one drained dot of rating per day and provide Essence at this reduced rate, but any additional benefits (including hearthstone powers) do not recover until the full rating is restored. This Charm does not allow a Jadeborn to drain sites of power to which she is not already attuned. She must first connect to the site with Living Earth Mediation and force attunement.
    Alternatively, the Artisan can drain Wyld places, drawing power from the chaotic Essence to be found there. A one-mile-radius region in the Bordermarches or Middle-marches is the equivalent of a level-1 demesne, while the Deep Wyld is level-2, and a zone of Pure Chaos would be equivalent to a level-3 demesne. Draining any Wyld region inflicts unsoakable levels of aggravated damage equal to the equivalent demesne's rating to the Artisan and sends discordant shock waves out a number of miles in every direction equal to (the equivalent demesne's rating x 5). Any raksha within that radius can sense the shock waves with a successful (Perception + Awareness) roll.
-   Finally, the Artisan can tap the ambient Essence of Creation. Doing so restores five motes to her pool but desiccates the normal geomantic activity within half a mile around her (a disruption that lasts for one day). Within this region, no being can regain Essence through respiration, though stunts, hearthstones and the like work normally. Immaterial spirits will feel extremely uncomfortable within the region and might even seek revenge upon the drainer. Even mortals and animals will be out of sorts and find the area unpleasant until normal geomantic activity returns.
-      </description>
+   Finally, the Artisan can tap the ambient Essence of Creation. Doing so restores five motes to her pool but desiccates the normal geomantic activity within half a mile around her (a disruption that lasts for one day). Within this region, no being can regain Essence through respiration, though stunts, hearthstones and the like work normally. Immaterial spirits will feel extremely uncomfortable within the region and might even seek revenge upon the drainer. Even mortals and animals will be out of sorts and find the area unpleasant until normal geomantic activity returns.</description>
    </charms>
    <charms>
       <name>Dragon-Tangling Web</name>
@@ -1405,8 +1373,7 @@
    In its second aspect, the Dragon-Tangling Web can be directed at any hearthstone the Mountain Folk successfully touches with an unarmed attack (this is a called strike, normally with a -2 external penalty). A successful attack, and the expenditure of (hearthstone rating x 3) motes, renders the hearthstone an inert and powerless rock until the Charm's duration ends.
    A Jadeborn with Essence 5 may summon the Dragon-Tangling Web in its third aspect and direct it against an opponent for a cost in motes equal to (the victim's Essence + 10). The target must have an Essence pool and must have an Essence equal to or lower than that of the Artisan using the Charm. The Artisan must specify whether he is laying a stable or unstable web when attacking. A stable web, once laid, prevents the target from regaining motes through any process other than respiration (including recovery from stunts, hearthstones, drawing on stored power from Essence storage devices, enhancements or effects from Charms), but it lasts for only one scene. An unstable web snares and then immediately collapses, draining a number of motes from the victim equal to (its creator's Willpower + Essence).
    The final aspect of the Dragon-Tangling Web, when invoked, spreads to encompass a ([creator's Willpower + Essence] x 10)-yard radius in every direction. Within this radius, all creatures regain Essence at half their normal rate, rounded down. More dangerously, all Essence expenditures increase by the Jadeborn's Essence in motes. (A Charm that normally costs four motes instead costs four plus the creator's Essence motes to invoke). The creator is not immune to this effect, but anyone with a higher Essence is immune to both of these effects.
-   All aspects of the Dragon-Tangling Web can be parried or blocked only with a perfect defense, but the web can be torn asunder with Emerald Countermagic or its equivalent.
-      </description>
+   All aspects of the Dragon-Tangling Web can be parried or blocked only with a perfect defense, but the web can be torn asunder with Emerald Countermagic or its equivalent.</description>
    </charms>
    <charms>
       <name>Sign Of Warding</name>
@@ -1439,8 +1406,7 @@
 • Damaging one mote (inflicts damage equal to half its lethal soak to any who enter the warded area - this damage is inflicted every five ticks and reduces the soak of the ward by 1L/1B every time it is delivered)
    A ward that has suffered damage equal to or greater than the ward's health levels has a hole large enough for the attacker to pass through rent in it. Wards are destroyed utterly after they take four times this damage. Regeneration will restore a ward to its full defensive strength (minus any reductions for damage inflicted) in time. Reapplication of this Charm can restore a ward to full strength, but it cannot increase its power. To do that, the ward must be broken and recreated.
    Wards that protect an entire area have a maximum radius of (Willpower x 10) yards. Those that protect a specific two-dimensional space (acting as a gate or to shield a wall from attack by immaterial spirits, for example) can cover an area equal to (Willpower x 50) square yards.
-   Emerald Countermagic or its equivalent will utterly destroy a ward created with this Charm.
-      </description>
+   Emerald Countermagic or its equivalent will utterly destroy a ward created with this Charm.</description>
    </charms>
    <charms>
       <name>Elemental Invocation Rite</name>
@@ -1467,8 +1433,7 @@
       </prerequest>
       <description>Like the Exalted, the Mountain Folk long ago learned the secrets to summon and bind elementals to their service. These arts are used sparingly - especially with elementals with higher Essence.
    The ritual necessary to summon an elemental requires a number of hours equal to the targeted elemental's Essence, time spent drawing the complex geomantic designs necessary to beckon and constrain the elemental. In all other ways (other than as listed thus far), this Charm operates in the same fashion as the Terrestrial Circle spell Summon Elemental (see Exalted, p. 254).
-   As normal, higher Essence elementals may choose to send minions instead of attending to the Jadeborn themselves. (Fire and earth elementals are less likely to do so than air, water or wood ones, though). Those who do show up expect to be treated with great respect and paid well with artifacts, prayers or other desired objects, lest they seek their vengeance upon the Artisan who summoned them when their terms of service are up.
-      </description>
+   As normal, higher Essence elementals may choose to send minions instead of attending to the Jadeborn themselves. (Fire and earth elementals are less likely to do so than air, water or wood ones, though). Those who do show up expect to be treated with great respect and paid well with artifacts, prayers or other desired objects, lest they seek their vengeance upon the Artisan who summoned them when their terms of service are up.</description>
    </charms>
    <charms>
       <name>Spirit-Calcifying Technique</name>
@@ -1493,8 +1458,7 @@
       <description>The Artisan hurls a pulse of incandescent light at an immaterial being in his line of sight. The energy spreads through the spirit's ephemeral body, weighing it with Essence and forcing it to manifest in Creation.
    Roll the Jadeborn's (Willpower + Essence) against the target's (Willpower + Essence). If the target wins, the Charm simply drains motes from the spirit's Essence pool equal to the Jadeborn's (Willpower + Essence). If the Artisan wins, the spirit becomes solid and is stuck in this form for the remainder of the scene.
    Dematerialized beings that have access to Charms that allow them to materialize must do so immediately (spending the appropriate costs to activate the Charm) and may not dematerialize for the duration of this Charm. Elementals that are materialized may not use Charms (or other effects) to dematerialize while under the Charm's effects. Those spirits that lack a method of materializing (or cannot currently pay the cost of materialization) lose all remaining motes of Essence, and then materialize anyway.
-   Spirit-Calcifying Technique cannot affect beings with a permanent Essence of 7 or higher. This Charm does not confer an ability to perceive immaterial beings.
-      </description>
+   Spirit-Calcifying Technique cannot affect beings with a permanent Essence of 7 or higher. This Charm does not confer an ability to perceive immaterial beings.</description>
    </charms>
    <charms>
       <name>God-Summoning Glyph</name>
@@ -1517,8 +1481,7 @@
          <name>Elemental Invocation Rite</name>
       </prerequest>
       <description>Mountain Folk may no more command the obeisance of gods than the Exalted can. The most knowledgeable of Artisans can, however, summon certain types of gods into their presence - to converse, to bargain, to threaten or for whatever other purpose. Gods of the earth, of the subterranean depths and those related to industry, alchemy or other purviews related to Autochthon are all gods who may be summoned by the Mountain Folk.
-   The geomantic patterns required to use this Charm are far more complex than those needed for elementals. Four hours of work constructing them per dot of Essence the god possesses is normal. Once summoned, the god appears before the Jadeborn, manifested (but not necessarily materialized), and from this point forward, the two may interact as they both choose. If the Jadeborn desires some service or boon, she must negotiate, cajole, threaten or entice the deity into acquiescing to her requests. Nothing inherent in the Charm prevents the god from attacking the Jadeborn or using Charms, though the Artisan may attempt to banish the spirit whence it came as a standard action, the player rolling (Willpower + Essence) against a difficulty equal to the god's Essence. Jadeborn who know the Sign of Warding may erect barriers against potentially hostile deities, although this is rarely seen favorably by the gods. Most, in fact, see it as an insult.
-      </description>
+   The geomantic patterns required to use this Charm are far more complex than those needed for elementals. Four hours of work constructing them per dot of Essence the god possesses is normal. Once summoned, the god appears before the Jadeborn, manifested (but not necessarily materialized), and from this point forward, the two may interact as they both choose. If the Jadeborn desires some service or boon, she must negotiate, cajole, threaten or entice the deity into acquiescing to her requests. Nothing inherent in the Charm prevents the god from attacking the Jadeborn or using Charms, though the Artisan may attempt to banish the spirit whence it came as a standard action, the player rolling (Willpower + Essence) against a difficulty equal to the god's Essence. Jadeborn who know the Sign of Warding may erect barriers against potentially hostile deities, although this is rarely seen favorably by the gods. Most, in fact, see it as an insult.</description>
    </charms>
    <charms>
       <name>Emerald Unweaving Rune</name>
@@ -1546,8 +1509,7 @@
       <description>Although the Mountain Folk's study of sorcery is theoretical in nature, it is not without benefits. Geomancers with sufficient understanding of Essence and the forms and patterns it takes are able to inscribe this rune, which may be used in two fashions.
    If 10 motes are spent on the Charm, the geomancer secures his person against hostile magic, tracing a coiled symbol of emerald light in the air before him. Until the end of his next action, any spell of the Terrestrial Circle cast against him shatters against the bulwark of the rune's defenses. While the rune is active, any non-reflexive action the geomancer takes incurs a +1 difficulty.
    If 20 motes are spent, the Jadeborn may hurl the sign against a Terrestrial Circle spell within (Essence x 20) yards. The symbol flies from the Jadeborn's hand to the spell's focal point and shatters in a violent flash, tearing the spell apart. The violence of this effect inflicts dice of bashing damage equal to half the shattered spell's Essence cost (rounded up) to everything within three yards of the explosion.
-   Emerald Unweaving Rune is analogous to Emerald Countermagic in all other respects, including its ability to disrupt certain Jadeborn Charms.
-      </description>
+   Emerald Unweaving Rune is analogous to Emerald Countermagic in all other respects, including its ability to disrupt certain Jadeborn Charms.</description>
    </charms>
    <charms>
       <name>Sapphire Unweaving Rune</name>
@@ -1571,8 +1533,7 @@
       </prerequest>
       <description>Skilled Artisan geomancers can unmake Terrestrial Circle spells - or the enchantments of their fellow Artisans - with relative ease. Celestial or Shadowlands Circle spells can be destroyed only through the use of an hour-long ritual involving three Mountain Folk who all know this Charm and use it in concert.
    As the ritual begins, the gathered Jadeborn stand together and raise their hands in unison. They sing or chant, each in a different, discordant pitch. As the melodious incantations flow from their lips, their hands trace intricate patterns of blue light around the participants. At the end of the hour-long ritual, the three adjust their pitch into a magnificent harmony, and the three designs merge into a single vast rune. The symbol hovers for a moment, then flies to the heart of the targeted spell, where it detonates with a thunderclap. The focal point of the spell cannot be further than (the lowest Essence of any participant x 20) yards away. As the spell shatters, its Essence explodes outward in a destructive wave, inflicting dice of lethal damage equal to half the spell's Essence cost (rounded up) to everything within 10 yards of the blast.
-   Sapphire Unweaving Rune is analogous to Sapphire Countermagic in all respects except those previously listed.
-      </description>
+   Sapphire Unweaving Rune is analogous to Sapphire Countermagic in all respects except those previously listed.</description>
    </charms>
    <charms>
       <name>Demesne-Binding Ritual</name>
@@ -1603,8 +1564,7 @@
    As long as the crystals remain undisturbed, the demesne is considered capped by a manse of equal rating. Over the course of a week, this temporary manse produces a hearthstone somewhere toward the center of the pattern of crystals.
    Those who desire may use the manse-creation process in The Books of Sorcery, Vol. III - Oadenol's Codex (pp. 63-79) to create the resultant manse. The manse must have Fragility•• to reflect the ease of breaking the Charm, and many powers listed are incompatible with the basically non-material nature of the manse. Storyteller and player should work together to craft the resulting manse, keeping in mind its makeup. The manse is a thing of Essence and crystal, not fortifications and rooms.
    Alternatively, this Charm can be used to enhance an existing manse, raising it up to match the demesne it caps (so a level-3 manse capping a level-5 demesne would be raised up to leve-5). Doing so requires that the Jadeborn construct her web of crystals around the hearthstone chamber of the manse, and the Charm lasts only as long as that web is undisturbed. As long as the Charm is active, however, the demesne is considered completely capped, and powers such as Essence Vents are no longer needed.
-   This Charm lasts until the pattern of gemstones that makes it is disturbed (requiring a [Strength + Athletics] total of 10 or more), the invoker cancels it or Emerald Counter-magic (or its equivalent) is used against it.
-      </description>
+   This Charm lasts until the pattern of gemstones that makes it is disturbed (requiring a [Strength + Athletics] total of 10 or more), the invoker cancels it or Emerald Counter-magic (or its equivalent) is used against it.</description>
    </charms>
    <charms>
       <name>Resplendent Dispersion Technique</name>
@@ -1652,8 +1612,7 @@
    One success: The character establishes whether the artifact is functional, damaged or otherwise inoperative.
    Two successes: The Artisan understands the overall category of purpose into which the item's magic falls (offensive, defensive, utilitarian, etc.).
    Three successes: The character gleans the device's specific purpose but not the details of its powers (narrative details only, without any explanation of rules or traits).
-   Four or more successes: The Artisan discerns the specific details and operation of all the artifact's powers and understands perfectly how to operate it.
-      </description>
+   Four or more successes: The Artisan discerns the specific details and operation of all the artifact's powers and understands perfectly how to operate it.</description>
    </charms>
    <charms>
       <name>Incomparable Forge Dominion</name>
@@ -1722,8 +1681,7 @@
       </prerequest>
       <description>Carefully disseminated to every Artisan capable of learning it, this Charm is considered the single most important piece of magical lore known to the Mountain Folk. The Jadeborn race would quickly dwindle into extinction without it. Jade's Egg Hatched allows an Artisan to shape those jade nodules that contain Mountain Folk souls, transforming rigid stone into living flesh as he frees the Jadeborn within.
    The birthing ritual takes (8 - the Artisan's Essence) minutes. Roll the Artisan's (Intelligence + Craft [Earth]) at a variable difficulty based on the caste being shaped: difficulty 1 to produce a Worker, difficulty 2 for a Warrior and difficulty 6 for an Artisan. Failing the roll produces a Worker, while a botch results in stillbirth and forces the soul to flee to a new nodule of jade. Rolling eight successes or more in an attempt to shape a Warrior or Worker can make the undercaste one of the Enlightened, at Storyteller discretion.
-   These numbers are not reflective of normal birthing percentages. Typically only one in 1,000 or so Mountain Folk is Enlightened (either as an Artisan or as one of the "lower" castes). For a more "realistic" percentage, roll four dice. If three successes are rolled, the child can be an Artisan. With four successes, she can be an Enlightened member of an undercaste. Roll the sculpting attempt normally, allowing creation of an Enlightened Jadeborn only if the probability check permits.
-      </description>
+   These numbers are not reflective of normal birthing percentages. Typically only one in 1,000 or so Mountain Folk is Enlightened (either as an Artisan or as one of the "lower" castes). For a more "realistic" percentage, roll four dice. If three successes are rolled, the child can be an Artisan. With four successes, she can be an Enlightened member of an undercaste. Roll the sculpting attempt normally, allowing creation of an Enlightened Jadeborn only if the probability check permits.</description>
    </charms>
    <charms>
       <name>Body Shaping Meditation</name>
@@ -1747,8 +1705,7 @@
          <name>Jade's Egg Hatched</name>
       </prerequest>
       <description>The Artisan concentrates, willing the threads of his Essence to reweave themselves. His form undulates and flows like soft clay in response, remolding itself to his specifications. Once this Charm is invoked, the Artisan's player may reallocate a number of dots of his Physical Attributes up to his Essence. This effect cannot raise any Attribute above seven dots or reduce any Attribute below three dots, nor can it alter any Attribute by more than three dots from its true rating.
-   The character may drop the Charm at any time, returning to his normal traits. A character's body can accept only one application of this Charm at a time. If he wishes to change the allocation, he must first drop back to his normal configuration by ending the Charm.
-      </description>
+   The character may drop the Charm at any time, returning to his normal traits. A character's body can accept only one application of this Charm at a time. If he wishes to change the allocation, he must first drop back to his normal configuration by ending the Charm.</description>
    </charms>
    <charms>
       <name>Artisan Pattern Mastery</name>
@@ -1808,8 +1765,7 @@
 • 4 motes extremely intricate design with complex parts or combination of highly complex mechanisms with complex makeup; (perfect equipment, highly sophisticated clockworks, base parts for magitech devices)
 • 5 motes raw magical materials; (adamant, jade, orichalcum, moonsilver only - cannot create starmetal or soulsteel by this process)
    Only nonliving matter can be created, regardless of Essence spent. Automatons or other self-motivated machines created with this Charm will be lifeless, still requiring the complex enchantments and patterning needed to give them "life". A character who lacks sufficient motes to fuel the Charm may prepare ahead of time with Essence-Focusing Concentration.
-   In addition to conferring the ability to create objects, Artisan Pattern Mastery allows Artisans to create new Charms. This procedure follows the guidelines and restrictions for other Pattern Mastery Charms (see p. 57). Finally, Artisan masters subtract two motes from the Essence cost to activate any Artisan Pattern Charm (except the creation ability associated with mastery itself), to a minimum cost of one mote.
-      </description>
+   In addition to conferring the ability to create objects, Artisan Pattern Mastery allows Artisans to create new Charms. This procedure follows the guidelines and restrictions for other Pattern Mastery Charms (see p. 57). Finally, Artisan masters subtract two motes from the Essence cost to activate any Artisan Pattern Charm (except the creation ability associated with mastery itself), to a minimum cost of one mote.</description>
    </charms>
    <charms>
       <name>Glorious Prodigy Lesson</name>
@@ -1832,8 +1788,7 @@
          <name>None</name>
       </prerequest>
       <description>The Jadeborn engages in a course of isolated contemplation, surrounding himself with the trappings and teachings of a skill or knowledge he has previously studied. At the end of a day and a night of study, he emerges, newly focused on his new field of mastery.
-   The player selects an Ability in which the character already has at least one dot. After invoking this Charm, that Ability becomes a Favored Ability (if it's not one already), and the character gains one dot in it. Additionally, the character's maximum potential rating in that trait increases by one. This Charm cannot be used to improve the same Ability more than once, excepting only those Abilities (Craft, for example) that can be developed in multiple different fields of study.
-      </description>
+   The player selects an Ability in which the character already has at least one dot. After invoking this Charm, that Ability becomes a Favored Ability (if it's not one already), and the character gains one dot in it. Additionally, the character's maximum potential rating in that trait increases by one. This Charm cannot be used to improve the same Ability more than once, excepting only those Abilities (Craft, for example) that can be developed in multiple different fields of study.</description>
    </charms>
    <charms>
       <name>Upon Strands Lightly</name>
@@ -1856,8 +1811,7 @@
          <name>Glorious Prodigy Lesson</name>
       </prerequest>
       <description>This Charm marks the beginning of the cascade known as the Art of Civilization. By attuning herself to the web of interactions and social ties around her, the Jadeborn empathically weaves herself into the tapestry of society, becoming an intrinsic part of it. She intuitively understands the rituals of courtesy and gesture that lubricate the wheels of interaction in the society she finds herself a part of and executes these mannerisms with flawless - if automatic and mindless - precision. She might not understand exactly why she must, for example, screw blue mud into the place where her navel should be, only that it is the key to harmonious interaction with her surroundings.
-   This hyperawareness of social cues and interactions brings with it a sensitivity to social and physical dangers. She subconsciously knows when those around her intend her immediate harm - physical or otherwise. Sensing this danger is automatic (unless the intent is masked by Charms invoked by a being with a higher Essence than her own), but the Jadeborn may perceive the source of the danger only with a successful reflexive (Perception + Compassion) roll made by her player. The difficulty of that roll is equal to the attacker's permanent Essence. The warning provided by this Charm comes at least one full action before any impending attack, ruining any chance of ambush or surprise.
-      </description>
+   This hyperawareness of social cues and interactions brings with it a sensitivity to social and physical dangers. She subconsciously knows when those around her intend her immediate harm - physical or otherwise. Sensing this danger is automatic (unless the intent is masked by Charms invoked by a being with a higher Essence than her own), but the Jadeborn may perceive the source of the danger only with a successful reflexive (Perception + Compassion) roll made by her player. The difficulty of that roll is equal to the attacker's permanent Essence. The warning provided by this Charm comes at least one full action before any impending attack, ruining any chance of ambush or surprise.</description>
    </charms>
    <charms>
       <name>Mien Of (Virtue)</name>
@@ -1894,8 +1848,7 @@
    Valor: The Jadeborn adopts an aggressive stance, projecting dignified pride and furious anger. While she might outwardly retain the superficial signs of courtesy, her whispers carry the force of shouted epithets, and her every word is a manifestation of glorious tyranny. While highly advantageous in social combat, this mien is seen as a weapon of last resort, and normally used sparingly. Those who rely on its power are often seen as crass or even barbaric.
    This mien attracts immediate attention from all those around the Jadeborn, and it aids in argumentation and social attacks, adding the character's Valor to her player's social rolls made to represent raw force of personality, intimidation or attacks of personality and rage. The mien also adds a bonus equal to half the character's Valor (rounded up) to her MDV scores, as with other miens, as her anger and forceful personality bull through lesser social attacks.
    Unfortunately, this mien automatically voids all Stealth attempts that are not Charm-enhanced, making the character preternaturally conspicuous. The character cannot hope to blend into a crowd. The players of all observers receive a reflexive (Perception + Awareness) check at standard difficulty to locate the character. Also, her aggressive demeanor makes the character unlikable, making any social interaction where the Jadeborn can't succeed through domination and intimidation far more difficult. The Mountain Folk using this mien suffers an internal penalty equal to her Valor to all social rolls that are not based on domination, intimidation or argumentative force.
-   This mien's greater effect converts the standard dice bonus into automatic successes for intimidation attempts only. In addition, the character's voice carries clearly over any ambient noise. Everyone in her line of sight can hear the Jadeborn as clearly as if she stood directly before them.
-      </description>
+   This mien's greater effect converts the standard dice bonus into automatic successes for intimidation attempts only. In addition, the character's voice carries clearly over any ambient noise. Everyone in her line of sight can hear the Jadeborn as clearly as if she stood directly before them.</description>
    </charms>
    <charms>
       <name>Studious Erudition Technique</name>
@@ -1962,8 +1915,7 @@
          <name>Language And Meaning Discernment</name>
       </prerequest>
       <description>With a moment of concentration, the Jadeborn structures his thoughts into an abstract construct of Essence. He can then hurl that construct with a glance into the mind of any sentient being he can observe clearly. If the target attempts to resist the sudden intrusion of foreign thoughts, the Jadeborn's player must succeed at a reflexive Willpower roll with a difficulty equal to the target's highest Virtue to force his thoughts through her resolve. If the target receives the message, she hears it in the Jadeborn's own words, as if he were standing next to her and speaking clearly. The message can have any length, but once sent, the Jadeborn must invoke this Charm again to send a new message.
-   For the cost of one experience point, the Jadeborn can attune himself to another sentient being by using this Charm while maintaining physical contact. This attunement reduces the cost of this Charm to one mote, and the target may thereafter be out of visual range, up to (Essence) miles away, and still receive the Jadeborn's thought constructs.
-      </description>
+   For the cost of one experience point, the Jadeborn can attune himself to another sentient being by using this Charm while maintaining physical contact. This attunement reduces the cost of this Charm to one mote, and the target may thereafter be out of visual range, up to (Essence) miles away, and still receive the Jadeborn's thought constructs.</description>
    </charms>
    <charms>
       <name>Conference Of The Mind</name>
@@ -1987,8 +1939,7 @@
       </prerequest>
       <description>By touching or making eye contact with another sentient being and invoking this Charm, the Jadeborn may transport their minds into a shared dreamscape that exists outside time and space.
    This virtual space has whatever features and terrain the Jadeborn wishes, and he can dictate how events play out, regardless of the laws of reality. He cannot affect the thought-body of his target, however, nor may either participant come to any real harm in this mindscape. If the target knows this Charm as well, she can invoke it to give herself some measure of control over their shared reality, but at all times, the original invoker of the Charm is the primary guiding mind behind this virtual reality.
-   Though the Jadeborn may end it at will, the Charm's effects may be maintained for a period of time equal to the initiator's permanent Willpower in perceived hours, but once the Charm ends, no actual time will have elapsed. Although predominantly used to facilitate private communication, this Charm also sees use as a training tool, allowing for hours of training to pass in the blink of an eye.
-      </description>
+   Though the Jadeborn may end it at will, the Charm's effects may be maintained for a period of time equal to the initiator's permanent Willpower in perceived hours, but once the Charm ends, no actual time will have elapsed. Although predominantly used to facilitate private communication, this Charm also sees use as a training tool, allowing for hours of training to pass in the blink of an eye.</description>
    </charms>
    <charms>
       <name>Incomparable Tutoring Method</name>
@@ -2051,8 +2002,7 @@
          <description>Officially, study in the Chaos Pattern (also called the Unknown Pattern, the Hidden Pattern or the Impossible Pattern) is strictly forbidden. Its power is corrosive, wearing away at the Virtues of any who seek to master it, until they are psychotic predators.
    The Pattern of Chaos is smaller even than the Foundation Pattern, with a scant seven Charms directly in its structure. These Charms tap into the strange linkages between Autochthon's creations left behind when the Great Maker fled Creation - the Jadeborn and the pattern spiders. As a result, they have some resemblance to the Charms of the Sidereals, although they are much less powerful in general (being even further removed from the Loom of Fate's operations than the Sidereals are at their worst).
    Charms in the Pattern of Chaos normally have a cost in Divergence, as well as motes of Essence, Willpower or health levels. When a student of these Charms breaks, however, he does not suffer a misfortune, as with other Jadeborn. Instead, the pool resets, and he loses one dot of Compassion. This lost Compassion can be regained with experience, but each time a Chaos Seer loses a dot, the "ceiling" he can reach is lowered by one.
-   When a Jadeborn reaches Compassion 0, he can no longer raise his Compassion with experience, becomes a heartless sociopath with no moral compunctions about killing anyone for any reason (or no reason at all). He is spiritually lost. Chaos Seers who reach Compassion 0 are freed from the Great Geas, no longer gaining Divergence for any reason, and they may consort with the enemies of Creation without (spiritual) reprisal.
-         </description>
+   When a Jadeborn reaches Compassion 0, he can no longer raise his Compassion with experience, becomes a heartless sociopath with no moral compunctions about killing anyone for any reason (or no reason at all). He is spiritually lost. Chaos Seers who reach Compassion 0 are freed from the Great Geas, no longer gaining Divergence for any reason, and they may consort with the enemies of Creation without (spiritual) reprisal.</description>
       </tree>
       <reference>Debris from the Fallen Races, page 19</reference>
       <cost>1m per point of difficulty reduction, 1+ Divergence</cost>
@@ -2068,8 +2018,7 @@
          <name>None</name>
       </prerequest>
       <description>As the Chaos Seer begins her decent into madness, she begins to receive flashes of insight, premonitions of events just about to happen. These glimpses give the Jadeborn hints as to what the most advantageous action to take is, the best way to get what they want - or to deny others what they desire.
-   Each mote spent on this Charm reduces the target number of an Ability or Attribute roll the Jadeborn's player is about to make by one, to a minimum of 4. Each success scored on this roll garners the character one point of Divergence.
-      </description>
+   Each mote spent on this Charm reduces the target number of an Ability or Attribute roll the Jadeborn's player is about to make by one, to a minimum of 4. Each success scored on this roll garners the character one point of Divergence.</description>
    </charms>
    <charms>
       <name>The Winding Path</name>
@@ -2079,8 +2028,7 @@
          <description>Officially, study in the Chaos Pattern (also called the Unknown Pattern, the Hidden Pattern or the Impossible Pattern) is strictly forbidden. Its power is corrosive, wearing away at the Virtues of any who seek to master it, until they are psychotic predators.
    The Pattern of Chaos is smaller even than the Foundation Pattern, with a scant seven Charms directly in its structure. These Charms tap into the strange linkages between Autochthon's creations left behind when the Great Maker fled Creation - the Jadeborn and the pattern spiders. As a result, they have some resemblance to the Charms of the Sidereals, although they are much less powerful in general (being even further removed from the Loom of Fate's operations than the Sidereals are at their worst).
    Charms in the Pattern of Chaos normally have a cost in Divergence, as well as motes of Essence, Willpower or health levels. When a student of these Charms breaks, however, he does not suffer a misfortune, as with other Jadeborn. Instead, the pool resets, and he loses one dot of Compassion. This lost Compassion can be regained with experience, but each time a Chaos Seer loses a dot, the "ceiling" he can reach is lowered by one.
-   When a Jadeborn reaches Compassion 0, he can no longer raise his Compassion with experience, becomes a heartless sociopath with no moral compunctions about killing anyone for any reason (or no reason at all). He is spiritually lost. Chaos Seers who reach Compassion 0 are freed from the Great Geas, no longer gaining Divergence for any reason, and they may consort with the enemies of Creation without (spiritual) reprisal.
-         </description>
+   When a Jadeborn reaches Compassion 0, he can no longer raise his Compassion with experience, becomes a heartless sociopath with no moral compunctions about killing anyone for any reason (or no reason at all). He is spiritually lost. Chaos Seers who reach Compassion 0 are freed from the Great Geas, no longer gaining Divergence for any reason, and they may consort with the enemies of Creation without (spiritual) reprisal.</description>
       </tree>
       <reference>Debris from the Fallen Races, page 20</reference>
       <cost>2m, 1 Divergence</cost>
@@ -2096,8 +2044,7 @@
          <name>The Diverging Road</name>
       </prerequest>
       <description>Binary decisions - left or right, stop or go, attack or retreat - become little more than child's play for the Chaos Seer. By subconsciously casting forth into the warp and weft of the Loom, he can tell at a glance which option is the correct action to take. Most times he is correct, but the hand of chaos - or the whim of the pattern spiders - can frown even on these interlopers.
-   When confronted with a purely binary decision - a fork in the tunnels, a decision to trust or not, etc. - the Chaos Seer can spend two motes to gain insight into which way will best advance his cause. The Seer's player rolls (Perception + Essence), with a difficulty adjudicated by the Storyteller based on how much impact the decision actually has and how far in the future its impact will be. The greater either (or both) are, the higher the difficulty. (If neither tunnel has great impact on the character's goals, the difficulty might be only 1. If trusting another character might have tremendous impact on the character's long-term goals - but not for decades -the difficulty might be a 5 or higher.) Each use of this Charm garners the character one Divergence.
-      </description>
+   When confronted with a purely binary decision - a fork in the tunnels, a decision to trust or not, etc. - the Chaos Seer can spend two motes to gain insight into which way will best advance his cause. The Seer's player rolls (Perception + Essence), with a difficulty adjudicated by the Storyteller based on how much impact the decision actually has and how far in the future its impact will be. The greater either (or both) are, the higher the difficulty. (If neither tunnel has great impact on the character's goals, the difficulty might be only 1. If trusting another character might have tremendous impact on the character's long-term goals - but not for decades -the difficulty might be a 5 or higher.) Each use of this Charm garners the character one Divergence.</description>
    </charms>
    <charms>
       <name>The Compelling Way</name>
@@ -2107,8 +2054,7 @@
          <description>Officially, study in the Chaos Pattern (also called the Unknown Pattern, the Hidden Pattern or the Impossible Pattern) is strictly forbidden. Its power is corrosive, wearing away at the Virtues of any who seek to master it, until they are psychotic predators.
    The Pattern of Chaos is smaller even than the Foundation Pattern, with a scant seven Charms directly in its structure. These Charms tap into the strange linkages between Autochthon's creations left behind when the Great Maker fled Creation - the Jadeborn and the pattern spiders. As a result, they have some resemblance to the Charms of the Sidereals, although they are much less powerful in general (being even further removed from the Loom of Fate's operations than the Sidereals are at their worst).
    Charms in the Pattern of Chaos normally have a cost in Divergence, as well as motes of Essence, Willpower or health levels. When a student of these Charms breaks, however, he does not suffer a misfortune, as with other Jadeborn. Instead, the pool resets, and he loses one dot of Compassion. This lost Compassion can be regained with experience, but each time a Chaos Seer loses a dot, the "ceiling" he can reach is lowered by one.
-   When a Jadeborn reaches Compassion 0, he can no longer raise his Compassion with experience, becomes a heartless sociopath with no moral compunctions about killing anyone for any reason (or no reason at all). He is spiritually lost. Chaos Seers who reach Compassion 0 are freed from the Great Geas, no longer gaining Divergence for any reason, and they may consort with the enemies of Creation without (spiritual) reprisal.
-         </description>
+   When a Jadeborn reaches Compassion 0, he can no longer raise his Compassion with experience, becomes a heartless sociopath with no moral compunctions about killing anyone for any reason (or no reason at all). He is spiritually lost. Chaos Seers who reach Compassion 0 are freed from the Great Geas, no longer gaining Divergence for any reason, and they may consort with the enemies of Creation without (spiritual) reprisal.</description>
       </tree>
       <reference>Debris from the Fallen Races, page 20</reference>
       <cost>4m, 2 Divergence</cost>
@@ -2127,8 +2073,7 @@
       </prerequest>
       <description>Madness lends a charisma and potency all its own to the words of the Chaos Seer. His words carry the whisper of madness on them, but at the same time, they are oddly compelling, eventually wearing down even the hardiest of souls and the strongest of wills.
    Each application of this Charm requires that the Chaos Seer converse with his target for a scene or more, though this conversation need not be directly related to the Jadeborn's goals. At the end of the discussion, the Jadeborn's player rolls (Manipulation + Presence) against the target's MDV. Each success scored costs the target one Willpower and subjects her to an unnatural mental influence - which costs an additional Willpower to resist.
-   As long as the Jadeborn keeps motes committed to this Charm, a character under its effects will continue to obey any reasonable-sounding suggestions from the Seer. Precisely what is considered "reasonable" grows ever more madness-tinged as the victim is subjected to the Seer's conversation. (This is reflected in the character's reduced Willpower. The lower the Willpower, the more insane the orders the character will follow without question).
-      </description>
+   As long as the Jadeborn keeps motes committed to this Charm, a character under its effects will continue to obey any reasonable-sounding suggestions from the Seer. Precisely what is considered "reasonable" grows ever more madness-tinged as the victim is subjected to the Seer's conversation. (This is reflected in the character's reduced Willpower. The lower the Willpower, the more insane the orders the character will follow without question).</description>
    </charms>
    <charms>
       <name>The Hazardous Trail</name>
@@ -2138,8 +2083,7 @@
          <description>Officially, study in the Chaos Pattern (also called the Unknown Pattern, the Hidden Pattern or the Impossible Pattern) is strictly forbidden. Its power is corrosive, wearing away at the Virtues of any who seek to master it, until they are psychotic predators.
    The Pattern of Chaos is smaller even than the Foundation Pattern, with a scant seven Charms directly in its structure. These Charms tap into the strange linkages between Autochthon's creations left behind when the Great Maker fled Creation - the Jadeborn and the pattern spiders. As a result, they have some resemblance to the Charms of the Sidereals, although they are much less powerful in general (being even further removed from the Loom of Fate's operations than the Sidereals are at their worst).
    Charms in the Pattern of Chaos normally have a cost in Divergence, as well as motes of Essence, Willpower or health levels. When a student of these Charms breaks, however, he does not suffer a misfortune, as with other Jadeborn. Instead, the pool resets, and he loses one dot of Compassion. This lost Compassion can be regained with experience, but each time a Chaos Seer loses a dot, the "ceiling" he can reach is lowered by one.
-   When a Jadeborn reaches Compassion 0, he can no longer raise his Compassion with experience, becomes a heartless sociopath with no moral compunctions about killing anyone for any reason (or no reason at all). He is spiritually lost. Chaos Seers who reach Compassion 0 are freed from the Great Geas, no longer gaining Divergence for any reason, and they may consort with the enemies of Creation without (spiritual) reprisal.
-         </description>
+   When a Jadeborn reaches Compassion 0, he can no longer raise his Compassion with experience, becomes a heartless sociopath with no moral compunctions about killing anyone for any reason (or no reason at all). He is spiritually lost. Chaos Seers who reach Compassion 0 are freed from the Great Geas, no longer gaining Divergence for any reason, and they may consort with the enemies of Creation without (spiritual) reprisal.</description>
       </tree>
       <reference>Debris from the Fallen Races, page 20</reference>
       <cost>15m, 2wp, 1+xp, 1+ Divergence</cost>
@@ -2160,8 +2104,7 @@
    The Chaos Seer can impart knowledge and training in much the same fashion as Incomparable Tutoring Method (see Scroll of Fallen Races: The Mountain Folk, p. 72), and the two Charms are nearly identical in operation. The Hazardous Trail differs, however, in that the Seer can also derive knowledge from her student under some circumstances while imparting this knowledge, and the use of this Charm is not at all obvious.
    While imparting knowledge - Abilities, specialties, Mental Attributes, Charms or mere information - to her victim, the Seer may also draw insight from him, gaining a like trait in exchange. The Jadeborn must spend any necessary experience points to gain this trait. He gains Divergence equal to one-fifth the total experience points used during the invocation of this Charm - including any experience point debt incurred on the part of the victim.
    The target of this Charm will not necessarily know that he has been subjected to it. The Seer's player rolls (Manipulation + Essence) against a difficulty equal to the target's current Willpower. If this roll is successful, the target has no idea that he has been granted any new traits and may use them subconsciously for some time before being confronted with the evidence of their usage. This can be especially true for Charms. Unlike Incomparable Tutoring Method, the Seer can implant Charms for which the character does not yet meet all the requirements. This is often done with The Diverging Road, planting the seed of Chaos in the unwary.
-   This Charm is most often used by Chaos Seers to create more of their kind, infecting their jailers with the madness they were themselves subjected to. Indeed, this is the most common way that the Impossible Pattern is taught to others, since so few records of its methods exist.
-      </description>
+   This Charm is most often used by Chaos Seers to create more of their kind, infecting their jailers with the madness they were themselves subjected to. Indeed, this is the most common way that the Impossible Pattern is taught to others, since so few records of its methods exist.</description>
    </charms>
    <charms>
       <name>The Parallel Lanes</name>
@@ -2171,8 +2114,7 @@
          <description>Officially, study in the Chaos Pattern (also called the Unknown Pattern, the Hidden Pattern or the Impossible Pattern) is strictly forbidden. Its power is corrosive, wearing away at the Virtues of any who seek to master it, until they are psychotic predators.
    The Pattern of Chaos is smaller even than the Foundation Pattern, with a scant seven Charms directly in its structure. These Charms tap into the strange linkages between Autochthon's creations left behind when the Great Maker fled Creation - the Jadeborn and the pattern spiders. As a result, they have some resemblance to the Charms of the Sidereals, although they are much less powerful in general (being even further removed from the Loom of Fate's operations than the Sidereals are at their worst).
    Charms in the Pattern of Chaos normally have a cost in Divergence, as well as motes of Essence, Willpower or health levels. When a student of these Charms breaks, however, he does not suffer a misfortune, as with other Jadeborn. Instead, the pool resets, and he loses one dot of Compassion. This lost Compassion can be regained with experience, but each time a Chaos Seer loses a dot, the "ceiling" he can reach is lowered by one.
-   When a Jadeborn reaches Compassion 0, he can no longer raise his Compassion with experience, becomes a heartless sociopath with no moral compunctions about killing anyone for any reason (or no reason at all). He is spiritually lost. Chaos Seers who reach Compassion 0 are freed from the Great Geas, no longer gaining Divergence for any reason, and they may consort with the enemies of Creation without (spiritual) reprisal.
-         </description>
+   When a Jadeborn reaches Compassion 0, he can no longer raise his Compassion with experience, becomes a heartless sociopath with no moral compunctions about killing anyone for any reason (or no reason at all). He is spiritually lost. Chaos Seers who reach Compassion 0 are freed from the Great Geas, no longer gaining Divergence for any reason, and they may consort with the enemies of Creation without (spiritual) reprisal.</description>
       </tree>
       <reference>Debris from the Fallen Races, page 21</reference>
       <cost>5m, 2 Divergence</cost>
@@ -2189,8 +2131,7 @@
          <name>The Winding Path</name>
       </prerequest>
       <description>As her mastery over the strange interface between the Jadeborn and the pattern spiders grows, the Seer is more able to consciously impose her will upon the Loom, manipulating the pattern spiders into enforcing her desires.
-   Through the use of this Charm, the Seer manipulates reality to enforce two different fates upon a target simultaneously, the outcome of two different probabilities. The Seer invokes this Charm, then her player rolls two attacks (of any sort the character could normally undertake). Although those observing will see only the less successful action actually take place, the target suffers the outcome of both attacks. (The Seer could appear to barely wound his victim with a physical attack, only to have his opponent fall dead from the cumulative damage of the weak attack and a much stronger simultaneous attack). Any type of perfect defense defends against both attacks, if it is applicable (or if it trumps applicability).
-      </description>
+   Through the use of this Charm, the Seer manipulates reality to enforce two different fates upon a target simultaneously, the outcome of two different probabilities. The Seer invokes this Charm, then her player rolls two attacks (of any sort the character could normally undertake). Although those observing will see only the less successful action actually take place, the target suffers the outcome of both attacks. (The Seer could appear to barely wound his victim with a physical attack, only to have his opponent fall dead from the cumulative damage of the weak attack and a much stronger simultaneous attack). Any type of perfect defense defends against both attacks, if it is applicable (or if it trumps applicability).</description>
    </charms>
    <charms>
       <name>Pattern-Rending Onslaught</name>
@@ -2200,8 +2141,7 @@
          <description>Officially, study in the Chaos Pattern (also called the Unknown Pattern, the Hidden Pattern or the Impossible Pattern) is strictly forbidden. Its power is corrosive, wearing away at the Virtues of any who seek to master it, until they are psychotic predators.
    The Pattern of Chaos is smaller even than the Foundation Pattern, with a scant seven Charms directly in its structure. These Charms tap into the strange linkages between Autochthon's creations left behind when the Great Maker fled Creation - the Jadeborn and the pattern spiders. As a result, they have some resemblance to the Charms of the Sidereals, although they are much less powerful in general (being even further removed from the Loom of Fate's operations than the Sidereals are at their worst).
    Charms in the Pattern of Chaos normally have a cost in Divergence, as well as motes of Essence, Willpower or health levels. When a student of these Charms breaks, however, he does not suffer a misfortune, as with other Jadeborn. Instead, the pool resets, and he loses one dot of Compassion. This lost Compassion can be regained with experience, but each time a Chaos Seer loses a dot, the "ceiling" he can reach is lowered by one.
-   When a Jadeborn reaches Compassion 0, he can no longer raise his Compassion with experience, becomes a heartless sociopath with no moral compunctions about killing anyone for any reason (or no reason at all). He is spiritually lost. Chaos Seers who reach Compassion 0 are freed from the Great Geas, no longer gaining Divergence for any reason, and they may consort with the enemies of Creation without (spiritual) reprisal.
-         </description>
+   When a Jadeborn reaches Compassion 0, he can no longer raise his Compassion with experience, becomes a heartless sociopath with no moral compunctions about killing anyone for any reason (or no reason at all). He is spiritually lost. Chaos Seers who reach Compassion 0 are freed from the Great Geas, no longer gaining Divergence for any reason, and they may consort with the enemies of Creation without (spiritual) reprisal.</description>
       </tree>
       <reference>Debris from the Fallen Races, page 21</reference>
       <cost>8+m, 1wp, 2 Divergence</cost>
@@ -2224,8 +2164,7 @@
    With this Charm, a Seer reaches out his hand and will to sever a handful of these strands, disintegrating the target in a flare of Essence. This Charm requires 10 ticks to perform. For part of this time, the Seer concentrates on her target, gathering Essence and determining the correct place to strike. During this time (the first six ticks of the action), her DV is halved, due to her concentration. Once this is completed, she makes a slashing motion through the air, releasing her power as a web of colorless streamers that engulf the target and consume it utterly in an iridescent cascade of light, leaving behind only glittering motes of dust. Anyone or anything that somehow survives an attack by this Charm is almost assuredly horribly maimed.
    The attack from Pattern-Rending Onslaught is made using the Seer's (Willpower + Essence). It can be dodged but cannot be parried without an enchanted weapon. If a non-magical weapon is used, the parry fails automatically and the weapon is destroyed, even if it is magically enhanced. (Perfect defenses that trump applicability, such as Heavenly Guardian Defense, protect the user, though not the weapon).
    The colorless beams have a base damage of (10L + successes + 1L for every mote spent after the eighth). There is no limit on how many motes the Seer may pour into a single use of this Charm (other than her available Essence). The Charm bypasses all non-magical soak and instantly destroys all non-magical armor. This attack can affect immaterial beings (which the Jadeborn must perceive and target using some other effect).
-   Anything destroyed by this Charm is truly obliterated, removed utterly from Creation and the Tapestry and leaves no trace of any sort of its existence. Only utterly indestructible objects - Mountain Folk souls, Celestial Exaltations and beings with Primordial Essence - can endure to reincarnate or linger in the Underworld as appropriate. Storytellers should probably allow this Charm to instantly destroy extras and non-magical objects of roughly human size or smaller without any sort of roll, rather than wasting time with an attack or damage roll.
-      </description>
+   Anything destroyed by this Charm is truly obliterated, removed utterly from Creation and the Tapestry and leaves no trace of any sort of its existence. Only utterly indestructible objects - Mountain Folk souls, Celestial Exaltations and beings with Primordial Essence - can endure to reincarnate or linger in the Underworld as appropriate. Storytellers should probably allow this Charm to instantly destroy extras and non-magical objects of roughly human size or smaller without any sort of roll, rather than wasting time with an attack or damage roll.</description>
    </charms>
    <charms>
       <name>Heart Of Chaos</name>
@@ -2235,8 +2174,7 @@
          <description>Officially, study in the Chaos Pattern (also called the Unknown Pattern, the Hidden Pattern or the Impossible Pattern) is strictly forbidden. Its power is corrosive, wearing away at the Virtues of any who seek to master it, until they are psychotic predators.
    The Pattern of Chaos is smaller even than the Foundation Pattern, with a scant seven Charms directly in its structure. These Charms tap into the strange linkages between Autochthon's creations left behind when the Great Maker fled Creation - the Jadeborn and the pattern spiders. As a result, they have some resemblance to the Charms of the Sidereals, although they are much less powerful in general (being even further removed from the Loom of Fate's operations than the Sidereals are at their worst).
    Charms in the Pattern of Chaos normally have a cost in Divergence, as well as motes of Essence, Willpower or health levels. When a student of these Charms breaks, however, he does not suffer a misfortune, as with other Jadeborn. Instead, the pool resets, and he loses one dot of Compassion. This lost Compassion can be regained with experience, but each time a Chaos Seer loses a dot, the "ceiling" he can reach is lowered by one.
-   When a Jadeborn reaches Compassion 0, he can no longer raise his Compassion with experience, becomes a heartless sociopath with no moral compunctions about killing anyone for any reason (or no reason at all). He is spiritually lost. Chaos Seers who reach Compassion 0 are freed from the Great Geas, no longer gaining Divergence for any reason, and they may consort with the enemies of Creation without (spiritual) reprisal.
-         </description>
+   When a Jadeborn reaches Compassion 0, he can no longer raise his Compassion with experience, becomes a heartless sociopath with no moral compunctions about killing anyone for any reason (or no reason at all). He is spiritually lost. Chaos Seers who reach Compassion 0 are freed from the Great Geas, no longer gaining Divergence for any reason, and they may consort with the enemies of Creation without (spiritual) reprisal.</description>
       </tree>
       <reference>Debris from the Fallen Races, page 22</reference>
       <cost>10m, 1+ Divergence</cost>
@@ -2261,7 +2199,6 @@
       <description>The pinnacle of current understanding of the Chaos Pattern, this is, curiously, not the Mastery Charm. Whether this is because there are more Charms left for the Seers to uncover in their madness, or whether this merely means that there is no such capstone Charm for this Pattern is unknown.
    Using this Charm, the Chaos Seer can cast his precognitive abilities into the far future or more clearly model the present, gaining insight into what is happening with great detail, as well as what might happen. Roll the Seer's (Intelligence + Essence), with a base difficulty of 3. Add one to the difficulty for every year (or fraction thereof) distant the character wishes to look. Storytellers may impose additional difficulty modifiers as appropriate.
    With one success, the character gleans vague information about the topic of his prognostications. With three successes, the information is much clearer, providing a largely accurate answer to the central question being asked. Five successes provide an answer as well as placing that answer in a helpful context.
-   The character garners one Divergence for every die that scores a success, even if the attempt as a whole fails. Combining this Charm with The Diverging Road can yield startlingly accurate predictions, but it can also lead to ruinously large amounts of Divergence for the character.
-      </description>
+   The character garners one Divergence for every die that scores a success, even if the attempt as a whole fails. Combining this Charm with The Diverging Road can yield startlingly accurate predictions, but it can also lead to ruinously large amounts of Divergence for the character.</description>
    </charms>
 </body>

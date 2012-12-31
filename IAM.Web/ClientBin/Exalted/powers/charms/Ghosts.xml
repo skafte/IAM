@@ -26,8 +26,7 @@
       </prerequest>
       <description>Ghosts who are incorporeal can move through solid objects with ease. Ghosts with this Charm, however, can physically become one with solid objects in the land of the living and hide within them. As the ghost lays his hand on the object, the player rolls (Manipulation + Craft). The Craft Ability he rolls depends on the type of object. He can hide inside only discrete, mundane objects that are not constructed of (and do not incorporate) any of the magical materials. Also, the object must be at least as large as a comb, and no larger than a yeddim's howdah. Once he is safely absorbed into the object, he remains there for a number of hours equal to the activation roll successes.
    While he's within the object, the character cannot be detected by any mundane means, nor can he be harmed. He's vaguely aware of what goes on around the item, but specific information is beyond his reach. (He could detect people moving around in the room where he's hiding, and he could infer from their movements that they were looking for him, but he wouldn't be able to tell who they were unless they spoke and he recognized their voices). If the item within which he's hiding is damaged, he suffers no damage himself. If damage resulting from fire, pulverization or magic affects the item, though, the character becomes aware of it as a faint sense of alarm. Should any of those three sources destroy the ghost's hiding place, the ghost is sent to Lethe.
-   A ghost using this Charm ends it prematurely if he exits the item in which he's hiding before the duration lapses. If he wants to hide in that item again (or move to a better one), he must activate the Charm again.
-      </description>
+   A ghost using this Charm ends it prematurely if he exits the item in which he's hiding before the duration lapses. If he wants to hide in that item again (or move to a better one), he must activate the Charm again.</description>
    </charms>
    <charms>
       <name>Motivated Shell</name>
@@ -54,8 +53,7 @@
          <name>Assassin's Subtle Escape</name>
       </prerequest>
       <description>A ghost can use this Charm's prerequisite to hide within an object in the living world, but while she's in there, she's effectively trapped. Even if the object can move, she can't move it. With this Charm, however, she can manipulate the object from within. First, she must let herself be absorbed into the object using Assassin's Subtle Escape. Activating this Charm requires a second (Manipulation + Craft) roll along with the new activation cost. For each success on the roll, she can control the object's actions for six ticks.
-   While she's in control, the ghost can make the object do anything it normally could do or be made to do by hand. If someone else fights her for control of the object - if, for instance, the ghost hides within a wheelbarrow and tries to snatch it away from the filthy peasant who's pushing it out toward the cow fields - pit the other person's (Strength + Athletics) in a contested roll against the ghost's player's activation roll. Whoever's roll has more successes decides what the object does.
-      </description>
+   While she's in control, the ghost can make the object do anything it normally could do or be made to do by hand. If someone else fights her for control of the object - if, for instance, the ghost hides within a wheelbarrow and tries to snatch it away from the filthy peasant who's pushing it out toward the cow fields - pit the other person's (Strength + Athletics) in a contested roll against the ghost's player's activation roll. Whoever's roll has more successes decides what the object does.</description>
    </charms>
    <charms>
       <name>Ride The Mystic Vessel</name>
@@ -82,8 +80,7 @@
          <name>Assassin's Subtle Escape</name>
       </prerequest>
       <description>This Charm grants the character the ability to use Assassin's Subtle Escape to hide within objects made of the magical materials. To use it, his player rolls the character's Valor. The new capability remains in effect for a number of subsequent actions equal to successes on the roll. In one of those subsequent actions, the character may then activate Assassin's Subtle Escape to attempt to inhabit an item made of one of the five magical materials. The ghost then remains within the magical object as per a normal use of Assassin's Subtle Escape. (The extended duration of this Charm exists to allow the player an extra attempt if he should fail the first activation roll for Assassin's Subtle Escape).
-   If the magical object is rated Artifact•• or higher, the ghost cannot inhabit it unless it is made of jade or soulsteel. If the object is rated Artifact•••• or higher, the ghost cannot hide within it at all. If the object is currently attuned to someone, the ghost cannot hide within it at all, regardless of its Artifact rating.
-      </description>
+   If the magical object is rated Artifact•• or higher, the ghost cannot inhabit it unless it is made of jade or soulsteel. If the object is rated Artifact•••• or higher, the ghost cannot hide within it at all. If the object is currently attuned to someone, the ghost cannot hide within it at all, regardless of its Artifact rating.</description>
    </charms>
    <charms>
       <name>Angry Trickster Ghost Method</name>
@@ -111,8 +108,7 @@
       </prerequest>
       <description>Venting her rage on the world around her, the ghost causes loose objects to rise into the air and swirl at dangerous speeds in a five-yard radius. A single success on a (Conviction + Melee) roll activates this Charm and sustains the whirlwind until the character's next action. Additional successes can either increase the radius of the effect by five yards or increase the duration of the effect by five ticks. Once the ghost has set the storm in motion and set its size and duration, she may act normally on subsequent actions.
    The number of successes on the activation roll also count as a number of attack successes against which anyone caught in the whirlwind must defend himself every five ticks that the whirlwind remains in effect. Anyone who can't successfully defend himself suffers four dice of damage. (The predominant type of debris determines the type of damage).
-   The Obvious keyword applies only when the ghost is corporeal and visible when she activates this Charm. The whirlwind itself is still very much in evidence if an immaterial ghost activates the Charm, but if the ghost is not detectable by mundane senses, the source of the flying detritus is not self-evident.
-      </description>
+   The Obvious keyword applies only when the ghost is corporeal and visible when she activates this Charm. The whirlwind itself is still very much in evidence if an immaterial ghost activates the Charm, but if the ghost is not detectable by mundane senses, the source of the flying detritus is not self-evident.</description>
    </charms>
    <charms>
       <name>Dark Steed Mastery</name>
@@ -139,8 +135,7 @@
          <name>None</name>
       </prerequest>
       <description>The ghostly steeds of the Underworld do not handle like living mounts do. They don't spook as easily at roadside distractions or balk at daunting obstacles. Riding such steeds, therefore, takes special training and a little getting used to. This Charm - a favorite of ghostly cavalrymen, messengers and explorers - augments the special knack it takes to master an Underworld steed. A rider can add one die to his Ride dice pools per mote of Essence he spends, up to a maximum equal to his Essence rating.
-   This Charm works only on ghostly mounts and only in either the Underworld or a shadowland. It has no effect whatsoever on living mounts. It has no effect on mounts in Creation unless the rider uses the Evoke the Ancient Clay Charm called Manifest the Dark Steed to make his ghostly mount appear in Creation. At the Storyteller's discretion, this Charm can be used as normal when a ghost rides a mount animated by necromancy (provided controlling the construct requires a Ride roll).
-      </description>
+   This Charm works only on ghostly mounts and only in either the Underworld or a shadowland. It has no effect whatsoever on living mounts. It has no effect on mounts in Creation unless the rider uses the Evoke the Ancient Clay Charm called Manifest the Dark Steed to make his ghostly mount appear in Creation. At the Storyteller's discretion, this Charm can be used as normal when a ghost rides a mount animated by necromancy (provided controlling the construct requires a Ride roll).</description>
    </charms>
    <charms>
       <name>Former Life Destruction Technique</name>
@@ -167,8 +162,7 @@
          <name>None</name>
       </prerequest>
       <description>Unlike the other common Arcanoi Charms, this one isn't a classic that reiterates spontaneously time and again. It's a relatively recent trick introduced to dead society by the Deathlords. The trick's widespread popularity among students of the Arcanoi is what makes it common.
-   Once she learns this Charm, a ghost strips away her name and replaces it with a new title or pseudonym. Thereafter, she gains a four-die bonus to actively resist any sorcery or necromancy effect that relies on her former name. It also grants her a +2 bonus to her MDVs when someone tries to use her former name against her to influence her behavior.
-      </description>
+   Once she learns this Charm, a ghost strips away her name and replaces it with a new title or pseudonym. Thereafter, she gains a four-die bonus to actively resist any sorcery or necromancy effect that relies on her former name. It also grants her a +2 bonus to her MDVs when someone tries to use her former name against her to influence her behavior.</description>
    </charms>
    <charms>
       <name>Moon's Cold Glow</name>
@@ -195,8 +189,7 @@
          <name>None</name>
       </prerequest>
       <description>The Underworld is a bleak, gloomy place. The most common weather patterns alternate oily rain with ominous, gray fog with stiff winds that carry minute flecks of bone dust. Overhead, the sky is perpetually overcast, leaving it up to the Calendar of Setesh to divide day from night. Ghosts caught out in bad weather without a light source are effectively blind.
-   With this Charm, however, the ghost can see as well in the darkness of the Underworld as any of the three Full Moon entries on the Sample Visibility Conditions table on page 135 of Exalted, regardless of however much worse the visibility conditions actually are. The Charm functions just as well in Creation or a shadowland as it does in the Underworld. In any location, it functions only at night. The player rolls (Perception + Conviction) to activate the power, which remains active for a number of nights equal to successes on the roll.
-      </description>
+   With this Charm, however, the ghost can see as well in the darkness of the Underworld as any of the three Full Moon entries on the Sample Visibility Conditions table on page 135 of Exalted, regardless of however much worse the visibility conditions actually are. The Charm functions just as well in Creation or a shadowland as it does in the Underworld. In any location, it functions only at night. The player rolls (Perception + Conviction) to activate the power, which remains active for a number of nights equal to successes on the roll.</description>
    </charms>
    <charms>
       <name>Ox-Body Technique</name>
@@ -249,8 +242,7 @@
          <name>None</name>
       </prerequest>
       <description>Using this Charm allows a ghost to better perform tasks that call for a Sail roll, whether he's working the tiller of a Stygian canal barge or he's the captain of black-sailed trawler dredging the depths of the Sea of Shadows. This Charm gives him a one-die bonus per mote of Essence spent to supplement a Sail roll, up to a maximum number equal to his Essence rating.
-   This Charm works only in the Underworld or a shadowland, as the fluid dynamics of clear water of the living world are quite different from those of the water-ways of the dead. If a ghost is a part (or the head) of the crew of a vessel brought into Creation with Conjure the Defeated Vessel or Sunken Admiral Technique (from the Evoke the Ancient Clay Arcanos), the player can augment his Sail rolls while the character is aboard the vessel.
-      </description>
+   This Charm works only in the Underworld or a shadowland, as the fluid dynamics of clear water of the living world are quite different from those of the water-ways of the dead. If a ghost is a part (or the head) of the crew of a vessel brought into Creation with Conjure the Defeated Vessel or Sunken Admiral Technique (from the Evoke the Ancient Clay Arcanos), the player can augment his Sail rolls while the character is aboard the vessel.</description>
    </charms>
    <charms>
       <name>Pyre Smoke Form</name>
@@ -277,8 +269,7 @@
          <name>None</name>
       </prerequest>
       <description>In their natural environs, ghosts are just as materially solid as mortals are in their homes in the living world. With this Charm, however, a ghost can make herself incorporeal even in locations where she should naturally be solid (such as the Underworld). Activating the Charm requires a (Stamina + Temperance) roll. If it succeeds, the ghost remains incorporeal for six ticks per success. Yet although she is incorporeal, the character remains as visible as she normally would be in that location.
-   A ghost who is incorporeal can move through solid objects at will. That is, she won't fall through the floor of the second story of her home if she's just walking around up there, but she can plunge down through the floor for a quick getaway. She can dive through walls or doors or startled onlookers, or pull herself up through ceilings with all the grace her (Dexterity + Athletics) pool allows. The only surfaces that prove impenetrable to incorporeal ghosts are ones that are specifically warded against such shenanigans and the solid ground beneath their feet.
-      </description>
+   A ghost who is incorporeal can move through solid objects at will. That is, she won't fall through the floor of the second story of her home if she's just walking around up there, but she can plunge down through the floor for a quick getaway. She can dive through walls or doors or startled onlookers, or pull herself up through ceilings with all the grace her (Dexterity + Athletics) pool allows. The only surfaces that prove impenetrable to incorporeal ghosts are ones that are specifically warded against such shenanigans and the solid ground beneath their feet.</description>
    </charms>
    <charms>
       <name>Breeze-Carried Ash Form</name>
@@ -306,8 +297,7 @@
       </prerequest>
       <description>With this Charm, a ghost can fly through the air - i.e., he can take Move or Dash actions in all three dimensions. To activate the Charm, the player rolls (Dexterity + Athletics). Each success lets the character fly for six ticks. The only hitch is that the character must be incorporeal while he's flying. He must, therefore, be either in Creation and not manifest or in his natural environs and using the prerequisite Charm. (The Obvious keyword applies only to the latter circumstance).
    If the character has not landed by the time this Charm wears off, his momentum carries him for just a moment - long enough for a stunt, but not much else - then he falls. If the character is incorporeal, he plummets earthward toward either solid ground or the highest solid object between himself and it and crashes into it. If he hits solid ground from a great height, he suffers no damage but explodes into a poof of ectoplasmic dust that takes a single miscellaneous action to reform into the shape of his body.
-   The trouble starts when the character is using the prerequisite Charm to allow himself to use this Charm to fly in a location where he is naturally solid. If this Charm's duration lapses while he's in flight, things could work out poorly. If he comes down before his use of Pyre Smoke Form runs out, he's got nothing to worry about. If he crashes after his Pyre Smoke Form Charm wears off, he takes damage normally based on how far he fell when Breeze-Carried Ash Form wore off.
-      </description>
+   The trouble starts when the character is using the prerequisite Charm to allow himself to use this Charm to fly in a location where he is naturally solid. If this Charm's duration lapses while he's in flight, things could work out poorly. If he comes down before his use of Pyre Smoke Form runs out, he's got nothing to worry about. If he crashes after his Pyre Smoke Form Charm wears off, he takes damage normally based on how far he fell when Breeze-Carried Ash Form wore off.</description>
    </charms>
    <charms>
       <name>Scent Of Sweet Blood</name>
@@ -334,8 +324,7 @@
          <name>None</name>
       </prerequest>
       <description>The blood of living creatures is powerful and almost intoxicating to the dead. With it, ghosts can be summoned, appeased or even bound. The dead rely on this Charm to locate this precious substance. With just a moment's concentration, a ghost with this Charm can detect the warm, sweet smell of blood spilled deliberately or even oozing from open wounds. The blood must have come from a living animal, a mortal or an Exalt, though the blood need not be fresh when the ghost smells it. The "donor" need not even be alive when the ghost smells the blood, so long as he or she was alive when the blood came out.
-   While the character uses this Charm, she can smell spilled animal blood at a range of one half mile per dot of Essence she has. She can smell a mortal or Exalt's blood at a range of one mile per dot of Essence. Strong winds, overpowering odors and a very large or very small amount of blood can all affect the range at which a character can detect the scent. No roll is required, though. The character automatically learns the direction of and distance to any site of spilled blood within her range. She can't discern such things as what type of creature shed the blood, how much blood has been shed or how long ago the bloodshed occurred.
-      </description>
+   While the character uses this Charm, she can smell spilled animal blood at a range of one half mile per dot of Essence she has. She can smell a mortal or Exalt's blood at a range of one mile per dot of Essence. Strong winds, overpowering odors and a very large or very small amount of blood can all affect the range at which a character can detect the scent. No roll is required, though. The character automatically learns the direction of and distance to any site of spilled blood within her range. She can't discern such things as what type of creature shed the blood, how much blood has been shed or how long ago the bloodshed occurred.</description>
    </charms>
    <charms>
       <name>Two-World Vision</name>
@@ -362,8 +351,7 @@
          <name>None</name>
       </prerequest>
       <description>This Charm allows a ghost to peer from his location in the Underworld into the corresponding location in Creation. (The realms exist in such perfect parallel that every place in the Underworld outside the inner slopes of the Abyss has a corresponding site in Creation). This vision lasts only temporarily, and it works only one way. Someone in Creation whom the ghost in the Underworld can see with this Charm cannot see the ghost. By the same token, a ghost in Creation cannot use this Charm to look back into the Underworld. Also, the Charm works only when it's night in Creation.
-   Activating this Charm requires a successful (Perception + Occult) roll, after which it lasts for a single action. That is, the ghost can see into Creation for only those six ticks it takes for his DV to refresh after he activates the Charm. While the ghost looks into Creation, he cannot see what transpires around him in the Underworld, though his other senses still function normally there.
-      </description>
+   Activating this Charm requires a successful (Perception + Occult) roll, after which it lasts for a single action. That is, the ghost can see into Creation for only those six ticks it takes for his DV to refresh after he activates the Charm. While the ghost looks into Creation, he cannot see what transpires around him in the Underworld, though his other senses still function normally there.</description>
    </charms>
    <charms>
       <name>Unconscious Speech</name>
@@ -390,8 +378,7 @@
          <name>None</name>
       </prerequest>
       <description>This neat little trick allows an incorporeal ghost in the living world to speak through a nearby living being. The ghost must "touch" the living being, and that being must be capable of speech. The character spends a mote of Essence as the player rolls (Dexterity + Performance). If the roll succeeds, the target says what the ghost wants him to say in up to as many words as successes garnered on the roll. At that point, the target's player is allowed a reflexive (Intelligence + Occult) roll. If the roll fails, the target remains unaware (and subsequently unwilling to believe) that he said anything. If the roll succeeds, he realizes what's happening.
-   If a character realizes a ghost is trying to speak through him, he may spend a Willpower point to resist each subsequent use of this Charm against him from the same ghost. Or he could allow the ghost to speak through him. If he does so, the ghost's player need not roll and may communicate one full sentence per mote of Essence spent. The willing target can hear and understand the words spoken through his mouth, but he cannot speak while the ghost speaks through him.
-      </description>
+   If a character realizes a ghost is trying to speak through him, he may spend a Willpower point to resist each subsequent use of this Charm against him from the same ghost. Or he could allow the ghost to speak through him. If he does so, the ghost's player need not roll and may communicate one full sentence per mote of Essence spent. The willing target can hear and understand the words spoken through his mouth, but he cannot speak while the ghost speaks through him.</description>
    </charms>
    <charms>
       <name>Whispers Of The Living</name>
@@ -418,8 +405,7 @@
          <name>None</name>
       </prerequest>
       <description>Similar to Two-World Vision, this Charm extends a ghost's sense from the land of the dead to the world of the living. Using this Charm, the ghost can hear what's going on in Creation (out to the limit of his normal hearing) from the spot parallel to his location in the Underworld. As with Two-World Vision, Whispers of the Living functions only during Creation's night and only in one direction. While the ghost listens in on Creation, he cannot hear what's going on around him in the Underworld.
-   Activating this Charm requires a successful (Perception + Occult) roll. It lasts for a number of minutes equal to the number of successes on the roll. Therefore, it behooves one who wants to be able to see and hear Creation from the Underworld to activate this Charm first, as this Charm lasts longer.
-      </description>
+   Activating this Charm requires a successful (Perception + Occult) roll. It lasts for a number of minutes equal to the number of successes on the roll. Therefore, it behooves one who wants to be able to see and hear Creation from the Underworld to activate this Charm first, as this Charm lasts longer.</description>
    </charms>
    <charms>
       <name>Soul Anchor</name>
@@ -446,8 +432,7 @@
          <name>None</name>
       </prerequest>
       <description>When a ghost activates this Charm, an oppressive pall falls over the surrounding area, weighing down those who try the hardest to escape. For 10 minutes per success on a (Charisma + Temperance) roll, no one within 25 yards of where the ghost activated the Charm may use supernatural abilities to move faster than they could on an unassisted Dash action.
-   The ghost who used the Charm and any affected being with a higher Essence rating than that ghost may spend a Willpower point to ignore this Charm's effects for the scene.
-      </description>
+   The ghost who used the Charm and any affected being with a higher Essence rating than that ghost may spend a Willpower point to ignore this Charm's effects for the scene.</description>
    </charms>
    <charms>
       <name>Monarch's Glorious Brilliance</name>
@@ -476,8 +461,7 @@
       </prerequest>
       <description>The character pulls a shroud of her Underworld master's authority around herself, which blazes as a blinding white corona until the character's next action. During the day in the Underworld, this light is visible up to a mile away. At night, it can be seen all the way out to the horizon.
    When the light appears, the player of anyone within 20 yards who looks at the ghost is allowed a reflexive (Wits + Resistance) roll. The character is temporarily blinded for 15 ticks, minus five ticks per success on the roll. Even if the resistance roll garners enough successes to mitigate the effect entirely, the character must still refrain from looking at the ghost using the Charm until the eerie brilliance has died down. As such, that character is still effectively blind with regard to the ghost using this Charm.
-         (Blindness is discussed on p. 152 of Exalted).
-      </description>
+         (Blindness is discussed on p. 152 of Exalted).</description>
    </charms>
    <charms>
       <name>Essence Binding</name>
@@ -505,8 +489,7 @@
       </prerequest>
       <description>Invoking his master's name and authority, the ghost extrudes icy chains from his palms that bind his foe's hands or feet. These chains -the links of which are shaped like the characters of the ghost's master's name - whip around the foe's limbs in an instant, cinch tight and seal themselves together at the ends.
    The ghost's target must be in close-combat range, and both parties must be corporeal at the time. The ghost must also decide when he activates the Charm whether he wants to bind the target's arms or legs. Activating the Charm is an attack that uses the ghost's (Dexterity + Bureaucracy) pool with a +2 Accuracy bonus. This attack can be dodged normally or parried with a stunt. If the attack succeeds, the target's arms are bound firmly at her sides or her legs are bound tightly together. A character whose arms are bound can move only her hands and fingers, while a character whose legs are bound can move, dash, swim or jump only one-fifth her normal distance.
-   The binding chains last for five ticks per success on the attack roll, not taking the target's defenses into account. (Dodging or parrying this attack is an all-or-nothing proposition). Breaking the chains before the duration elapses is possible, though it is a feat of strength akin to snapping iron manacles. (See Exalted, p. 127). If the target breaks out of the chains, parries them successfully or dodges them when they come at her, the chains shatter into dust.
-      </description>
+   The binding chains last for five ticks per success on the attack roll, not taking the target's defenses into account. (Dodging or parrying this attack is an all-or-nothing proposition). Breaking the chains before the duration elapses is possible, though it is a feat of strength akin to snapping iron manacles. (See Exalted, p. 127). If the target breaks out of the chains, parries them successfully or dodges them when they come at her, the chains shatter into dust.</description>
    </charms>
    <charms>
       <name>Snare The Fleeing Thief</name>
@@ -535,8 +518,7 @@
          <name>Essence Binding</name>
       </prerequest>
       <description>When a ghost uses this Charm, her master's name or other identifying symbol appears on her palm, which she then uses to strike her target. Doing so adds an  Accuracy bonus equal to her Bureaucracy to a normal Martial Arts attack. If this attack succeeds - i.e., is not successfully dodged or parried - it inflicts no damage but instead envelops the target in a shining outline of white light. This light slows the target down considerably so he can't get away.
-   For a number of minutes equal to threshold successes on the attack roll, the target can move only one-fifth his normal speed, no matter how he's moving. This Charm doesn't affect Dexterity-based actions that rely on hand-eye coordination, just locomotion.
-      </description>
+   For a number of minutes equal to threshold successes on the attack roll, the target can move only one-fifth his normal speed, no matter how he's moving. This Charm doesn't affect Dexterity-based actions that rely on hand-eye coordination, just locomotion.</description>
    </charms>
    <charms>
       <name>Essence Lasso Form</name>
@@ -625,8 +607,7 @@
    Green    6-10
    Yellow   11-20
    Orange  21-40
-   Red       41+
-      </description>
+   Red       41+</description>
    </charms>
    <charms>
       <name>Delicious Essence Scent</name>
@@ -653,8 +634,7 @@
          <name>Aura-Reading Technique</name>
       </prerequest>
       <description>Where Aura-Reading Technique is a passive sense, this Charm is more active. To use it, the ghost spends three motes of Essence as her player rolls (Perception + Awareness). If the roll succeeds, the character can smell when any living source of Essence - i.e., any living being - comes within 100 yards of her for the rest of the scene. When she detects living Essence thus, the ghost can attempt to follow it back to its source.
-   Following Essence by scent is easier the more potent the source is. To track the Essence, the ghost's player rolls (Perception + Temperance). The difficulty equals (4 - target's Essence), minimum 1. If the roll succeeds, the ghost is aware of the target's relative distance and permanent Essence. Once the ghost has the scent, illusions and disguises cannot hide her target from her. Only effects that mask the target's Essence outright block the ghost's perception.
-      </description>
+   Following Essence by scent is easier the more potent the source is. To track the Essence, the ghost's player rolls (Perception + Temperance). The difficulty equals (4 - target's Essence), minimum 1. If the roll succeeds, the ghost is aware of the target's relative distance and permanent Essence. Once the ghost has the scent, illusions and disguises cannot hide her target from her. Only effects that mask the target's Essence outright block the ghost's perception.</description>
    </charms>
    <charms>
       <name>Essence-Devouring Ghost Touch</name>
@@ -682,8 +662,7 @@
       </prerequest>
       <description>Ghosts have good reason to fear other ghosts who know this Charm, though other beings have little to fear from it. With the Charm, a ghost can disrupt the Essence that flows through a fellow ghost and cause it to dissipate against the target's will. The user of the Charm does not draw the dissipated Essence into himself, but it's often just as well that his opponent doesn't have it either.
    To use the Charm, the ghost must touch his target as the player rolls (Manipulation + Larceny), difficulty 2. (Touching the target requires an unarmed [Dexterity + Martial Arts] roll if that target attempts to avoid the touch). Every threshold success causes two motes of Essence to evaporate from the target's pool.
-   This Charm works only on targets of a ghostly nature.
-      </description>
+   This Charm works only on targets of a ghostly nature.</description>
    </charms>
    <charms>
       <name>Feeding The Lamprey's Appetite</name>
@@ -710,8 +689,7 @@
          <name>Essence-Devouring Ghost Touch</name>
       </prerequest>
       <description>With this Charm, a ghost can keep motes of Essence stripped away by Essence-Devouring Ghost Touch from going to waste. She absorbs motes taken from ghostly opponents with the prerequisite Charm, using them to replenish her own Essence pool.
-   When a ghost successfully uses Essence-Devouring Ghost Touch during a scene in which she has activated this Charm, the player is allowed a reflexive Temperance roll. (This reflexive roll does not count as a Charm use). If the roll succeeds, the ghost absorbs half of the motes that she successfully stripped away. The ghost can absorb only those motes that she herself stripped away with the prerequisite Charm. She cannot exceed her maximum number of motes with stolen Essence.
-      </description>
+   When a ghost successfully uses Essence-Devouring Ghost Touch during a scene in which she has activated this Charm, the player is allowed a reflexive Temperance roll. (This reflexive roll does not count as a Charm use). If the roll succeeds, the ghost absorbs half of the motes that she successfully stripped away. The ghost can absorb only those motes that she herself stripped away with the prerequisite Charm. She cannot exceed her maximum number of motes with stolen Essence.</description>
    </charms>
    <charms>
       <name>Ravening Life-Force Hunger</name>
@@ -739,8 +717,7 @@
          <name>Essence-Devouring Ghost Touch</name>
       </prerequest>
       <description>The moment a ghost learns this Charm, all creatures with Essence have as much reason to fear him as his fellow ghosts did when he learned the prerequisite. The ghost can now use the effects of Essence-Devouring Ghost Touch on the living, on gods, on demons and on the Exalted. Doing so requires a touch, as well as the same (Manipulation + Larceny) roll at difficulty 2. The main difference is that the ghost must be manifest and corporeal, as must his target, in order to use this Charm.
-   If the target is capable of channeling Essence, each threshold success on the activation roll strips away two motes of Essence. These motes do not automatically transfer to the ghost, nor are they susceptible to absorption by Feeding the Lamprey's Appetite. If the target cannot channel Essence, this Charm disrupts her life force directly. The player of the affected character rolls (Stamina + Resistance) at difficulty 3. If the roll succeeds, the character survives but blows out a shud-dering breath that steams bright white regardless of the temperature. If the roll fails, the character's time grows short. By sundown or sunrise (whichever comes first), chills and auditory hallucinations incapacitate her. If a character with at least three dots of Medicine does not successfully treat her, the victim will die within a number of days equal to her Stamina. Treatment involves an (Intelligence + Medicine) roll, difficulty 1, on behalf of a qualified character.
-      </description>
+   If the target is capable of channeling Essence, each threshold success on the activation roll strips away two motes of Essence. These motes do not automatically transfer to the ghost, nor are they susceptible to absorption by Feeding the Lamprey's Appetite. If the target cannot channel Essence, this Charm disrupts her life force directly. The player of the affected character rolls (Stamina + Resistance) at difficulty 3. If the roll succeeds, the character survives but blows out a shud-dering breath that steams bright white regardless of the temperature. If the roll fails, the character's time grows short. By sundown or sunrise (whichever comes first), chills and auditory hallucinations incapacitate her. If a character with at least three dots of Medicine does not successfully treat her, the victim will die within a number of days equal to her Stamina. Treatment involves an (Intelligence + Medicine) roll, difficulty 1, on behalf of a qualified character.</description>
    </charms>
    <charms>
       <name>Blood-Drinking Thirst</name>
@@ -767,8 +744,7 @@
          <name>Ravening Life-Force Hunger</name>
       </prerequest>
       <description>Activating this Charm is a simple action that requires the expenditure of a point of Willpower. Thereafter, during the scene it remains active, the ghost can reap a hearty harvest of the motes she strips away from her victims using either Essence-Devouring Ghost Touch or Ravening Life-Force Hunger.
-   If the ghost uses either of those two Charms successfully, the player may spend a point of Willpower and make a reflexive Temperance roll. (This roll does not count as a Charm use). If the Temperance roll succeeds, the character absorbs all the motes her preceding use of Essence-Devouring Ghost Touch or Ravening Life-Force Hunger stripped away from the victim. She can absorb only those motes she personally stripped away. As with Feeding the Lamprey's Appetite, she cannot exceed her maximum number of motes with stolen Essence. If she uses Ravening Life-Force Hunger on a target who cannot channel Essence, subsequently using this Charm's effect grants no benefit.
-      </description>
+   If the ghost uses either of those two Charms successfully, the player may spend a point of Willpower and make a reflexive Temperance roll. (This roll does not count as a Charm use). If the Temperance roll succeeds, the character absorbs all the motes her preceding use of Essence-Devouring Ghost Touch or Ravening Life-Force Hunger stripped away from the victim. She can absorb only those motes she personally stripped away. As with Feeding the Lamprey's Appetite, she cannot exceed her maximum number of motes with stolen Essence. If she uses Ravening Life-Force Hunger on a target who cannot channel Essence, subsequently using this Charm's effect grants no benefit.</description>
    </charms>
    <charms>
       <name>Blending The Streams Of Essence</name>
@@ -795,8 +771,7 @@
          <name>Essence-Devouring Ghost Touch</name>
       </prerequest>
       <description>What a ghost with this Charm's prerequisite can take away, so can he bestow. He must touch another ghostly character, which requires an unarmed Martial Arts attack if that character resists, and spend six motes of Essence as the player makes a Temperance roll. If successful, the ghost can then force a maximum number of his remaining motes equal to his Willpower through the connection. If the recipient is willing to accept them, she absorbs the transferred motes, adding them to her own pool. If the recipient is not willing to take them, the motes dissipate from the point of contact as a faint steam and are wasted. The same thing happens if the ghost attempts to transfer Essence to any non-ghostly creature, regardless of how willing the recipient might be to take it.
-   A ghost cannot give more motes than the recipient's maximum, and he cannot leave himself with less than one mote.
-      </description>
+   A ghost cannot give more motes than the recipient's maximum, and he cannot leave himself with less than one mote.</description>
    </charms>
    <charms>
       <name>Feeding Life's Fountain</name>
@@ -823,8 +798,7 @@
          <name>Blending The Streams Of Essence</name>
       </prerequest>
       <description>When she is manifest and corporeal, a ghost can transfer some of her Essence to a living recipient, just as she uses the prerequisite Charm on fellow ghosts. The roll and limitations of this Charm are the same as they are for Blending the Streams of Essence, and the ghost much touch her intended recipient. The recipient must still be willing, as well.
-   If the recipient is an Essence channeler, he absorbs the motes into his pool as normal. If the recipient cannot channel Essence, the ghost's Essence augments the character's health for a number of days equal to (ghost's Essence x motes transferred). While this benefit lasts, the recipient gains one automatic success on all (Stamina + Resistance) rolls to resist illness or poisoning. This Charm also mitigates any fertility deficiency or reproductive difficulty short of literal sterility that would normally make conception difficult. (For rules on handling Essence exchange with characters with two Essence pools, see page 155).
-      </description>
+   If the recipient is an Essence channeler, he absorbs the motes into his pool as normal. If the recipient cannot channel Essence, the ghost's Essence augments the character's health for a number of days equal to (ghost's Essence x motes transferred). While this benefit lasts, the recipient gains one automatic success on all (Stamina + Resistance) rolls to resist illness or poisoning. This Charm also mitigates any fertility deficiency or reproductive difficulty short of literal sterility that would normally make conception difficult. (For rules on handling Essence exchange with characters with two Essence pools, see page 155).</description>
    </charms>
    <charms>
       <name>Fertile Soul Endowment</name>
@@ -853,8 +827,7 @@
       <description>It is thanks to this Charm that the Ghost-Blooded exist, as it allows ghosts to impregnate living women. To use it, the ghost must be corporeal and must be in either Creation or a shadowland. During the scene in which the Charm is active, the ghost and the mortal woman need not actually copulate (though they certainly can), but they must share at least a long, passionate kiss. Either a male or female ghost may use this Charm, but the living partner must be female.
    During the embrace, at a moment of the ghost's choosing, the ghost's player makes a reflexive (Temperance + Essence) roll against a difficulty equal to the living woman's Essence. If the roll fails, nothing happens. If the roll botches, the woman is stricken sterile unless her player succeeds on a reflexive (Stamina + Resistance) roll, difficulty 2. (Exalted and other supernatural beings do not risk sterility). If the activation roll succeeds, the woman conceives a Ghost-Blooded offspring. Regardless of the outcome, the scene is considered to be over after the attempt at conception.
    The mother carries the child of a successful conception to term normally. The Essence spent activating this Charm remains committed until the child is born or the pregnancy otherwise ends. The ghost cannot willingly end this commitment. Even the ghost's destruction does not release the Essence.
-   One sinister implication of this Charm's effects is that only the ghost need be cognizant of its use. The living partner need be neither aware of it, nor willing to submit to it.
-      </description>
+   One sinister implication of this Charm's effects is that only the ghost need be cognizant of its use. The living partner need be neither aware of it, nor willing to submit to it.</description>
    </charms>
    <charms>
       <name>Filling The Precious Vial</name>
@@ -881,8 +854,7 @@
          <name>Blending The Streams Of Essence</name>
       </prerequest>
       <description>With this Charm, a ghost siphons off a portion of his Essence and seals it in some sort of inanimate container for later use. The best and most common containers are soulfire crystals (see The Manual of Exalted Power - The Abyssals, p. 215) and Essence-containing gems (see The Manual of Exalted Power - The Abyssals, p. 215), though other container designs are allowed. Vessels suitable for holding Essence are usually small and as delicate as glass, however, so it behooves one to handle them with care. Breaking a container causes an explosion that inflicts one die of raw (lethal) damage per mote stored on anyone within 10 feet.
-   To fill a suitable container, the ghost spends seven motes to power the effect and concentrates a number of his remaining motes to be stored in the palm of his hand. He then places the container there as his player rolls (Perception + Larceny) at difficulty 2. If he succeeds, the motes are absorbed into the container and stored there. If the ghost then spends a Willpower point to seal the container, the motes remain inside until someone takes them out. If he doesn't spend the Willpower, one mote leaks out of the container per day.
-      </description>
+   To fill a suitable container, the ghost spends seven motes to power the effect and concentrates a number of his remaining motes to be stored in the palm of his hand. He then places the container there as his player rolls (Perception + Larceny) at difficulty 2. If he succeeds, the motes are absorbed into the container and stored there. If the ghost then spends a Willpower point to seal the container, the motes remain inside until someone takes them out. If he doesn't spend the Willpower, one mote leaks out of the container per day.</description>
    </charms>
    <charms>
       <name>Soulsteel Scream</name>
@@ -910,8 +882,7 @@
       </prerequest>
       <description>This Charm enables a ghost to discern information about the history of either a single piece of soulsteel or a soulsteel artifact - i.e., one for which soulsteel is the predominant magical material. He need only touch the metal a moment and close his eyes as his player rolls (Perception + Craft). The Craft Ability required is determined by the type of object in question.
    If the roll succeeds, the player may ask the Storyteller one straightforward question per success regarding the object's past. These questions can include information about who has used the object, how the object was used and events that transpired around the object even when it was not in use. Items that are relics of things destroyed in Creation contain information regarding their existence in Creation as well.
-   The character receives all the answers to the player's questions in an instantaneous flash of information. People around him hear only a brief scream from the souls forged into the metal.
-      </description>
+   The character receives all the answers to the player's questions in an instantaneous flash of information. People around him hear only a brief scream from the souls forged into the metal.</description>
    </charms>
    <charms>
       <name>Soulsteel Shaper</name>
@@ -939,8 +910,7 @@
       </prerequest>
       <description>Any ghost who dwells near an Underworld soulsteel refinery and manufactory covets this Charm above all others. Having it elevates her from rank-and-file wraith who could be folded into a soulsteel artifact herself some day to valued assistant condemning her fellows to that hellish eternity for her own sake. Using the Charm allows a ghostly technician to act as a competent aide in building soulsteel artifacts.
    Normally, a single ghost with minimum ratings of 3 in Lore, Occult and a relevant Craft Ability would count as "mortal" assistants (per the guidelines on p. 29 of The Books of Sorcery, Vol. III - Oadenol's Codex) when she helps a master artisan craft soulsteel. With this Charm, a ghost who doesn't meet the Ability qualifications can still count as a "mortal" assistant. If the ghost is already qualified, using this Charm allows her to count as a "supernatural" assistant instead.
-   The ghost who uses this Charm better understands the techniques and tricks of working only with soulsteel. She can't use this Charm to better help build artifacts that use other substances as the primary magical material.
-      </description>
+   The ghost who uses this Charm better understands the techniques and tricks of working only with soulsteel. She can't use this Charm to better help build artifacts that use other substances as the primary magical material.</description>
    </charms>
    <charms>
       <name>Grave Goods Shaping Technique</name>
@@ -967,8 +937,7 @@
          <name>Soulsteel Shaper</name>
       </prerequest>
       <description>It is a well-known fact that items buried with the dead materialize in the Underworld as grave goods, crystallizing from the strange Essence of that realm as exact copies of their living-world counterparts. Using this Charm, a ghostly artisan makes grave goods' Essence malleable, allowing him to reshape such items into new forms. He can add supplementary materials to the new item for support or decoration, so long as he doesn't exceed 10 percent of the original object's mass. He can also break the original object down into smaller individual items, so long as each new item consists of no more than 90 percent of the original material. As long as he abides by those restrictions, he can fashion a completely new and fully functional item (or set of items) from the original's materials. The resulting item(s) retain any magical properties the original had, though every individual piece in a matching set made from a single item must be together for those magical properties to function.
-   Changing a single grave goods item into a new form takes seven days per dot of the Grave Goods Background the original item represents. The ghost may spend the required Essence in a lump sum up front or spread the cost out day by day. He may pay off the balance at any time.
-      </description>
+   Changing a single grave goods item into a new form takes seven days per dot of the Grave Goods Background the original item represents. The ghost may spend the required Essence in a lump sum up front or spread the cost out day by day. He may pay off the balance at any time.</description>
    </charms>
    <charms>
       <name>Soulsteel Rebuilding Technique</name>
@@ -995,8 +964,7 @@
          <name>Soulsteel Shaper</name>
       </prerequest>
       <description>This Charm is similar to Grave Goods Shaping Technique in that it lets a ghostly artisan change one item into another (or into a set of smaller ones). The items in question in this case, though, are soulsteel artifacts rather than simply grave goods. The restrictions on mass and composition remain the same as for Grave Goods Shaping Technique, and it likewise takes seven days to complete the transformation per dot of Artifact the original item represents. The new item retains the magical properties of the original. If the finished product is a set of smaller items, the original's magical properties function only when all the items in the new set are together.
-   The new artifact a ghost creates cannot be of a higher Artifact value than the original was. A ghost cannot use this Charm, for instance, to reforge a reaver daiklave into a thinner grand daiklave or a dire chain into a long powerbow. Use the guidelines on pages 13-18 of The Books of Sorcery, Vol. III - Oadenol's Codex to compare the relative power of a proposed new artifact to the original.
-      </description>
+   The new artifact a ghost creates cannot be of a higher Artifact value than the original was. A ghost cannot use this Charm, for instance, to reforge a reaver daiklave into a thinner grand daiklave or a dire chain into a long powerbow. Use the guidelines on pages 13-18 of The Books of Sorcery, Vol. III - Oadenol's Codex to compare the relative power of a proposed new artifact to the original.</description>
    </charms>
    <charms>
       <name>Soulsteel Forging</name>
@@ -1023,8 +991,7 @@
          <name>Soulsteel Rebuilding Technique</name>
       </prerequest>
       <description>No matter how skilled a ghost with the prerequisite Charm is at transforming one soulsteel artifact into another, it's much harder to work raw soulsteel into fine artifacts. Under normal circumstances, only Exalted artificers have that capacity. With this Charm, however, the ghost internalizes the knack for working the metal, twisting the Essence and torturing the imprisoned souls into the proper shapes.
-   Forging items of soulsteel takes just as long as forging similar objects of normal materials, which can require ghosts to activate this Charm again and again until the project is finished. When the work is done, the item has all the standard abilities of its designed form, as well as the basic soulsteel bonuses. (See Exalted, pp. 387 and 390 for the bonuses soulsteel grants to close-combat and ranged weapons and to armor). This Charm does not allow a ghost to imbue a new artifact with any other magical properties or powers as an Exalted artificer would be able to do.
-      </description>
+   Forging items of soulsteel takes just as long as forging similar objects of normal materials, which can require ghosts to activate this Charm again and again until the project is finished. When the work is done, the item has all the standard abilities of its designed form, as well as the basic soulsteel bonuses. (See Exalted, pp. 387 and 390 for the bonuses soulsteel grants to close-combat and ranged weapons and to armor). This Charm does not allow a ghost to imbue a new artifact with any other magical properties or powers as an Exalted artificer would be able to do.</description>
    </charms>
    <charms>
       <name>Soulsteel Miner's Sense</name>
@@ -1051,8 +1018,7 @@
          <name>Soulsteel Rebuilding Technique</name>
       </prerequest>
       <description>A ghost with this Charm can use it to locate the black, argillaceous ore of the Labyrinth that is one of the two main components of soulsteel (the other component being souls). When the ghost activates this power, the player rolls (Perception + Craft [Earth]). For every success on the roll, the ghost gains a keen internal sense of where the nearest unmined deposit of the ore can be found. This sense manifests by reducing the difficulty to find or mine the soulsteel ore by one. If this bonus reduces the difficulty to 0, the ghost can walk right to the vein of ore with his eyes shut and tell exactly how deeply in the Labyrinth's wall it is buried.
-   This sense works only while the ghost is in the Labyrinth himself. If he leaves the Labyrinth for any reason before the power's duration expires, he must reactivate it once he reenters the hellish maze if he intends to keep searching.
-      </description>
+   This sense works only while the ghost is in the Labyrinth himself. If he leaves the Labyrinth for any reason before the power's duration expires, he must reactivate it once he reenters the hellish maze if he intends to keep searching.</description>
    </charms>
    <charms>
       <name>Taste The Demon Wind</name>
@@ -1085,8 +1051,7 @@
          3              500 yards
          4   One mile
          5+   Five miles
-   Within that range, the ghost can tell the number and location of all present hungry ghosts. This awareness manifests as a sound (like faint howling that no one else can hear), a smell (like rotting remains) or a sudden frisson of cold down the spine. Once the ghost is aware of the hungry ghosts, he remains aware of them for as long as they remain in the range determined by his successes. He does not gain any awareness of hungry ghosts who enter that range after the Charm is activated or who leave that range then return.
-      </description>
+   Within that range, the ghost can tell the number and location of all present hungry ghosts. This awareness manifests as a sound (like faint howling that no one else can hear), a smell (like rotting remains) or a sudden frisson of cold down the spine. Once the ghost is aware of the hungry ghosts, he remains aware of them for as long as they remain in the range determined by his successes. He does not gain any awareness of hungry ghosts who enter that range after the Charm is activated or who leave that range then return.</description>
    </charms>
    <charms>
       <name>Call The Ravening Hound</name>
@@ -1119,8 +1084,7 @@
          2              250 Yards  2
          3              500 Yards  4
          4   One Mile    8
-         5+   Five Miles  20
-      </description>
+         5+   Five Miles  20</description>
    </charms>
    <charms>
       <name>Ferocious Predator Beacon</name>
@@ -1149,8 +1113,7 @@
          <name>Call The Ravening Hound</name>
       </prerequest>
       <description>To use this Charm, the ghost touches his target as the player rolls (Manipulation + Presence), difficulty 2. (Touching the target calls for an unarmed Martial Arts attack if the target is wisely unwilling to stand still for it). If the roll succeeds, a ghastly white handprint outlined in red appears on the target's chest and back, visible through any clothes or armor he's wearing. The beacon lasts for one hour. If the player spends one experience point when he activates the Charm, the beacon lasts for a year. If he spends two experience points, it is permanent. The Essence that empowers this Charm is committed if the ghost uses it for only the standard one-hour duration. If the player spends experience points to extend the duration, however, that Essence is no longer committed.
-   While the beacon exists, all hungry ghosts in line of sight are irresistibly compelled to hunt down and devour the target. They give chase until either they're destroyed or they lose the scent. When theduration lapses, any hungry ghosts who are already in pursuit won't necessarily give up the chase. New hungry ghosts won't necessarily join in the chase either, though.
-      </description>
+   While the beacon exists, all hungry ghosts in line of sight are irresistibly compelled to hunt down and devour the target. They give chase until either they're destroyed or they lose the scent. When theduration lapses, any hungry ghosts who are already in pursuit won't necessarily give up the chase. New hungry ghosts won't necessarily join in the chase either, though.</description>
    </charms>
    <charms>
       <name>Diversion Of The Savage Hunter</name>
@@ -1178,8 +1141,7 @@
       </prerequest>
       <description>For the young ghost or neophyte ghost tamer, Taste the Demon Wind is the best means of avoiding regrettable entanglements with savage hungry ghosts. If you know where the hungry ghosts are, you can avoid them from the start. Those who can't avoid drawing hungry ghosts' attention, however, must rely on this Charm. With it, the wraith makes herself imperceptible to every hungry ghost in the vicinity.
    To use the Charm, the ghost stands perfectly still and spends the required Essence as her player rolls (Perception + Presence), difficulty 2. On a success, hungry ghosts can no longer see, hear or smell the character. If she attacks one of them, however, that hungry ghost once more becomes aware of her presence.
-   Some ghosts who have been marked by Ferocious Predator Beacon can use this Charm to mitigate its effects for one scene. The affected ghost must have a higher Essence rating than the one who put the mark on her had at the time the mark was levied. Thereafter, any time the affected ghost's activation of this Charm exceeds the successes rolled to inflict the mark, the affected ghost hides the mark for one scene.
-      </description>
+   Some ghosts who have been marked by Ferocious Predator Beacon can use this Charm to mitigate its effects for one scene. The affected ghost must have a higher Essence rating than the one who put the mark on her had at the time the mark was levied. Thereafter, any time the affected ghost's activation of this Charm exceeds the successes rolled to inflict the mark, the affected ghost hides the mark for one scene.</description>
    </charms>
    <charms>
       <name>Tame The Wicked Appetite</name>
@@ -1213,8 +1175,7 @@
          3               5
          4               10
          5+             20
-   When the normal duration of this Charm lapses, the ghost can spend a mote of Essence to extend the duration for another hour. Doing so affects all the hungry ghosts that were calmed by the original roll. If the character needs the hungry ghosts for longer-term service, the player may spend an experience point in addition to the cost of activating the Charm. Doing so makes the calming effect permanent. Even inflicting damage on an affected hungry ghost does not make it revert to its savage ways, though it will defend itself.
-      </description>
+   When the normal duration of this Charm lapses, the ghost can spend a mote of Essence to extend the duration for another hour. Doing so affects all the hungry ghosts that were calmed by the original roll. If the character needs the hungry ghosts for longer-term service, the player may spend an experience point in addition to the cost of activating the Charm. Doing so makes the calming effect permanent. Even inflicting damage on an affected hungry ghost does not make it revert to its savage ways, though it will defend itself.</description>
    </charms>
    <charms>
       <name>Command The Hungry Devil</name>
@@ -1248,8 +1209,7 @@
          3                              10
          4                              20
          5+                            30
-   The hungry ghosts all follow the same command immediately, to the best of their ability and with no regard for their own potential destruction. The command must be a simple one, however. If the order is too complex - such as, "Fight each other one by one in order of weakest to strongest!" - the hungry ghosts can't follow it. Instead, they pause in confusion for one miscellaneous action then resume whatever they were doing before.
-      </description>
+   The hungry ghosts all follow the same command immediately, to the best of their ability and with no regard for their own potential destruction. The command must be a simple one, however. If the order is too complex - such as, "Fight each other one by one in order of weakest to strongest!" - the hungry ghosts can't follow it. Instead, they pause in confusion for one miscellaneous action then resume whatever they were doing before.</description>
    </charms>
    <charms>
       <name>Dust Commands Litany</name>
@@ -1307,8 +1267,7 @@
       </prerequest>
       <description>A ghost with Tame the Wicked Appetite can calm hungry ghosts, but she can't give them commands. A ghost who also knows Command the Hungry Devil can calm hungry ghosts and give them commands but can't train them and make them her own. Even if she makes the duration of Tame the Wicked Appetite permanent, all she winds up with are calm, intractable hungry ghosts who don't do what they're told. Only this Charm allows a ghost to truly make hungry ghosts willing and able to be trained.
    To use this Charm, the ghost need only touch the head of a hungry ghost, which could require an unarmed Martial Arts attack if the ghost hasn't used one of the prerequisite Charms first to get the hungry ghost under control. When the Charm is activated, the hungry ghost forms an instant bond with its new master. The hungry ghost won't attack its master for any reason, even under supernatural compulsion, and it will respond to her training. That is, the hungry ghost can now be trained by the ghost who used this Charm on it, whereas it could not be trained at all by anyone before.
-   Training takes one month and lasts thereafter until the hungry ghost is destroyed. The ghost tamer can train as many hungry ghosts at a time in the same month as she can afford to affect with this Charm at the beginning. Once the hungry ghosts are trained, she can issue simple commands to them without using Command the Hungry Devil. The hungry ghosts remain unwilling to attack their master for any reason and will even come to her defense if they know she's in trouble. Unless the master trains them otherwise or keeps them tightly in check, they treat everyone else the way hungry ghosts normally would.
-      </description>
+   Training takes one month and lasts thereafter until the hungry ghost is destroyed. The ghost tamer can train as many hungry ghosts at a time in the same month as she can afford to affect with this Charm at the beginning. Once the hungry ghosts are trained, she can issue simple commands to them without using Command the Hungry Devil. The hungry ghosts remain unwilling to attack their master for any reason and will even come to her defense if they know she's in trouble. Unless the master trains them otherwise or keeps them tightly in check, they treat everyone else the way hungry ghosts normally would.</description>
    </charms>
    <charms>
       <name>Spirit-Handling Leash</name>
@@ -1337,8 +1296,7 @@
       </prerequest>
       <description>This Charm allows a trainer of hungry ghosts to turn over control of hungry ghosts tamed with the prerequisite Charm to new masters. He must touch the hungry ghost's head and the new master's hand at the same time, as an evanescent leash of Essence extends briefly from one to the other. Thereafter, the new master commands the hungry ghost as if she were the one who had used Ghostly Harness Exercise on the hungry ghost in the first place.
    Thereafter, the hungry ghost will not attack its new master for any reason, and it follows the new master's simple commands without the new master having to use Command the Hungry Devil. The hungry ghost will also refrain from attacking its former master unless its new master commands it to do so. It does not follow its former master's commands, however, unless the former master uses Command the Hungry Devil or Dust Commands Litany. (Even then, the former master cannot command the hungry ghost to harm its new master).
-   Only the current master of a hungry ghost can use this Charm to transfer ownership to a new master. The current master need not be the same person who used Ghostly Harness Exercise on the hungry ghost to train it, though. The ghost tamer who most recently used Ghostly Harness Exercise on the hungry ghost is considered to be the hungry ghost's former master for this Charm's purposes. Therefore, if one ghost tamer receives a hungry ghost from another trainer, it behooves him to retrain the hungry ghost himself (with the prerequisite Charm) before he transfers ownership to a new ghost.
-      </description>
+   Only the current master of a hungry ghost can use this Charm to transfer ownership to a new master. The current master need not be the same person who used Ghostly Harness Exercise on the hungry ghost to train it, though. The ghost tamer who most recently used Ghostly Harness Exercise on the hungry ghost is considered to be the hungry ghost's former master for this Charm's purposes. Therefore, if one ghost tamer receives a hungry ghost from another trainer, it behooves him to retrain the hungry ghost himself (with the prerequisite Charm) before he transfers ownership to a new ghost.</description>
    </charms>
    <charms>
       <name>Waxen Ghostly Flesh</name>
@@ -1368,8 +1326,7 @@
       </prerequest>
       <description>This Charm makes possible any cosmetic change the ghost can imagine. With it, the ghost can change his height, girth, tone, color and appearance in any way he sees fit. He is capable of any change on the spectrum of human variation and beyond. As the ghost spends the requisite Essence, he pushes and pulls on his features, molding them like clay. With concentration, he can change the color of his flesh in any way he pleases, even adding an iridescent sheen to its surface. The ghost can even add inhuman features or hide human characteristics.
    Using this Charm requires a (Dexterity + Craft [Moliation]) roll. (See p. 115 for a full description of that new Craft Ability). The difficulty varies based on the complexity of the change. Changing one's skin, hair or eye color is difficulty 1. Changing a facial feature is difficulty 2. Altering one's body shape is difficulty 3. Fashioning a nonhuman feature is difficulty 4. Any change imaginable is possible, though with certain restrictions. The primary consideration is that the ghost must reshape himself into a form with a roughly equivalent mass as his original form. Second, the ghost cannot grant himself natural weapons, natural armor or superhuman capabilities. The ghost can reshape his arms into wings, but that won't allow him to fly. He can change his narrow mouth into a gaping lamprey maw, but his bite attacks inflict no more damage than usual. Finally, the new form must remain roughly humanoid. The ghost cannot use this Charm to literally transform himself into a ghostly animal or a chair or what have you.
-   At the end of the scene, the ghost's reshaped corpus flows back into its original shape. The ghost can forestall this automatic transformation for one hour by spending a Willpower point. Every hour thereafter, the ghost may spend another Willpower point to forestall the change for a subsequent hour. The Essence he spent to affect the change remains committed until the duration lapses.
-      </description>
+   At the end of the scene, the ghost's reshaped corpus flows back into its original shape. The ghost can forestall this automatic transformation for one hour by spending a Willpower point. Every hour thereafter, the ghost may spend another Willpower point to forestall the change for a subsequent hour. The Essence he spent to affect the change remains committed until the duration lapses.</description>
    </charms>
    <charms>
       <name>Nine Terrors Visage</name>
@@ -1403,8 +1360,7 @@
 • Fearsome Visage: Anyone who sees the ghost's face is overcome by terror. Affected characters' players must make successful Valor rolls for their characters. If a Valor roll fails, the character flees the scene in abject terror. If the character is forced to fight the ghost wearing such a hideous visage in self-defense, his player suffers a -2 internal penalty to all rolls.
 • Unsettling Physiognomy: The ghost's face is either so outright disgusting or so subtly wrong in proportion that people who look on her are deeply troubled by what they see. Unless an onlooker's player succeeds on a Willpower roll, the onlooker suffers a -1 internal penalty for the rest of the scene for any physical action. This penalty results from either nausea or overwhelming unease, depending on just what makes the ghost's face so unsettling.
 • Vision of Loveliness: Seeing the ghost's wondrously beautiful face calls for a Temperance roll. If that roll fails, the ghost's beauty entrances the character. For as long as the ghost wears that façade, the character suffers a -2 penalty to his MDVs to resist doing as the ghost wants. He'll even take his own initiative to do what he thinks the ghost would like.
-   A character attempts to resist the Emotion effect of a ghost's use of Nine Terrors Visage once, the first time he sees it in a scene. If he resists successfully, he is thereafter immune to that visage's Emotion effect. If he fails, his difficulty to resist that ghost's use of that visage increases by 1 the next time he sees it after that scene. If the character fails to resist the same visage from the same ghost four consecutive times, he can no longer even attempt to resist its Emotion effect until his Motivation changes or he undergoes some other significant psychological metamorphosis. If a character is Exalted, however, he resists the visage's special effect at the same base difficulty every time, regardless of how many times he might consecutively try and fail to do so.
-      </description>
+   A character attempts to resist the Emotion effect of a ghost's use of Nine Terrors Visage once, the first time he sees it in a scene. If he resists successfully, he is thereafter immune to that visage's Emotion effect. If he fails, his difficulty to resist that ghost's use of that visage increases by 1 the next time he sees it after that scene. If the character fails to resist the same visage from the same ghost four consecutive times, he can no longer even attempt to resist its Emotion effect until his Motivation changes or he undergoes some other significant psychological metamorphosis. If a character is Exalted, however, he resists the visage's special effect at the same base difficulty every time, regardless of how many times he might consecutively try and fail to do so.</description>
    </charms>
    <charms>
       <name>Yielding Spirit Form</name>
@@ -1432,8 +1388,7 @@
          <name>Waxen Ghostly Flesh</name>
       </prerequest>
       <description>In combat, the ghost suffuses his corpus with Essence that makes it malleable and slightly fluid, allowing it to soak up a measure of an attack's kinetic energy harm-lessly. In Step Eight of combat resolution (see Exalted, p. 149), the ghost activates this Charm and his player rolls (Dexterity + Craft [Moliation]). (See p. 115 for a full description of that new Craft Ability). Every success on this roll adds to the character's appropriate soak total against that attack.
-   Attacking a ghost who's using this Charm is similar to attacking a wet clay effigy. Fists and weapons deform the ghost's corpus but don't significantly damage it. Arrows punch through it and come out the other side. The ghost still feels these injuries, but only abstractly. No matter how badly beaten out of shape the ghost's body is, limbs that suffer no actual damage thanks to this Charm still function as normal. The deformations caused by attacks that inflict no damage flow back into their original shape in two ticks per level of damage soaked.
-      </description>
+   Attacking a ghost who's using this Charm is similar to attacking a wet clay effigy. Fists and weapons deform the ghost's corpus but don't significantly damage it. Arrows punch through it and come out the other side. The ghost still feels these injuries, but only abstractly. No matter how badly beaten out of shape the ghost's body is, limbs that suffer no actual damage thanks to this Charm still function as normal. The deformations caused by attacks that inflict no damage flow back into their original shape in two ticks per level of damage soaked.</description>
    </charms>
    <charms>
       <name>Steeling The Spirit</name>
@@ -1460,8 +1415,7 @@
          <name>Yielding Spirit Form</name>
       </prerequest>
       <description>Many Charms of this Arcanos allow the ghost to make useful changes in her corpus, but those changes don't last very long unless the ghost spends massive amounts of Willpower. This Charm allows a ghost to extend the effectiveness of Charms that enable her to reshape herself. Once the ghost has activated such a Charm, she then activates Steeling the Spirit with the proper expenditure of Essence and Willpower. The player then rolls Willpower. For every success on the Willpower roll, the effects of the transformation Charm last for one day, rather than the Charm's listed duration.
-   A ghost can use this Charm only on effects that change her own corpus, but those changes can be ones either she or someone else imposed on her flesh. A ghost cannot extend the duration of the soak-boosting effects of Yielding Spirit Form with this Charm.
-      </description>
+   A ghost can use this Charm only on effects that change her own corpus, but those changes can be ones either she or someone else imposed on her flesh. A ghost cannot extend the duration of the soak-boosting effects of Yielding Spirit Form with this Charm.</description>
    </charms>
    <charms>
       <name>Ghost-Devil Form</name>
@@ -1505,8 +1459,7 @@
    Spikes   Successful unarmed Martial Arts attacks on the ghost inflict 3L on the attacker
    Suckers            +4 dice on clinch attacks
    A ghost must design his expression of Ghost-Devil Form before he can wear it. Designing the form requires a successful (Intelligence + Craft [Moliation]) roll. (See p. 115 for a full description of that new Craft Ability). The base design time is one day, plus an additional day per special feature the final form will contain. Once the ghost has designed the form, reshaping himself in that image for the first time requires a successful (Dexterity + Craft [Moliation]) roll. The base difficulty of the roll is 3. Each special feature requires an additional (Dexterity + Craft [Moliation]) roll, difficulty 2. Once the ghost is satisfied with the form he's created, he spends the requisite 10 Essence to lock in that form. Thereafter, any time he wants to take on his new form, he may spend the same amount of Essence to activate the Charm and transform instantaneously. He remains in that new shape for one scene unless he then uses Steeling the Spirit to extend the duration.
-   A character may have as many different locked-in expressions of Ghost-Devil Form as he pleases, so long as he designs and physically fashions each one separately.
-      </description>
+   A character may have as many different locked-in expressions of Ghost-Devil Form as he pleases, so long as he designs and physically fashions each one separately.</description>
    </charms>
    <charms>
       <name>Weighted With The Anchor Of Flesh</name>
@@ -1534,8 +1487,7 @@
       </prerequest>
       <description>This is the Charm many ghosts use to manifest physically in Creation. It's expensive, but it requires no roll. (In shadowlands, it doesn't even cost Willpower points). To use it, the ghost simply spends the requisite points while she's present in Creation. The weight of her former living body settles on her corpus once more as she becomes both visible and solid. Keep in mind that the ghost becomes physical in whatever form her corpus is currently in. If other Charms in this Arcanos have been used on the ghost's body (even Ghost-Devil Form), the transformed body is the one that manifests.
    The ghost can then interact physically with the living world, and physical attacks can damage her body. Her injuries bleed when she's wounded, though her blood vanishes when it is no longer in contact with her body. If inflicted damage "kills" her, her physical body collapses then dissipates into the Underworld.
-   This physical shell lasts for one hour, and the character can extend the duration by an additional hour per additional Willpower she spends on the effect. (The Essence remains committed until the duration lapses). She is still a ghost during that time, however, so she is still susceptible to effects that apply to ghosts.
-      </description>
+   This physical shell lasts for one hour, and the character can extend the duration by an additional hour per additional Willpower she spends on the effect. (The Essence remains committed until the duration lapses). She is still a ghost during that time, however, so she is still susceptible to effects that apply to ghosts.</description>
    </charms>
    <charms>
       <name>Stolen Wax Discipline</name>
@@ -1626,8 +1578,7 @@
       </prerequest>
       <description>Shaping the Obedient Servant allows a masquer to apply the range of changes made possible by Ghost-Devil Form to a willing ghost. Just as with Ghost-Devil Form, the ghost must first design the new form then apply it to the target. The rolls and difficulties for each are the same as for Ghost-Devil Form. Completing implementation of a new form costs nine motes of Essence and one Willpower point. Once the artist has designed a new form, he can apply it to as many other willing ghosts as he can afford to. The appropriate (Dexterity + Craft [Moliation]) rolls - see page 115 for a full description of Craft (Moliation) - are required anew for every subject (as is the activation cost), but so long as the design doesn't change, the design roll need be made only once.
    Once a ghost implements the designed changes upon his subject, the new form lasts for one day. The subject cannot switch her form back unless she has Charms that allow her to reshape her corpus. Also, the imposed form is not considered to be "locked in" like a ghost's own personal use of Ghost-Devil Form would be. If the subject wishes to take that same form again after the duration elapses, she must have someone with this Charm reshape her. If the subject wants to use Ghost-Devil Form to recreate the shape, she must design the form herself from scratch. The subject may, however, extend the effects of the Charm as the artist completes the transformation. Doing so requires the expenditure of experience points, as well as a successful Willpower roll. One experience point extends the duration to one month. Two points makes the duration one year, and three points make the effects permanent.
-   The masquer commits the Essence to maintain his transformed creation unless the subject spends experience points to increase the duration of the effect.
-      </description>
+   The masquer commits the Essence to maintain his transformed creation unless the subject spends experience points to increase the duration of the effect.</description>
    </charms>
    <charms>
       <name>Prison Of The New Form</name>
@@ -1681,8 +1632,7 @@
          <name>None</name>
       </prerequest>
       <description>Dutiful ghosts who practice this Arcanos are obligated by their Underworld lieges to remain vigilant for abuses of this power by their less scrupulous peers. This basic Charm grants them the ability to carry out that obligation. With it, a character can spot another ghost hidden inside someone else's body.Upon activating the Charm, the character sees in his mind's eye a pale light emanating from within the body of every ghost in his line of sight. If a ghost is hiding inside another character, the ghost's face overlays the other character's face like a luminous mask. If the character sees a passenger ghost revealed thus, the player may make a reflexive (Perception + Awareness) roll at difficulty 2. If the roll succeeds, the character recognizes the ghost whose face he sees. Otherwise, all he can tell is that a ghost is hitching a ride.
-   The light the character with this Charm sees is not visible to anyone else. Therefore, ghosts revealed by it are not automatically aware that the character can see them.
-      </description>
+   The light the character with this Charm sees is not visible to anyone else. Therefore, ghosts revealed by it are not automatically aware that the character can see them.</description>
    </charms>
    <charms>
       <name>Soul-Whispering Empathy Discipline</name>
@@ -1711,8 +1661,7 @@
       <description>By paying close attention for a moment to a target in her line of sight - be that target ghost or mortal - a ghost can perceive that target's thoughts. As the character spends the requisite points, the player rolls (Manipulation + Awareness). The difficulty is equal to the target's Essence. If the roll succeeds, the ghost hears the target's surface thoughts as if the target were whispering them in her ear.
    This mental eavesdropping lasts for one scene at the base activation cost. At the end of that scene, the ghost may extend the duration for another scene by spending another Willpower point. The ghost can maintain contact thus until either she runs out of Willpower or contact is otherwise broken. Death or injury to the target breaks contact, as does injury or any significant distraction to the ghost. (Spending Willpower for any other reason than maintaining this Charm's effects counts as a significant distraction). Until one of those things happens, though, the ghost can listen in on the target's thoughts regardless of how far away and out of sight the target goes. Essence spent to power this effect is committed until the duration lapses.
    Being able to hear someone's surface thoughts is not the same as being able to telepathically ransack a target's mind. If the ghost wants to learn some specific piece of information, she'll have to wait until the target thinks of it on his own. It's perfectly fine to arrange circumstances that cause the subject of interest to occur to the target, though.
-   Most targets never even realize anyone else is listening in on them. If the target is Exalted or has more than two dots of Compassion, though, he gets the uneasy sensation that he's being watched.
-      </description>
+   Most targets never even realize anyone else is listening in on them. If the target is Exalted or has more than two dots of Compassion, though, he gets the uneasy sensation that he's being watched.</description>
    </charms>
    <charms>
       <name>Skin-Riding Prana</name>
@@ -1739,8 +1688,7 @@
          <name>Soul-Whispering Empathy Discipline</name>
       </prerequest>
       <description>Activating this Charm is the same as for activating its prerequisite, calling for the same conditions and the same roll at the same difficulty. Likewise, it works on ghosts or mortals, and both Exalts and targets of sufficient Compassion have an unaccountable sense of being watched. Instead of allowing the ghost to listen in on the target's surface thoughts, however, this Charm lets the ghost sense what most of the target's own senses observe.
-   For the duration of this Charm, which can be extended as per Soul-Whispering Empathy Discipline, the ghost can see, hear and even smell what the target does in addition to what he himself can. These phantom sensations are only vague and suggestive unless the ghost concentrates on them to the exclusion of his own surroundings. Paying full attention to both the target's senses and his own requires a successful reflexive Wits roll every action the ghost takes. Failing the roll means he loses details from his target's senses as he's forced to pay closer attention to his own environment. For this reason, many ghosts who use this Charm regularly to spy on their targets retreat to a safe location upon establishing contact - one either well hidden or protected by trusted guards.
-      </description>
+   For the duration of this Charm, which can be extended as per Soul-Whispering Empathy Discipline, the ghost can see, hear and even smell what the target does in addition to what he himself can. These phantom sensations are only vague and suggestive unless the ghost concentrates on them to the exclusion of his own surroundings. Paying full attention to both the target's senses and his own requires a successful reflexive Wits roll every action the ghost takes. Failing the roll means he loses details from his target's senses as he's forced to pay closer attention to his own environment. For this reason, many ghosts who use this Charm regularly to spy on their targets retreat to a safe location upon establishing contact - one either well hidden or protected by trusted guards.</description>
    </charms>
    <charms>
       <name>Six Demon Bag</name>
@@ -1770,8 +1718,7 @@
          <name>Skin-Riding Prana</name>
       </prerequest>
       <description>A ghostly smuggler, assassin or courier who uses this Charm makes a part of her body into the eponymous container. Drawing a fingernail along her corpus, she causes a hollow, nigh-undetectable chamber to open up. This empty space can be up to one cubic foot in area, and it can open into any part of the ghost's body. (The body part's size limits the size of the space, of course). When the ghost puts an item to be hidden into this space and seals her corpus back over it, her flesh looks as whole and normal as ever. Storing objects in this ingenious hiding place imposes a +4 external penalty on any other character's attempts to locate concealed items on the ghost's person. An observer who uses Spirit-Catching Eye Technique as he searches the ghost's person will see the hidden object through the ghost's corpus.
-   Removing an object from its hiding spot can be easy or quite painful. At the end of the day, the empty compartment opens, and the item pops out as the Charm's duration expires. The ghost may spend three motes of Essence to eject the item herself before then. Other methods are less gentle. If an attacker knows where the item is hidden, he can use a stunt to target that area and attempt to either break the compartment open or break the item within. Breaking the compartment open requires inflicting at least three unsoaked levels of lethal damage with a specifically targeted attack. Likewise, either the ghost herself or someone who has the ghost in her power can cut the compartment open outside of combat, though doing so still inflicts three levels of unsoakable lethal damage. Broken Mold Strike (see p. 145) can cause the compartment to rupture with just a single level of damage, but the attack must still target the compartment intentionally. Finally, if the ghost is willing but lacks the Essence or the time to remove the stored item naturally, she can allow another ghost to use Stolen Wax Discipline to painlessly pull back the flesh enclosing the compartment.
-      </description>
+   Removing an object from its hiding spot can be easy or quite painful. At the end of the day, the empty compartment opens, and the item pops out as the Charm's duration expires. The ghost may spend three motes of Essence to eject the item herself before then. Other methods are less gentle. If an attacker knows where the item is hidden, he can use a stunt to target that area and attempt to either break the compartment open or break the item within. Breaking the compartment open requires inflicting at least three unsoaked levels of lethal damage with a specifically targeted attack. Likewise, either the ghost herself or someone who has the ghost in her power can cut the compartment open outside of combat, though doing so still inflicts three levels of unsoakable lethal damage. Broken Mold Strike (see p. 145) can cause the compartment to rupture with just a single level of damage, but the attack must still target the compartment intentionally. Finally, if the ghost is willing but lacks the Essence or the time to remove the stored item naturally, she can allow another ghost to use Stolen Wax Discipline to painlessly pull back the flesh enclosing the compartment.</description>
    </charms>
    <charms>
       <name>Mortal-Shadowing Technique</name>
@@ -1799,8 +1746,7 @@
       </prerequest>
       <description>This Charm is one step away from outright possession. With it, a ghost steps directly into a mortal's body and rides around therein, experiencing everything the mortal feels. Making entry requires first a touch and the expenditure of the activation cost. (The touch could require an unarmed Martial Arts attack if the prospective host actively resists). As the ghost makes contact, the player rolls (Dexterity + Awareness), at a difficulty equal to the host's Essence. If the roll succeeds, the ghost melds with the target and becomes undetectable except by such Charms as Spirit-Catching Eye Technique. A target who is aware of the ghostly passenger can spend a Willpower point to try to expel the uninvited guest. Doing so requires the host's player to win a contested Willpower roll. If she succeeds, her character expels the ghost from her body. If she loses, the character must endure the ghost's presence for the duration of the Charm.
    While the ghost shadows his host, he experiences all of the host's sensations as his own, including taste and the sense of touch. He can also share the space with other ghosts who use this Charm on the same host, so long as all the other ghosts are merely passive observers like him. If the host is injured, the ghost feels the damage and suffers an equal amount of bashing damage to his own corpus. If the host is killed, the shadowing ghost is ejected from the body automatically. Otherwise, the ghost remains for one hour. He may increase that duration to one day by spending an extra Willpower point, keeping the Essence committed until he leaves the mortal's body.
-   The intimacy of contact this Charm provides is sufficient for a ghost with the Fertile Soul Endowment Charm (see p. 135) to impregnate a mortal woman.
-      </description>
+   The intimacy of contact this Charm provides is sufficient for a ghost with the Fertile Soul Endowment Charm (see p. 135) to impregnate a mortal woman.</description>
    </charms>
    <charms>
       <name>Intangible Guardian Presence</name>
@@ -1827,8 +1773,7 @@
          <name>Mortal-Shadowing Technique</name>
       </prerequest>
       <description>Once a ghost enters a mortal or corpse body, this Charm bolsters that vessel and makes it more durable. Similar to the various Ox-Body Technique Charms, this one adds health levels, though only to the body the ghost is either shadowing or possessing outright. For each time the ghost has purchased this Charm, the body in which she is the passenger or puppeteer receives one extra -0 and -1 health level. These health levels apply only to the host body, and only while the ghost is within it using Mortal-Shadowing Technique or any possession Charm that descends from it. When the ghost departs the body, the extra health levels disappear, taking any damage marked in them away.
-   The ghost can buy this Charm as many times as she has dots of Compassion.
-      </description>
+   The ghost can buy this Charm as many times as she has dots of Compassion.</description>
    </charms>
    <charms>
       <name>Puppeteer's Masterful Hand</name>
@@ -1857,8 +1802,7 @@
       <description>If a ghost just wants to ride around in a mortal's body, feeling the sensations of life once more, he uses Mortal-Shadowing Technique. If that ghost wants to take total control of his mortal host, he uses this Charm instead. He must already be riding within the mortal through the prerequisite Charm, after which he can attempt to exert total control. Doing so calls for an expenditure of the listed Essence and Willpower, as well as a successful (Dexterity + Compassion) roll. The difficulty of that possession roll is equal to twice the host's Essence.
    Success on the possession roll ejects any other ghostly passengers from the host's body and breaks any other ghosts' connections granted by Soul-Whispering Empathy Discipline or Skin-Riding Prana. The host's consciousness is subsumed as well, leaving the host unaware of what her body is doing. The possessing ghost can exert either his own or his host's Strength, Dexterity, Charisma or Perception - whichever is higher. He relies on the host body's Stamina and Appearance and uses his own Manipulation, Intelligence and Wits. He can exert any of his own Abilities through the host's body as well. If the host has more dots than the ghost in an Ability that has to do with some physical activity or quality (such as Melee or Presence, respectively), the ghost can exert the host's higher traits. If the Ability is purely mental or social, though (such as Occult or Socialize), the ghost must use his own traits.
    While the ghost possesses his host, he can use his Arcanoi as the Charms' normal circumstances and conditions allow. Even transformation Charms such as Ghost-Devil Form are allowed. (These physical changes lapse the moment the ghost leaves the host). Costs for Arcanos Charms come from the possessing ghost's Essence pool. If the host is Exalted, the ghost has no access to the host's Essence pool. He can use any artifacts to which the Exalt was already attuned, however, and he benefits from any current magical effects that already apply to the Exalt's body. He cannot access the Exalt's Charms. If the Exalt has reflexive defensive Charms, however, the Exalt's player may still activate those Charms for his possessed character as circumstances necessitate. (Essence costs for those Charms come out of the possessed host's Essence pool). The Exalt himself is not activating these Charms consciously. His instinct for self-preservation is simply taking over.
-   Possession granted by this Charm lasts for one hour. At the end of that hour, the ghost may extend the duration for another hour by spending a Willpower point. He can do so again at the end of each subsequent hour. The player must succeed at a new (Dexterity + Compassion) roll each time, though. If he doesn't, the ghost is ejected. The Essence that activates the Charm remains committed until the ghost leaves the body.
-      </description>
+   Possession granted by this Charm lasts for one hour. At the end of that hour, the ghost may extend the duration for another hour by spending a Willpower point. He can do so again at the end of each subsequent hour. The player must succeed at a new (Dexterity + Compassion) roll each time, though. If he doesn't, the ghost is ejected. The Essence that activates the Charm remains committed until the ghost leaves the body.</description>
    </charms>
    <charms>
       <name>Nemissary's Ride</name>
@@ -1886,8 +1830,7 @@
       </prerequest>
       <description>This Charm allows a ghost to possess a host as per Puppeteer's Masterful Hand, only it works on human corpses rather than living beings. As the ghost spends the requisite Essence and Willpower, the player must succeed on a (Strength + Compassion) roll, difficulty 1. If the roll succeeds, the ghost becomes one with the corpse, animating it with her own Attributes and Abilities. Once she's in, the ghost may exert her Arcanoi through the body, but any attunements or reflexive Charms the previous owner of the body might have had in life are no longer available. The body has a mortal's seven health levels (-0 / -1/-1 / -2/-2 / -4 / Incapicated). The wounds that ended the body's former life do not contribute to these wound penalties. Damage inflicted on the possessed corpse makes the body harder to control, though, as does unchecked rot that occurs before possession.
    In choosing a corpse to possess, the ghost must be aware of the effects of putrescence on a prospective vessel. In temperate climates, a corpse exposed to the elements lasts about seven weeks before it starts to come apart. A corpse in the frozen North or arid South might last months instead. A body left to rot somewhere more humid might last only two or three weeks. After that grace period, the body loses two permanent health levels every day as the flesh and sinew holding the limbs together comes undone. When it has no health levels left, it is no longer suitable for possession.
-   This Charm lasts for one day, which does not contribute to the aforementioned natural process of decay. When the day is up, the ghost may pay the activation cost again to extend the duration to one week. She can do so week by week for as long as she can afford the cost. Extending the duration in this way even once is very hard on the corpse, though. While it won't decay while she's still in possession of it, the natural process of decay catches up rapidly once the nemissary has been in possession of the body for more than a week. After that first week of possession, the body falls to pieces all at once when the ghost finally leaves it. Thereafter, no one else can use this Charm on that body. The ghost's Essence remains committed to this effect until the nemissary leaves the body.
-      </description>
+   This Charm lasts for one day, which does not contribute to the aforementioned natural process of decay. When the day is up, the ghost may pay the activation cost again to extend the duration to one week. She can do so week by week for as long as she can afford the cost. Extending the duration in this way even once is very hard on the corpse, though. While it won't decay while she's still in possession of it, the natural process of decay catches up rapidly once the nemissary has been in possession of the body for more than a week. After that first week of possession, the body falls to pieces all at once when the ghost finally leaves it. Thereafter, no one else can use this Charm on that body. The ghost's Essence remains committed to this effect until the nemissary leaves the body.</description>
    </charms>
    <charms>
       <name>The Embalmer's Art</name>
@@ -1914,8 +1857,7 @@
          <name>Nemissary's Ride</name>
       </prerequest>
       <description>This Charm refines its prerequisite, making it easier to perform and less damaging on the possessed corpse. First, the possession requires no roll, and it lasts for as long as the ghost commits the Essence. Second, while the ghost uses this Charm to possess a corpse, the natural process of decay is halted. When the ghost finally leaves the body, decay resumes at its natural rate as if the intervening time of possession had not occurred. The decay rate does not catch up to the body as it does after one week under the effects of Nemissary's Ride.
-   Also, when the ghost activates this Charm, he may commit additional Essence to bolster the corpse's durability. For every three additional motes he commits when he activates this Charm, he adds one -2 health level to the corpse vessel. These additional health levels last as long as the possession, though they may be added only when the Charm is activated. The levels are also compatible with those provided by Intangible Guardian Presence.
-      </description>
+   Also, when the ghost activates this Charm, he may commit additional Essence to bolster the corpse's durability. For every three additional motes he commits when he activates this Charm, he adds one -2 health level to the corpse vessel. These additional health levels last as long as the possession, though they may be added only when the Charm is activated. The levels are also compatible with those provided by Intangible Guardian Presence.</description>
    </charms>
    <charms>
       <name>Instauration Of The Fleshly Vessel</name>
@@ -1943,8 +1885,7 @@
          <name>The Embalmer's Art</name>
       </prerequest>
       <description>Rot is one of those unavoidable inconveniences nemissaries have to deal with on the job. With this Charm, however, they can repair damage caused by violence or natural decay. Every four motes of Essence the ghost spends reverses one day's worth of rot. As described under Nemissary's Ride, an exposed corpse degrades day by day after a grace period determined by the climate. Four motes spent to empower this Charm repairs damage caused by one day's post-grace-period decay. It can also roll back that grace-period countdown. With enough motes, a character can return a badly decayed corpse to the pristine condition it was in the moment after it died. To use this aspect of the Charm, the ghost must be possessing the corpse already, rebuilding it from within.
-   The second aspect of this Charm allows a ghost to heal damage the corpse sustains while she's in possession of it, though at the painful expense of her corpus. For the cost of only one mote, the ghost can dissolve one health level of her own body to repair one health level of damage to her corpse vessel. The damage can be bashing or lethal; the type she heals is the type she takes. The ghost cannot use this Charm to heal damage from aggravated sources, from fire or from magic that specifically ruins undead flesh - such as Blazing Solar Bolt or the Dazzling Flare effect of Essence Arrow Attack. (See Exalted, pages 192 and 189 for descriptions of those Charms).
-      </description>
+   The second aspect of this Charm allows a ghost to heal damage the corpse sustains while she's in possession of it, though at the painful expense of her corpus. For the cost of only one mote, the ghost can dissolve one health level of her own body to repair one health level of damage to her corpse vessel. The damage can be bashing or lethal; the type she heals is the type she takes. The ghost cannot use this Charm to heal damage from aggravated sources, from fire or from magic that specifically ruins undead flesh - such as Blazing Solar Bolt or the Dazzling Flare effect of Essence Arrow Attack. (See Exalted, pages 192 and 189 for descriptions of those Charms).</description>
    </charms>
    <charms>
       <name>Dead Fur Cloak Method</name>
@@ -1971,8 +1912,7 @@
          <name>Nemissary's Ride</name>
       </prerequest>
       <description>This Charm refines its prerequisite such that the ghost can now possess the corpses of animals. The roll to possess the corpse is the same, as is the restriction that the body must still be reasonably intact. Animals larger than a full-grown wolf are too difficult for a ghost to control properly, as are those smaller than a rat.
-   While he's in control of an animal's corpse, the ghost uses the animal's Attributes and his own other traits. He can also use any natural capabilities of the animal's form, such as a bird's ability to fly or a shark's deadly grace in the water. The possession lasts for as long as the ghost commits the motes.
-      </description>
+   While he's in control of an animal's corpse, the ghost uses the animal's Attributes and his own other traits. He can also use any natural capabilities of the animal's form, such as a bird's ability to fly or a shark's deadly grace in the water. The possession lasts for as long as the ghost commits the motes.</description>
    </charms>
    <charms>
       <name>Drive The Necrotic Colossus</name>
@@ -2028,8 +1968,7 @@
          <name>None</name>
       </prerequest>
       <description>Using this Charm requires a moment of quiet, peaceful contemplation. As the ghost remembers his life and thinks about those things that gave his existence meaning, he considers the connections that chain him to his current state. In this meditative state, the ghost senses the current status and condition of those connections - i.e., his Fetters.
-   Achieving the peace necessary to use this Charm in a disruptive environment requires a successful Willpower roll. When the character is relaxed enough, using the Charm requires a (Wits + Temperance) roll. If that roll succeeds, the ghost chooses one Fetter and learns about its current condition. This information is general and vague, and it concerns only one Fetter per activation of this Charm.
-      </description>
+   Achieving the peace necessary to use this Charm in a disruptive environment requires a successful Willpower roll. When the character is relaxed enough, using the Charm requires a (Wits + Temperance) roll. If that roll succeeds, the ghost chooses one Fetter and learns about its current condition. This information is general and vague, and it concerns only one Fetter per activation of this Charm.</description>
    </charms>
    <charms>
       <name>Death-Avoiding Monitor</name>
@@ -2057,8 +1996,7 @@
       </prerequest>
       <description>A ghost with more training in this Arcanos can apply more vigilance to a Fetter than this Charm's prerequisite allows. With Death-Avoiding Monitor, the ghost concentrates on the important person or object and spends the motes and Willpower to activate the Charm. (The Fetter need not be in her presence at the time). The player then rolls (Perception + Temperance). If the roll succeeds, the character gains an ongoing background awareness of the subject's condition. She need only think about the Fetter to be informed of its condition.
    This awareness lasts for one week. If the Fetter is a physical object, the ghost is aware of whether and how it is altered, damaged, repaired or destroyed. If the Fetter is a person, the ghost knows about changes in the person's condition including injury, illness, death, pregnancy or significant changes in emotional makeup. Spending one experience point at the time of activation extends this Charm's duration to one year. Spending two experience points makes the effect permanent. The character can activate Death-Avoiding Monitor as many ongoing concurrent times as she can afford, but she can check in on only one Fetter at a time.
-   The Essence that empowers this Charm is committed if the ghost uses it for the standard one-week duration. If the player spends experience points to extend the duration, however, that Essence is no longer committed.
-      </description>
+   The Essence that empowers this Charm is committed if the ghost uses it for the standard one-week duration. If the player spends experience points to extend the duration, however, that Essence is no longer committed.</description>
    </charms>
    <charms>
       <name>Extension Of The Friendly Gaze</name>
@@ -2085,8 +2023,7 @@
          <name>World-Bridging Meditation</name>
       </prerequest>
       <description>Ghosts who have no experience using this Arcanos must rely on comrades (or entrepreneurs) who know this Charm. With it, a ghost lays hands on a fellow wraith and gets a sense of the condition of one of that wraith's Fetters. This information is comparable to that granted by World-Bridging Meditation, though that Charm's meditative calm is not required. The ghost need only touch the wraith for whom he's checking in. He can even take this information without the other's consent as long as he can touch him. (Touching an unwilling target requires an unarmed Martial Arts attack).
-   Once the ghost has touched a target, his player makes a (Wits + Awareness) roll. The difficulty is (5 - the Fetter's rating), with a minimum difficulty of 1. If the roll succeeds, the ghost gains insight equal to that granted by World-Bridging Meditation. Only the ghost who uses this Charm gains this insight. Also, the ghost can look in on a specific Fetter only if his wraith target is willing to have him do so. If the target is unwilling, the ghost can look in only on the Fetter with the highest rating, no matter how many of the target's Fetters the ghost knows about. The Storyteller chooses between Fetters of equal ratings.
-      </description>
+   Once the ghost has touched a target, his player makes a (Wits + Awareness) roll. The difficulty is (5 - the Fetter's rating), with a minimum difficulty of 1. If the roll succeeds, the ghost gains insight equal to that granted by World-Bridging Meditation. Only the ghost who uses this Charm gains this insight. Also, the ghost can look in on a specific Fetter only if his wraith target is willing to have him do so. If the target is unwilling, the ghost can look in only on the Fetter with the highest rating, no matter how many of the target's Fetters the ghost knows about. The Storyteller chooses between Fetters of equal ratings.</description>
    </charms>
    <charms>
       <name>Veil-Piercing Binding</name>
@@ -2114,8 +2051,7 @@
       </prerequest>
       <description>Once a ghost successfully uses Extension of the Friendly Gaze on another ghost, she may use this Charm on her immediately following action. Doing so grants her target of Extension of the Friendly Gaze a continual background awareness of the Fetter on which she just checked. This awareness is identical to the awareness granted by the Death-Avoiding Monitor Charm. Establishing this link requires a successful (Perception + Temperance) roll, difficulty 2. Thereafter, the target need only concentrate a moment to become aware of the Fetter's current condition as if the target had used Death-Avoiding Monitor on his own Fetter.
    If the ghost who used this Charm so desires, she can grant herself the same awareness of a target's Fetter as she grants the target. Doing so requires an extra threshold success on the activation roll. Thereafter, during the duration of the effect, the ghost may look in on her fellow wraith's Fetter at any time by spending one mote of Essence.
-   This Charm's effects last for one week. The ghost can extend the effect to one year by spending one experience point at the time of activation. Spending two points makes the effect permanent. The Essence that empowers this Charm is committed if the ghost uses it for the standard one-week duration. If the player spends experience points to extend the duration, however, that Essence is no longer committed.
-      </description>
+   This Charm's effects last for one week. The ghost can extend the effect to one year by spending one experience point at the time of activation. Spending two points makes the effect permanent. The Essence that empowers this Charm is committed if the ghost uses it for the standard one-week duration. If the player spends experience points to extend the duration, however, that Essence is no longer committed.</description>
    </charms>
    <charms>
       <name>Mark Of The Relentless Hunter</name>
@@ -2143,8 +2079,7 @@
       </prerequest>
       <description>This Charm grants yet more information than either Death-Avoiding Monitor or Veil-Piercing Binding. With it, a ghost chooses a Fetter (either one of his own or one that's currently subject to his use of Veil-Piercing Binding) and forges a strong mental connection to it. Having done so, he can thereafter sense its location and direction for the Charm's duration, even across the boundary between Creation and the Underworld.
    Forging this link requires a successful (Perception + Awareness) roll. The difficulty is 1 if the Fetter belongs to him; 2 if it belongs to someone else. (He can target someone else's Fetter only if he's currently aware of that Fetter through the use of Veil-Piercing Binding, though). If the roll succeeds, he can get a mental fix on the item's location and direction with just a moment's thought.
-   Mark of the Relentless Hunter lasts for one week or until the Fetter is destroyed. Spending one experience point at the time of activation extends that duration to one year if the Fetter is not destroyed before then. Spending two experience points makes the effect permanent. In that case, even the destruction or death of the Fetter might not break the connection. If the Fetter appears in the Underworld as a ghost or a relic of an object, the ghost who used the Charm can still track it. The Essence that empowers this Charm is committed if the ghost uses it for the standard one-week duration. If the player spends experience points to extend the duration, however, that Essence is no longer committed.
-      </description>
+   Mark of the Relentless Hunter lasts for one week or until the Fetter is destroyed. Spending one experience point at the time of activation extends that duration to one year if the Fetter is not destroyed before then. Spending two experience points makes the effect permanent. In that case, even the destruction or death of the Fetter might not break the connection. If the Fetter appears in the Underworld as a ghost or a relic of an object, the ghost who used the Charm can still track it. The Essence that empowers this Charm is committed if the ghost uses it for the standard one-week duration. If the player spends experience points to extend the duration, however, that Essence is no longer committed.</description>
    </charms>
    <charms>
       <name>Sensing The Delicate Strands</name>
@@ -2172,8 +2107,7 @@
       </prerequest>
       <description>A ghost with the Extension of the Friendly Gaze Charm can learn valuable information about another ghost's Fetters. She does so only at that other ghost's sufferance, though. If she tries to raid an unwilling ghost for information, she gets information about only a single Fetter. Plus, she's got to get close enough to touch the ghost, which opens her up to the same risk if her target has Extension of the Friendly Gaze as well.
    With this Charm, however, the ghost can learn much more about a target and with much less risk. To do so, the ghost looks at a target wraith and spends the activation cost as the player rolls (Perception + Occult), difficulty 3. If the roll succeeds, the ghost learns basic information about one of the target's Fetters, including that Fetter's nature, its appearance, its connection to the ghost, its distance from the target and the direction in which it lies. A successful roll also allows a new roll at the same difficulty. If that roll succeeds, the ghost gains information about another of her target's Fetters. Each successful roll gives new information (starting with the target's most important Fetter and working down from there) and allows an additional roll.
-   If a roll to use this Charm fails, the ghost cannot use Sensing the Delicate Strands against that same target again for one full day.
-      </description>
+   If a roll to use this Charm fails, the ghost cannot use Sensing the Delicate Strands against that same target again for one full day.</description>
    </charms>
    <charms>
       <name>Chain-Shattering Discipline</name>
@@ -2201,8 +2135,7 @@
       </prerequest>
       <description>To use this wicked power, a ghost must first use the prerequisite Charm to ferret out information regarding a target ghost's Fetters. Having done so, he physically takes hold of the metaphysical bond between target and Fetter and snaps it in two. Breaking the bond requires a (Strength + Temperance) roll, at a difficulty equal to the sum of the target's Essence rating and the object's Fetter rating.
    If the link does break, the object or person is no longer a Fetter for the target. No supernatural effect treats it as such, and the Fetter provides no benefit for the target. The target is instantly aware of this loss, even if she had no supernatural perception of the Fetter active at the time. If the target's player does not succeed on a reflexive Willpower roll when the Fetter bond is broken, the target becomes catatonic with despair for a number of days equal to the attacker's Temperance rating.
-   If a ghost is so inclined, he can use this Charm to break his connections to his own Fetters.
-      </description>
+   If a ghost is so inclined, he can use this Charm to break his connections to his own Fetters.</description>
    </charms>
    <charms>
       <name>Weaver Guards The Loom</name>
@@ -2229,8 +2162,7 @@
          <name>Sensing The Delicate Strands</name>
       </prerequest>
       <description>Once a ghost learns how to sense the bonds of other ghosts' Fetters, she becomes all the more keenly aware of her own. If someone else tries to look in on or manipulate her Fetters with supernatural effects (such as Sensing the Delicate Strands), this Charm makes the intrusion known to her. Weaver Guards the Loom does not grant automatic protection or retaliation against such effects, but it can grant an idea of where the source of the trouble is.
-   Activating this Charm requires a simple (Intelligence + Awareness) roll. It lasts for one day, after which the ghost can reflexively renew it. While it's active, the ghost's player is allowed a reflexive (Perception + Temperance) roll any time another character attempts to detect or monitor one of the ghost's Fetters. If that roll succeeds in such an instance, the player is allowed a reflexive (Perception + Occult) roll, difficulty 3. If that roll succeeds, the ghost knows who is looking in on her Fetters and gets a rough idea of where that person is. The person doing the spying remains unaware that the ghost is onto him.
-      </description>
+   Activating this Charm requires a simple (Intelligence + Awareness) roll. It lasts for one day, after which the ghost can reflexively renew it. While it's active, the ghost's player is allowed a reflexive (Perception + Temperance) roll any time another character attempts to detect or monitor one of the ghost's Fetters. If that roll succeeds in such an instance, the player is allowed a reflexive (Perception + Occult) roll, difficulty 3. If that roll succeeds, the ghost knows who is looking in on her Fetters and gets a rough idea of where that person is. The person doing the spying remains unaware that the ghost is onto him.</description>
    </charms>
    <charms>
       <name>Farmer Defends The Unharvested Field</name>
@@ -2257,8 +2189,7 @@
          <name>Weaver Guards The Loom</name>
       </prerequest>
       <description>When someone attempts to spy on or tamper with the Fetter bonds of a ghost with this Charm, the ghost strikes back viciously. If the ghost has activated Weaver Guards the Loom, and its effect successfully reveals to him that someone is spying on or tampering with the bond between himself and one of his Fetters, the ghost may reflexively activate this Charm in response.
-   In order to be eligible to use this Charm, the ghost's player must have succeeded on Weaver Guards the Loom's reflexive (Perception + Temperance) roll to detect the intrusion, as well as the subsequent (Perception + Occult) roll to identify the source. Using this Charm then calls for a (Wits + Temperance) roll. If it succeeds, the ghost inflicts five dice of lethal damage on the offender, which the offender can soak only with his natural, unarmored soak. As a result, the offender's attempt to monitor or tamper with the Fetter bond automatically fails before it takes effect (even if the backlash inflicted no actual damage). Also, blood leaks from the offender's eyes, ears and nose for one minute per level of damage she suffers.
-      </description>
+   In order to be eligible to use this Charm, the ghost's player must have succeeded on Weaver Guards the Loom's reflexive (Perception + Temperance) roll to detect the intrusion, as well as the subsequent (Perception + Occult) roll to identify the source. Using this Charm then calls for a (Wits + Temperance) roll. If it succeeds, the ghost inflicts five dice of lethal damage on the offender, which the offender can soak only with his natural, unarmored soak. As a result, the offender's attempt to monitor or tamper with the Fetter bond automatically fails before it takes effect (even if the backlash inflicted no actual damage). Also, blood leaks from the offender's eyes, ears and nose for one minute per level of damage she suffers.</description>
    </charms>
    <charms>
       <name>Jangling Coin Pouch Sense</name>
@@ -2337,8 +2268,7 @@
          <name>Earnest Creditor Technique</name>
       </prerequest>
       <description>This Charm allows a ghost to take motes of Essence from a willing party with motes to spend. The ghost need only touch his creditor, and the creditor must be willing to allow the ghost to withdraw Essence. The ghost then spends one Willpower point as the player rolls (Conviction + Bureaucracy). For every success on the roll, the ghost may take one mote of Essence.
-   This Charm fails if the prospective creditor is unwilling to transfer Essence.
-      </description>
+   This Charm fails if the prospective creditor is unwilling to transfer Essence.</description>
    </charms>
    <charms>
       <name>Bold Thief's Way</name>
@@ -2365,8 +2295,7 @@
          <name>Jangling Coin Pouch Sense</name>
       </prerequest>
       <description>This Charm is similar to the previous one in that it lets a ghost take Essence from another being who has motes to spend. The "donor" need not be willing for this Charm's purposes, however. The ghost need only touch the target and spend three motes of Essence as the player rolls (Conviction + Larceny). Touching an unwilling target requires an unarmed Martial Arts roll.
-   On a successful roll, the ghost takes one mote from the target per success. While this Charm is debilitating to the target, it is not necessarily profitable for the bold thief unless her player rolls well.
-      </description>
+   On a successful roll, the ghost takes one mote from the target per success. While this Charm is debilitating to the target, it is not necessarily profitable for the bold thief unless her player rolls well.</description>
    </charms>
    <charms>
       <name>Redirected Prayer Path</name>
@@ -2394,8 +2323,7 @@
       </prerequest>
       <description>When a ghost's living descendants burn certain goods (or paper replicas thereof) as an offering to the ghost's memory, black jade tokens bearing the ghost's name appear in the Underworld parallel to the location in the living world where the burnt offerings were made. These coins are known as "hell money". The ghost whose name is on the hell money can draw Essence and Willpower from it. The amount is determined by the value of the sacrificed object. A ghost can still draw Essence (but not Willpower) from a hell money coin with someone else's name on it, but not as many motes as he could if the coin were addressed to him.
    If a ghost knows this Charm, however, he can appropriate another ghost's burnt offerings as they appear. To do so, he need only be within five yards of the spot in the Underworld where the hell money will appear. While the offering burns in the living world, the ghost spends one Willpower point as his player rolls (Manipulation + Larceny). If the roll succeeds, the hell money appears with his name on it and is his to use to its full potential. The ghost for whom the hell money was originally intended is out of luck.
-   If more than one ghost wants to appropriate a burnt offering as it's being made, the hell money goes to whichever character's player achieved more successes on the activation roll. In the event of a tie, contesting players should roll again. Characters are not aware when their use of this power is contested, but that fact is usually self-evident to the loser. If a ghost with this Charm has reason to suspect that someone else is trying to appropriate his legitimate burnt offerings, he can use this power himself to try to make sure his hell money goes where it's supposed to.
-      </description>
+   If more than one ghost wants to appropriate a burnt offering as it's being made, the hell money goes to whichever character's player achieved more successes on the activation roll. In the event of a tie, contesting players should roll again. Characters are not aware when their use of this power is contested, but that fact is usually self-evident to the loser. If a ghost with this Charm has reason to suspect that someone else is trying to appropriate his legitimate burnt offerings, he can use this power himself to try to make sure his hell money goes where it's supposed to.</description>
    </charms>
    <charms>
       <name>Cannibal Call</name>
@@ -2423,8 +2351,7 @@
       </prerequest>
       <description>This Charm allows a ghost to steal from a victim not Essence or offerings, but that victim's very corpus. The attacker grapples her target and devours as much of his ghostly flesh as possible, replenishing her corpus at her victim's expense. For every two health levels of damage the attacker inflicts on her target with a bite, the attacker can heal one level of damage to her own corpus.
    Unless the attacker has had her jaw and teeth reshaped to allow for a reasonable attack, biting a victim is not a very effective combat maneuver. A bite attack from a normally shaped human mouth has the following traits: Speed 6, Accuracy -2, Damage +0L, Defense -, Rate 1. Attacking with a bite also reduces the attacker's Dodge DV by two, rather than the standard -1 DV penalty for a normal Attack action.
-   An attacker must inflict at least two health levels of damage with a bite before she can activate this Charm. (She must inflict damage in multiples of two in order to recoup multiple health levels). If she inflicts only one level of damage, or none at all, she need not activate the Charm, hence its reflexive nature.
-      </description>
+   An attacker must inflict at least two health levels of damage with a bite before she can activate this Charm. (She must inflict damage in multiples of two in order to recoup multiple health levels). If she inflicts only one level of damage, or none at all, she need not activate the Charm, hence its reflexive nature.</description>
    </charms>
    <charms>
       <name>Secret Imperial Mint Technique</name>
@@ -2442,8 +2369,7 @@
          <name>Bold Thief's Way</name>
       </prerequest>
       <description>This Charm allows a ghost to crystallize his Essence into coins of local currency, whether he's in the Underworld or Creation. (He must be fully physically manifested to create money in Creation, though). To use this Charm, the ghost's player rolls (Intelligence + Larceny) as the character spends one Willpower point and a variable amount of Essence. If the roll succeeds, the ghost creates enough money for a single purchase at a level of Resources equal to one dot per two motes spent. That is, if the roll succeeds and the ghost spends two motes, he creates money sufficient for a single Resources• purchase. That's enough for, say, a good short sword. The ghost can create only an effective number of Resources dots equal to or less than his Temperance rating.
-   The money this Charm creates is real, legitimate local currency. The ghost can keep it for as long as he pleases. Until he spends it all or otherwise gets rid of it, however, he cannot use this Charm again to create more money.
-      </description>
+   The money this Charm creates is real, legitimate local currency. The ghost can keep it for as long as he pleases. Until he spends it all or otherwise gets rid of it, however, he cannot use this Charm again to create more money.</description>
    </charms>
    <charms>
       <name>Corpse-Fed Radiance</name>
@@ -2471,8 +2397,7 @@
          <name>None</name>
       </prerequest>
       <description>Forcing back the heartless darkness of the Underworld, the haunter emanates a wan light from his body. This light can be pale white or any single color at a time, and it shines with the intensity of late dusk in a clear sky. If two ghosts shine light of the same color, the intensity increases to that of early dusk. The more ghosts who work together, the brighter the light is. When up to seven ghosts shine at the same time, their light is as bright as midday in the trackless desert.
-   A ghost can use this Charm in the Underworld, the living world or shadowlands. The haunter need not be physically manifested for the light to be visible.
-      </description>
+   A ghost can use this Charm in the Underworld, the living world or shadowlands. The haunter need not be physically manifested for the light to be visible.</description>
    </charms>
    <charms>
       <name>Black Breath Of The Abyss</name>
@@ -2500,8 +2425,7 @@
          <name>Corpse-Fed Radiance</name>
       </prerequest>
       <description>As the ghost spends the Essence to activate this Charm, eerie blackness pours out of her mouth and nose and runs from her eyes like tears. This blackness is as empty and dark as the space between the stars, and it extends in a pulsing, quivering sphere 10 feet in radius around the ghost. Ghosts can see through this darkness clearly, but no actual light can move in or out of it. Anyone caught inside the radius of effect suffers a -2 external penalty to all rolls to take physical actions, and ranged attacks from one side of the boundary of darkness cannot be made against targets on the opposite side. Only time (i.e., a scene), choice (namely the ghost's) or the manifestation of a Solar's anima banner can dispel this cloud of darkness.
-   Normally, the bubble of darkness remains in place for the duration and affected characters can move out of it after a successful (Wits + Awareness) roll, which suffers the -2 penalty imposed by the darkness. If the haunter spends a Willpower point when she activates this Charm, though, she can move the cloud of darkness around as she desires as a miscellaneous action. She can move the center of the cloud as far as her natural Move distance per miscellaneous action.
-      </description>
+   Normally, the bubble of darkness remains in place for the duration and affected characters can move out of it after a successful (Wits + Awareness) roll, which suffers the -2 penalty imposed by the darkness. If the haunter spends a Willpower point when she activates this Charm, though, she can move the cloud of darkness around as she desires as a miscellaneous action. She can move the center of the cloud as far as her natural Move distance per miscellaneous action.</description>
    </charms>
    <charms>
       <name>Painting The Sunset Picture</name>
@@ -2530,8 +2454,7 @@
          <name>Black Breath Of The Abyss</name>
       </prerequest>
       <description>This Charm allows a haunter to hone his con-trol over light and darkness into an ability to create detailed illusions. Such illusions are somewhat basic: they tend to periodically flicker or blur slightly, and they appear translucent in strong light. Nonetheless, they are three-dimensional images with a full color palette, and they can be as large or as detailed as the haunter desires.
-   Creating an illusion with this Charm requires a successful roll of (Wits + Craft [Pandemonium]). (See p. 116 for a full description of that new Craft Ability). The difficulty of a basic illusion, such as an image of the haunter as a young man, is 1. A more complicated image, such as a recreation of the scene where the haunter was murdered, is difficulty 2. A huge and richly detailed image, such as a faithful recreation of a Solar's palatial manse, is difficulty 3. At the end of the standard duration, the character can spend one Willpower point to maintain the illusion for an additional hour. He can do so again and again as each hour elapses. The ghost may also create as many individual illusions as he wishes, though doing so requires a separate activation of the Charm for each illusion. Finally, the haunter may create these illusions in the Underworld, shadowlands or Creation. If he's in Creation, he need not manifest physically to create an illusion. The Essence for each illusion is committed until the illusion dissipates.
-      </description>
+   Creating an illusion with this Charm requires a successful roll of (Wits + Craft [Pandemonium]). (See p. 116 for a full description of that new Craft Ability). The difficulty of a basic illusion, such as an image of the haunter as a young man, is 1. A more complicated image, such as a recreation of the scene where the haunter was murdered, is difficulty 2. A huge and richly detailed image, such as a faithful recreation of a Solar's palatial manse, is difficulty 3. At the end of the standard duration, the character can spend one Willpower point to maintain the illusion for an additional hour. He can do so again and again as each hour elapses. The ghost may also create as many individual illusions as he wishes, though doing so requires a separate activation of the Charm for each illusion. Finally, the haunter may create these illusions in the Underworld, shadowlands or Creation. If he's in Creation, he need not manifest physically to create an illusion. The Essence for each illusion is committed until the illusion dissipates.</description>
    </charms>
    <charms>
       <name>Midnight Canvas Unfurled</name>
@@ -2561,8 +2484,7 @@
       </prerequest>
       <description>Like its prerequisite, this Charm allows a ghost to create a convincing illusion. The roll is the same, as is the range of difficulty based on the complexity of the image. Where Painting the Sunset Image creates only an immobile image, though, Midnight Canvas Unfurled creates an image capable of moving at the haunter's command. The haunter can either cause the image to slide across the landscape in three dimensions just as if she were lifting and repositioning a model, or she can cause it to appear to move under its own power. Illusions created with this Charm move as fast as their creators wish. The ghost can "program" the illusion at the moment of its creation to take a set of repetitive actions, or she can micromanage its movements with consecutive miscellaneous actions.
    The illusion lasts for one scene, and the duration can be extended by spending one Willpower point per hour of extension. While the image exists, it normally affects only the sense of sight. For every five additional motes the haunter spends to activate the effect, however, she can cause the illusion to affect one additional sense. She could, for instance, make it talk or emanate a horrid stench. She could even grant it an illusory solidity and texture, though she could not cause it to inflict damage.
-   As with Painting the Sunset Canvas, the ghost can create illusions in the Underworld, a shadowland or Creation, and she need not be materialized in order to do so. The Essence required to create the illusion remains committed for as long as the illusion exists.
-      </description>
+   As with Painting the Sunset Canvas, the ghost can create illusions in the Underworld, a shadowland or Creation, and she need not be materialized in order to do so. The Essence required to create the illusion remains committed for as long as the illusion exists.</description>
    </charms>
    <charms>
       <name>The Ichor Cauldron</name>
@@ -2590,8 +2512,7 @@
          <name>Midnight Canvas Unfurled</name>
       </prerequest>
       <description>An old standby of ghostly pranksters and specialists in spreading terror, this Charm allows a haunter to summon up liquids from nowhere. These liquids can be any harmless substance from water to blood to ink to dribbling phlegm. Powerfully deleterious substances such as acid, poison or flammable oil are not allowed, but less immediately harmful substances such as weak wine or slippery grease are fine.
-   When the ghost activates the power, he can summon up to 10 gallons per dot of Conviction he has. The liquid comes from any place in the ghost's line of sight, seemingly out of thin air, and its flow cannot be blocked. It lasts for one hour, drying, clotting, evaporating and conforming to the shape of its container just as is normal for the substance. When the hour is done, the substance disappears as if it were never there. Nonetheless, any damage it might have caused, such as ruining a sand sculpture or making a document illegible, remains.
-      </description>
+   When the ghost activates the power, he can summon up to 10 gallons per dot of Conviction he has. The liquid comes from any place in the ghost's line of sight, seemingly out of thin air, and its flow cannot be blocked. It lasts for one hour, drying, clotting, evaporating and conforming to the shape of its container just as is normal for the substance. When the hour is done, the substance disappears as if it were never there. Nonetheless, any damage it might have caused, such as ruining a sand sculpture or making a document illegible, remains.</description>
    </charms>
    <charms>
       <name>Messenger Of The Grave</name>
@@ -2620,8 +2541,7 @@
       </prerequest>
       <description>With a momentary exercise of will, the haunter creates vermin to carry out her will. She can create a scarab, rat, spider, snake or other creature of similar size, with all the basic traits and capabilities of a normal animal of the same type. The creature follows her mental commands to the best of its ability, and while it can't do anything a normal creature couldn't do, it is smart enough to understand and follow her orders. Vermin created thus can have (and use) fangs, claws or stingers like any other member of their species, but they carry no venom and are completely sterile.
    Creating vermin with this Charm requires a successful (Wits + Craft [Pandemonium]) roll. (See p. 116 for a full description of that new Craft Ability). Creating an insect or other very small creature is difficulty 2. Creating a creature the size of a rat is difficulty 3 and is the limit of this Charm's capability. The animal lives for one hour, though the creator can extend this duration by additional hours by expending one additional Willpower point per hour. When the duration expires, the animal dies on the spot, leaving a perfectly natural corpse.
-   The ghost need not be physically manifested to create vermin in the lands of the living. She need only be present there. Essence used to create the vermin remains committed until the creature dies.
-      </description>
+   The ghost need not be physically manifested to create vermin in the lands of the living. She need only be present there. Essence used to create the vermin remains committed until the creature dies.</description>
    </charms>
    <charms>
       <name>Six Plague Summons</name>
@@ -2658,8 +2578,7 @@
          4                             6,250
          5+      So. Damn. Many.
    As with vermin created by Messenger of the Grave, these creatures can have their normal fangs, claws or stingers, but they carry no venom and can conceive no offspring. Unlike that Charm, they can carry out only one set of simple orders, such as "Devour him!" or "Destroy these crops!" or "Swarm over everyone in this village!" If they manage to carry out their orders completely before the duration of the Charm expires, they run wild, obeying the dictates of their ravenous hunger. At the end of the hour, they die off rapidly, leaving tiny carcasses strewn all over the place.
-   A haunter can use Six Plague Summons in the Underworld, a shadowland or Creation. He need not be physically manifested to create a horde in Creation; he need only be present.
-      </description>
+   A haunter can use Six Plague Summons in the Underworld, a shadowland or Creation. He need not be physically manifested to create a horde in Creation; he need only be present.</description>
    </charms>
    <charms>
       <name>Hand Of The Wind</name>
@@ -2687,8 +2606,7 @@
       </prerequest>
       <description>This Charm allows a haunter to perform a physical action that affects the world while she is not physically manifested in it. (It works only in Creation or during the day in a shadowland). Without manifesting, she goes through the motions of taking the action, spending three motes of Essence and one Willpower. Her player then makes a roll appropriate to the action. If the roll succeeds, the action occurs just as if the ghost were fully physically manifested, although the haunter remains invisible and intangible.
    Hand of the Wind allows a ghost to affect the world with only one action, though that action can include a necessary preliminary effect. The haunter could, for example, snatch a dagger off the floor and throw it as one action. She could dip a quill pen in a handy pot of ink and write a simple sentence with it as a single action. She could step in front of a beloved living descendant who's under attack and punch the attacker in the face as a single action. Alternatively, she could snatch that descendant's weapon out of the mortal's hand and use it to parry a single attack directed at that mortal.
-   Actions the ghost takes with this Charm rely on the ghost's normal traits just as if she were corporeal and taking the action physically. They also provoke any reactive traits onlookers possess (such as DVs or reflexive Charms). Any action the haunter takes thus is considered unexpected, however, unless onlookers can somehow accurately sense her while she is intangible and invisible.
-      </description>
+   Actions the ghost takes with this Charm rely on the ghost's normal traits just as if she were corporeal and taking the action physically. They also provoke any reactive traits onlookers possess (such as DVs or reflexive Charms). Any action the haunter takes thus is considered unexpected, however, unless onlookers can somehow accurately sense her while she is intangible and invisible.</description>
    </charms>
    <charms>
       <name>Strike Of Dead Hands</name>
@@ -2741,8 +2659,7 @@
          <name>Strike Of Dead Hands</name>
       </prerequest>
       <description>When a haunter uses this Charm, she suddenly seems to flit back and forth from place to place faster than the eye can follow. To the ghost's perception, people around her seem to move sluggishly, like drowning men or dreamers trapped in hellish nightmares.
-   To use this Charm, the haunter spends the requisite motes and Willpower as her player makes a reflexive (Intelligence + Craft [Pandemonium]) roll. (See p. 116 for a full description of this new Craft Ability). The character receives one extra action per success on the roll, up to a maximum limited by her Essence rating. This Charm is a normal extra action Charm per the description on page 182 of Exalted.
-      </description>
+   To use this Charm, the haunter spends the requisite motes and Willpower as her player makes a reflexive (Intelligence + Craft [Pandemonium]) roll. (See p. 116 for a full description of this new Craft Ability). The character receives one extra action per success on the roll, up to a maximum limited by her Essence rating. This Charm is a normal extra action Charm per the description on page 182 of Exalted.</description>
    </charms>
    <charms>
       <name>Staggered Dark Stars Movement</name>
@@ -2769,8 +2686,7 @@
          <name>Flying Time Technique</name>
       </prerequest>
       <description>Flying Time Technique allows a haunter to compress indefinable instants of time in such a way that he moves faster than everyone else; this Charm allows him to manipulate the Calendar of Setesh such that he is completely separate from the flow of passing time. When the ghost activates the Charm, he feels momentarily lighter than air as the landscape around him blurs indescribably. An instant later, the sensation fades. The ghost remains in the same place where he activated the Charm, but much more time has passed than he experienced. To onlookers, the haunter seems to disappear, only to reappear in exactly the same spot much later in exactly the same condition he was in when he left.
-   Using this power requires a successful (Intelligence + Occult) roll. For every success the roll garners, the character may disappear for up to 30 minutes. He determines up front the entire amount of time he'll skip, and he has no knowledge of what happens in the intervening time. The ghost cannot use this power to move backward in time, only forward. Also, since this Charm relies on the ghost's connection to the Calendar of Setesh, he cannot use it anywhere but in the Underworld.
-      </description>
+   Using this power requires a successful (Intelligence + Occult) roll. For every success the roll garners, the character may disappear for up to 30 minutes. He determines up front the entire amount of time he'll skip, and he has no knowledge of what happens in the intervening time. The ghost cannot use this power to move backward in time, only forward. Also, since this Charm relies on the ghost's connection to the Calendar of Setesh, he cannot use it anywhere but in the Underworld.</description>
    </charms>
    <charms>
       <name>Hours Like Autumn Leaves</name>
@@ -2799,8 +2715,7 @@
       </prerequest>
       <description>This Charm functions exactly like its prerequisite except for the cost and one key difference. Now, not only can the haunter move herself forward in time by separating herself from the Calendar of Setesh, but she can also move other ghosts forward with her as well.
    To use this Charm, the haunter must spend six motes of Essence and one point of Willpower for herself and that same cost again for each additional ghost she wants to take with her. (She must skip ahead with the group, or the Charm fails). The player then makes the same roll as for Staggered Dark Stars Movement, and successes determine how far ahead the group can skip. Every member of the group skips ahead the same amount of time. The ghost using this Charm must be touching everyone she wants to take with her who is unwilling to skip ahead. (Those who are willing need not be touching her, but they must be within 10 yards of her).
-   As with Staggered Dark Stars Movement, this Charm functions only in the Underworld.
-      </description>
+   As with Staggered Dark Stars Movement, this Charm functions only in the Underworld.</description>
    </charms>
    <charms>
       <name>Ebon Grasp Of Oblivion</name>
@@ -2833,8 +2748,7 @@
       <description>As the haunter activates this horrid power, darkness flows from his eyes, ears, nose and mouth, coating his body in the impenetrable black that exists at the event horizon of the Abyss. This blackness completely obscures the character's features, though it clings to his body and trails faint streamers in its wake as the character moves.
    For the rest of the scene, dozens of jet-black tendrils lash out from the character's tenebrous body in a five-yard radius to attack anyone nearby. The haunter's player rolls a single (Strength + Martial Arts) attack, against which every character in the radius must defend him - or herself. (These tendrils do not distinguish between friend and foe). Each such attack roll counts as a (Speed 6, DV -1) action. A successful attack inflicts (Strength + 2) levels of lethal damage. If such an attack strikes a victim down to Incapacitated or below, several of the tendrils wrap around the fallen target in the next action and drag her toward the attacking ghost's black body. Doing so takes two independent miscellaneous actions (meaning the other tendrils continue to attack as normal). A character can attempt to pull a downed comrade free of the tendrils, engaging in a contested Strength roll with the haunter - all while dodging the other tendrils' attacks, of course. If someone does not rescue a fallen character in the space of two miscellaneous actions, the fallen character is dragged into the attacking ghost's body as if that ghost's silhouette were a hole in space itself. If the victim is pulled through that hole in space, she is cast into the Abyss.
    While a haunter uses this Charm, he's not entirely in control of himself. He becomes an extension of the death wish of the Neverborn who orbit the threshold of dissolution, wanting only to pull in and devour anything that resists the call of Oblivion. The most he can do of his own will is cover distance at his normal Move or Dash speeds. Otherwise, he cannot attack targets himself, nor can he defend himself. Although the tendrils' attacks use his traits, they act only on the blind idiot volition of the Neverborn. Fortunately, although the ghost cannot dodge or parry attacks made against him, the tenebrous shell of Oblivion that surrounds him adds 6L/12B to his soak and a like amount of Hardness. Also, if a weapon is not made of one of the magical materials or is not otherwise supernaturally enhanced, it inflicts bashing damage against the character using this Charm. (Note, the weapon, not the attack, must be supernaturally enhanced).
-   If a ghost is destroyed while using this Charm, he implodes and plummets into the Abyss.
-      </description>
+   If a ghost is destroyed while using this Charm, he implodes and plummets into the Abyss.</description>
    </charms>
    <charms>
       <name>Whisper</name>
@@ -2861,8 +2775,7 @@
          <name>None</name>
       </prerequest>
       <description>Speaking softly, the ghost makes himself heard in the region of Creation that parallels his present location in the Underworld. Anyone within one yard of his mirror location hears the words as clearly as if the ghost were whispering them in his ear. The player of any character outside that radius may make a (Perception + Awareness) roll to make out the whispered words. The difficulty of that roll is 1 for everyone within 10 yards, and it rises by 1 every 10 yards farther away the listener is from the ghost's mirror location.
-   The ghost's words are as audible as normal in the Underworld while he whispers into the living world. If the ghost speaks louder than a whisper, however, his words are inaudible in the living world. The ghost may not use this Charm to whisper from Creation to the Underworld.
-      </description>
+   The ghost's words are as audible as normal in the Underworld while he whispers into the living world. If the ghost speaks louder than a whisper, however, his words are inaudible in the living world. The ghost may not use this Charm to whisper from Creation to the Underworld.</description>
    </charms>
    <charms>
       <name>Marsh Light</name>
@@ -2889,8 +2802,7 @@
          <name>Whisper</name>
       </prerequest>
       <description>With this Charm, the ghost causes a light one foot in diameter (or a number of smaller component lights) to appear in Creation parallel to her Underworld location. The light can take only a simple shape (or shapes), and it moves in Creation only as the ghost moves.
-   If a living creature sees this light and is not doing something he considers vitally important at that moment (such as fighting for his life or lashing a comrade's leg to a makeshift splint so they can escape an imminent threat), his player must make a reflexive Conviction roll. If the roll succeeds, the character continues what he was doing. If it fails, he spends a miscellaneous action staring at the light. Characters with higher Essence ratings than the ghost's are immune to this Compulsion effect.
-      </description>
+   If a living creature sees this light and is not doing something he considers vitally important at that moment (such as fighting for his life or lashing a comrade's leg to a makeshift splint so they can escape an imminent threat), his player must make a reflexive Conviction roll. If the roll succeeds, the character continues what he was doing. If it fails, he spends a miscellaneous action staring at the light. Characters with higher Essence ratings than the ghost's are immune to this Compulsion effect.</description>
    </charms>
    <charms>
       <name>Sweet Winsome Light</name>
@@ -2917,8 +2829,7 @@
          <name>Marsh Light</name>
       </prerequest>
       <description>As his player makes a successful (Charisma + Occult) roll, the ghost spends four motes of Essence to create a beautiful, intriguing ball of light that drifts and dances enticingly in the air. It lasts for one minute per success on the roll, and the ghost can create it anywhere within 20 yards of himself. It moves as he commands and can go anywhere within his line of sight. For an additional mote, a ghost in the Underworld can create the ball of light in the living world within 20 yards of his parallel Underworld location. It moves there as he directs, but it cannot leave a 20-yard radius around his parallel Underworld location - though that area moves as the ghost does.
-   Animals who see the light are drawn toward it, compelled to approach at their top Move rate. More intelligent witnesses who see the light might think it's a traveler's torch, a playful spirit or some interesting natural phenomenon, and they are also compelled to approach. If the Charm's activation roll scores more successes than the witness's appropriate MDV, the witness moves toward the light at her top Move rate. Spending a point of Willpower negates the alluring effect of this Charm for one minute. Controlling an affected animal and keeping it from following the light calls for a (Dexterity + Ride) roll that opposes the Charm's activation roll.
-      </description>
+   Animals who see the light are drawn toward it, compelled to approach at their top Move rate. More intelligent witnesses who see the light might think it's a traveler's torch, a playful spirit or some interesting natural phenomenon, and they are also compelled to approach. If the Charm's activation roll scores more successes than the witness's appropriate MDV, the witness moves toward the light at her top Move rate. Spending a point of Willpower negates the alluring effect of this Charm for one minute. Controlling an affected animal and keeping it from following the light calls for a (Dexterity + Ride) roll that opposes the Charm's activation roll.</description>
    </charms>
    <charms>
       <name>Tinker's Body</name>
@@ -2945,8 +2856,7 @@
          <name>Marsh Light</name>
       </prerequest>
       <description>An intangible ghost in the land of the living can use this Charm to construct a physical body out of any nearby loose objects. These objects fill the space that her incorporeal body would take up if she were manifest, and they provide a limited sense of touch. The ghost cannot speak through this body of scraps, but she can use it to make noise and to pantomime her intentions. If she constructs a face out of enough small, appropriately shaped pieces, she can even express her emotions through it. Constructing a suitable face requires a (Dexterity + Craft [Air]) roll, difficulty 2. If that roll fails (or if the ghost doesn't bother in the first place), the ghost suffers a -2 internal penalty to any social action.
-   While the ghost's Mental Attributes stay the same in her scrap-body, her Physical Attributes depend on what she uses to construct it. The body has one dot in each Physical Attribute, with four more split up among them based on the available materials (and Storyteller approval). Light, fragile materials yield higher Dexterity but less Strength. Firm or springy materials lend themselves to higher Strength. Larger, thicker pieces might yield more Stamina. The body this Charm constructs has only four health levels (-0/-1/-2/-4). The wound penalties represent only the diminishing structural integrity of the body as damage knocks it apart. The body does not transmit pain to the ghost.
-      </description>
+   While the ghost's Mental Attributes stay the same in her scrap-body, her Physical Attributes depend on what she uses to construct it. The body has one dot in each Physical Attribute, with four more split up among them based on the available materials (and Storyteller approval). Light, fragile materials yield higher Dexterity but less Strength. Firm or springy materials lend themselves to higher Strength. Larger, thicker pieces might yield more Stamina. The body this Charm constructs has only four health levels (-0/-1/-2/-4). The wound penalties represent only the diminishing structural integrity of the body as damage knocks it apart. The body does not transmit pain to the ghost.</description>
    </charms>
    <charms>
       <name>Sleeper's Caul</name>
@@ -3028,8 +2938,7 @@
          <name>Embody</name>
       </prerequest>
       <description>If the ghost is in the presence of his ghostly steed in the living world, he can lay a hand on it and make it manifest when he does so. The steed does not manifest when the ghost uses this Charm, but later in that scene when he uses another Charm to make himself manifest (provided he's touching the steed when he manifests). Other animals of the mount's type shy away from this weird beast that looks like one of their own, though they can be trained to tolerate such a steed's presence.
-   Mounts or other ghostly animals made manifest in this way retain all of their normal traits and qualities. They remain corporeal until either the scene after they manifest ends or the ghost ends his own manifestation - whichever comes first.
-      </description>
+   Mounts or other ghostly animals made manifest in this way retain all of their normal traits and qualities. They remain corporeal until either the scene after they manifest ends or the ghost ends his own manifestation - whichever comes first.</description>
    </charms>
    <charms>
       <name>Birth The Perfected Master</name>
@@ -3082,8 +2991,7 @@
          <name>Embody</name>
       </prerequest>
       <description>If a ghost needs to manifest for a fight in the living world, she uses this Charm instead of its prerequisite. To activate it, the ghost's player rolls (Valor + Occult). If the roll succeeds, the ghost creates a physical body in her image (with the same allowance for cosmetic variation) that has her full Attributes and health levels. It lasts for five minutes per success on the roll.
-   Along with her body and clothes, the ghost may also manifest a single weapon and set of armor. The weapon and armor must be non-magical, and the normal Resources cost of each may not exceed the ghost's Essence rating. The weapon and armor are physical and work normally for as long as the ghost remains manifest. When the Charm's duration ends (or before that if the ghost ends her manifestation early), the weapon and armor disappear.
-      </description>
+   Along with her body and clothes, the ghost may also manifest a single weapon and set of armor. The weapon and armor must be non-magical, and the normal Resources cost of each may not exceed the ghost's Essence rating. The weapon and armor are physical and work normally for as long as the ghost remains manifest. When the Charm's duration ends (or before that if the ghost ends her manifestation early), the weapon and armor disappear.</description>
    </charms>
    <charms>
       <name>Unending Rebirth</name>
@@ -3143,8 +3051,7 @@
       </prerequest>
       <description>A dead pilot can steer a ghostly ship from the Underworld through a shadowland and into Creation. (Bringing larger vessels into Creation thus can increase the Essence toll required to enter the land of the living - see Exalted, p. 313 - at the Storyteller's discretion). Normally a ship and all ghosts aboard become intangible when the ship crosses into Creation. If the ghost uses this Charm once the vessel arrives, though, the boat becomes fully physical.
    Activating this Charm calls for an (Intelligence + Sail) roll, after which the boat remains physical for one hour per success. At any point during that period, the ghost's player may spend additional Essence and roll again to extend the duration. The new duration is based on the new roll, and it begins from that moment. The boat lasts until its duration expires, the ghost who made it manifest becomes incorporeal or the pilot becomes incorporeal - whichever happens first. If direct sunlight touches it, the boat disintegrates into a cloud of ash. All Essence used in this effect from the moment it first manifests in the living world is committed until the effect's most recently determined duration expires.
-   Boats from the Underworld made manifest with this Charm often look like broken, derelict vessels with leaning masts, holes in their hulls and rotting sails and lines. Nonetheless, they function just as normal, undamaged vessels of their type. Even their rusting, barnacle-covered weapons still work as though new. The only time this doesn't hold true is when a ghostly vessel suffers actual damage in the Underworld - such as from savage storms or deathknight piracy - before manifesting. If a vessel damaged in the Underworld manifests in the living world, it remains in its same damaged condition, though it's still just as seaworthy as it was in the Underworld.
-      </description>
+   Boats from the Underworld made manifest with this Charm often look like broken, derelict vessels with leaning masts, holes in their hulls and rotting sails and lines. Nonetheless, they function just as normal, undamaged vessels of their type. Even their rusting, barnacle-covered weapons still work as though new. The only time this doesn't hold true is when a ghostly vessel suffers actual damage in the Underworld - such as from savage storms or deathknight piracy - before manifesting. If a vessel damaged in the Underworld manifests in the living world, it remains in its same damaged condition, though it's still just as seaworthy as it was in the Underworld.</description>
    </charms>
    <charms>
       <name>Sunken Admiral Technique</name>
@@ -3171,8 +3078,7 @@
          <name>Conjure The Defeated Vessel</name>
       </prerequest>
       <description>This Charm works in all ways just like Conjure the Defeated Vessel, except that it can manifest multiple boats at the same time. For every Underworld vessel in the ghost's line of sight that she wants to make manifest in the living world, the ghost spends eight motes of Essence. The ethereal fleet becomes physical in Creation and lasts for one hour per success on the (Intelligence + Sail) activation roll. (The ghost must spend the Essence toll for exiting the shadowland - see Exalted, p. 313 - for each boat, though).
-   The ghost can renew the duration of the effect just as she can with Conjure the Defeated Vessel, but she may affect no more boats on each subsequent renewal than she did on the previous renewal. Also, as with the prerequisite Charm, all the motes devoted to the effect remain committed until the final duration expires.
-      </description>
+   The ghost can renew the duration of the effect just as she can with Conjure the Defeated Vessel, but she may affect no more boats on each subsequent renewal than she did on the previous renewal. Also, as with the prerequisite Charm, all the motes devoted to the effect remain committed until the final duration expires.</description>
    </charms>
    <charms>
       <name>Courier In Dreams</name>
@@ -3199,8 +3105,7 @@
          <name>None</name>
       </prerequest>
       <description>With this Charm, a ghost enters a meditative state and speaks a message intended for a living being. The message can be simple - "The White Walker will find you, my apostate daughter!" - or complex - "I, Mara Sparhawk, being of sound mind and spirit, do attest and swear that this is my last will and testament, part one..." - but it must be no longer than 50 words. The message then seeks out the intended recipient in Creation and waits for up to eight hours. If the intended recipient goes to sleep within that period, she dreams of the ghost standing before her and speaking the message. Anything the listener might say in response is not transmitted back to the ghost.
-   The ghost can send this dream message from the Underworld, a shadowland or Creation, and he can send it to anyone anywhere in Creation.
-      </description>
+   The ghost can send this dream message from the Underworld, a shadowland or Creation, and he can send it to anyone anywhere in Creation.</description>
    </charms>
    <charms>
       <name>Honorable Descendant Blessing</name>
@@ -3227,8 +3132,7 @@
          <name>Courier In Dreams</name>
       </prerequest>
       <description>If a ghost feels that a living descendant has attended his familial duties to the fallen with due respect and piety, the ghost may grant this blessing as a reward. She speaks the descendant's name and pictures his face then activates the Charm. When she does so, the descendant feels a sense of peace and self-confidence deriving from a job well done, even if he's not aware of the ghost's blessing.
-   At some point in the next 25 hours, the descendant may draw upon a one-time, three-die bonus to supplement a single roll of any action of his choosing. This bonus cannot allow the character to exceed his normal limit of bonus dice. Honorable Descendant Blessing works only on living characters who descend directly from the ghost granting the blessing. The ghost knows immediately whether or not the blessing is granted, but the Charm gives no knowledge of how the descendant put the blessing to use.
-      </description>
+   At some point in the next 25 hours, the descendant may draw upon a one-time, three-die bonus to supplement a single roll of any action of his choosing. This bonus cannot allow the character to exceed his normal limit of bonus dice. Honorable Descendant Blessing works only on living characters who descend directly from the ghost granting the blessing. The ghost knows immediately whether or not the blessing is granted, but the Charm gives no knowledge of how the descendant put the blessing to use.</description>
    </charms>
    <charms>
       <name>Dishonorable Descendant Curse</name>
@@ -3255,8 +3159,7 @@
          <name>Courier In Dreams</name>
       </prerequest>
       <description>When a descendant has behaved badly or failed to uphold her responsibilities to the dead, a ghost with this Charm can levy a minor punishment. (The ghost can also levy it just to torture a descendant he doesn't like). As with Honorable Descendant Blessing, the ghost speaks the target's name and pictures her face as he activates the Charm. Likewise, the Charm works only on living characters who descend directly from the ghost.
-   As the Charm goes into effect, the player of the vengeful ghost rolls (Compassion + Lore). If the roll succeeds, a dull pain suffuses the target's body and lasts for one hour per success. During that time, the target loses one die from all dice pools and takes a -1 DV penalty as well. When the ghost has exhausted his retaliatory Schadenfreude, he can reflexively dismiss the curse at any time before the duration expires. A ghost can levy only one such curse on the same descendant at a time, but any number of related ghosts can curse the same person at the same time. The penalty in the latter case is cumulative, but it cannot exceed an amount equal to the highest Essence rating among the ghosts ganging up on the victim.
-      </description>
+   As the Charm goes into effect, the player of the vengeful ghost rolls (Compassion + Lore). If the roll succeeds, a dull pain suffuses the target's body and lasts for one hour per success. During that time, the target loses one die from all dice pools and takes a -1 DV penalty as well. When the ghost has exhausted his retaliatory Schadenfreude, he can reflexively dismiss the curse at any time before the duration expires. A ghost can levy only one such curse on the same descendant at a time, but any number of related ghosts can curse the same person at the same time. The penalty in the latter case is cumulative, but it cannot exceed an amount equal to the highest Essence rating among the ghosts ganging up on the victim.</description>
    </charms>
    <charms>
       <name>Unseemly Librarian Nature</name>
@@ -3310,8 +3213,7 @@
       </prerequest>
       <description>The ghost with this Charm not only has a wealth of information floating around in her mind, but she can subconsciously compare statements made in her presence to reliable patterns of information in her mind. These patterns make up a "big-picture" view of human (and ghostly) nature. While the Charm is active, the character can measure a person's statements against this big picture to determine whether the speaker is either lying or simply wrong.
    To activate the Charm, the ghost spends the requisite Essence as the player rolls (Perception + Investigation). The effects last for one minute per success. During that period, if a speaker in the ghost's presence knowingly utters a false statement, the ghost's player receives one automatic success on rolls to realize that the statement doesn't ring true under these circumstances in the big picture. (The ghost doesn't automatically know what the truth actually is, though).
-   The Charm provides the same benefit when a speaker makes a statement of fact that he believes is true but is actually false. The fact in question must be an objective one that is currently and accurately on record in a scholarly storehouse somewhere in the Underworld. If, for instance, a speaker made some spurious claim about relative Underworld population figures in Chiaroscuro and Sijan, the ghost would have a good chance of recognizing the error, based on those two cities' current ghostly census records. The ghost wouldn't get any sense of whether a speaker's claim about the nature of the Emissary of Nexus was true, however, as that being's actual nature is not on record anywhere in the Underworld.
-      </description>
+   The Charm provides the same benefit when a speaker makes a statement of fact that he believes is true but is actually false. The fact in question must be an objective one that is currently and accurately on record in a scholarly storehouse somewhere in the Underworld. If, for instance, a speaker made some spurious claim about relative Underworld population figures in Chiaroscuro and Sijan, the ghost would have a good chance of recognizing the error, based on those two cities' current ghostly census records. The ghost wouldn't get any sense of whether a speaker's claim about the nature of the Emissary of Nexus was true, however, as that being's actual nature is not on record anywhere in the Underworld.</description>
    </charms>
    <charms>
       <name>Masterly Pedagogical Inquiry</name>
@@ -3339,8 +3241,7 @@
          <name>Discerning Student Technique</name>
       </prerequest>
       <description>A ghost uses this Charm to compel someone to answer one question truthfully. The ghost spends the Essence and asks the question as his player rolls (Manipulation + Presence). If the successes exceed the target's Dodge MDV, the target answers truthfully to the best of his ability - assuming he knows the answer, of course. The answer must be as full and honest as the target is capable of giving, though the target will normally keep it to about a paragraph in length.
-   If the target's Essence is higher than that of the ghost using this Charm, the Charm automatically fails. The user of the Charm is aware of the failure even if the target pretends to comply.
-      </description>
+   If the target's Essence is higher than that of the ghost using this Charm, the Charm automatically fails. The user of the Charm is aware of the failure even if the target pretends to comply.</description>
    </charms>
    <charms>
       <name>Imperious Instructor's Dictate</name>
@@ -3369,8 +3270,7 @@
          <name>Masterly Pedagogical Inquiry</name>
       </prerequest>
       <description>As the ghost's player rolls (Charisma + Presence), the ghost spends the activation cost and speaks a short, imperative statement to a target. If the roll succeeds, the statement makes no sound as the words go straight into the target's consciousness. If the roll's successes exceed the target's Dodge MDV, the target carries out the ghost's order, believing that it was his own idea to do so. The Compulsion effect lasts for one day, after which the target changes his mind about what he was trying so hard to do. He does not realize that the ghost put this idea into his mind. If the roll fails, the ghost speaks her command aloud and the target treats it as any other command she might give. If the roll botches, not only does the target treat the command as any other verbal order the ghost issued, but he automatically understands that the ghost tried to supernaturally compel his obedience.
-   If an intended target has a higher Essence than the ghost using the Charm, it automatically fails. The ghost using the Charm is aware of the failure even if the target pretends to comply.
-      </description>
+   If an intended target has a higher Essence than the ghost using the Charm, it automatically fails. The ghost using the Charm is aware of the failure even if the target pretends to comply.</description>
    </charms>
    <charms>
       <name>Favored Student Charm</name>
@@ -3405,8 +3305,7 @@
          3        One full day (25 hours)
          4        One week
          5        One month
-   When the duration ends, the ghost may extend the effect without a roll for another increment of the same duration by spending the activation cost again. Once the duration lapses and is not extended, the target grows uneasy around the ghost, vaguely aware of what he did to her. Thereafter, for a period equal to the total amount of time the ghost had the target under the effect, the difficulty of all social rolls made for the ghost when he interacts with the target increases by 1.
-      </description>
+   When the duration ends, the ghost may extend the effect without a roll for another increment of the same duration by spending the activation cost again. Once the duration lapses and is not extended, the target grows uneasy around the ghost, vaguely aware of what he did to her. Thereafter, for a period equal to the total amount of time the ghost had the target under the effect, the difficulty of all social rolls made for the ghost when he interacts with the target increases by 1.</description>
    </charms>
    <charms>
       <name>Eternally Loyal Student Prana</name>
@@ -3433,8 +3332,7 @@
          <name>Favored Student Charm</name>
       </prerequest>
       <description>This Charm is like its prerequisite in that it works only on ghosts with fewer dots of Essence than the character using the Charm has. With it, the ghost can implant a permanent command in the target's mind. This command cannot run directly counter to the target's Motivation, an Intimacy or any Virtue in which he has three or more dots.
-   To implant the command, the ghost must spend one whole day with the target, at the end of which she spends the requisite motes and Willpower as the player rolls (Manipulation + Presence). The roll must garner at least two successes in excess of the target's MDV. If it does, the ghost implants the command permanently into the target's mind. The command cannot be more complex than can be communicated in about 100 words. If the activation roll garners more than five successes in excess of the target's MDV, however, the command can be as complicated as the ghost desires.
-      </description>
+   To implant the command, the ghost must spend one whole day with the target, at the end of which she spends the requisite motes and Willpower as the player rolls (Manipulation + Presence). The roll must garner at least two successes in excess of the target's MDV. If it does, the ghost implants the command permanently into the target's mind. The command cannot be more complex than can be communicated in about 100 words. If the activation roll garners more than five successes in excess of the target's MDV, however, the command can be as complicated as the ghost desires.</description>
    </charms>
    <charms>
       <name>Illuminate The Shadow Constraint</name>
@@ -3461,8 +3359,7 @@
          <name>None</name>
       </prerequest>
       <description>Ghosts who either travel widely in the Underworld or dwell in areas with richly multicultural populations are wise to learn this Charm. To use it, the ghost considers one aspect of the Underworld society around himself and spends a single mote of Essence as the player rolls (Perception + Bureaucracy). Each success on the roll reveals a single taboo associated with that aspect of society. The information revealed is only as specific, however, as the aspect of society the ghost considers as he activates the Charm. Pondering "food" as an aspect of society might yield general taboos such as "Never eat food outside" or "Eat food only with the thumb, index and middle finger of the right hand." Pondering "apples" might yield more specific information such as, "Never eat an entire apple all by yourself" or "It is rude to eat an apple you yourself have picked".
-   This Charm works only while the character is immersed in the society whose taboos he hopes to reveal.
-      </description>
+   This Charm works only while the character is immersed in the society whose taboos he hopes to reveal.</description>
    </charms>
    <charms>
       <name>Dark Sorcery Observation</name>
@@ -3515,8 +3412,7 @@
          <name>Illuminate The Shadow Constraint</name>
       </prerequest>
       <description>Using this Charm allows a ghost to tell who's breaking the law. First, he can tell who's breaking the natural law of the Underworld just by being there - i.e., who in his line of sight is a living being. Second, he can tell who in his line of sight has committed an unforgiven violation of a local Underworld taboo within the last 25 hours. The subject of the latter need not be aware she has committed the violation. The awareness granted the ghostly magistrate does not include the exact nature of the violation or even the particular taboo in question. All he knows is that the subject violated a taboo at some point in the last day.
-   This Charm functions only in the Underworld and only while the subject is in the area governed by the taboo she broke. Activating the Charm requires a successful (Perception + Bureaucracy) roll.
-      </description>
+   This Charm functions only in the Underworld and only while the subject is in the area governed by the taboo she broke. Activating the Charm requires a successful (Perception + Bureaucracy) roll.</description>
    </charms>
    <charms>
       <name>Brief Exemption</name>
@@ -3543,8 +3439,7 @@
          <name>Illuminate The Shadow Constraint</name>
       </prerequest>
       <description>A favorite of corrupt enforcers of Underworld law, as well as those who must use criminal methods to ferret criminals out, this Charm grants a character temporary immunity from a local taboo. On a successful (Manipulation + Stealth) roll, the character can choose a local taboo of which she is aware and get away with breaking it for one scene. If anyone sees her break the taboo, she still has to deal with the social consequences and the attention of other enforcers of the law. For the purposes of any magical perception or enforcement of the rules (such as Ghostly Magistrate Perception), however, the character does not "read" as one who has violated the taboo. Likewise, the character suffers no internal penalties for violating the taboo, regardless of whether anyone sees her do so or not. When the scene is over, it is as if the ghost had never violated the taboo at all during the scene (unless she's still violating it at scene's end).
-   Exempting oneself from a natural taboo requires only a single success on the activation roll. Exempting oneself from a taboo imposed by necromancy or Charms (such as Impose Stricture) requires as many successes on the activation roll as the character who imposed the taboo had dots of Essence at the time the taboo was levied.Using this Charm does not count as a violation of any taboo.
-      </description>
+   Exempting oneself from a natural taboo requires only a single success on the activation roll. Exempting oneself from a taboo imposed by necromancy or Charms (such as Impose Stricture) requires as many successes on the activation roll as the character who imposed the taboo had dots of Essence at the time the taboo was levied.Using this Charm does not count as a violation of any taboo.</description>
    </charms>
    <charms>
       <name>Accept Amercement</name>
@@ -3571,8 +3466,7 @@
          <name>Brief Exemption</name>
       </prerequest>
       <description>Similar to its prerequisite, this Charm allows one character to forgive or alleviate another character's transgression against a local taboo. The criminal must admit her violation of the taboo, though she need not be repentant. When the absolving confessor uses the Charm, the criminal no longer "reads" as a violator of the taboo in question. If the violation was a one-time action, such as eating a forbidden fruit or making brief eye contact with someone she was supposed to pretend not to notice, this Charm wipes it away as if it never happened. She no longer suffers any levied penalty for breaking the rule, and magical perception (such as Ghostly Magistrate Perception) no longer registers her as an offender. If the violation is an ongoing defiance of taboo, such as wearing armor in a place it's forbidden to do so, she is exempt from that taboo until either the end of the scene or the moment she corrects her behavior (whichever occurs first).
-   This Charm applies only to taboos the character has already violated or those she is currently violating. It cannot be used to forgive a character for a transgression she has not yet committed.
-      </description>
+   This Charm applies only to taboos the character has already violated or those she is currently violating. It cannot be used to forgive a character for a transgression she has not yet committed.</description>
    </charms>
    <charms>
       <name>Levy Fine</name>
@@ -3600,8 +3494,7 @@
          <name>Accept Amercement</name>
       </prerequest>
       <description>If an Underworld law-enforcement officer feels that the punishment a criminal suffers for violating a taboo is not harsh enough, she can add a punishment of her own. She need only touch the criminal in question, which could require an unarmed Martial Arts attack, and declare her additional punishment aloud. This increased burden might include such hindrances as a two-die penalty on all rolls, a visible brand that declares the target a criminal or some ethereal physical impediment (such as a translucent ball and chain) that reduces the target's Move or Dash rate by one-third. Other punishments of similar scale are acceptable as well.
-   Excess punishments last for one scene. A character can stack as many punishments on an offender as she pleases, but she must activate the Charm separately for each one, and she can add only one punishment per taboo of which the criminal is currently in violation. If the target is not guilty of the offense (or if another Charm has rendered him exempt from it), this Charm has no effect on him.
-      </description>
+   Excess punishments last for one scene. A character can stack as many punishments on an offender as she pleases, but she must activate the Charm separately for each one, and she can add only one punishment per taboo of which the criminal is currently in violation. If the target is not guilty of the offense (or if another Charm has rendered him exempt from it), this Charm has no effect on him.</description>
    </charms>
    <charms>
       <name>House Arrest</name>
@@ -3629,8 +3522,7 @@
       </prerequest>
       <description>If an Underworld lawman catches a living person violating a taboo in the Underworld, the lawman can lay down a harsh penalty. Using this Charm, he can confine the offender to the Underworld until such time as the criminal is forgiven for her crime. Gaining forgiveness involves having the user of this Charm or a character with higher Essence use Accept Amercement on the offender's behalf.
    While the penalty remains in effect, the character can use no means natural or supernatural to return to Creation from the Underworld. She can emerge into a shadowland, but she physically cannot leave its borders during the day. If she tries to cross the shadowland's border at night, she always winds up in the Underworld, regardless of whether she spends a mote of Essence or not.
-   This Charm has no effect on ghosts or on Ghost-Blooded individuals.
-      </description>
+   This Charm has no effect on ghosts or on Ghost-Blooded individuals.</description>
    </charms>
    <charms>
       <name>Hide The Living Name</name>
@@ -3659,8 +3551,7 @@
       <description>An especially brutal or cruel Underworld magistrate can levy this extreme punishment on a living offender of Underworld taboos. She must touch the target, possibly as a result of an unarmed Martial Arts attack, and loudly proclaim the nature of the taboo the offender violated. If the offender did, indeed, violate that taboo and was neither forgiven for nor exempt from it, his hun (his intelligent higher soul) is stripped from his body. His body is then magically transported to a secret holding facility somewhere on the border of the Labyrinth. From then on, the offender is forced to exist as a ghost, with all the normal traits and capabilities a ghost has. This sentence lasts until either the ghost who imposed it or a character with a higher Essence uses Accept Amercement to forgive the crime.
    Aside from the drawbacks of being punitively transformed into a ghost, an offender has a few additional things to worry about. The first is that his confiscated body continues to age at its normal rate even though he's not in it. The second is that the holding facility where his body is stored is neither guarded nor wholly inviolable. From time to time, spectres creep into these places to possess the empty bodies, take them into Creation and wreak havoc with them. These evil wraiths take special delight in using the bodies of the virtuous for their wicked joyrides. If the total of the character's two highest Virtues is higher than the number of Willpower points (not dots) the offender had left at the time the sentence was levied, his body is especially attractive to spectres. The bodies of offenders of weak virtue or with the will to resist their baser natures, however, are hardly worth a spectre's time.
    Fortunately, for all the trouble a joyriding spectre can cause in a stolen body, it can't actually destroy its stolen vessel. If the body is "killed" in Creation while it's possessed, the spectre is ejected, and the body returns to its holding facility where it regenerates at its normal healing rate. If the body is gone when the offending character's sentence ends, the character's ghost is suddenly transported to the holding facility where he may wait until the body returns. If he doesn't want to wait, he can follow his body into Creation and try to take it back.
-   Spectral possession is not necessarily a given while a character is under this Charm's effects. Whether or not it happens is up to the Storyteller.
-      </description>
+   Spectral possession is not necessarily a given while a character is under this Charm's effects. Whether or not it happens is up to the Storyteller.</description>
    </charms>
    <charms>
       <name>Impose Stricture</name>
@@ -3688,8 +3579,7 @@
       </prerequest>
       <description>This Charm allows a character to impose a taboo over a local area of the Underworld. (It does not function in Creation or any shadowlands). To do so, the character announces the new stricture aloud and spends the required Essence and Willpower as the player rolls (Charisma + Bureaucracy). The new taboo lasts for three days per success on the roll, and it applies to an area equal in radius to one mile per dot of Essence the character has. Taboos created thus must either forbid or require a single, simple behavior. Such taboos cannot literally be impossible to follow, but they can state inherent contradictions with symbolic solutions. A character could state, for instance, that all residents of the area must be both blind and able to see simultaneously. While that taboo applies, residents could adhere to it by simply keeping one eye covered or both eyes closed at all times.
    Taboos laid down with this Charm carry automatic consequences for those who violate them. The basic consequence is a one-die penalty on all rolls that begins the moment the person violates the taboo and ends one hour after the person ceases to violate the taboo. The consequence applies only to violations of the taboo that occur in the affected area during the duration of the effect. If the violation is an ongoing one - such as wearing a forbidden item of clothing - the consequence kicks in the moment the offender engages in it. It lasts until either one hour after the offender stops, one hour after the offender leaves the area of effect or one hour after the duration of the effect lapses, whichever occurs first.
-   The character who laid down the taboo or a character with higher Essence can use Accept Amercement to alleviate the penalties for violating the imposed taboo. Exempting oneself with the Charm Brief Exemption requires achieving more successes on the activation roll than the character who laid down the stricture has dots of Essence.
-      </description>
+   The character who laid down the taboo or a character with higher Essence can use Accept Amercement to alleviate the penalties for violating the imposed taboo. Exempting oneself with the Charm Brief Exemption requires achieving more successes on the activation roll than the character who laid down the stricture has dots of Essence.</description>
    </charms>
    <charms>
       <name>Curse Of The Damned</name>
@@ -3716,7 +3606,6 @@
          <name>Impose Stricture</name>
       </prerequest>
       <description>This Charm narrows and amplifies the effect of Impose Stricture. With it, a character can lay down a taboo with the same restrictions and consequences as those allowed by Impose Stricture. The taboo applies to only a single person, though, who must be in the character's presence at the time.
-   This imposed taboo is effectively permanent, barring certain conditions. First, the character who imposed it can remove it with the Accept Amercement Charm. Also, another character can remove it the same way as long as that character's Essence is higher than that of the character who imposed it was when he did so. A character whose Essence equals the taboo-imposing character's Essence at the time of imposition can alleviate the taboo for only one scene with Accept Amercement. The victim herself can do the same for a single scene with Brief Exemption, but only if her Essence exceeds the taboo-imposing character's Essence at the time of imposition.
-      </description>
+   This imposed taboo is effectively permanent, barring certain conditions. First, the character who imposed it can remove it with the Accept Amercement Charm. Also, another character can remove it the same way as long as that character's Essence is higher than that of the character who imposed it was when he did so. A character whose Essence equals the taboo-imposing character's Essence at the time of imposition can alleviate the taboo for only one scene with Accept Amercement. The victim herself can do the same for a single scene with Brief Exemption, but only if her Essence exceeds the taboo-imposing character's Essence at the time of imposition.</description>
    </charms>
 </body>
