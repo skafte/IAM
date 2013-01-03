@@ -10,13 +10,12 @@ using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Expression.Controls;
 using Microsoft.Expression.Media;
-//using System.ComponentModel;
 
 using IAM;
 
 namespace IAM.Powers
 {
-   public class CreatePowerElement //: INotifyPropertyChanged
+   public class CreatePowerElement
    {
       #region Properties --------------------------------------------------------------------
       #region Private ---------------------------------------------------------------------------
@@ -454,6 +453,7 @@ namespace IAM.Powers
 
          expndr.Name = powertype + "_" + itemcount.ToString() + "_expndr";
          expndr.HorizontalAlignment = HorizontalAlignment.Stretch;
+         expndr.Width = 700;                    // TODO: make this = wrppnl.actualwidth
 
          expndr.Header = CreateHeader();
          expndr.Content = CreateContent();
