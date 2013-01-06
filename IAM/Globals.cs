@@ -34,6 +34,17 @@ namespace IAM
             Globals.TemporaryData.SelectedCharacterPowers.Add(new XElement("body"));
          }
       }
+
+      /// <summary>
+      /// Used to convert from GUI font size (points) to WPF xaml size (pixel)
+      /// </summary>
+      /// <param name="pt">point size to convert</param>
+      /// <returns>converted to pixel</returns>
+      public static float PtToPx(int pt = 1)
+      {
+         float px = (float)pt * 96/72;
+         return px;
+      }
       #endregion ----------------------------------------------------------------------------
 
       #region Properties --------------------------------------------------------------------
