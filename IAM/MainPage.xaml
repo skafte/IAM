@@ -8,12 +8,13 @@
 	xmlns:System="clr-namespace:System;assembly=mscorlib"
    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
    xmlns:Views="clr-namespace:Microsoft.Internal.Pivot.Views;assembly=System.Windows.Controls.Pivot"
+   xmlns:Controls="clr-namespace:Microsoft.Internal.Pivot.Controls;assembly=System.Windows.Controls.Pivot"
    x:Class="IAM.MainPage"
    mc:Ignorable="d"
    d:DesignHeight="300" d:DesignWidth="400">
 
    <Grid x:Name="LayoutRoot" Background="White">
-      <Grid x:Name="UserMenu_grd" Margin="0">
+      <Grid x:Name="UserMenuOuter_grd" Margin="0">
       	<Grid.ColumnDefinitions>
       		<ColumnDefinition MaxWidth="300" Width="Auto"/>
       		<ColumnDefinition/>
@@ -35,7 +36,7 @@
       						<RowDefinition/>
       					</Grid.RowDefinitions>
       					<sdk:Label Foreground="{StaticResource Brush_Header}" Content="Characters" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
-      					<toolkit:WrapPanel x:Name="CharacterSheetMenu_wrppnl" Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20"/>
+      					<toolkit:WrapPanel x:Name="CharacterSheetMenu_wrppnl" Grid.Row="1" Margin="0,0,-20,-20" Orientation="Vertical"/>
       				</Grid>
       				<Grid x:Name="PowerMenu_grd" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="{Binding ViewportHeight, ElementName=scrollViewer}" Margin="0,0,40,0" Visibility="Collapsed">
       					<Grid.RowDefinitions>
@@ -43,7 +44,7 @@
       						<RowDefinition/>
       					</Grid.RowDefinitions>
       					<sdk:Label Foreground="{StaticResource Brush_Header}" Content="Powers" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
-      					<toolkit:WrapPanel x:Name="PowerLibraryMenu_wrppnl" Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20"/>
+      					<toolkit:WrapPanel x:Name="PowerLibraryMenu_wrppnl" Grid.Row="1" Margin="0,0,-20,-20" Orientation="Vertical"/>
       				</Grid>
       				<Grid x:Name="EquipmentMenu_grd" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="{Binding ViewportHeight, ElementName=scrollViewer}" Visibility="Collapsed">
       					<Grid.RowDefinitions>
@@ -51,13 +52,13 @@
       						<RowDefinition/>
       					</Grid.RowDefinitions>
       					<sdk:Label Foreground="{StaticResource Brush_Header}" Content="Equipment" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
-      					<toolkit:WrapPanel x:Name="EquipmentLibraryMenu_wrppnl" Orientation="Vertical" Grid.Row="1" Margin="0,0,-20,-20"/>
+      					<toolkit:WrapPanel x:Name="EquipmentLibraryMenu_wrppnl" Grid.Row="1" Margin="0,0,-20,-20" Orientation="Vertical"/>
       				</Grid>
       			</StackPanel>
       		</ScrollViewer>
       	</Grid>
       </Grid>
-      <Grid x:Name="CharacterSheetOuter_grd" Grid.ColumnSpan="2" Margin="0" Visibility="Collapsed">
+      <Grid x:Name="CharacterSheetOuter_grd" Margin="0" Visibility="Collapsed">
       	<Grid.ColumnDefinitions>
       		<ColumnDefinition MaxWidth="300" Width="Auto" MinWidth="60"/>
       		<ColumnDefinition/>
@@ -78,16 +79,7 @@
       		</ScrollViewer>
       	</Grid>
       </Grid>
-      <Grid x:Name="PowerLibraryOuter_grd" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="0,0,5,0">
-      	<Grid.RowDefinitions>
-      		<RowDefinition Height="60"/>
-      		<RowDefinition/>
-      	</Grid.RowDefinitions>
-      	<sdk:Label x:Name="PowerName_lbl" VerticalAlignment="Bottom" Margin="60,0,20,0" Content="[power name]" FontFamily="Segoe UI" FontSize="26.667" Height="36" Foreground="{StaticResource Brush_Header}"/>
-      	<ScrollViewer x:Name="PowerLibrary_scrllvwr" BorderThickness="0" BorderBrush="{x:Null}" Grid.Row="1">
-      		<Grid x:Name="PowerLibraryInner_grd"/>
-         </ScrollViewer>
-      </Grid>
+      <Grid x:Name="PowerLibraryOuter_grd" Margin="0,0,5,0"/>
       <Grid x:Name="EquipmentLibraryOuter_grd" Grid.ColumnSpan="2" Margin="0,0,5,0" Visibility="Collapsed">
       	<Grid.RowDefinitions>
       		<RowDefinition Height="60"/>
@@ -121,13 +113,13 @@
       </Grid>
       <Grid x:Name="NavigationBar_grd" Height="110" VerticalAlignment="Top" Background="#FF3A3E4B" MouseLeave="Bar_grd_MouseLeave" Tag="1" Visibility="Collapsed">
       	<StackPanel x:Name="NavigationBar_stckpnl" HorizontalAlignment="Left" Margin="10,10,10,0" Orientation="Horizontal" UseLayoutRounding="True">
-      		<Button x:Name="NavigationBar_UserMenu_btn" Width="75" Style="{StaticResource Custom_ButtonStyle_Generic}" Click="NagivationBar_btn_click" Tag="UserMenu_grd">
+      		<Button x:Name="NavigationBar_UserMenu_btn" Width="75" Style="{StaticResource Custom_ButtonStyle_Generic}" Click="NagivationBar_btn_click" Tag="UserMenu">
       			<TextBox TextWrapping="Wrap" Text="Home" Style="{StaticResource Custom_TextBoxStyle_Generic}"/>
       		</Button>
       	</StackPanel>
       </Grid>
       <Grid x:Name="Unused_BarCollapsed_grd" MouseEnter="BarCollapsed_grd_MouseEnter" Background="#00000000" Opacity="0.01" HorizontalAlignment="Left" Width="10" Visibility="Collapsed"/>
       <Grid x:Name="Unused_Bar_grd" Background="#FF3A3E4B" MouseLeave="Bar_grd_MouseLeave" HorizontalAlignment="Left" Width="60" Visibility="Collapsed" Tag="0"/>
-      <toolkit:BusyIndicator x:Name="LoadingData_bsind" BusyContent="Loading data, Please wait..." IsBusy="True" Visibility="Collapsed" />
+      <toolkit:BusyIndicator x:Name="LoadingData_bsind" Visibility="Collapsed" BusyContent="Loading data, Please wait..." IsBusy="True" />
    </Grid>
 </UserControl>
