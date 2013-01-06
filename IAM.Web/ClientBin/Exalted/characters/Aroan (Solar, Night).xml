@@ -909,28 +909,28 @@ Uncover the truth behind Aroan's former DB officer as well as dealing with any c
 		<powers type="charms" user="Solars">
 			<charms>
 				<name>Second (Ability) Excellency - Essence Triumphant</name>
-				<type>Solars</type>
+				<user>Solars</user>
 				<skill>(Ability)</skill>
 				<trueSkill>Athletics</trueSkill>
 			</charms>
 			<charms>
 				<name>Dipping Swallow Defense</name>
-				<type>Solars</type>
+				<user>Solars</user>
 				<skill>Melee</skill>
 			</charms>
 			<charms>
 				<name>Invincible Ego Shield</name>
-				<type>Solars</type>
+				<user>Solars</user>
 				<skill>Integrity</skill>
 			</charms>
 			<charms>
 				<name>Demure Carp Feint</name>
-				<type></type>
+				<user></user>
 				<skill>Martial Arts</skill>
 			</charms>
 			<charms>
 				<name>Fiery Solar Chakram</name>
-				<type>Solars</type>
+				<user>Solars</user>
 				<skill>Thrown</skill>
 			</charms>
 		</powers>
@@ -940,7 +940,7 @@ Uncover the truth behind Aroan's former DB officer as well as dealing with any c
 		<powers type="spells" user="Solars">
 			<spells>
 				<name>Invisible Statue Spirit</name>
-				<type></type>
+				<user></user>
 				<skill>Stealth</skill>
 			</spells>
 		</powers>

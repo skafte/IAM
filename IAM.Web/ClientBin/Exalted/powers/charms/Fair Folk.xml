@@ -5440,7 +5440,7 @@
          <keyword>Dreaming: Shaping</keyword>
          <keyword>Waking: Mutation (2)</keyword>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Archery</skill>
             <name>Phantom Arrow Technique</name>
          </crossRef>
@@ -10659,7 +10659,7 @@
          <keyword>Combo-OK</keyword>
          <keyword>Echo</keyword>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Sail</skill>
             <name>Perfect Reckoning Technique</name>
          </crossRef>
@@ -10701,7 +10701,7 @@
          <keyword>Combo-OK</keyword>
          <keyword>Echo</keyword>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Survival</skill>
             <name>Unshakeable Bloodhound Technique</name>
          </crossRef>
@@ -10746,7 +10746,7 @@
          <keyword>Echo</keyword>
          <duration>Dreaming: One tale; Waking: Instant</duration>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Survival</skill>
             <name>Traceless Passage</name>
          </crossRef>

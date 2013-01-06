@@ -535,7 +535,7 @@
       <keyword>Stackable</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Lunars</type>
+         <user>Lunars</user>
          <skill>Appearance</skill>
          <name>River Reflects Desire</name>
       </crossRef>
@@ -1820,7 +1820,7 @@
       <keyword>Combo-OK</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Graceful Crane Stance</name>
       </crossRef>
@@ -2950,7 +2950,7 @@
       <keyword>None</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Integrity</skill>
          <name>Righteous Lion Defence</name>
       </crossRef>
@@ -4534,7 +4534,7 @@
       <keyword>None</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Occult</skill>
          <name>All-Encompassing Sorcerer's Sight</name>
       </crossRef>
@@ -4897,7 +4897,7 @@
       <keyword>Combo-OK</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Awareness</skill>
          <name>Keen (Sense) Technique</name>
       </crossRef>
@@ -5216,7 +5216,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Occult</skill>
          <name>Magic-Shattering Strike</name>
       </crossRef>

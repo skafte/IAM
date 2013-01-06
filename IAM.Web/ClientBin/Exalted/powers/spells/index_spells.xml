@@ -4,8 +4,8 @@
 	<singles>
 	</singles>
 	<forall>
-		<type>Celestial</type>
-		<type>Solar</type>
-		<type>Terrestrial</type>
+		<user>Celestial</user>
+		<user>Solar</user>
+		<user>Terrestrial</user>
 	</forall>
 </body>

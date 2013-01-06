@@ -2,30 +2,30 @@
 <body>
    <title>charms</title>
    <singles>
-      <type>Abyssals</type>
-      <type>Alchemicals</type>
-      <type>Dragon Kings</type>
-      <type>Dragon-Blooded</type>
-      <type>Fair Folk</type>
-      <type>Ghosts</type>
-      <type>Green Sun Princes</type>
-      <type>Lunars</type>
-      <type>Mountain Folk</type>
-      <type>Sidereals</type>
-      <type>Solars</type>
-      <type>Spirits</type>
+      <user>Abyssals</user>
+      <user>Alchemicals</user>
+      <user>Dragon Kings</user>
+      <user>Dragon-Blooded</user>
+      <user>Fair Folk</user>
+      <user>Ghosts</user>
+      <user>Green Sun Princes</user>
+      <user>Lunars</user>
+      <user>Mountain Folk</user>
+      <user>Sidereals</user>
+      <user>Solars</user>
+      <user>Spirits</user>
    </singles>
    <forall>
-      <type>general</type>
-      <type>Martial Arts, Celestial</type>
-      <type>Martial Arts, Sidereal</type>
-      <type>Martial Arts, Terrestrial</type>
+      <user>general</user>
+      <user>Martial Arts, Celestial</user>
+      <user>Martial Arts, Sidereal</user>
+      <user>Martial Arts, Terrestrial</user>
    </forall>
 
    <!--
 	<singles>
-		<type>test type</type>
-		<type>test type 2</type>
+		<user>test user</user>
+		<user>test user 2</user>
 	</singles>
 	<forall>
 	</forall>

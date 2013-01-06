@@ -19,7 +19,7 @@
       <keyword>Mirror (First (Ability) Excellency - Essence Overwhelming)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>(Ability)</skill>
          <name>First (Ability) Excellency - Essence Overwhelming</name>
       </crossRef>
@@ -50,7 +50,7 @@
       <keyword>Mirror (Second (Ability) Excellency - Essence Triumphant)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>(Ability)</skill>
          <name>Second (Ability) Excellency - Essence Triumphant</name>
       </crossRef>
@@ -80,7 +80,7 @@
       <keyword>Mirror (Third (Ability) Excellency - Essence Resurgent)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>(Ability)</skill>
          <name>Third (Ability) Excellency - Essence Resurgent</name>
       </crossRef>
@@ -107,7 +107,7 @@
       <keyword>Mirror (Infinite (Ability) Mastery)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>(Ability)</skill>
          <name>Infinite (Ability) Mastery</name>
       </crossRef>
@@ -155,7 +155,7 @@
       <keyword>Mirror ((Ability) Essence Flow)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>(Ability)</skill>
          <name>(Ability) Essence Flow</name>
       </crossRef>
@@ -210,7 +210,7 @@
       <keyword>Mirror (Supreme Perfection Of (Ability))</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>(Ability)</skill>
          <name>Supreme Perfection Of (Ability)</name>
       </crossRef>
@@ -258,7 +258,7 @@
       <keyword>Mirror (Apocalyptic Evolution of (Ability))</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>(Ability)</skill>
          <name>Apocalyptic Evolution of (Ability)</name>
       </crossRef>
@@ -297,7 +297,7 @@
       <keyword>Mirror (Pulse Of The Prey)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Archery</skill>
          <name>Pulse Of The Prey</name>
       </crossRef>
@@ -340,7 +340,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Archery</skill>
          <name>Flawless Archer Discipline</name>
       </crossRef>
@@ -406,7 +406,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Archery</skill>
          <name>Withering Feathered Maelstrom</name>
       </crossRef>
@@ -475,7 +475,7 @@
       <keyword>Mirror (Doom Drawn And Imminent)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Archery</skill>
          <name>Doom Drawn And Imminent</name>
       </crossRef>
@@ -492,7 +492,7 @@
          <keyword>Mirror (Doom Drawn And Imminent)</keyword>
          <duration>Permanent</duration>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Archery</skill>
             <name>Doom Drawn And Imminent</name>
          </crossRef>
@@ -511,7 +511,7 @@
          <keyword>Mirror (Doom Drawn And Imminent)</keyword>
          <duration>Permanent</duration>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Archery</skill>
             <name>Doom Drawn And Imminent</name>
          </crossRef>
@@ -541,7 +541,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Archery</skill>
          <name>Splinter Of The Void</name>
       </crossRef>
@@ -573,7 +573,7 @@
       <keyword>Obvious</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Archery</skill>
          <name>Relic Arrow Method</name>
       </crossRef>
@@ -601,7 +601,7 @@
       <keyword>Mirror (Banished Bow Arsenal)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Archery</skill>
          <name>Banished Bow Arsenal</name>
       </crossRef>
@@ -640,7 +640,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Archery</skill>
          <name>Exquisite Relic Bow</name>
       </crossRef>
@@ -666,7 +666,7 @@
          <keyword>Mirror (Exquisite Relic Bow)</keyword>
          <keyword>Obvious</keyword>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Archery</skill>
             <name>Exquisite Relic Bow</name>
          </crossRef>
@@ -694,7 +694,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Archery</skill>
          <name>Quiver Of Souls</name>
       </crossRef>
@@ -722,7 +722,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Archery</skill>
          <name>Gasp Of Dead Gods</name>
       </crossRef>
@@ -868,7 +868,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Archery</skill>
          <name>Howling Shadows Of The Void</name>
       </crossRef>
@@ -897,7 +897,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Archery</skill>
          <name>Uncanny Extermination Instinct</name>
       </crossRef>
@@ -925,7 +925,7 @@
       <keyword>Obvious</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Archery</skill>
          <name>Caught In Oblivion's Eye</name>
       </crossRef>
@@ -978,7 +978,7 @@
       <keyword>Mirror (Raiton's Nimble Perch)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>Raiton's Nimble Perch</name>
       </crossRef>
@@ -1006,7 +1006,7 @@
       <keyword>Mirror (Spider Pounce Technique)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>Spider Pounce Technique</name>
       </crossRef>
@@ -1040,7 +1040,7 @@
       <keyword>Mirror (Earth-Forsaking Stance)</keyword>
       <duration>Until next action</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>Earth-Forsaking Stance</name>
       </crossRef>
@@ -1076,7 +1076,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>Stepping Outside Existence</name>
       </crossRef>
@@ -1128,7 +1128,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>Falling Scythe Attack</name>
       </crossRef>
@@ -1163,7 +1163,7 @@
       <keyword>Mirror (Shadow Races The Light)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>Shadow Races The Light</name>
       </crossRef>
@@ -1221,7 +1221,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>Crouching Gargoyle Stance</name>
       </crossRef>
@@ -1249,7 +1249,7 @@
       <keyword>Mirror (Mist Over Ice)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>Mist Over Ice</name>
       </crossRef>
@@ -1278,7 +1278,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>On Wings Of Night</name>
       </crossRef>
@@ -1311,7 +1311,7 @@
       <keyword>Stackable</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>Corpse-Might Surge</name>
       </crossRef>
@@ -1344,7 +1344,7 @@
       <keyword>Mirror (Superior Weapon Body)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>Superior Weapon Body</name>
       </crossRef>
@@ -1381,7 +1381,7 @@
       <keyword>Mirror (Nimble Ghost Grace)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>Nimble Ghost Grace</name>
       </crossRef>
@@ -1410,7 +1410,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>Oblivion's Triumph</name>
       </crossRef>
@@ -1440,7 +1440,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>Death Draws Near</name>
       </crossRef>
@@ -1475,7 +1475,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>Swifter Than A Scream</name>
       </crossRef>
@@ -1531,7 +1531,7 @@
       <keyword>Mirror (Effortless Unnatural Grace)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>Effortless Unnatural Grace</name>
       </crossRef>
@@ -1559,7 +1559,7 @@
       <keyword>Mirror (Headstones Flung Like Pebbles)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>Headstones Flung Like Pebbles</name>
       </crossRef>
@@ -1595,12 +1595,12 @@
       <keyword>War</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Dragon-Blooded</type>
+         <user>Dragon-Blooded</user>
          <skill>Athletics</skill>
          <name>Tail Follows Head</name>
       </crossRef>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Athletics</skill>
          <name>Nowhere Is Safe</name>
       </crossRef>
@@ -1628,7 +1628,7 @@
       <keyword>Mirror (Superior (Sense) Focus)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Awareness</skill>
          <name>Superior (Sense) Focus</name>
       </crossRef>
@@ -1660,7 +1660,7 @@
       <keyword>Mirror (Entropic Awakening Of (Sense))</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Awareness</skill>
          <name>Entropic Awakening Of (Sense)</name>
       </crossRef>
@@ -1689,7 +1689,7 @@
       <keyword>Mirror (Ominous Portent Method)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Awareness</skill>
          <name>Ominous Portent Method</name>
       </crossRef>
@@ -1720,7 +1720,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Awareness</skill>
          <name>Piercing Gaze Of The Unmaker</name>
       </crossRef>
@@ -1880,7 +1880,7 @@
       <keyword>Mirror (Calculated Avarice Understanding)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Bureaucracy</skill>
          <name>Calculated Avarice Understanding</name>
       </crossRef>
@@ -1932,7 +1932,7 @@
       <keyword>Mirror (Eloquent Example Inspiration)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Bureaucracy</skill>
          <name>Eloquent Example Inspiration</name>
       </crossRef>
@@ -1983,7 +1983,7 @@
       <keyword>Mirror (Cunning Subversion Style)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Bureaucracy</skill>
          <name>Cunning Subversion Style</name>
       </crossRef>
@@ -2012,7 +2012,7 @@
       <keyword>Mirror (Caustic Hatred Diatribe)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Bureaucracy</skill>
          <name>Caustic Hatred Diatribe</name>
       </crossRef>
@@ -2315,7 +2315,7 @@
       <keyword>Mirror (Systematic Demolition Exercise)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Craft</skill>
          <name>Systematic Demolition Exercise</name>
       </crossRef>
@@ -2505,7 +2505,7 @@
       <keyword>Mirror (World-Slaying Arsenal Epiphany)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Craft</skill>
          <name>World-Slaying Arsenal Epiphany</name>
       </crossRef>
@@ -2560,7 +2560,7 @@
       <keyword>Mirror (Flitting Shadow Form)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Dodge</skill>
          <name>Flitting Shadow Form</name>
       </crossRef>
@@ -2595,7 +2595,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Dodge</skill>
          <name>Flickering Wisp Technique</name>
       </crossRef>
@@ -2646,7 +2646,7 @@
       <keyword>Mirror (Uncanny Impulse Evasion)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Dodge</skill>
          <name>Uncanny Impulse Evasion</name>
       </crossRef>
@@ -2681,7 +2681,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Dodge</skill>
          <name>Untouchable Phantom Mien</name>
       </crossRef>
@@ -2716,7 +2716,7 @@
       <keyword>Mirror (Foe-Shaming Defense)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Dodge</skill>
          <name>Foe-Shaming Defense</name>
       </crossRef>
@@ -2853,7 +2853,7 @@
       <keyword>Mirror (Thousandfold Shadow Dance)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Dodge</skill>
          <name>Thousandfold Shadow Dance</name>
       </crossRef>
@@ -2912,7 +2912,7 @@
       <keyword>Obvious</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Dodge</skill>
          <name>Shadow Fades At Dawn</name>
       </crossRef>
@@ -2971,7 +2971,7 @@
       <keyword>Mirror (Undying Stagnation Defense)</keyword>
       <duration>One day</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Integrity</skill>
          <name>Undying Stagnation Defense</name>
       </crossRef>
@@ -3021,7 +3021,7 @@
       <keyword>Mirror (Eternal Enmity Approach)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Integrity</skill>
          <name>Eternal Enmity Approach</name>
       </crossRef>
@@ -3097,7 +3097,7 @@
       <keyword>Stackable</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Integrity</skill>
          <name>Heart Of Darkness</name>
       </crossRef>
@@ -3126,7 +3126,7 @@
       <keyword>Social</keyword>
       <duration>Instant (Story)</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Integrity</skill>
          <name>Lesser Horrors Scorned</name>
       </crossRef>
@@ -3208,7 +3208,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Integrity</skill>
          <name>Blood Before Surrender</name>
       </crossRef>
@@ -3237,7 +3237,7 @@
       <keyword>Stackable</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Integrity</skill>
          <name>Five Hearts Hatred</name>
       </crossRef>
@@ -3265,7 +3265,7 @@
       <keyword>Native</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Integrity</skill>
          <name>Underworld Executioner Stance</name>
       </crossRef>
@@ -3343,7 +3343,7 @@
       <keyword>Mirror (Void King Ascension)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Integrity</skill>
          <name>Void King Ascension</name>
       </crossRef>
@@ -3406,7 +3406,7 @@
       <keyword>Mirror (Sun-Devouring Void Prophet)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Integrity</skill>
          <name>Sun-Devouring Void Prophet</name>
       </crossRef>
@@ -3435,7 +3435,7 @@
       <keyword>Obvious</keyword>
       <duration>One day</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Integrity</skill>
          <name>World-Ending Void Apostle</name>
       </crossRef>
@@ -3495,12 +3495,12 @@
       <keyword>Mirror (Dark Will Triumphant)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Dragon-Blooded</type>
+         <user>Dragon-Blooded</user>
          <skill>Integrity</skill>
          <name>Wound-Denying Dragon Faith</name>
       </crossRef>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Integrity</skill>
          <name>Dark Will Triumphant</name>
       </crossRef>
@@ -3560,7 +3560,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Integrity</skill>
          <name>Dark Visionary Defense</name>
       </crossRef>
@@ -3587,7 +3587,7 @@
       <keyword>Mirror (Oblivion's Jowl Postulation)</keyword>
       <duration>Instant (Story)</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Integrity</skill>
          <name>Oblivion's Jowl Postulation</name>
       </crossRef>
@@ -3614,7 +3614,7 @@
       <keyword>Combo-OK</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Green Sun Princes</type>
+         <user>Green Sun Princes</user>
          <skill>Essence</skill>
          <name>Cosmic Transcendence Of (Virtue)</name>
       </crossRef>
@@ -3664,7 +3664,7 @@
       <keyword>Mirror (Crime-Unveiling Wickedness)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Investigation</skill>
          <name>Crime-Unveiling Wickedness</name>
       </crossRef>
@@ -3716,7 +3716,7 @@
       <keyword>Mirror (Deception-Piercing Stare)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Investigation</skill>
          <name>Deception-Piercing Stare</name>
       </crossRef>
@@ -3770,7 +3770,7 @@
       <keyword>Mirror (Spider In Society's Web)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Investigation</skill>
          <name>Spider In Society's Web</name>
       </crossRef>
@@ -3822,7 +3822,7 @@
       <keyword>Servitude</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Investigation</skill>
          <name>Unholy Unwitting Pact</name>
       </crossRef>
@@ -4043,7 +4043,7 @@
       <keyword>Mirror (Unjust Appropriation Method)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Larceny</skill>
          <name>Unjust Appropriation Method</name>
       </crossRef>
@@ -4096,7 +4096,7 @@
       <keyword>Mirror (Chains Cannot Hold)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Larceny</skill>
          <name>Chains Cannot Hold</name>
       </crossRef>
@@ -4148,7 +4148,7 @@
       <keyword>Mirror (Death Claims All)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Larceny</skill>
          <name>Death Claims All</name>
       </crossRef>
@@ -4254,7 +4254,7 @@
       <keyword>Mirror (Solar Impersonation Style)</keyword>
       <duration>One day</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Larceny</skill>
          <name>Solar Impersonation Style</name>
       </crossRef>
@@ -4282,7 +4282,7 @@
       <keyword>Mirror (Blood Calligraphy Technique)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Linguistics</skill>
          <name>Blood Calligraphy Technique</name>
       </crossRef>
@@ -4333,7 +4333,7 @@
       <keyword>Mirror (Insidious Undertone Trick)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Linguistics</skill>
          <name>Insidious Undertone Trick</name>
       </crossRef>
@@ -4362,7 +4362,7 @@
       <keyword>Mirror (Mystique-Spoiling Guess)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Linguistics</skill>
          <name>Mystique-Spoiling Guess</name>
       </crossRef>
@@ -4391,7 +4391,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Linguistics</skill>
          <name>Scathing Cynic Attitude</name>
       </crossRef>
@@ -4419,7 +4419,7 @@
       <keyword>Mirror (Infinite Blasphemy Glossolalia)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Linguistics</skill>
          <name>Infinite Blasphemy Glossolalia</name>
       </crossRef>
@@ -4446,7 +4446,7 @@
       <keyword>Mirror (Language-Absorbing Method)</keyword>
       <duration>Varies</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Linguistics</skill>
          <name>Language-Absorbing Method</name>
       </crossRef>
@@ -4479,7 +4479,7 @@
       <keyword>Mirror (Soul-Snaring Tract)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Linguistics</skill>
          <name>Soul-Snaring Tract</name>
       </crossRef>
@@ -4690,7 +4690,7 @@
       <keyword>Obvious</keyword>
       <duration>One hour</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Lore</skill>
          <name>Dream-Slaying Defense</name>
       </crossRef>
@@ -4720,7 +4720,7 @@
       <keyword>Shaping</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Lore</skill>
          <name>Nightmare-Carving Murmur</name>
       </crossRef>
@@ -4760,7 +4760,7 @@
       <keyword>Mirror (Enduring Dead Dreams)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Lore</skill>
          <name>Enduring Dead Dreams</name>
       </crossRef>
@@ -4793,7 +4793,7 @@
       <keyword>Touch</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Lore</skill>
          <name>Essence-Draining Touch</name>
       </crossRef>
@@ -4829,7 +4829,7 @@
       <keyword>Touch</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Lore</skill>
          <name>Will-Feasting Onslaught</name>
       </crossRef>
@@ -4933,7 +4933,7 @@
       <keyword>Obvious</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Lore</skill>
          <name>Essence Engorgement Technique</name>
       </crossRef>
@@ -5105,7 +5105,7 @@
       <keyword>Mirror (Virtue-Devouring Hunger)</keyword>
       <duration>N/A</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Lore</skill>
          <name>Virtue-Devouring Hunger</name>
       </crossRef>
@@ -5285,7 +5285,7 @@
       <keyword>Mirror (Pitiless Triage Judgment)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Medicine</skill>
          <name>Pitiless Triage Judgment</name>
       </crossRef>
@@ -5313,7 +5313,7 @@
       <keyword>Mirror (Plague-Eating Kiss)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Medicine</skill>
          <name>Plague-Eating Kiss</name>
       </crossRef>
@@ -5341,7 +5341,7 @@
       <keyword>Touch</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Medicine</skill>
          <name>Venom-Bleeding Agony</name>
       </crossRef>
@@ -5369,7 +5369,7 @@
       <keyword>Touch</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Medicine</skill>
          <name>Bone Graft Technique</name>
       </crossRef>
@@ -5528,7 +5528,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Presence</skill>
          <name>Hastening Night's End</name>
       </crossRef>
@@ -5559,7 +5559,7 @@
       <keyword>Mirror (Savage Shade Style)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Savage Shade Style</name>
       </crossRef>
@@ -5595,7 +5595,7 @@
       <keyword>Mirror (Artful Maiming Onslaught)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Artful Maiming Onslaught</name>
       </crossRef>
@@ -5674,7 +5674,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Unfurling Iron Lotus</name>
       </crossRef>
@@ -5712,7 +5712,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Time-Scything Technique</name>
       </crossRef>
@@ -5745,7 +5745,7 @@
       <keyword>Mirror (Thousand Wounds Feinting)</keyword>
       <duration>N/A</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Thousand Wounds Feinting</name>
       </crossRef>
@@ -5786,7 +5786,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Blade-Summoning Gesture</name>
       </crossRef>
@@ -5805,7 +5805,7 @@
          <keyword>Obvious</keyword>
          <duration>Permanent</duration>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Melee</skill>
             <name>Blade-Summoning Gesture</name>
          </crossRef>
@@ -5835,7 +5835,7 @@
       <keyword>Mirror (Void Sheath Technique)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Void Sheath Technique</name>
       </crossRef>
@@ -5877,7 +5877,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Resplendent Shadow Blade</name>
       </crossRef>
@@ -5935,7 +5935,7 @@
          <keyword>Mirror (Ebon Lightning Prana)</keyword>
          <keyword>Obvious</keyword>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Melee</skill>
             <name>Ebon Lightning Prana</name>
          </crossRef>
@@ -5962,7 +5962,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Ebon Lightning Prana</name>
       </crossRef>
@@ -6007,7 +6007,7 @@
       <keyword>Mirror (Elegant Flowing Deflection)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Elegant Flowing Deflection</name>
       </crossRef>
@@ -6087,7 +6087,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Death-Deflecting Technique</name>
       </crossRef>
@@ -6130,7 +6130,7 @@
       <keyword>Mirror (Eye Of The Tempest)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Eye Of The Tempest</name>
       </crossRef>
@@ -6169,7 +6169,7 @@
       <keyword>Mirror (Vengeful Riposte)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Vengeful Riposte</name>
       </crossRef>
@@ -6189,7 +6189,7 @@
          <martialReady>Martial Arts</martialReady>
          <martialReady>Thrown</martialReady>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Melee</skill>
             <name>Vengeful Riposte</name>
          </crossRef>
@@ -6207,7 +6207,7 @@
          <martialReady>Martial Arts</martialReady>
          <martialReady>Thrown</martialReady>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Melee</skill>
             <name>Vengeful Riposte</name>
          </crossRef>
@@ -6268,7 +6268,7 @@
       <keyword>Mirror (Fluttering Moth Defense)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Fluttering Moth Defense</name>
       </crossRef>
@@ -6303,7 +6303,7 @@
          <keyword>Obvious</keyword>
          <duration>One scene</duration>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Melee</skill>
             <name>Fluttering Moth Defense</name>
          </crossRef>
@@ -6333,7 +6333,7 @@
       <keyword>Native</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Blades Well-Blooded</name>
       </crossRef>
@@ -6366,7 +6366,7 @@
       <duration>Permanent</duration>
       <martialReady>Martial Arts</martialReady>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Death Well-Remembered</name>
       </crossRef>
@@ -6395,7 +6395,7 @@
       <keyword>Native</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Coiled Shadow Attitude</name>
       </crossRef>
@@ -6427,7 +6427,7 @@
       <martialReady>Martial Arts</martialReady>
       <martialReady>Thrown</martialReady>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Entropic Blade Nature</name>
       </crossRef>
@@ -6454,7 +6454,7 @@
       <keyword>Mirror (All Blades Cry For Blood)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>All Blades Cry For Blood</name>
       </crossRef>
@@ -6484,7 +6484,7 @@
          <keyword>Obvious</keyword>
          <duration>Permanent</duration>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Melee</skill>
             <name>All Blades Cry For Blood</name>
          </crossRef>
@@ -6539,7 +6539,7 @@
          <keyword>Stackable</keyword>
          <duration>Instant</duration>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Melee</skill>
             <name>Rending Steel Cruelty</name>
          </crossRef>
@@ -6622,7 +6622,7 @@
       <keyword>Mirror (Death's Knight Stance)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Death's Knight Stance</name>
       </crossRef>
@@ -6903,7 +6903,7 @@
       <keyword>Mirror (Elegant Bloodletting Art)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Elegant Bloodletting Art</name>
       </crossRef>
@@ -6962,7 +6962,7 @@
       <keyword>War</keyword>
       <duration>One action</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Symphony Of The Flayed Legion</name>
       </crossRef>
@@ -7054,7 +7054,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Life-Severing Blade</name>
       </crossRef>
@@ -7070,7 +7070,7 @@
          <keyword>Mirror (Life-Severing Blade)</keyword>
          <keyword>Obvious</keyword>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Melee</skill>
             <name>Life-Severing Blade</name>
          </crossRef>
@@ -7085,7 +7085,7 @@
          <keyword>Mirror (Life-Severing Blade)</keyword>
          <keyword>Obvious</keyword>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Melee</skill>
             <name>Life-Severing Blade</name>
          </crossRef>
@@ -7112,7 +7112,7 @@
       <keyword>Mirror (Creation-Slaying Holocaust Blade)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Creation-Slaying Holocaust Blade</name>
       </crossRef>
@@ -7142,7 +7142,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Melee</skill>
          <name>Charnel Emperor Stance</name>
       </crossRef>
@@ -7169,7 +7169,7 @@
          <keyword>Mirror (Charnel Emperor Stance)</keyword>
          <keyword>Obvious</keyword>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Melee</skill>
             <name>Charnel Emperor Stance</name>
          </crossRef>
@@ -7206,7 +7206,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Lunars</type>
+         <user>Lunars</user>
          <skill>Strength</skill>
          <name>Deadly Mantis Practice</name>
       </crossRef>
@@ -7234,7 +7234,7 @@
       <keyword>Mirror (Spirit-Sensing Meditation)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Occult</skill>
          <name>Spirit-Sensing Meditation</name>
       </crossRef>
@@ -7263,7 +7263,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Occult</skill>
          <name>Corpus-Rending Blow</name>
       </crossRef>
@@ -7298,7 +7298,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Occult</skill>
          <name>God-Slaying Torment</name>
       </crossRef>
@@ -7340,7 +7340,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Occult</skill>
          <name>Spirit-Desolating Sphere</name>
       </crossRef>
@@ -7367,7 +7367,7 @@
       <keyword>Mirror (Through Dead Eyes)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Occult</skill>
          <name>Through Dead Eyes</name>
       </crossRef>
@@ -7420,7 +7420,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Occult</skill>
          <name>Magic-Devouring Strike</name>
       </crossRef>
@@ -7523,7 +7523,7 @@
       <keyword>Mirror (Unconquered Hero's Faith)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Occult</skill>
          <name>Unconquered Hero's Faith</name>
       </crossRef>
@@ -7585,7 +7585,7 @@
       <keyword>Touch</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Occult</skill>
          <name>Divinity-Banishing Contempt</name>
       </crossRef>
@@ -7614,7 +7614,7 @@
       <keyword>Servitude</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Occult</skill>
          <name>Spirit-Chaining Doom</name>
       </crossRef>
@@ -7644,7 +7644,7 @@
       <keyword>Social</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Performance</skill>
          <name>Morbid Fascination Style</name>
       </crossRef>
@@ -7672,7 +7672,7 @@
       <keyword>Obvious</keyword>
       <duration>Variable</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Performance</skill>
          <name>Haunting Apparition Trick</name>
       </crossRef>
@@ -7708,7 +7708,7 @@
       <keyword>Social</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Performance</skill>
          <name>Soul-Desiccating Style</name>
       </crossRef>
@@ -7738,7 +7738,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Performance</skill>
          <name>Lies That Tell Themselves</name>
       </crossRef>
@@ -7772,7 +7772,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Performance</skill>
          <name>Irresistible Succubus Style</name>
       </crossRef>
@@ -7890,7 +7890,7 @@
          <keyword>Compulsion</keyword>
          <keyword>Mirror (Lust And Loathing Stance)</keyword>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Performance</skill>
             <name>Lust And Loathing Stance</name>
          </crossRef>
@@ -7945,7 +7945,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant (see below)</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Performance</skill>
          <name>Withering Phantasmagoria</name>
       </crossRef>
@@ -7975,7 +7975,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Performance</skill>
          <name>Inescapable Massacre Technique</name>
       </crossRef>
@@ -8006,7 +8006,7 @@
       <keyword>Touch</keyword>
       <duration>Solar's Charisma in days</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Presence</skill>
          <name>Poisoning The Will</name>
       </crossRef>
@@ -8036,7 +8036,7 @@
       <keyword>Social</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Presence</skill>
          <name>Dread Lord's Demeanor</name>
       </crossRef>
@@ -8066,7 +8066,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Presence</skill>
          <name>Soul-Flaying Gaze</name>
       </crossRef>
@@ -8166,7 +8166,7 @@
       <keyword>Social</keyword>
       <duration>Solar's Charisma in days</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Presence</skill>
          <name>Chaining The Weak</name>
       </crossRef>
@@ -8250,7 +8250,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Presence</skill>
          <name>Insidious Forbidding Command</name>
       </crossRef>
@@ -8304,7 +8304,7 @@
       <keyword>Mirror (Stalking the Shadowed Mind)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Presence</skill>
          <name>Stalking the Shadowed Mind</name>
       </crossRef>
@@ -8334,7 +8334,7 @@
       <keyword>Mirror (Eternal Overlord of Dread Attitude)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Presence</skill>
          <name>Eternal Overlord of Dread Attitude</name>
       </crossRef>
@@ -8462,7 +8462,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Presence</skill>
          <name>Broken Heart Triumph</name>
       </crossRef>
@@ -8489,7 +8489,7 @@
       <keyword>Mirror (Lurking Malice Insinuation)</keyword>
       <duration>One month</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Presence</skill>
          <name>Lurking Malice Insinuation</name>
       </crossRef>
@@ -8516,7 +8516,7 @@
       <keyword>Mirror (Barrow King's Authority)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Presence</skill>
          <name>Barrow King's Authority</name>
       </crossRef>
@@ -8544,7 +8544,7 @@
       <keyword>Mirror (Armor-Calling Kata)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Resistance</skill>
          <name>Armor-Calling Kata</name>
       </crossRef>
@@ -8580,7 +8580,7 @@
       <keyword>Obvious</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Resistance</skill>
          <name>Void-Banished Mail</name>
       </crossRef>
@@ -8615,7 +8615,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Resistance</skill>
          <name>Inauspicious Inner Aegis</name>
       </crossRef>
@@ -8660,7 +8660,7 @@
       <keyword>Mirror (Ghost Armor Prana)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Resistance</skill>
          <name>Ghost Armor Prana</name>
       </crossRef>
@@ -8689,7 +8689,7 @@
       <keyword>Mirror (Spirit-Hardened Frame)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Resistance</skill>
          <name>Spirit-Hardened Frame</name>
       </crossRef>
@@ -8757,7 +8757,7 @@
          <keyword>Dawn</keyword>
          <keyword>Mirror (Spirit Strengthens The Skin)</keyword>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Resistance</skill>
             <name>Walking Cadaver Grotesquerie</name>
          </crossRef>
@@ -8769,7 +8769,7 @@
          <reference>Exalted 2.5 (Scroll of Errata, page 87)</reference>
          <keyword>Mirror (Spirit Strengthens The Skin)</keyword>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Resistance</skill>
             <name>Walking Cadaver Grotesquerie</name>
          </crossRef>
@@ -8834,7 +8834,7 @@
          <reference>Exalted 2.5 (Scroll of Errata, page 195)</reference>
          <keyword>Mirror (Wound-Eating Invulnerability)</keyword>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Resistance</skill>
             <name>Wound-Eating Invulnerability</name>
          </crossRef>
@@ -8860,7 +8860,7 @@
       <keyword>Obvious</keyword>
       <duration>Scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Resistance</skill>
          <name>Resilient Corpse Body</name>
       </crossRef>
@@ -8908,7 +8908,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Resistance</skill>
          <name>Wounds Mean Nothing</name>
       </crossRef>
@@ -9067,7 +9067,7 @@
       <keyword>Stackable</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Resistance</skill>
          <name>Ox-Body Technique</name>
       </crossRef>
@@ -9121,7 +9121,7 @@
          <keyword>Mirror (Stitched-Flesh Resilience)</keyword>
          <keyword>Obvious</keyword>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Resistance</skill>
             <name>Stitched-Flesh Resilience</name>
          </crossRef>
@@ -9150,7 +9150,7 @@
       <keyword>Mirror (Plague Knows Its Master)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Resistance</skill>
          <name>Plague Knows Its Master</name>
       </crossRef>
@@ -9178,7 +9178,7 @@
       <keyword>Mirror (Injury-Absorbing Discipline)</keyword>
       <duration>Until the day ends</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Resistance</skill>
          <name>Injury-Absorbing Discipline</name>
       </crossRef>
@@ -9342,7 +9342,7 @@
       <keyword>Mirror (Far Beyond Ruin)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Resistance</skill>
          <name>Far Beyond Ruin</name>
       </crossRef>
@@ -9398,7 +9398,7 @@
       <keyword>Mirror (Flesh As Marble Stance)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Resistance</skill>
          <name>Flesh As Marble Stance</name>
       </crossRef>
@@ -9435,7 +9435,7 @@
          <cost>- (+2m, 1wp)</cost>
          <keyword>Mirror (Patchwork Corpse Reassembly)</keyword>
          <crossRef>
-            <type>Abyssals</type>
+            <user>Abyssals</user>
             <skill>Resistance</skill>
             <name>Patchwork Corpse Reassembly</name>
          </crossRef>
@@ -9461,7 +9461,7 @@
       <keyword>Taint</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Resistance</skill>
          <name>Restless As The Dead</name>
       </crossRef>
@@ -9513,7 +9513,7 @@
       <keyword>Mirror (Wound-Eating Invulnerability)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Resistance</skill>
          <name>Wound-Eating Invulnerability</name>
       </crossRef>
@@ -9563,7 +9563,7 @@
       <keyword>Mirror (Soul Reins)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Ride</skill>
          <name>Soul Reins</name>
       </crossRef>
@@ -9596,7 +9596,7 @@
       <keyword>Mirror (Unholy Mount Warding)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Ride</skill>
          <name>Unholy Mount Warding</name>
       </crossRef>
@@ -9647,7 +9647,7 @@
       <keyword>Obvious</keyword>
       <duration>One day</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Ride</skill>
          <name>Spectral Steed</name>
       </crossRef>
@@ -9676,7 +9676,7 @@
       <keyword>Touch</keyword>
       <duration>One day</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Ride</skill>
          <name>Last Ride Glory</name>
       </crossRef>
@@ -9704,7 +9704,7 @@
       <keyword>Obvious</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Ride</skill>
          <name>Primal Terror Spurs</name>
       </crossRef>
@@ -9784,7 +9784,7 @@
       <keyword>Native</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Ride</skill>
          <name>Fell Rider's Advantages</name>
       </crossRef>
@@ -9963,7 +9963,7 @@
       <keyword>War</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Sail</skill>
          <name>Deck-Striding Phantom</name>
       </crossRef>
@@ -10022,7 +10022,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Sail</skill>
          <name>Unhallowed Ghost Ship</name>
       </crossRef>
@@ -10052,7 +10052,7 @@
       <keyword>Touch</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Sail</skill>
          <name>Hull-Hardening Concentration</name>
       </crossRef>
@@ -10083,7 +10083,7 @@
       <keyword>Touch</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Sail</skill>
          <name>Unsinking Derelict Preservation</name>
       </crossRef>
@@ -10178,7 +10178,7 @@
       <keyword>Native</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Sail</skill>
          <name>Fell Captain's Advantages</name>
       </crossRef>
@@ -10212,7 +10212,7 @@
       <keyword>Obvious</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Sail</skill>
          <name>Treacherous Flag Display</name>
       </crossRef>
@@ -10267,7 +10267,7 @@
       <keyword>Obvious</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Sail</skill>
          <name>Shadow-Driven Ghost Galleon</name>
       </crossRef>
@@ -10296,7 +10296,7 @@
       <keyword>Obvious</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Sail</skill>
          <name>Black Fleet Vanguard</name>
       </crossRef>
@@ -10354,7 +10354,7 @@
       <keyword>Mirror (Ruthless Captain Efficiency)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Sail</skill>
          <name>Ruthless Captain Efficiency</name>
       </crossRef>
@@ -10383,7 +10383,7 @@
       <keyword>Spectral</keyword>
       <duration>Until disembarking</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Sail</skill>
          <name>Sea-Scanning Glare</name>
       </crossRef>
@@ -10414,7 +10414,7 @@
       <keyword>Mirror (Voiceless Admiralty Dread)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Sail</skill>
          <name>Voiceless Admiralty Dread</name>
       </crossRef>
@@ -10497,7 +10497,7 @@
       <keyword>Mirror (Scribing The Old Laws)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Socialize</skill>
          <name>Scribing The Old Laws</name>
       </crossRef>
@@ -10575,7 +10575,7 @@
       <keyword>Social</keyword>
       <duration>Until next action</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Socialize</skill>
          <name>Exquisite Etiquette Style</name>
       </crossRef>
@@ -10653,7 +10653,7 @@
       <keyword>Mirror (Merciless Dissecting Stare)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Socialize</skill>
          <name>Merciless Dissecting Stare</name>
       </crossRef>
@@ -10729,7 +10729,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Socialize</skill>
          <name>Honey-Tongued Serpent Attack</name>
       </crossRef>
@@ -10781,7 +10781,7 @@
       <keyword>Mirror (Shadow Cloak Technique)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Stealth</skill>
          <name>Shadow Cloak Technique</name>
       </crossRef>
@@ -10810,7 +10810,7 @@
       <keyword>Mirror (Atrocity Without Witness)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Stealth</skill>
          <name>Atrocity Without Witness</name>
       </crossRef>
@@ -10838,7 +10838,7 @@
       <keyword>Mirror (Splinter In The Mind's Eye)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Stealth</skill>
          <name>Splinter In The Mind's Eye</name>
       </crossRef>
@@ -10965,7 +10965,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Stealth</skill>
          <name>Oblivion-Consigned Essence</name>
       </crossRef>
@@ -11139,7 +11139,7 @@
       <keyword>Mirror (Maelstrom-Weathering Indifference)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Survival</skill>
          <name>Maelstrom-Weathering Indifference</name>
       </crossRef>
@@ -11166,7 +11166,7 @@
       <keyword>Mirror (Maelstrom-Weathering Indifference)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Survival</skill>
          <name>Maelstrom-Weathering Indifference</name>
       </crossRef>
@@ -11199,7 +11199,7 @@
       <keyword>Mirror (World-Denying Invincibility)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Survival</skill>
          <name>World-Denying Invincibility</name>
       </crossRef>
@@ -11227,7 +11227,7 @@
       <keyword>Mirror (Pomegranates Full And Fine)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Survival</skill>
          <name>Pomegranates Full And Fine</name>
       </crossRef>
@@ -11255,7 +11255,7 @@
       <keyword>Mirror (Dark Paths Found)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Survival</skill>
          <name>Dark Paths Found</name>
       </crossRef>
@@ -11283,7 +11283,7 @@
       <keyword>Mirror (Infallible Barghest Mien)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Survival</skill>
          <name>Infallible Barghest Mien</name>
       </crossRef>
@@ -11311,7 +11311,7 @@
       <keyword>Mirror (Ghost Leaves No Trail)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Survival</skill>
          <name>Ghost Leaves No Trail</name>
       </crossRef>
@@ -11384,7 +11384,7 @@
       <keyword>Obvious</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Survival</skill>
          <name>Wisp Light Summons</name>
       </crossRef>
@@ -11467,7 +11467,7 @@
       <keyword>Mirror (Surviving the Sunlit Lands)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Survival</skill>
          <name>Surviving the Sunlit Lands</name>
       </crossRef>
@@ -11621,7 +11621,7 @@
       <keyword>Mirror (Aid Of Ill Wind)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Thrown</skill>
          <name>Aid Of Ill Wind</name>
       </crossRef>
@@ -11702,7 +11702,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Thrown</skill>
          <name>Crypt Bolt Attack</name>
       </crossRef>
@@ -11739,7 +11739,7 @@
       <keyword>Mirror (Stalking the Striker's Hand)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Thrown</skill>
          <name>Stalking the Striker's Hand</name>
       </crossRef>
@@ -11953,7 +11953,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Thrown</skill>
          <name>Bone-Filled Maelstrom Gust</name>
       </crossRef>
@@ -11983,7 +11983,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Thrown</skill>
          <name>Five Birds, One Stone</name>
       </crossRef>
@@ -12013,7 +12013,7 @@
       <keyword>Stackable</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Thrown</skill>
          <name>Burrowing Bone Maggot</name>
       </crossRef>
@@ -12045,7 +12045,7 @@
       <keyword>Mirror (Lightning Clutch Of The Raptor)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Thrown</skill>
          <name>Lightning Clutch Of The Raptor</name>
       </crossRef>
@@ -12074,7 +12074,7 @@
       <keyword>Obvious</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>Thrown</skill>
          <name>Eyes Like Daggers Glance</name>
       </crossRef>
@@ -12151,7 +12151,7 @@
       <keyword>War</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>War</skill>
          <name>Morale-Shattering Method</name>
       </crossRef>
@@ -12180,7 +12180,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>War</skill>
          <name>Arise And Slaughter</name>
       </crossRef>
@@ -12208,7 +12208,7 @@
       <keyword>Mirror (Allied In Hate Discernment)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>War</skill>
          <name>Allied In Hate Discernment</name>
       </crossRef>
@@ -12299,7 +12299,7 @@
       <keyword>Training</keyword>
       <duration>One week</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>War</skill>
          <name>Hardened Killer Training Style</name>
       </crossRef>
@@ -12326,7 +12326,7 @@
       <keyword>Mirror (Soul-Numbing Prowess)</keyword>
       <duration>One week</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>War</skill>
          <name>Soul-Numbing Prowess</name>
       </crossRef>
@@ -12384,7 +12384,7 @@
       <keyword>Native</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>War</skill>
          <name>Ash Child's Requiem</name>
       </crossRef>
@@ -12413,7 +12413,7 @@
       <keyword>Mirror (Ever-Ready Killer's Tools)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>War</skill>
          <name>Ever-Ready Killer's Tools</name>
       </crossRef>
@@ -12443,7 +12443,7 @@
       <keyword>Native</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>War</skill>
          <name>Manifold Murder Arts</name>
       </crossRef>
@@ -12592,7 +12592,7 @@
       <keyword>War</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>War</skill>
          <name>Filling the Elephants' Graveyard</name>
       </crossRef>
@@ -12671,7 +12671,7 @@
       <keyword>Training</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Bureaucracy</skill>
          <name>Legend Lives On</name>
       </crossRef>
@@ -12701,12 +12701,12 @@
       <keyword>War</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Dragon-Blooded</type>
+         <user>Dragon-Blooded</user>
          <skill>War</skill>
          <name>Tactics Mean Everything</name>
       </crossRef>
       <crossRef>
-         <type>Abyssals</type>
+         <user>Abyssals</user>
          <skill>War</skill>
          <name>Dread Warlord Stratagem</name>
       </crossRef>

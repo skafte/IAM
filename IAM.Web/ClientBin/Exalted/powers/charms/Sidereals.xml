@@ -18,7 +18,7 @@
       <keyword>Combo-OK</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>(Ability)</skill>
          <name>First (Ability) Excellency - Essence Overwhelming</name>
       </crossRef>
@@ -51,7 +51,7 @@
       <keyword>Combo-OK</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>(Ability)</skill>
          <name>Second (Ability) Excellency - Essence Triumphant</name>
       </crossRef>
@@ -84,7 +84,7 @@
       <keyword>Combo-OK</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>(Ability)</skill>
          <name>Third (Ability) Excellency - Essence Resurgent</name>
       </crossRef>
@@ -160,7 +160,7 @@
       <keyword>None</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>(Ability)</skill>
          <name>Infinite (Ability) Mastery</name>
       </crossRef>
@@ -1294,7 +1294,7 @@
       <keyword>Combo-OK</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Dodge</skill>
          <name>Shadow Over Water</name>
       </crossRef>
@@ -3216,7 +3216,7 @@
          <keyword>Combo-Basic</keyword>
          <duration>One hour</duration>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Occult</skill>
             <name>All-Encompassing Sorcerer's Sight</name>
          </crossRef>

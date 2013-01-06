@@ -349,7 +349,7 @@
       <keyword>Obvious</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Performance</skill>
          <name>Phantom-Conjuring Performance</name>
       </crossRef>
@@ -1954,7 +1954,7 @@
       <keyword>Internal</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Integrity</skill>
          <name>Righteous Lion Defense</name>
       </crossRef>
@@ -2310,7 +2310,7 @@
       <keyword>Shaping</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Lore</skill>
          <name>Chaos-Repelling Pattern</name>
       </crossRef>

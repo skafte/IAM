@@ -1284,7 +1284,7 @@
          <keyword>Dynasty</keyword>
          <keyword>Servitude</keyword>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Investigation</skill>
             <name>Know The Soul's Price</name>
          </crossRef>
@@ -3736,7 +3736,7 @@
       <keyword>Combo-OK</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Dragon-Blooded</type>
+         <user>Dragon-Blooded</user>
          <skill>Integrity</skill>
          <name>Granite Curtain Of Serenity</name>
       </crossRef>
@@ -4481,7 +4481,7 @@
       <keyword>Combo-OK</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Occult</skill>
          <name>All-Encompassing Sorcerer's Sight</name>
       </crossRef>
@@ -4630,7 +4630,7 @@
       <keyword>Combo-OK</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Dragon-Blooded</type>
+         <user>Dragon-Blooded</user>
          <skill>Larceny</skill>
          <name>Imposter's Voice Technique</name>
       </crossRef>
@@ -6007,7 +6007,7 @@
       <keyword>None</keyword>
       <duration>One hour</duration>
       <crossRef>
-         <type>Dragon-Blooded</type>
+         <user>Dragon-Blooded</user>
          <skill>Occult</skill>
          <name>Harmonious Wind-Luring Song</name>
       </crossRef>
@@ -6767,7 +6767,7 @@
       <keyword>Illusion</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Dragon-Blooded</type>
+         <user>Dragon-Blooded</user>
          <skill>Performance</skill>
          <name>Blossom Hides Thorns</name>
       </crossRef>

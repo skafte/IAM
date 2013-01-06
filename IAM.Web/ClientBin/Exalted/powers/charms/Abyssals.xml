@@ -19,7 +19,7 @@
       <keyword>Mirror (First (Ability) Excellency - Essence Overwhelming)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>(Ability)</skill>
          <name>First (Ability) Excellency - Essence Overwhelming</name>
       </crossRef>
@@ -47,7 +47,7 @@
       <keyword>Mirror (Second (Ability) Excellency - Essence Triumphant)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>(Ability)</skill>
          <name>Second (Ability) Excellency - Essence Triumphant</name>
       </crossRef>
@@ -75,7 +75,7 @@
       <keyword>Mirror (Third (Ability) Excellency - Essence Resurgent)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>(Ability)</skill>
          <name>Third (Ability) Excellency - Essence Resurgent</name>
       </crossRef>
@@ -102,7 +102,7 @@
       <keyword>Mirror (Infinite (Ability) Mastery)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>(Ability)</skill>
          <name>Infinite (Ability) Mastery</name>
       </crossRef>
@@ -141,7 +141,7 @@
       <keyword>Mirror ((Ability) Essence Flow)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>(Ability)</skill>
          <name>(Ability) Essence Flow</name>
       </crossRef>
@@ -219,7 +219,7 @@
       <keyword>Mirror (Supreme Perfection Of (Ability))</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>(Ability)</skill>
          <name>Supreme Perfection Of (Ability)</name>
       </crossRef>
@@ -247,7 +247,7 @@
       <keyword>Mirror (Divine Transcendence Of (Ability))</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>(Ability)</skill>
          <name>Divine Transcendence Of (Ability)</name>
       </crossRef>
@@ -310,7 +310,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Archery</skill>
          <name>Accuracy Without Distance</name>
       </crossRef>
@@ -361,7 +361,7 @@
       <keyword>Mirror (There Is No Wind)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Archery</skill>
          <name>There Is No Wind</name>
       </crossRef>
@@ -390,7 +390,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Archery</skill>
          <name>Trance Of Unhesitating Speed</name>
       </crossRef>
@@ -429,7 +429,7 @@
       <keyword>Mirror (Flashing Vengeance Draw)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Archery</skill>
          <name>Flashing Vengeance Draw</name>
       </crossRef>
@@ -446,7 +446,7 @@
          <keyword>Martial-Ready</keyword>
          <keyword>Mirror (Flashing Vengeance Draw)</keyword>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Archery</skill>
             <name>Flashing Vengeance Draw</name>
          </crossRef>
@@ -497,7 +497,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Archery</skill>
          <name>Essence Arrow Attack</name>
       </crossRef>
@@ -535,7 +535,7 @@
       <keyword>Mirror (Summoning The Loyal Bow)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Archery</skill>
          <name>Summoning The Loyal Bow</name>
       </crossRef>
@@ -551,7 +551,7 @@
          <keyword>Merged</keyword>
          <keyword>Mirror (Summoning The Loyal Bow)</keyword>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Archery</skill>
             <name>Summoning The Loyal Bow</name>
          </crossRef>
@@ -603,7 +603,7 @@
       <keyword>Obvious</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Archery</skill>
          <name>Phantom Arrow Technique</name>
       </crossRef>
@@ -631,7 +631,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Archery</skill>
          <name>Immaculate Golden Bow</name>
       </crossRef>
@@ -660,7 +660,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Archery</skill>
          <name>Inexhaustible Bolts Of Solar Fire</name>
       </crossRef>
@@ -689,7 +689,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Archery</skill>
          <name>Solar Flare Methodology</name>
       </crossRef>
@@ -718,7 +718,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Archery</skill>
          <name>Lambent Bolt Of Annihilation</name>
       </crossRef>
@@ -746,7 +746,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Archery</skill>
          <name>Golden Artillerist Method</name>
       </crossRef>
@@ -774,7 +774,7 @@
       <keyword>Obvious</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Archery</skill>
          <name>Boundless Arrow Of The Unconquered Sun</name>
       </crossRef>
@@ -802,7 +802,7 @@
       <keyword>Mirror (Graceful Crane Stance)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Graceful Crane Stance</name>
       </crossRef>
@@ -831,7 +831,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Spider-Foot Style</name>
       </crossRef>
@@ -858,7 +858,7 @@
       <keyword>Mirror (Perfect Poise Stance)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Perfect Poise Stance</name>
       </crossRef>
@@ -892,7 +892,7 @@
       <keyword>Mirror (Feather-Foot Style)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Feather-Foot Style</name>
       </crossRef>
@@ -920,7 +920,7 @@
       <keyword>Mirror (Eagle-Wing Style)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Eagle-Wing Style</name>
       </crossRef>
@@ -951,7 +951,7 @@
       <keyword>Mirror (Monkey Leap Technique)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Monkey Leap Technique</name>
       </crossRef>
@@ -979,7 +979,7 @@
       <keyword>Mirror (Soaring Crane Leap)</keyword>
       <duration>Until next action</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Soaring Crane Leap</name>
       </crossRef>
@@ -1009,7 +1009,7 @@
       <keyword>Stackable</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Increasing Strength Exercise</name>
       </crossRef>
@@ -1043,7 +1043,7 @@
       <keyword>Mirror (Hill-Hurling Might)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Hill-Hurling Might</name>
       </crossRef>
@@ -1083,7 +1083,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Thunderbolt Attack Prana</name>
       </crossRef>
@@ -1117,7 +1117,7 @@
       <keyword>Mirror (Lightning Speed)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Lightning Speed</name>
       </crossRef>
@@ -1154,7 +1154,7 @@
       <keyword>Shaping</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Mountain-Crossing Leap Technique</name>
       </crossRef>
@@ -1182,7 +1182,7 @@
       <keyword>Mirror (Glorious Temple Body)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Glorious Temple Body</name>
       </crossRef>
@@ -1216,7 +1216,7 @@
       <keyword>Mirror (Unparalleled Acumen Meditation)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Unparalleled Acumen Meditation</name>
       </crossRef>
@@ -1245,7 +1245,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Unconquered Might</name>
       </crossRef>
@@ -1274,7 +1274,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Godspeed Steps</name>
       </crossRef>
@@ -1303,7 +1303,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Speed Of Light Approach</name>
       </crossRef>
@@ -1339,7 +1339,7 @@
       <keyword>War</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Athletics</skill>
          <name>Flying Faith Legion</name>
       </crossRef>
@@ -1367,7 +1367,7 @@
       <keyword>Mirror (Keen (Sense) Technique)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Awareness</skill>
          <name>Keen (Sense) Technique</name>
       </crossRef>
@@ -1395,7 +1395,7 @@
       <keyword>Mirror (Unsurpassed (Sense) Discipline)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Awareness</skill>
          <name>Unsurpassed (Sense) Discipline</name>
       </crossRef>
@@ -1425,7 +1425,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Awareness</skill>
          <name>Eye Of The Unconquered Sun</name>
       </crossRef>
@@ -1482,7 +1482,7 @@
       <keyword>Mirror (Surprise Anticipation Method)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Awareness</skill>
          <name>Surprise Anticipation Method</name>
       </crossRef>
@@ -1510,7 +1510,7 @@
       <keyword>Mirror (Frugal Merchant Method)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Bureaucracy</skill>
          <name>Frugal Merchant Method</name>
       </crossRef>
@@ -1540,7 +1540,7 @@
       <keyword>Obvious</keyword>
       <duration>Varies</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Bureaucracy</skill>
          <name>Speed The Wheels</name>
       </crossRef>
@@ -1592,7 +1592,7 @@
       <keyword>Mirror (Indolent Official Charm)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Bureaucracy</skill>
          <name>Indolent Official Charm</name>
       </crossRef>
@@ -1620,7 +1620,7 @@
       <keyword>Mirror (Foul Air Of Argument Technique)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Bureaucracy</skill>
          <name>Foul Air Of Argument Technique</name>
       </crossRef>
@@ -1700,7 +1700,7 @@
       <keyword>Mirror (Shattering Grasp)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Craft</skill>
          <name>Shattering Grasp</name>
       </crossRef>
@@ -1872,7 +1872,7 @@
       <keyword>Mirror (Wonder-Forging Genius)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Craft</skill>
          <name>Wonder-Forging Genius</name>
       </crossRef>
@@ -1903,7 +1903,7 @@
       <keyword>Mirror (Shadow Over Water)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Dodge</skill>
          <name>Shadow Over Water</name>
       </crossRef>
@@ -1939,7 +1939,7 @@
       <keyword>Spectral</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Dodge</skill>
          <name>Seven Shadow Evasion</name>
       </crossRef>
@@ -1962,7 +1962,7 @@
          <keyword>Mirror (Seven Shadow Evasion)</keyword>
          <keyword>Obvious</keyword>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Dodge</skill>
             <name>Seven Shadow Evasion</name>
          </crossRef>
@@ -1978,7 +1978,7 @@
          <keyword>Mirror (Seven Shadow Evasion)</keyword>
          <keyword>Obvious</keyword>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Dodge</skill>
             <name>Seven Shadow Evasion</name>
          </crossRef>
@@ -2003,7 +2003,7 @@
       <keyword>Mirror (Reflex Sidestep Technique)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Dodge</skill>
          <name>Reflex Sidestep Technique</name>
       </crossRef>
@@ -2045,7 +2045,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Dodge</skill>
          <name>Flow Like Blood</name>
       </crossRef>
@@ -2081,7 +2081,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Dodge</skill>
          <name>Leaping Dodge Method</name>
       </crossRef>
@@ -2115,7 +2115,7 @@
       <keyword>Mirror (Refinement Of Flowing Shadows)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Dodge</skill>
          <name>Refinement Of Flowing Shadows</name>
       </crossRef>
@@ -2149,7 +2149,7 @@
       <keyword>Obvious</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Dodge</skill>
          <name>Divine Witness Of Utter Safety</name>
       </crossRef>
@@ -2186,7 +2186,7 @@
       <keyword>Mirror (Integrity-Protecting Prana)</keyword>
       <duration>One day</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Integrity</skill>
          <name>Integrity-Protecting Prana</name>
       </crossRef>
@@ -2213,7 +2213,7 @@
       <keyword>Mirror (Righteous Lion Defense)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Integrity</skill>
          <name>Righteous Lion Defense</name>
       </crossRef>
@@ -2242,7 +2242,7 @@
       <keyword>Stackable</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Integrity</skill>
          <name>Unhesitating Dedication</name>
       </crossRef>
@@ -2270,7 +2270,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Integrity</skill>
          <name>Spirit-Maintaining Maneuver</name>
       </crossRef>
@@ -2301,7 +2301,7 @@
       <keyword>Social</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Integrity</skill>
          <name>Temptation-Resisting Stance</name>
       </crossRef>
@@ -2332,7 +2332,7 @@
       <keyword>Social</keyword>
       <duration>Instant (Story)</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Integrity</skill>
          <name>Elusive Dream Defense</name>
       </crossRef>
@@ -2436,7 +2436,7 @@
       <keyword>Mirror (Black Mirror Revelation)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Integrity</skill>
          <name>Black Mirror Revelation</name>
       </crossRef>
@@ -2465,7 +2465,7 @@
       <keyword>Native</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Integrity</skill>
          <name>Lion's Roar Recovery</name>
       </crossRef>
@@ -2492,7 +2492,7 @@
       <keyword>Mirror (Shedding Infinite Radiance)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Integrity</skill>
          <name>Shedding Infinite Radiance</name>
       </crossRef>
@@ -2525,7 +2525,7 @@
       <keyword>Mirror (Rising Sun Soul)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Integrity</skill>
          <name>Rising Sun Soul</name>
       </crossRef>
@@ -2554,7 +2554,7 @@
       <keyword>Obvious</keyword>
       <duration>One day</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Integrity</skill>
          <name>Glory To The Most High</name>
       </crossRef>
@@ -2582,12 +2582,12 @@
       <keyword>Mirror (Invincible Ego Shield)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Dragon-Blooded</type>
+         <user>Dragon-Blooded</user>
          <skill>Integrity</skill>
          <name>Wound-Denying Dragon Faith</name>
       </crossRef>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Integrity</skill>
          <name>Invincible Ego Shield</name>
       </crossRef>
@@ -2698,7 +2698,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Integrity</skill>
          <name>Staring At The Sun</name>
       </crossRef>
@@ -2727,7 +2727,7 @@
       <keyword>Mirror (Undaunted Wrath Of The Sun)</keyword>
       <duration>Instant (Story)</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Integrity</skill>
          <name>Undaunted Wrath Of The Sun</name>
       </crossRef>
@@ -2755,7 +2755,7 @@
       <keyword>Mirror (Crafty Observation Method)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Investigation</skill>
          <name>Crafty Observation Method</name>
       </crossRef>
@@ -2783,7 +2783,7 @@
       <keyword>Mirror (Judge's Ear Technique)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Investigation</skill>
          <name>Judge's Ear Technique</name>
       </crossRef>
@@ -2838,7 +2838,7 @@
       <keyword>Mirror (Courtier's Eye Technique)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Investigation</skill>
          <name>Courtier's Eye Technique</name>
       </crossRef>
@@ -2868,7 +2868,7 @@
       <keyword>Servitude</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Investigation</skill>
          <name>Know the Soul's Price</name>
       </crossRef>
@@ -2951,7 +2951,7 @@
       <keyword>Mirror (Flawless Pickpocketing Technique)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Larceny</skill>
          <name>Flawless Pickpocketing Technique</name>
       </crossRef>
@@ -2979,7 +2979,7 @@
       <keyword>Mirror (Lock-Opening Touch)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Larceny</skill>
          <name>Lock-Opening Touch</name>
       </crossRef>
@@ -3080,7 +3080,7 @@
       <keyword>Mirror (Vile Anathema Shroud)</keyword>
       <duration>One day</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Larceny</skill>
          <name>Vile Anathema Shroud</name>
       </crossRef>
@@ -3167,7 +3167,7 @@
       <keyword>Mirror (Reversal Of Fortune)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Larceny</skill>
          <name>Reversal Of Fortune</name>
       </crossRef>
@@ -3195,7 +3195,7 @@
       <keyword>Mirror (Whirling Brush Method)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Linguistics</skill>
          <name>Whirling Brush Method</name>
       </crossRef>
@@ -3224,7 +3224,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Linguistics</skill>
          <name>Sagacious Reading Of Intent</name>
       </crossRef>
@@ -3252,7 +3252,7 @@
       <keyword>Mirror (Discerning Savant's Eye)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Linguistics</skill>
          <name>Discerning Savant's Eye</name>
       </crossRef>
@@ -3282,7 +3282,7 @@
       <keyword>Taint</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Linguistics</skill>
          <name>Poetic Expression Style</name>
       </crossRef>
@@ -3338,7 +3338,7 @@
       <keyword>Mirror (Letter-Within-A-Letter Technique)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Linguistics</skill>
          <name>Letter-Within-A-Letter Technique</name>
       </crossRef>
@@ -3368,7 +3368,7 @@
       <keyword>Mirror (Twisted Words Technique)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Linguistics</skill>
          <name>Twisted Words Technique</name>
       </crossRef>
@@ -3422,7 +3422,7 @@
       <keyword>Training</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Linguistics</skill>
          <name>Excellent Emissary's Tongue</name>
       </crossRef>
@@ -3484,7 +3484,7 @@
       <keyword>Obvious</keyword>
       <duration>One hour</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Lore</skill>
          <name>Chaos-Repelling Pattern</name>
       </crossRef>
@@ -3539,7 +3539,7 @@
       <keyword>Touch</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Lore</skill>
          <name>Essence-Lending Method</name>
       </crossRef>
@@ -3569,7 +3569,7 @@
       <keyword>Touch</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Lore</skill>
          <name>Will-Bolstering Method</name>
       </crossRef>
@@ -3626,7 +3626,7 @@
       <keyword>Mirror (Virtue-Donating Grace)</keyword>
       <duration>N/A</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Lore</skill>
          <name>Virtue-Donating Grace</name>
       </crossRef>
@@ -3703,7 +3703,7 @@
       <keyword>Obvious</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Lore</skill>
          <name>Immanent Solar Glory</name>
       </crossRef>
@@ -3745,7 +3745,7 @@
       <keyword>Shaping</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Lore</skill>
          <name>Wyld-Shaping Technique</name>
       </crossRef>
@@ -3781,7 +3781,7 @@
       <keyword>Mirror (Wyld Cauldron Technology)</keyword>
       <duration>N/A</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Lore</skill>
          <name>Wyld Cauldron Technology</name>
       </crossRef>
@@ -3814,7 +3814,7 @@
       <keyword>Mirror (Flawless Diagnosis Technique)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Medicine</skill>
          <name>Flawless Diagnosis Technique</name>
       </crossRef>
@@ -3865,7 +3865,7 @@
       <keyword>Touch</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Medicine</skill>
          <name>Ailment-Rectifying Method</name>
       </crossRef>
@@ -3920,7 +3920,7 @@
       <keyword>Touch</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Medicine</skill>
          <name>Body-Purifying Admonitions</name>
       </crossRef>
@@ -3975,7 +3975,7 @@
       <keyword>Touch</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Medicine</skill>
          <name>Wholeness-Restoring Meditation</name>
       </crossRef>
@@ -4166,7 +4166,7 @@
       <keyword>Mirror (Hungry Tiger Technique)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Hungry Tiger Technique</name>
       </crossRef>
@@ -4203,7 +4203,7 @@
       <keyword>Mirror (Fire and Stones Strike)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Fire and Stones Strike</name>
       </crossRef>
@@ -4293,7 +4293,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Peony Blossom Attack</name>
       </crossRef>
@@ -4330,7 +4330,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Iron Whirlwind Attack</name>
       </crossRef>
@@ -4363,7 +4363,7 @@
       <keyword>Mirror (Invincible Fury Of The Dawn)</keyword>
       <duration>N/A</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Invincible Fury Of The Dawn</name>
       </crossRef>
@@ -4398,7 +4398,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Call The Blade</name>
       </crossRef>
@@ -4417,7 +4417,7 @@
          <keyword>Obvious</keyword>
          <duration>Permanent</duration>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Melee</skill>
             <name>Call The Blade</name>
          </crossRef>
@@ -4447,7 +4447,7 @@
       <keyword>Mirror (Summoning The Loyal Steel)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Summoning The Loyal Steel</name>
       </crossRef>
@@ -4463,7 +4463,7 @@
          <keyword>Merged</keyword>
          <keyword>Mirror (Summoning The Loyal Steel)</keyword>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Melee</skill>
             <name>Summoning The Loyal Steel</name>
          </crossRef>
@@ -4494,7 +4494,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Glorious Solar Saber</name>
       </crossRef>
@@ -4555,7 +4555,7 @@
       <keyword>Mirror (Blazing Solar Bolt)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Blazing Solar Bolt</name>
       </crossRef>
@@ -4584,7 +4584,7 @@
          <keyword>Mirror (Iron Raptor Technique)</keyword>
          <keyword>Obvious</keyword>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Melee</skill>
             <name>Iron Raptor Technique</name>
          </crossRef>
@@ -4614,7 +4614,7 @@
       <keyword>Mirror (Dipping Swallow Defense)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Dipping Swallow Defense</name>
       </crossRef>
@@ -4636,7 +4636,7 @@
          <keyword>Martial</keyword>
          <keyword>Mirror (Dipping Swallow Defense)</keyword>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Melee</skill>
             <name>Dipping Swallow Defense</name>
          </crossRef>
@@ -4668,7 +4668,7 @@
       <keyword>Mirror (Solar Counterattack)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Solar Counterattack</name>
       </crossRef>
@@ -4685,7 +4685,7 @@
          <keyword>Martial-Ready</keyword>
          <keyword>Mirror (Solar Counterattack)</keyword>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Melee</skill>
             <name>Solar Counterattack</name>
          </crossRef>
@@ -4738,7 +4738,7 @@
       <keyword>Mirror (Fivefold Bulwark Stance)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Fivefold Bulwark Stance</name>
       </crossRef>
@@ -4776,7 +4776,7 @@
       <keyword>Spectral</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Heavenly Guardian Defense</name>
       </crossRef>
@@ -4799,7 +4799,7 @@
          <keyword>Mirror (Heavenly Guardian Defense)</keyword>
          <keyword>Obvious</keyword>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Melee</skill>
             <name>Heavenly Guardian Defense</name>
          </crossRef>
@@ -4824,7 +4824,7 @@
       <keyword>Mirror (Protection Of Celestial Bliss)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Protection Of Celestial Bliss</name>
       </crossRef>
@@ -4858,7 +4858,7 @@
          <keyword>Obvious</keyword>
          <duration>One scene</duration>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Melee</skill>
             <name>Protection Of Celestial Bliss</name>
          </crossRef>
@@ -4907,7 +4907,7 @@
       <keyword>Mirror (Golden Destruction Cut)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Golden Destruction Cut</name>
       </crossRef>
@@ -4935,7 +4935,7 @@
       <keyword>Native</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Perfected Battle Array</name>
       </crossRef>
@@ -4965,7 +4965,7 @@
       <duration>Permanent</duration>
       <martialReady>Martial Arts</martialReady>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Perfect Blade Aegis</name>
       </crossRef>
@@ -4997,7 +4997,7 @@
       <keyword>Native</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Blade Lair Discipline</name>
       </crossRef>
@@ -5029,7 +5029,7 @@
       <martialReady>Martial Arts</martialReady>
       <martialReady>Thrown</martialReady>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Inexorable Swordsman Spirit</name>
       </crossRef>
@@ -5056,7 +5056,7 @@
       <keyword>Mirror (Sun-Sword Concentration)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Sun-Sword Concentration</name>
       </crossRef>
@@ -5085,7 +5085,7 @@
          <keyword>Obvious</keyword>
          <duration>Permanent</duration>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Melee</skill>
             <name>Sun-Sword Concentration</name>
          </crossRef>
@@ -5116,7 +5116,7 @@
       <keyword>Stackable</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Molten Sun-Blade</name>
       </crossRef>
@@ -5143,7 +5143,7 @@
       <keyword>Mirror (Guardian Sunfire Catechism)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Guardian Sunfire Catechism</name>
       </crossRef>
@@ -5174,7 +5174,7 @@
       <keyword>War</keyword>
       <duration>One action</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Sharp Light Of Judgment Stance</name>
       </crossRef>
@@ -5204,7 +5204,7 @@
       <keyword>Mirror (Rising Sun Slash)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Rising Sun Slash</name>
       </crossRef>
@@ -5221,7 +5221,7 @@
          <keyword>Mirror (Rising Sun Slash)</keyword>
          <keyword>Obvious</keyword>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Melee</skill>
             <name>Rising Sun Slash</name>
          </crossRef>
@@ -5248,7 +5248,7 @@
       <keyword>Mirror (World-Scarring Solar Glory)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>World-Scarring Solar Glory</name>
       </crossRef>
@@ -5276,7 +5276,7 @@
       <keyword>Mirror (Immortal Blade Triumphant)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Melee</skill>
          <name>Immortal Blade Triumphant</name>
       </crossRef>
@@ -5302,7 +5302,7 @@
          <keyword>Mirror (Immortal Blade Triumphant)</keyword>
          <keyword>Obvious</keyword>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Melee</skill>
             <name>Immortal Blade Triumphant</name>
          </crossRef>
@@ -5422,7 +5422,7 @@
       <keyword>Mirror (Spirit-Detecting Glance)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Occult</skill>
          <name>Spirit-Detecting Glance</name>
       </crossRef>
@@ -5451,7 +5451,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Occult</skill>
          <name>Spirit-Cutting Attack</name>
       </crossRef>
@@ -5486,7 +5486,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Occult</skill>
          <name>Ghost-Eating Technique</name>
       </crossRef>
@@ -5522,7 +5522,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Occult</skill>
          <name>Spirit-Repelling Diagram</name>
       </crossRef>
@@ -5549,7 +5549,7 @@
       <keyword>Mirror (All-Encompassing Sorcerer's Sight)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Occult</skill>
          <name>All-Encompassing Sorcerer's Sight</name>
       </crossRef>
@@ -5580,7 +5580,7 @@
       <keyword>Touch</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Occult</skill>
          <name>Asserting The Mandate</name>
       </crossRef>
@@ -5632,7 +5632,7 @@
       <keyword>Servitude</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Occult</skill>
          <name>Demon-Binding Redemption</name>
       </crossRef>
@@ -5662,7 +5662,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Occult</skill>
          <name>Magic-Shattering Strike</name>
       </crossRef>
@@ -5739,7 +5739,7 @@
       <keyword>Obvious</keyword>
       <duration>Variable</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Performance</skill>
          <name>Phantom-Conjuring Performance</name>
       </crossRef>
@@ -5769,7 +5769,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant (see below)</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Performance</skill>
          <name>Demon-Wracking Glory</name>
       </crossRef>
@@ -5804,7 +5804,7 @@
       <keyword>Social</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Performance</skill>
          <name>Respect Commanding Attitude</name>
       </crossRef>
@@ -5834,7 +5834,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Performance</skill>
          <name>Face The Light</name>
       </crossRef>
@@ -5864,7 +5864,7 @@
       <keyword>Social</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Performance</skill>
          <name>Heart-Compelling Method</name>
       </crossRef>
@@ -5895,7 +5895,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Performance</skill>
          <name>Husband-Seducing Demon Dance</name>
       </crossRef>
@@ -5925,7 +5925,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Performance</skill>
          <name>Memory-Reweaving Discipline</name>
       </crossRef>
@@ -5981,7 +5981,7 @@
       <keyword>Compulsion</keyword>
       <keyword>Mirror (Rose-Lipped Seduction Style)</keyword>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Performance</skill>
          <name>Rose-Lipped Seduction Style</name>
       </crossRef>
@@ -6037,7 +6037,7 @@
       <keyword>Touch</keyword>
       <duration>Abyssal's Charisma in days</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Presence</skill>
          <name>Hypnotic Tongue Technique</name>
       </crossRef>
@@ -6067,7 +6067,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Presence</skill>
          <name>You Can Be More</name>
       </crossRef>
@@ -6095,7 +6095,7 @@
       <keyword>Mirror (Minds Yield To Glory)</keyword>
       <duration>One month</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Presence</skill>
          <name>Minds Yield To Glory</name>
       </crossRef>
@@ -6124,7 +6124,7 @@
       <keyword>Social</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Presence</skill>
          <name>Majestic Radiant Presence</name>
       </crossRef>
@@ -6198,7 +6198,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Presence</skill>
          <name>Terrifying Apparition Of Glory</name>
       </crossRef>
@@ -6229,7 +6229,7 @@
       <keyword>Social</keyword>
       <duration>Abyssal's Charisma in days</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Presence</skill>
          <name>Worshipful Lackey Acquisition</name>
       </crossRef>
@@ -6335,7 +6335,7 @@
       <keyword>Mirror (Shining On Dark Realms)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Presence</skill>
          <name>Shining On Dark Realms</name>
       </crossRef>
@@ -6412,7 +6412,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Presence</skill>
          <name>Mind-Blanking Rebuke</name>
       </crossRef>
@@ -6439,7 +6439,7 @@
       <keyword>Mirror (Searing After-Image Passion)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Presence</skill>
          <name>Searing After-Image Passion</name>
       </crossRef>
@@ -6469,7 +6469,7 @@
       <keyword>Mirror (Eternal Empress Of Love Attitude)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Presence</skill>
          <name>Eternal Empress Of Love Attitude</name>
       </crossRef>
@@ -6498,7 +6498,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Resistance</skill>
          <name>Whirlwind Armor-Donning Prana</name>
       </crossRef>
@@ -6527,7 +6527,7 @@
       <keyword>Obvious</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Resistance</skill>
          <name>Hauberk-Lightening Gesture</name>
       </crossRef>
@@ -6555,7 +6555,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Resistance</skill>
          <name>Glorious Solar Plate</name>
       </crossRef>
@@ -6583,7 +6583,7 @@
       <keyword>Mirror (Unbreakable Warrior's Mastery)</keyword>
       <keyword>Obvious</keyword>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Resistance</skill>
          <name>Unbreakable Warrior's Mastery</name>
       </crossRef>
@@ -6610,7 +6610,7 @@
       <type>Permanent</type>
       <keyword>Mirror (Enduring Mountain Method)</keyword>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Resistance</skill>
          <name>Enduring Mountain Method</name>
       </crossRef>
@@ -6639,7 +6639,7 @@
       <keyword>Mirror (Armored Scout's Invigoration)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Resistance</skill>
          <name>Armored Scout's Invigoration</name>
       </crossRef>
@@ -6667,7 +6667,7 @@
       <keyword>Mirror (Body-Mending Meditation)</keyword>
       <duration>Until the night ends</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Resistance</skill>
          <name>Body-Mending Meditation</name>
       </crossRef>
@@ -6701,7 +6701,7 @@
       <keyword>Mirror (Durability Of Oak Meditation)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Resistance</skill>
          <name>Durability Of Oak Meditation</name>
       </crossRef>
@@ -6736,7 +6736,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Resistance</skill>
          <name>Adamant Skin Technique</name>
       </crossRef>
@@ -6790,7 +6790,7 @@
       <keyword>Taint</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Resistance</skill>
          <name>Tireless Sentinel Technique</name>
       </crossRef>
@@ -6886,7 +6886,7 @@
       <keyword>Stackable</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Resistance</skill>
          <name>Ox-Body Technique</name>
       </crossRef>
@@ -6914,7 +6914,7 @@
       <keyword>Mirror (Immunity To Everything Technique)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Resistance</skill>
          <name>Immunity To Everything Technique</name>
       </crossRef>
@@ -6942,7 +6942,7 @@
       <keyword>Mirror (Ruin-Abasing Shrug)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Resistance</skill>
          <name>Ruin-Abasing Shrug</name>
       </crossRef>
@@ -6977,7 +6977,7 @@
       <keyword>Obvious</keyword>
       <duration>Scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Resistance</skill>
          <name>Iron Kettle Body</name>
       </crossRef>
@@ -7007,7 +7007,7 @@
       <keyword>Mirror (Armored In Righteousness Stance)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Resistance</skill>
          <name>Armored In Righteousness Stance</name>
       </crossRef>
@@ -7060,7 +7060,7 @@
       <keyword>Mirror (Heroes Never Die)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Resistance</skill>
          <name>Heroes Never Die</name>
       </crossRef>
@@ -7086,7 +7086,7 @@
          <keyword>Mirror (Iron Skin Concentration)</keyword>
          <duration>One tick</duration>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Resistance</skill>
             <name>Iron Skin Concentration</name>
          </crossRef>
@@ -7113,7 +7113,7 @@
       <keyword>Mirror (Spirit Strengthens The Skin)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Resistance</skill>
          <name>Spirit Strengthens The Skin</name>
       </crossRef>
@@ -7144,7 +7144,7 @@
       <keyword>Touch</keyword>
       <duration>One day</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Ride</skill>
          <name>Master Horseman's Techniques</name>
       </crossRef>
@@ -7174,7 +7174,7 @@
       <keyword>Obvious</keyword>
       <duration>One day</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Ride</skill>
          <name>Phantom Steed</name>
       </crossRef>
@@ -7203,7 +7203,7 @@
       <keyword>Touch</keyword>
       <duration>Mount's Stamina in days</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Ride</skill>
          <name>Flashing Thunderbolt Steed</name>
       </crossRef>
@@ -7231,7 +7231,7 @@
       <keyword>Obvious</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Ride</skill>
          <name>Wind-Racing Essence Infusion</name>
       </crossRef>
@@ -7258,7 +7258,7 @@
       <keyword>Mirror (Worthy Mount Technique)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Ride</skill>
          <name>Worthy Mount Technique</name>
       </crossRef>
@@ -7338,7 +7338,7 @@
       <keyword>Native</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Ride</skill>
          <name>Immortal Rider's Advantages</name>
       </crossRef>
@@ -7394,7 +7394,7 @@
       <keyword>War</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Sail</skill>
          <name>Salty Dog Method</name>
       </crossRef>
@@ -7422,7 +7422,7 @@
       <keyword>Mirror (Crew-Inspiring Charisma)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Sail</skill>
          <name>Crew-Inspiring Charisma</name>
       </crossRef>
@@ -7451,7 +7451,7 @@
       <keyword>Spectral</keyword>
       <duration>Until disembarking</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Sail</skill>
          <name>Oceanic Omniscience Intuition</name>
       </crossRef>
@@ -7536,7 +7536,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Sail</skill>
          <name>Ship-Claiming Stance</name>
       </crossRef>
@@ -7566,7 +7566,7 @@
       <keyword>Touch</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Sail</skill>
          <name>Hull-Preserving Technique</name>
       </crossRef>
@@ -7597,7 +7597,7 @@
       <keyword>Touch</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Sail</skill>
          <name>Shipwreck-Surviving Stamina</name>
       </crossRef>
@@ -7625,7 +7625,7 @@
       <keyword>Native</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Sail</skill>
          <name>Immortal Captain's Advantages</name>
       </crossRef>
@@ -7655,7 +7655,7 @@
       <keyword>Obvious</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Sail</skill>
          <name>Flag Of All Nations Method</name>
       </crossRef>
@@ -7684,7 +7684,7 @@
       <keyword>Obvious</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Sail</skill>
          <name>Omnipotent Admiral Authority</name>
       </crossRef>
@@ -7713,7 +7713,7 @@
       <keyword>Obvious</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Sail</skill>
          <name>Invincible Solar Vessel</name>
       </crossRef>
@@ -7763,7 +7763,7 @@
       <keyword>Mirror (Omnipresent Admiral Of Light)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Sail</skill>
          <name>Omnipresent Admiral Of Light</name>
       </crossRef>
@@ -7792,7 +7792,7 @@
       <keyword>Social</keyword>
       <duration>Until next action</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Socialize</skill>
          <name>Mastery Of Small Manners</name>
       </crossRef>
@@ -7821,7 +7821,7 @@
       <keyword>Social</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Socialize</skill>
          <name>Heartfelt Honorific Opportunity</name>
       </crossRef>
@@ -7965,7 +7965,7 @@
       <keyword>Mirror (Taboo Inflicting Diatribe)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Socialize</skill>
          <name>Taboo Inflicting Diatribe</name>
       </crossRef>
@@ -8016,7 +8016,7 @@
       <keyword>Mirror (Web-Cutting Eyes)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Socialize</skill>
          <name>Web-Cutting Eyes</name>
       </crossRef>
@@ -8043,7 +8043,7 @@
       <keyword>Mirror (Easily Overlooked Presence Method)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Stealth</skill>
          <name>Easily Overlooked Presence Method</name>
       </crossRef>
@@ -8099,7 +8099,7 @@
       <keyword>Mirror (Mental Invisibility Technique)</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Stealth</skill>
          <name>Mental Invisibility Technique</name>
       </crossRef>
@@ -8128,7 +8128,7 @@
       <keyword>Mirror (Vanishing From Mind's Eye Method)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Stealth</skill>
          <name>Vanishing From Mind's Eye Method</name>
       </crossRef>
@@ -8157,7 +8157,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Stealth</skill>
          <name>Swallowing The Sun</name>
       </crossRef>
@@ -8209,7 +8209,7 @@
       <keyword>Mirror (Trackless Region Navigation)</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Survival</skill>
          <name>Trackless Region Navigation</name>
       </crossRef>
@@ -8237,7 +8237,7 @@
       <keyword>Mirror (Unshakeable Bloodhound Technique)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Survival</skill>
          <name>Unshakeable Bloodhound Technique</name>
       </crossRef>
@@ -8266,7 +8266,7 @@
       <keyword>Spectral</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Survival</skill>
          <name>Traceless Passage</name>
       </crossRef>
@@ -8344,12 +8344,12 @@
       <keyword>Spectral</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Survival</skill>
          <name>Hardship-Surviving Mendicant Spirit</name>
       </crossRef>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Survival</skill>
          <name>Element-Resisting Prana</name>
       </crossRef>
@@ -8399,7 +8399,7 @@
       <keyword>Spectral</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Survival</skill>
          <name>Eternal Elemental Harmony</name>
       </crossRef>
@@ -8450,7 +8450,7 @@
       <keyword>Mirror (Food-Gathering Exercise)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Survival</skill>
          <name>Food-Gathering Exercise</name>
       </crossRef>
@@ -8479,7 +8479,7 @@
       <keyword>Mirror (Steadfast Elemental Emperor Stance)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Survival</skill>
          <name>Steadfast Elemental Emperor Stance</name>
       </crossRef>
@@ -8510,7 +8510,7 @@
       <keyword>Obvious</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Survival</skill>
          <name>Guiding Light Shines On</name>
       </crossRef>
@@ -8543,7 +8543,7 @@
       <keyword></keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Thrown</skill>
          <name>Triple-Distance Attack Technique</name>
       </crossRef>
@@ -8578,7 +8578,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Thrown</skill>
          <name>Wind Full Of Knives</name>
       </crossRef>
@@ -8628,7 +8628,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Thrown</skill>
          <name>Call The Blade</name>
       </crossRef>
@@ -8647,7 +8647,7 @@
          <keyword>Obvious</keyword>
          <duration>Permanent</duration>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Thrown</skill>
             <name>Call The Blade</name>
          </crossRef>
@@ -8680,7 +8680,7 @@
       <keyword>Stackable</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Thrown</skill>
          <name>Branding Judgment Attack</name>
       </crossRef>
@@ -8768,7 +8768,7 @@
       <keyword>Mirror (Deft Hands Deflection)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Thrown</skill>
          <name>Deft Hands Deflection</name>
       </crossRef>
@@ -8804,7 +8804,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Thrown</skill>
          <name>Spirit Weapons</name>
       </crossRef>
@@ -8841,7 +8841,7 @@
       <keyword>Obvious</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Thrown</skill>
          <name>Fiery Solar Chakram</name>
       </crossRef>
@@ -8857,7 +8857,7 @@
          <keyword>Mirror (Fiery Solar Chakram)</keyword>
          <keyword>Obvious</keyword>
          <crossRef>
-            <type>Solars</type>
+            <user>Solars</user>
             <skill>Thrown</skill>
             <name>Fiery Solar Chakram</name>
          </crossRef>
@@ -8906,7 +8906,7 @@
       <keyword>Mirror (Angle-Tracing Edge)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Thrown</skill>
          <name>Angle-Tracing Edge</name>
       </crossRef>
@@ -8935,7 +8935,7 @@
       <keyword>Obvious</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Thrown</skill>
          <name>Maelstrom Of Celestial Dominance</name>
       </crossRef>
@@ -8993,7 +8993,7 @@
       <keyword>War</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>War</skill>
          <name>Mob-Dispersing Rebuke</name>
       </crossRef>
@@ -9022,7 +9022,7 @@
       <keyword>Obvious</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>War</skill>
          <name>Fury Inciting Presence</name>
       </crossRef>
@@ -9099,7 +9099,7 @@
       <keyword>Mirror (General Of The All-Seeing Sun)</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>War</skill>
          <name>General Of The All-Seeing Sun</name>
       </crossRef>
@@ -9129,7 +9129,7 @@
       <keyword>Training</keyword>
       <duration>One week</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>War</skill>
          <name>Tiger Warrior Training Technique</name>
       </crossRef>
@@ -9161,7 +9161,7 @@
       <keyword>Obvious</keyword>
       <duration>One week</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>War</skill>
          <name>Legendary Warrior Curriculum</name>
       </crossRef>
@@ -9270,7 +9270,7 @@
       <keyword>Native</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>War</skill>
          <name>Dawn King's Strife</name>
       </crossRef>
@@ -9297,7 +9297,7 @@
       <keyword>Mirror (Elegant Dance Of Bow And Blade)</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>War</skill>
          <name>Elegant Dance Of Bow And Blade</name>
       </crossRef>
@@ -9325,7 +9325,7 @@
       <keyword>Native</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>War</skill>
          <name>Supreme Martial Instinct</name>
       </crossRef>
@@ -9354,7 +9354,7 @@
       <keyword>War</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>War</skill>
          <name>Behemoth-Slaying Attitude</name>
       </crossRef>
@@ -9384,12 +9384,12 @@
       <keyword>War</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Dragon-Blooded</type>
+         <user>Dragon-Blooded</user>
          <skill>War</skill>
          <name>Tactics Mean Everything</name>
       </crossRef>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>War</skill>
          <name>Shining General Puissance</name>
       </crossRef>

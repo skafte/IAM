@@ -18,7 +18,7 @@
       <keyword>Combo-OK</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>(Ability)</skill>
          <name>First (Ability) Excellency - Essence Overwhelming</name>
       </crossRef>
@@ -50,7 +50,7 @@
       <keyword>Combo-OK</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>(Ability)</skill>
          <name>Second (Ability) Excellency - Essence Triumphant</name>
       </crossRef>
@@ -82,7 +82,7 @@
       <keyword>Combo-OK</keyword>
       <duration>Instant</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>(Ability)</skill>
          <name>Third (Ability) Excellency - Essence Resurgent</name>
       </crossRef>
@@ -113,7 +113,7 @@
       <type>Simple</type>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>(Ability)</skill>
          <name>Infinite (Ability) Mastery</name>
       </crossRef>
@@ -576,7 +576,7 @@
       <keyword>None</keyword>
       <duration>Indefinite</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Occult</skill>
          <name>All-Encompassing Sorcerer's Sight</name>
       </crossRef>
@@ -1936,7 +1936,7 @@
       <keyword>None</keyword>
       <duration>Permanent</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Integrity</skill>
          <name>Righteous Lion Defense</name>
       </crossRef>
@@ -2185,7 +2185,7 @@
       <keyword>Touch</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Spirits</type>
+         <user>Spirits</user>
          <skill>Esssence</skill>
          <name>Endowment</name>
       </crossRef>

@@ -186,7 +186,7 @@
       <keyword>None</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Awareness</skill>
          <name>Keen (Sense) Technique</name>
       </crossRef>
@@ -217,7 +217,7 @@
       <keyword>None</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Occult</skill>
          <name>All-Encompassing Sorcerer's Sight</name>
       </crossRef>
@@ -329,7 +329,7 @@
       <keyword>Combo-Basic</keyword>
       <duration>One scene</duration>
       <crossRef>
-         <type>Solars</type>
+         <user>Solars</user>
          <skill>Awareness</skill>
          <name>Eye of the Unconquered Sun</name>
       </crossRef>
