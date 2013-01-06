@@ -50,7 +50,7 @@ namespace IAM
          LoadingData_bsind.Visibility = Visibility.Visible;
 
          // Collaps all grids except the menu, to make sure there ain't an visible grids from the design process
-         ShowCollapsOuterGrids(UserMenu_grd.Name, LayoutRoot);
+         ShowCollapsOuterGrids(UserMenuOuter_grd.Name, LayoutRoot);
       }
 
       private void SetEvents()
@@ -90,8 +90,8 @@ namespace IAM
       /// </summary>
       private void Back_btn_Click(object sender, System.Windows.RoutedEventArgs e)
       {
-         ShowCollapsOuterGrids(UserMenu_grd.Name, LayoutRoot);
-         // TODO: throw new NotImplementedException();
+         ShowCollapsOuterGrids(UserMenuOuter_grd.Name, LayoutRoot);
+         // TODO: should probably do something more than just go back to Home
       }
 
       /// <summary>
@@ -137,7 +137,7 @@ namespace IAM
       private void NagivationBar_btn_click(object sender, System.Windows.RoutedEventArgs e)
       {
          LoadingData_bsind.IsBusy = true;
-         ShowCollapsOuterGrids((sender as Button).Tag.ToString().Replace("Menu_wrppnl", "Outer_grd"), LayoutRoot);
+         ShowCollapsOuterGrids((sender as Button).Tag.ToString() + "Outer_grd", LayoutRoot);
          LoadingData_bsind.IsBusy = false;
       }
 
@@ -463,7 +463,17 @@ namespace IAM
          btn.Style = (Application.Current.Resources["Custom_ButtonStyle_Generic"] as Style);
          btn.Content = txtbx;
          btn.Click += new RoutedEventHandler(UserMenu_btn_Clicked);
-         btn.Tag = ParentPanel.Name;
+
+         //create gridname
+         if (ParentPanel.Name.ToString() != "CharacterSheetMenu_wrppnl")
+         {
+            string gridname = itemToAdd.Replace("\n", "_");
+            gridname = gridname.Replace(", ", "_");
+            gridname = gridname.Replace(" ", "_");
+            btn.Tag = gridname;
+         }
+         else
+            btn.Tag = "CharacterSheet";
 
          ParentPanel.Children.Add(btn);
       }
@@ -518,6 +528,39 @@ namespace IAM
          return false;
       }
 
+      public bool AddAppBarStackPanel(object sender)
+      {
+         string gridname = ((sender as Button).Content as TextBox).Text.Replace("\n", "_");
+         gridname = gridname.Replace(", ", "_");
+         gridname = gridname.Replace(" ", "_");
+         gridname += "AppBar_grd";
+
+         if ((from vGrid in AppBar_grd.Children                              // make sure button doesn't already exist
+              where ((vGrid as Grid).Name.ToString() == gridname)
+              select vGrid).ToList().Count == 0)
+         {
+            // grid, outer
+            Grid grd = new Grid();
+            grd.HorizontalAlignment = HorizontalAlignment.Stretch;
+            grd.VerticalAlignment = VerticalAlignment.Stretch;
+            grd.Name = gridname;
+
+            // stackpanel
+            StackPanel stckpnl = new StackPanel();
+            stckpnl.Orientation = Orientation.Horizontal;
+            stckpnl.HorizontalAlignment = HorizontalAlignment.Left;
+            stckpnl.VerticalAlignment = VerticalAlignment.Stretch;
+
+            // connect the elements
+            grd.Children.Add(stckpnl);
+            AppBar_grd.Children.Add(grd);
+
+            return true;
+         }
+
+         return false;
+      }
+
       #region ShowHide ------------------------------------------------------------------------------
       /// <summary>
       /// Event that will switch to CharacterSheetOuter_grd and open the clicked character sheet
@@ -525,7 +568,6 @@ namespace IAM
       /// <param name="sender">Clicked on button</param>
       private void UserMenu_Character(object sender)
       {
-
          // get and format character name to match file name
          string characterName = ((sender as Button).Content as TextBox).Text;
          if (characterName.Contains("\n"))
@@ -545,10 +587,13 @@ namespace IAM
       /// <param name="sender">Clicked on button</param>
       private void UserMenu_Power(object sender)
       {
-         LoadingData_bsind.IsBusy = true;
-         PowerName_lbl.Content = ((sender as Button).Content as TextBox).Text;
-         ShowCollapsOuterGrids(PowerLibraryOuter_grd.Name, LayoutRoot);
+         if (AddAppBarStackPanel(sender))
+         {
+            clDisplayPowers.CreatePowerLibraryGrid(sender, LayoutRoot);
+         }
 
+         ShowCollapsOuterGrids((sender as Button).Tag.ToString() + "Outer_grd", LayoutRoot);
+         ShowCollapsOuterGrids((sender as Button).Tag.ToString() + "AppBar_grd", AppBar_grd);
          LoadingData_bsind.IsBusy = false;
       }
 
@@ -558,10 +603,9 @@ namespace IAM
       /// <param name="sender">Clicked on button</param>
       private void UserMenu_Equipment(object sender)
       {
-         LoadingData_bsind.IsBusy = true;
          EquipmentName_lbl.Content = ((sender as Button).Content as TextBox).Text;
-         ShowCollapsOuterGrids(EquipmentLibraryOuter_grd.Name, LayoutRoot);
 
+         ShowCollapsOuterGrids(EquipmentLibraryOuter_grd.Name, LayoutRoot);
          LoadingData_bsind.IsBusy = false;
       }
 
@@ -582,10 +626,14 @@ namespace IAM
             }
          }
 
-         if (VisualGrid == "UserMenu_grd")
+         if (VisualGrid == "UserMenuOuter_grd")
             Back_btn.Visibility = Visibility.Collapsed;
          else
             Back_btn.Visibility = Visibility.Visible;
+
+         AppBar_grd.Tag = 1;
+         if (ParentGrid.Name.ToString() == "AppBar_grd")
+            AppBar_grd.Tag = 2;
       }
       #endregion ------------------------------------------------------------------------------------
       #endregion --------------------------------------------------------------------------------
