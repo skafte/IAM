@@ -26,13 +26,13 @@ namespace IAM.FileIO
       // file to process properties
       enum FileProcessEnum
       {
-      none,
-      // Startup loading of informations
-      getListOfGames, getListOfCharacters, getListOfEquipment, getListOfPowers,
-      getTypesOfEquipment, getTypesOfPower,
-      // Character sheet informations
-      getCharacterStats, getCharacterPowerFiles, getCharacterPowerCrossRefs, getCharacterPowerKeywords, getEmptyCharacterSheet
-            
+         none,
+         // Startup loading of informations
+         getListOfGames, getListOfCharacters, getListOfEquipment, getListOfPowers,
+         getTypesOfEquipment, getTypesOfPower,
+         // Character sheet informations
+         getCharacterStats, getCharacterPowerFiles, getCharacterPowerCrossRefs, getCharacterPowerKeywords, getEmptyCharacterSheet,
+         // Power Library informations
       };
       int FileProcessTask;
 
@@ -55,6 +55,7 @@ namespace IAM.FileIO
       public event fromWebClientHandler gotCharacterPowerCrossRefs;
       public event fromWebClientHandler gotCharacterPowerKeywords;
       public event fromWebClientHandler gotEmptyCharacterSheet;
+      // Power Library informations
       #endregion ------------------------------------------------------------------------------------
       #endregion --------------------------------------------------------------------------------
       #endregion ----------------------------------------------------------------------------
@@ -111,7 +112,7 @@ namespace IAM.FileIO
 
                   // find single power types
                   List<string> PowerIndex = (from vTypes in ePowerName.Descendants(powerType)
-                                             select vTypes.Element("type").Value).Distinct().ToList();
+                                             select vTypes.Element("user").Value).Distinct().ToList();
                   PowerIndex.AddRange(Globals.GameInformation.PowerIndexForAll.ElementAt(Globals.GameInformation.PowerIndex.IndexOf(powerType)));  // find general powers
                   PowerIndex.Remove("");                                                          // Cleanup of list
 
@@ -133,7 +134,7 @@ namespace IAM.FileIO
                foreach (XElement eCrossRef in document.Descendants("crossRef"))
                {
                   string parentName = eCrossRef.Parent.Name.ToString();
-                  string typeName = eCrossRef.Element("type").Value;
+                  string typeName = eCrossRef.Element("user").Value;
                
                   if (UserFiles.IndexOf(parentName + ": " + typeName) == -1)                                                     // file hasn't been called to load yet
                   {
@@ -226,6 +227,7 @@ namespace IAM.FileIO
                case (int)FileProcessEnum.getEmptyCharacterSheet:
                   this.gotEmptyCharacterSheet(XDocument.Load(e.Result));
                   break;
+               // Power library informations
                default:
                   throw new UnknownFileProcessException(Enum.GetName(typeof(FileProcessEnum), FileProcessTask));
             }
