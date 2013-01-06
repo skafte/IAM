@@ -845,7 +845,7 @@ namespace IAM.Powers
 
             foreach (XElement eCrossRef in ePower.Parent.Element("crossRefPowers_" + ePower.Name).Elements(ePower.Name))
             {
-               if ((ePower.Element("crossRef").Element("type").Value == eCrossRef.Element("user").Value) &&
+               if ((ePower.Element("crossRef").Element("user").Value == eCrossRef.Element("user").Value) &&
                    (ePower.Element("crossRef").Element("skill").Value == eCrossRef.Element("skill").Element("name").Value) &&
                    (ePower.Element("crossRef").Element("name").Value == eCrossRef.Element("name").Value))
                {

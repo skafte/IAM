@@ -320,9 +320,9 @@ namespace IAM
       /// <param name="document">Index over specific power types</param>
       private void clWebClientManager_gotTypesOfPower(XDocument document)
       {
-         List<string> single = (from vTypes in document.Descendants("singles").Elements("type")
+         List<string> single = (from vTypes in document.Descendants("singles").Elements("user")
                                 select vTypes.Value).Distinct().ToList();
-         List<string> forall = (from vTypes in document.Descendants("forall").Elements("type")
+         List<string> forall = (from vTypes in document.Descendants("forall").Elements("user")
                                 select vTypes.Value).Distinct().ToList();
          Globals.GameInformation.PowerIndex.Add(document.Element("body").Element("title").Value);
          Globals.GameInformation.PowerIndexSingle.Add(single);
@@ -493,6 +493,21 @@ namespace IAM
          return haveConverted;
       }
 
+      private static string ToLowerCaseProper(string toConvert)
+      {
+         char FirstLetter = ' ';
+         string haveConverted = "";
+         foreach (char SecondLetter in toConvert)
+         {
+            if (FirstLetter == ' ')
+               haveConverted += SecondLetter.ToString().ToLower();
+            else
+               haveConverted += SecondLetter.ToString();
+            FirstLetter = SecondLetter;
+         }
+         return haveConverted;
+      }
+
       /// <summary>
       /// Display the first page of the character sheet after it is loaded
       /// </summary>
@@ -500,6 +515,13 @@ namespace IAM
       {
          ShowCollapsOuterGrids(CharacterSheetOuter_grd.Name, LayoutRoot);
          CharacterSheetMenu_lstbx.SelectedIndex = 0;
+         LoadingData_bsind.IsBusy = false;
+      }
+
+      private void PowerLibraryFinished()
+      {
+         ShowCollapsOuterGrids(Globals.TemporaryData.SelectedPowerLibrary + "Outer_grd", LayoutRoot);
+         ShowCollapsOuterGrids(Globals.TemporaryData.SelectedPowerLibrary + "AppBar_grd", AppBar_grd);
          LoadingData_bsind.IsBusy = false;
       }
 
@@ -528,7 +550,7 @@ namespace IAM
          return false;
       }
 
-      public bool AddAppBarStackPanel(object sender)
+      public bool AddAppBarGrid(object sender)
       {
          string gridname = ((sender as Button).Content as TextBox).Text.Replace("\n", "_");
          gridname = gridname.Replace(", ", "_");
@@ -587,14 +609,23 @@ namespace IAM
       /// <param name="sender">Clicked on button</param>
       private void UserMenu_Power(object sender)
       {
-         if (AddAppBarStackPanel(sender))
+         Globals.TemporaryData.SelectedPowerLibrary = (sender as Button).Tag.ToString();
+         if (AddAppBarGrid(sender))
          {
             clDisplayPowers.CreatePowerLibraryGrid(sender, LayoutRoot);
+
+            // find AppBar grid
+            Grid AppBarGrid = new Grid();
+            foreach (object objAppBar_grd in AppBar_grd.Children)
+            {
+               if ((objAppBar_grd.GetType().Name == "Grid") && ((objAppBar_grd as Grid).Name == Globals.TemporaryData.SelectedPowerLibrary + "AppBar_grd"))
+                  AppBarGrid = (objAppBar_grd as Grid);
+               break;
+            }
+            clDisplayPowers.DisplayPowerLibraryUsers(ToLowerCaseProper((sender as Button).Tag.ToString()), (AppBarGrid.Children.First() as StackPanel));
          }
 
-         ShowCollapsOuterGrids((sender as Button).Tag.ToString() + "Outer_grd", LayoutRoot);
-         ShowCollapsOuterGrids((sender as Button).Tag.ToString() + "AppBar_grd", AppBar_grd);
-         LoadingData_bsind.IsBusy = false;
+         PowerLibraryFinished();
       }
 
       /// <summary>

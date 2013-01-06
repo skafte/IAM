@@ -61,10 +61,40 @@ namespace IAM.Powers
          inner_grd.HorizontalAlignment = HorizontalAlignment.Stretch;
          inner_grd.VerticalAlignment = VerticalAlignment.Stretch;
 
+// mangler power element liste og graph
+
          // connect the elements
+         scrllvwr.Content = inner_grd;
          outer_grd.Children.Add(scrllvwr);
          outer_grd.Children.Add(name_lbl);
          LayoutRoot.Children.Insert(LayoutRoot.Children.Count - 10, outer_grd);
+      }
+
+      /// <summary>
+      /// Will add users to combobox
+      /// </summary>
+      /// <param name="document"></param>
+      public void DisplayPowerLibraryUsers(string powerSelected, StackPanel AppBar_stckpnl)
+      {  
+         // stackpanel, combobox parent
+         StackPanel stckpnl = new StackPanel();
+         stckpnl.Orientation = Orientation.Vertical;
+
+         // label
+         Label lbl = new Label();
+         lbl.Content = "User";
+
+         // combobox
+         ComboBox cmbbx = new ComboBox();
+
+         // add data
+         foreach (string str in Globals.GameInformation.PowerIndexSingle.ElementAt(Globals.GameInformation.PowerIndex.IndexOf(powerSelected)))
+            cmbbx.Items.Add(str);
+
+         // connect the elements
+         stckpnl.Children.Add(lbl);
+         stckpnl.Children.Add(cmbbx);
+         AppBar_stckpnl.Children.Add(stckpnl);
       }
    }
 }
