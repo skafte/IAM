@@ -626,10 +626,9 @@ namespace IAM
             }
          }
 
+         Back_btn.Visibility = Visibility.Visible;
          if (VisualGrid == "UserMenuOuter_grd")
             Back_btn.Visibility = Visibility.Collapsed;
-         else
-            Back_btn.Visibility = Visibility.Visible;
 
          AppBar_grd.Tag = 1;
          if (ParentGrid.Name.ToString() == "AppBar_grd")
