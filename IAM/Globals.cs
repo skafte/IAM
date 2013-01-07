@@ -173,6 +173,8 @@ namespace IAM
          static private List<XElement> powersxmlfiles = new List<XElement>();
          static private XDocument selectedcharacterpowers = new XDocument();
 
+         static private string selectedpowerlibrary = "";
+
          /// <summary>
          /// Used for temporary storing of data while fetching the sheet layout for that character type
          /// </summary>
@@ -230,6 +232,21 @@ namespace IAM
             set
             {
                selectedcharacterpowers = value;
+            }
+         }
+
+         /// <summary>
+         /// Used for temporary storing of data while fetching and creating power library
+         /// </summary>
+         static public string SelectedPowerLibrary
+         {
+            get
+            {
+               return selectedpowerlibrary;
+            }
+            set
+            {
+               selectedpowerlibrary = value;
             }
          }
       }
