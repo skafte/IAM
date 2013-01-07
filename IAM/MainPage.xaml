@@ -111,9 +111,9 @@
       		</Button>
       	</StackPanel>
       </Grid>
-      <Grid x:Name="NavigationBar_grd" Height="110" VerticalAlignment="Top" Background="#FF3A3E4B" MouseLeave="Bar_grd_MouseLeave" Tag="1" Visibility="Collapsed">
+      <Grid x:Name="NavigationBar_grd" Height="110" VerticalAlignment="Top" Background="#FF3A3E4B" MouseLeave="Bar_grd_MouseLeave" Tag="1">
       	<StackPanel x:Name="NavigationBar_stckpnl" HorizontalAlignment="Left" Margin="10,10,10,0" Orientation="Horizontal" UseLayoutRounding="True">
-      		<Button x:Name="NavigationBar_UserMenu_btn" Width="75" Style="{StaticResource Custom_ButtonStyle_Generic}" Click="NagivationBar_btn_click" Tag="UserMenu">
+      		<Button x:Name="NavigationBar_UserMenu_btn" Width="75" Style="{StaticResource Custom_ButtonStyle_Generic}" Click="NagivationBar_btn_click" Tag="UserMenu" Background="{StaticResource Brush_Header}">
       			<TextBox TextWrapping="Wrap" Text="Home" Style="{StaticResource Custom_TextBoxStyle_Generic}"/>
       		</Button>
       	</StackPanel>
