@@ -57,18 +57,18 @@ namespace IAM
       {
          // from WebClient
          // Startup loading of informations
-         this.clWebClientManager.gotListOfGames += new WebClientManager.fromWebClientHandler(clWebClientManager_gotListOfGames);
-         this.clWebClientManager.gotListOfCharacters += new WebClientManager.fromWebClientHandler(clWebClientManager_gotListOfCharacters);
-         this.clWebClientManager.gotListOfEquipment += new WebClientManager.fromWebClientHandler(clWebClientManager_gotListOfEquipment);
-         this.clWebClientManager.gotTypesOfEquipment += new WebClientManager.fromWebClientHandler(clWebClientManager_gotTypesOfEquipment);
-         this.clWebClientManager.gotListOfPowers += new WebClientManager.fromWebClientHandler(clWebClientManager_gotListOfPowers);
-         this.clWebClientManager.gotTypesOfPower += new WebClientManager.fromWebClientHandler(clWebClientManager_gotTypesOfPower);
+         this.clWebClientManager.gotListOfGames += clWebClientManager_gotListOfGames;
+         this.clWebClientManager.gotListOfCharacters += clWebClientManager_gotListOfCharacters;
+         this.clWebClientManager.gotListOfEquipment += clWebClientManager_gotListOfEquipment;
+         this.clWebClientManager.gotTypesOfEquipment += clWebClientManager_gotTypesOfEquipment;
+         this.clWebClientManager.gotListOfPowers += clWebClientManager_gotListOfPowers;
+         this.clWebClientManager.gotTypesOfPower += clWebClientManager_gotTypesOfPower;
          // Character sheet informations
-         this.clWebClientManager.gotCharacterStats += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterStats);
-         this.clWebClientManager.gotCharacterPowerFiles += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterPowerFiles);
-         this.clWebClientManager.gotCharacterPowerCrossRefs += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterPowerCrossRefs);
-         this.clWebClientManager.gotCharacterPowerKeywords += new WebClientManager.fromWebClientHandler(clWebClientManager_gotCharacterPowerKeywords);
-         this.clWebClientManager.gotEmptyCharacterSheet += new WebClientManager.fromWebClientHandler(clWebClientManager_gotEmptyCharacterSheet);
+         this.clWebClientManager.gotCharacterStats += clWebClientManager_gotCharacterStats;
+         this.clWebClientManager.gotCharacterPowerFiles += clWebClientManager_gotCharacterPowerFiles;
+         this.clWebClientManager.gotCharacterPowerCrossRefs += clWebClientManager_gotCharacterPowerCrossRefs;
+         this.clWebClientManager.gotCharacterPowerKeywords += clWebClientManager_gotCharacterPowerKeywords;
+         this.clWebClientManager.gotEmptyCharacterSheet += clWebClientManager_gotEmptyCharacterSheet;
 
          // from CreatePowerElement
          this.clCreatePowerElement.Version_btn_click += clCreatePowerElement_Version_btn_click;
@@ -619,8 +619,10 @@ namespace IAM
             foreach (object objAppBar_grd in AppBar_grd.Children)
             {
                if ((objAppBar_grd.GetType().Name == "Grid") && ((objAppBar_grd as Grid).Name == Globals.TemporaryData.SelectedPowerLibrary + "AppBar_grd"))
+               {
                   AppBarGrid = (objAppBar_grd as Grid);
-               break;
+                  break;
+               }
             }
             clDisplayPowers.DisplayPowerLibraryUsers(ToLowerCaseProper((sender as Button).Tag.ToString()), (AppBarGrid.Children.First() as StackPanel));
          }
