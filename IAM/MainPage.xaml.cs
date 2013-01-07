@@ -521,7 +521,6 @@ namespace IAM
       private void PowerLibraryFinished()
       {
          ShowCollapsOuterGrids(Globals.TemporaryData.SelectedPowerLibrary + "Outer_grd", LayoutRoot);
-         ShowCollapsOuterGrids(Globals.TemporaryData.SelectedPowerLibrary + "AppBar_grd", AppBar_grd);
          LoadingData_bsind.IsBusy = false;
       }
 
@@ -648,24 +647,34 @@ namespace IAM
       /// <param name="VisualGrid">Name of grid to show</param>
       private void ShowCollapsOuterGrids(string VisualGrid, Grid ParentGrid)
       {
+         // default AppBar cannot open
+         if (ParentGrid.Name.ToString() == "AppBar_grd")
+            AppBar_grd.Tag = 1;
+
+         // find and show selected grid
          foreach (object obj in ParentGrid.Children)
          {
             if (obj.GetType().Name == "Grid")
             {
                if ((obj as Grid).Name == VisualGrid)
+               {
                   (obj as Grid).Visibility = Visibility.Visible;
+                  if (ParentGrid.Name.ToString() == "AppBar_grd")
+                     AppBar_grd.Tag = 2;
+               }
                else if (!(obj as Grid).Name.Contains("Collapsed_grd"))    // should always be "visible"
                   (obj as Grid).Visibility = Visibility.Collapsed;
             }
          }
 
+         // show/hide Back_btn
          Back_btn.Visibility = Visibility.Visible;
          if (VisualGrid == "UserMenuOuter_grd")
             Back_btn.Visibility = Visibility.Collapsed;
 
-         AppBar_grd.Tag = 1;
-         if (ParentGrid.Name.ToString() == "AppBar_grd")
-            AppBar_grd.Tag = 2;
+         // call to show AppBar childgrid is exist
+         if (ParentGrid.Name.ToString() != "AppBar_grd")
+            ShowCollapsOuterGrids(VisualGrid.Replace("Outer_grd", "AppBar_grd"), AppBar_grd);
       }
       #endregion ------------------------------------------------------------------------------------
       #endregion --------------------------------------------------------------------------------
