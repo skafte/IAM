@@ -15,7 +15,7 @@ namespace IAM
 {
    static class Globals
    {
-      #region Methods -----------------------------------------------------------------------
+      #region Methods _________________________________________________________________________
       /// <summary>
       /// Will clear all data from Globals.TemporaryData
       /// This function is first called after a character sheet is actually found, in case the sheet doesn't exist anyway
@@ -45,9 +45,9 @@ namespace IAM
          float px = (float)pt * 96/72;
          return px;
       }
-      #endregion ----------------------------------------------------------------------------
+      #endregion ______________________________________________________________________________
 
-      #region Properties --------------------------------------------------------------------
+      #region Properties ______________________________________________________________________
       /// <summary>
       /// Path to folders corrently in use
       /// </summary>
@@ -250,6 +250,6 @@ namespace IAM
             }
          }
       }
-      #endregion ----------------------------------------------------------------------------
+      #endregion ______________________________________________________________________________
    }
 }

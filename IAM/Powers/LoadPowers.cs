@@ -19,22 +19,22 @@ namespace IAM.Powers
 {
    public class LoadPowers
    {
-      #region Properties --------------------------------------------------------------------
-      #region Private ---------------------------------------------------------------------------
+      #region Properties ______________________________________________________________________
+      #region Private _____________________________________________________________________________
       private int amount = 10;
       private string User;             // Name of user type
-      #endregion --------------------------------------------------------------------------------
-      #endregion ----------------------------------------------------------------------------
+      #endregion __________________________________________________________________________________
+      #endregion ______________________________________________________________________________
 
-      #region Methods -----------------------------------------------------------------------
-      #region Private ---------------------------------------------------------------------------
+      #region Methods _________________________________________________________________________
+      #region Private _____________________________________________________________________________
       /// <summary>
       /// Collection of calls to all the insert data functions
       /// </summary>
       /// <param name="body_stckpnl">Power element</param>
       /// <param name="ePower">XML data for power</param>
       /// <param name="action">How to insert data: none=No existing data, add=add to already existing data, replace=replace existing data</param>
-      #region Insert data ---------------------------------------------------------------------------
+      #region Insert data _____________________________________________________________________________
       private void DataIntoPowerBody_Intro(StackPanel body_stckpnl, XElement ePower, string action)
       {
          TextBlock CreatorValue_txtblck = new TextBlock();
@@ -967,9 +967,9 @@ namespace IAM.Powers
          else if (action == "none")
             CommentText_txtbx.Visibility = Visibility.Collapsed;
       }
-      #endregion ------------------------------------------------------------------------------------
+      #endregion ______________________________________________________________________________________
 
-      #region helper functions ----------------------------------------------------------------------
+      #region helper functions ________________________________________________________________________
       /// <summary>
       /// Collection of calls to all the insert data functions
       /// </summary>
@@ -1011,10 +1011,10 @@ namespace IAM.Powers
             PrerequestValue[k - 1].Text += ",";
          PrerequestValue[k].Text = sName;
       }
-      #endregion ------------------------------------------------------------------------------------
-      #endregion --------------------------------------------------------------------------------
+      #endregion ______________________________________________________________________________________
+      #endregion __________________________________________________________________________________
 
-      #region Public ----------------------------------------------------------------------------
+      #region Public ______________________________________________________________________________
       /// <summary>
       /// Function that will fill in all the fields in a power element
       /// </summary>
@@ -1038,7 +1038,7 @@ namespace IAM.Powers
             InsertPowerInfomation(body_stckpnl, eErrata, eErrata.Element("todo").Value);
          }
       }
-      #endregion ---------------------------------------------------------------------------------
-      #endregion ----------------------------------------------------------------------------
+      #endregion __________________________________________________________________________________
+      #endregion ______________________________________________________________________________
    }
 }

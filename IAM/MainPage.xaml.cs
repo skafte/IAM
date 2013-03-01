@@ -20,18 +20,18 @@ namespace IAM
 {
    public partial class MainPage : UserControl
    {
-      #region Properties --------------------------------------------------------------------
-      #region Private ---------------------------------------------------------------------------
+      #region Properties _____________________________________________________________________
+      #region Private ____________________________________________________________________________
       private CreateSheet clCreateSheet = new CreateSheet();
       private GetPowers clGetPowers = new GetPowers();
       private WebClientManager clWebClientManager = new WebClientManager();
       private DisplayPowers clDisplayPowers = new DisplayPowers();
       private LoadPowers clLoadPowers = new LoadPowers();
       private CreatePowerElement clCreatePowerElement = new CreatePowerElement();
-      #endregion --------------------------------------------------------------------------------
-      #endregion ----------------------------------------------------------------------------
+      #endregion _________________________________________________________________________________
+      #endregion _____________________________________________________________________________
 
-      #region Default Behavior --------------------------------------------------------------
+      #region Default Behavior _______________________________________________________________
       public MainPage()
       {
          InitializeComponent();
@@ -84,10 +84,10 @@ namespace IAM
          NavigationBar_grd.Tag = 1;
          Unused_Bar_grd.Tag = 0;
       }
-      #endregion ----------------------------------------------------------------------------
+      #endregion ______________________________________________________________________________
 
-      #region Events ------------------------------------------------------------------------
-      #region from XAML -------------------------------------------------------------------------
+      #region Events __________________________________________________________________________
+      #region from XAML ___________________________________________________________________________
       /// <summary>
       /// Jumps back to last grid - or at least that is what it is suppose to do, doesn't do it yet
       /// </summary>
@@ -227,9 +227,9 @@ namespace IAM
          else
             NagivationBar_btn_click(sender, e);
       }
-      #endregion --------------------------------------------------------------------------------
+      #endregion __________________________________________________________________________________
 
-      #region from WebClient --------------------------------------------------------------------
+      #region from WebClient ______________________________________________________________________
       /// <summary>
       /// Games loaded from database
       /// Filling games into GameList_lstbx
@@ -419,14 +419,14 @@ namespace IAM
 
          SheetFinished();
       }
-      #endregion --------------------------------------------------------------------------------
+      #endregion __________________________________________________________________________________
       
       #region from DisplayPowers ----------------------------------------------------------------
       private void clDisplayPowers_selectedUser(object sender, SelectionChangedEventArgs e)
       {}
-      #endregion --------------------------------------------------------------------------------
-      
-      #region from CreatePowerElement -----------------------------------------------------------
+      #endregion __________________________________________________________________________________
+
+      #region from CreatePowerElement _____________________________________________________________
       /// <summary>
       /// Trigger whenever one of the version buttons in a power element have been clicked
       /// </summary>
@@ -437,11 +437,11 @@ namespace IAM
          throw new NotImplementedException();
       }
 
-      #endregion --------------------------------------------------------------------------------
-      #endregion ----------------------------------------------------------------------------
+      #endregion __________________________________________________________________________________
+      #endregion ______________________________________________________________________________
 
-      #region Methods -----------------------------------------------------------------------
-      #region Private ---------------------------------------------------------------------------
+      #region Methods _________________________________________________________________________
+      #region Private _____________________________________________________________________________
       /// <summary>
       /// Create and set text of a menu button
       /// </summary>
@@ -590,7 +590,7 @@ namespace IAM
          return false;
       }
 
-      #region ShowHide ------------------------------------------------------------------------------
+      #region ShowHide ________________________________________________________________________________
       /// <summary>
       /// Event that will switch to CharacterSheetOuter_grd and open the clicked character sheet
       /// </summary>
@@ -684,8 +684,8 @@ namespace IAM
          if (ParentGrid.Name.ToString() != "AppBar_grd")
             ShowCollapsOuterGrids(VisualGrid.Replace("Outer_grd", "AppBar_grd"), AppBar_grd);
       }
-      #endregion ------------------------------------------------------------------------------------
-      #endregion --------------------------------------------------------------------------------
-      #endregion ----------------------------------------------------------------------------
+      #endregion ______________________________________________________________________________________
+      #endregion __________________________________________________________________________________
+      #endregion ______________________________________________________________________________
    }
 }
