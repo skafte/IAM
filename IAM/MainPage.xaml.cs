@@ -88,7 +88,7 @@ namespace IAM
       /// <summary>
       /// Jumps back to last grid - or at least that is what it is suppose to do, doesn't do it yet
       /// </summary>
-      private void Back_btn_Click(object sender, System.Windows.RoutedEventArgs e)
+      private void Back_btn_Click(object sender, RoutedEventArgs e)
       {
          ShowCollapsOuterGrids(UserMenuOuter_grd.Name, LayoutRoot);
          // TODO: should probably do something more than just go back to Home
@@ -97,7 +97,7 @@ namespace IAM
       /// <summary>
       /// Open side-bar
       /// </summary>
-      private void BarCollapsed_grd_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+      private void BarCollapsed_grd_MouseEnter(object sender, MouseEventArgs e)
       {
          var grd = ((sender as Grid).Parent as Grid).FindName((sender as Grid).Name.Replace("Collapsed", ""));
 
@@ -108,7 +108,7 @@ namespace IAM
       /// <summary>
       /// Close side-bar
       /// </summary>
-      private void Bar_grd_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
+      private void Bar_grd_MouseLeave(object sender, MouseEventArgs e)
       {
          (sender as Grid).Visibility = Visibility.Collapsed;
       }
@@ -116,7 +116,7 @@ namespace IAM
       /// <summary>
       /// Go to Search menu
       /// </summary>
-      private void CharmSearch_btn_Click(object sender, System.Windows.RoutedEventArgs e)
+      private void CharmSearch_btn_Click(object sender, RoutedEventArgs e)
       {
          throw new NotImplementedException();
       }
@@ -124,7 +124,7 @@ namespace IAM
       /// <summary>
       /// Go to settings menu
       /// </summary>
-      private void CharmSettings_btn_Click(object sender, System.Windows.RoutedEventArgs e)
+      private void CharmSettings_btn_Click(object sender, RoutedEventArgs e)
       {
          throw new NotImplementedException();
       }
@@ -134,7 +134,7 @@ namespace IAM
       /// </summary>
       /// <param name="sender">Navigation button clicked</param>
       /// <param name="e"></param>
-      private void NagivationBar_btn_click(object sender, System.Windows.RoutedEventArgs e)
+      private void NagivationBar_btn_click(object sender, RoutedEventArgs e)
       {
          LoadingData_bsind.IsBusy = true;
          ShowCollapsOuterGrids((sender as Button).Tag.ToString() + "Outer_grd", LayoutRoot);
@@ -145,7 +145,7 @@ namespace IAM
       /// Hide selection menu panel and show Unhide button
       /// </summary>
       /// <param name="sender">Used to find panel/button to hide/show</param>
-      private void Selection_Hide_btn_Click(object sender, System.Windows.RoutedEventArgs e)
+      private void Selection_Hide_btn_Click(object sender, RoutedEventArgs e)
       {
          ((sender as Button).Parent as Grid).Visibility = Visibility.Collapsed;
          ((((sender as Button).Parent as Grid).Parent as Grid).FindName((sender as Button).Name.Replace("Hide", "Unhide")) as Button).Visibility = Visibility.Visible;         
@@ -155,7 +155,7 @@ namespace IAM
       /// Unhide selection menu panel and hide Unhdie button
       /// </summary>
       /// <param name="sender">Used to find panel/button to show/hide</param>
-      private void Selection_Unhide_btn_Click(object sender, System.Windows.RoutedEventArgs e)
+      private void Selection_Unhide_btn_Click(object sender, RoutedEventArgs e)
       {
          (sender as Button).Visibility = Visibility.Collapsed;
          (((sender as Button).Parent as Grid).FindName((sender as Button).Name.Replace("Unhide_btn", "grd")) as Grid).Visibility = Visibility.Visible;
@@ -164,7 +164,7 @@ namespace IAM
       /// <summary>
       /// Open the grid corrosponding to the selected menu point
       /// </summary>
-      private void SecondaryMenu_lstbx_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+      private void SecondaryMenu_lstbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
       {
          if (sender is ListBox)
          {
@@ -182,7 +182,7 @@ namespace IAM
       /// <summary>
       /// When a game has been selected, this will start the chain of data to be loaded in order to setup all the grids connected to that game
       /// </summary>
-      private void GamesList_lstbx_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+      private void GamesList_lstbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
       {
          if ((sender as ListBox).SelectedIndex != -1)
          {
