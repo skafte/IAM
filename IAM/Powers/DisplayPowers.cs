@@ -18,6 +18,24 @@ namespace IAM.Powers
 {
    public class DisplayPowers
    {
+      #region Properties --------------------------------------------------------------------
+      #region Private ---------------------------------------------------------------------------
+
+      #endregion --------------------------------------------------------------------------------
+
+      #region Events ----------------------------------------------------------------------------
+      public delegate void fromDisplayPowersHandler(object sender, SelectionChangedEventArgs e);
+
+      #region Event Signatures ----------------------------------------------------------------------
+      // Startup loading of informations
+      public event fromDisplayPowersHandler selectedUser;
+      #endregion ------------------------------------------------------------------------------------
+      #endregion --------------------------------------------------------------------------------
+      #endregion ----------------------------------------------------------------------------
+
+      #region Methods -----------------------------------------------------------------------
+      #region Public ----------------------------------------------------------------------------
+
       /// <summary>
       /// Create grid for the selected power
       /// </summary>
@@ -93,12 +111,12 @@ namespace IAM.Powers
 
          // ListBox
          ListBox lstbx = new ListBox();
-         //DescriptionText_txtbx.Background = new SolidColorBrush(Colors.White);
          lstbx.Background = null;
          lstbx.BorderBrush = null;
          lstbx.Foreground = new SolidColorBrush(Colors.White);
          lstbx.FontFamily = new FontFamily("Segoe UI");
          lstbx.FontSize = Globals.PtToPx(14);
+         lstbx.SelectionChanged += lstbx_SelectionChanged;
 
          // add data
          foreach (string str in Globals.GameInformation.PowerIndexSingle.ElementAt(Globals.GameInformation.PowerIndex.IndexOf(powerSelected)))
@@ -109,5 +127,14 @@ namespace IAM.Powers
          stckpnl.Children.Add(lstbx);
          AppBar_stckpnl.Children.Add(stckpnl);
       }
+
+      void lstbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
+      {
+         if (this.selectedUser != null)
+            this.selectedUser(sender, e);
+      }
+      #endregion --------------------------------------------------------------------------------
+      #endregion ----------------------------------------------------------------------------
+
    }
 }

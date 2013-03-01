@@ -72,6 +72,9 @@ namespace IAM
 
          // from CreatePowerElement
          this.clCreatePowerElement.Version_btn_click += clCreatePowerElement_Version_btn_click;
+
+         // from DisplayPowers
+         this.clDisplayPowers.selectedUser += clDisplayPowers_selectedUser;
       }
 
       private void SetData()
@@ -417,7 +420,12 @@ namespace IAM
          SheetFinished();
       }
       #endregion --------------------------------------------------------------------------------
-
+      
+      #region from DisplayPowers ----------------------------------------------------------------
+      private void clDisplayPowers_selectedUser(object sender, SelectionChangedEventArgs e)
+      {}
+      #endregion --------------------------------------------------------------------------------
+      
       #region from CreatePowerElement -----------------------------------------------------------
       /// <summary>
       /// Trigger whenever one of the version buttons in a power element have been clicked
