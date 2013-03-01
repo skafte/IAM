@@ -152,7 +152,7 @@ namespace IAM.Powers
          VersionOfNext_btn.Width = 11;
          VersionOfPre_btn.IsEnabled = false;
          VersionOfNext_btn.IsEnabled = false;
-         VersionOfPre_btn.Click += VersionOf_btn_Click;
+         VersionOfPre_btn.Click += VersionOf_btn_Click;     // TODO: it is not working
          VersionOfNext_btn.Click += VersionOf_btn_Click;
          VersionOf_stckpnl.Children.Add(VersionOfPre_btn);
          VersionOf_stckpnl.Children.Add(VersionOfNext_btn);
@@ -435,7 +435,8 @@ namespace IAM.Powers
       #region Events -------------------------------------------------------------------------------
       private void VersionOf_btn_Click(object sender, RoutedEventArgs e)
       {
-         this.Version_btn_click(sender, e);
+         if (this.Version_btn_click != null)
+            this.Version_btn_click(sender, e);
       }
       #endregion -----------------------------------------------------------------------------------
       #endregion --------------------------------------------------------------------------------
