@@ -11,9 +11,9 @@ using System.Windows.Shapes;
 using System.Linq;
 using System.Xml.Linq;
 using System.Collections.Generic;
+using System.IO;
 
 using IAM;
-using System.IO;
 
 namespace IAM.FileIO
 {
