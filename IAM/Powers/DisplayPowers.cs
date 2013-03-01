@@ -79,21 +79,34 @@ namespace IAM.Powers
          // stackpanel, combobox parent
          StackPanel stckpnl = new StackPanel();
          stckpnl.Orientation = Orientation.Vertical;
+         stckpnl.Margin = new Thickness(10);
 
          // label
          Label lbl = new Label();
+         lbl.Foreground = (SolidColorBrush)Application.Current.Resources["Brush_Header"];
+         lbl.FontFamily = new FontFamily("Segoe UI");
+         lbl.FontSize = Globals.PtToPx(20);
+         lbl.HorizontalAlignment = HorizontalAlignment.Stretch;
+         lbl.VerticalAlignment = VerticalAlignment.Bottom;
+         lbl.Margin = new Thickness(0, 0, 20, 0);
          lbl.Content = "User";
 
-         // combobox
-         ComboBox cmbbx = new ComboBox();
+         // ListBox
+         ListBox lstbx = new ListBox();
+         //DescriptionText_txtbx.Background = new SolidColorBrush(Colors.White);
+         lstbx.Background = null;
+         lstbx.BorderBrush = null;
+         lstbx.Foreground = new SolidColorBrush(Colors.White);
+         lstbx.FontFamily = new FontFamily("Segoe UI");
+         lstbx.FontSize = Globals.PtToPx(14);
 
          // add data
          foreach (string str in Globals.GameInformation.PowerIndexSingle.ElementAt(Globals.GameInformation.PowerIndex.IndexOf(powerSelected)))
-            cmbbx.Items.Add(str);
+            lstbx.Items.Add(str);
 
          // connect the elements
          stckpnl.Children.Add(lbl);
-         stckpnl.Children.Add(cmbbx);
+         stckpnl.Children.Add(lstbx);
          AppBar_stckpnl.Children.Add(stckpnl);
       }
    }
