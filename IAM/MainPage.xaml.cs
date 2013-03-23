@@ -20,18 +20,18 @@ namespace IAM
 {
    public partial class MainPage : UserControl
    {
-      #region Properties _____________________________________________________________________
-      #region Private ____________________________________________________________________________
+      #region Properties ______________________________________________________________________
+      #region Private _____________________________________________________________________________
       private CreateSheet clCreateSheet = new CreateSheet();
       private GetPowers clGetPowers = new GetPowers();
       private WebClientManager clWebClientManager = new WebClientManager();
       private DisplayPowers clDisplayPowers = new DisplayPowers();
       private LoadPowers clLoadPowers = new LoadPowers();
       private CreatePowerElement clCreatePowerElement = new CreatePowerElement();
-      #endregion _________________________________________________________________________________
-      #endregion _____________________________________________________________________________
+      #endregion __________________________________________________________________________________
+      #endregion ______________________________________________________________________________
 
-      #region Default Behavior _______________________________________________________________
+      #region Default Behavior ________________________________________________________________
       public MainPage()
       {
          InitializeComponent();
@@ -69,6 +69,8 @@ namespace IAM
          this.clWebClientManager.gotCharacterPowerCrossRefs += clWebClientManager_gotCharacterPowerCrossRefs;
          this.clWebClientManager.gotCharacterPowerKeywords += clWebClientManager_gotCharacterPowerKeywords;
          this.clWebClientManager.gotEmptyCharacterSheet += clWebClientManager_gotEmptyCharacterSheet;
+         // Power library informations
+         this.clWebClientManager.gotTypesOfUserPowers += clWebClientManager_gotTypesOfUserPowers;
 
          // from CreatePowerElement
          this.clCreatePowerElement.Version_btn_click += clCreatePowerElement_Version_btn_click;
@@ -419,11 +421,42 @@ namespace IAM
 
          SheetFinished();
       }
+
+      /// <summary>
+      /// 
+      /// </summary>
+      /// <param name="document"></param>
+      void clWebClientManager_gotTypesOfUserPowers(XDocument document)
+      {
+         Globals.TemporaryData.PowersXMLFiles.Add(document.Element("body"));
+         if (--Globals.TemporaryData.FilesStillToLoad == 0)
+         {
+            // find AppBar grid
+            Grid AppBarGrid = new Grid();
+            foreach (object objAppBar_grd in AppBar_grd.Children)
+            {
+               if ((objAppBar_grd.GetType().Name == "Grid") && ((objAppBar_grd as Grid).Name == Globals.TemporaryData.SelectedPowerLibrary + "AppBar_grd"))
+               {
+                  AppBarGrid = (objAppBar_grd as Grid);
+                  break;
+               }
+            }
+
+            clDisplayPowers.DisplayPowerLibraryCategories((AppBarGrid.Children.First() as StackPanel));
+            clDisplayPowers.DisplayPowerLibrarySkills((AppBarGrid.Children.First() as StackPanel));
+            LoadingData_bsind.IsBusy = false;
+         }
+      }
       #endregion __________________________________________________________________________________
       
       #region from DisplayPowers ----------------------------------------------------------------
       private void clDisplayPowers_selectedUser(object sender, SelectionChangedEventArgs e)
-      {}
+      {
+         LoadingData_bsind.IsBusy = true;
+         Globals.ResetTemporaryData("PowersXMLFiles");
+         clGetPowers.UserIsSelected((sender as ListBox).SelectedItem.ToString());
+         clWebClientManager.PrepareFilePaths("Get type of user powers", (sender as ListBox).SelectedItem.ToString());
+      }
       #endregion __________________________________________________________________________________
 
       #region from CreatePowerElement _____________________________________________________________
@@ -451,7 +484,7 @@ namespace IAM
       {
          // get characters name and stuff
          string itemToAdd = eButtonText.Element("name").Value.ToString();
-         itemToAdd = ToUpperCaseProper(itemToAdd);
+         itemToAdd = Globals.ToUpperCaseProper(itemToAdd);
 
          // insert extra info
          if (eButtonText.Element("type") != null)
@@ -484,36 +517,6 @@ namespace IAM
             btn.Tag = "CharacterSheet";
 
          ParentPanel.Children.Add(btn);
-      }
-
-      private static string ToUpperCaseProper(string toConvert)
-      {
-         char FirstLetter = ' ';
-         string haveConverted = "";
-         foreach (char SecondLetter in toConvert)
-         {
-            if (FirstLetter == ' ')
-               haveConverted += SecondLetter.ToString().ToUpper();
-            else
-               haveConverted += SecondLetter.ToString();
-            FirstLetter = SecondLetter;
-         }
-         return haveConverted;
-      }
-
-      private static string ToLowerCaseProper(string toConvert)
-      {
-         char FirstLetter = ' ';
-         string haveConverted = "";
-         foreach (char SecondLetter in toConvert)
-         {
-            if (FirstLetter == ' ')
-               haveConverted += SecondLetter.ToString().ToLower();
-            else
-               haveConverted += SecondLetter.ToString();
-            FirstLetter = SecondLetter;
-         }
-         return haveConverted;
       }
 
       /// <summary>
@@ -562,6 +565,7 @@ namespace IAM
          string gridname = ((sender as Button).Content as TextBox).Text.Replace("\n", "_");
          gridname = gridname.Replace(", ", "_");
          gridname = gridname.Replace(" ", "_");
+         gridname = Globals.ToLowerCaseProper(gridname);
          gridname += "AppBar_grd";
 
          if ((from vGrid in AppBar_grd.Children                              // make sure button doesn't already exist
@@ -616,7 +620,7 @@ namespace IAM
       /// <param name="sender">Clicked on button</param>
       private void UserMenu_Power(object sender)
       {
-         Globals.TemporaryData.SelectedPowerLibrary = (sender as Button).Tag.ToString();
+         Globals.TemporaryData.SelectedPowerLibrary = Globals.ToLowerCaseProper((sender as Button).Tag.ToString());
          if (AddAppBarGrid(sender))
          {
             clDisplayPowers.CreatePowerLibraryGrid(sender, LayoutRoot);
@@ -631,7 +635,7 @@ namespace IAM
                   break;
                }
             }
-            clDisplayPowers.DisplayPowerLibraryUsers(ToLowerCaseProper((sender as Button).Tag.ToString()), (AppBarGrid.Children.First() as StackPanel));
+            clDisplayPowers.DisplayPowerLibraryUsers((AppBarGrid.Children.First() as StackPanel));
          }
 
          PowerLibraryFinished();

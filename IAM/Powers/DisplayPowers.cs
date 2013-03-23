@@ -60,7 +60,7 @@ namespace IAM.Powers
          r = new RowDefinition();
          r.Height = new GridLength(1, GridUnitType.Star);
          outer_grd.RowDefinitions.Add(r);
-         outer_grd.Name = (sender as Button).Tag.ToString() + "Outer_grd";
+         outer_grd.Name = Globals.ToLowerCaseProper((sender as Button).Tag.ToString()) + "Outer_grd";
 
          // label
          Label name_lbl = new Label();
@@ -99,7 +99,7 @@ namespace IAM.Powers
       /// Will add users to combobox
       /// </summary>
       /// <param name="document"></param>
-      public void DisplayPowerLibraryUsers(string powerSelected, StackPanel AppBar_stckpnl)
+      public void DisplayPowerLibraryUsers(StackPanel AppBar_stckpnl)
       {  
          // stackpanel, combobox parent
          StackPanel stckpnl = new StackPanel();
@@ -126,7 +126,7 @@ namespace IAM.Powers
          lstbx.SelectionChanged += lstbx_SelectionChanged;
 
          // add data
-         foreach (string str in Globals.GameInformation.PowerIndexSingle.ElementAt(Globals.GameInformation.PowerIndex.IndexOf(powerSelected)))
+         foreach (string str in Globals.GameInformation.PowerIndexSingle.ElementAt(Globals.GameInformation.PowerIndex.IndexOf(Globals.TemporaryData.SelectedPowerLibrary)))
             lstbx.Items.Add(str);
 
          // connect the elements
@@ -134,6 +134,12 @@ namespace IAM.Powers
          stckpnl.Children.Add(lstbx);
          AppBar_stckpnl.Children.Add(stckpnl);
       }
+
+      public void DisplayPowerLibraryCategories(StackPanel AppBar_stckpnl)
+      { }
+
+      public void DisplayPowerLibrarySkills(StackPanel AppBar_stckpnl)
+      { }
       #endregion __________________________________________________________________________________
       #endregion ______________________________________________________________________________
 

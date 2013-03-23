@@ -33,6 +33,7 @@ namespace IAM.FileIO
          // Character sheet informations
          getCharacterStats, getCharacterPowerFiles, getCharacterPowerCrossRefs, getCharacterPowerKeywords, getEmptyCharacterSheet,
          // Power Library informations
+         getTypeOfUserPowers
       };
       int FileProcessTask;
 
@@ -56,6 +57,7 @@ namespace IAM.FileIO
       public event fromWebClientHandler gotCharacterPowerKeywords;
       public event fromWebClientHandler gotEmptyCharacterSheet;
       // Power Library informations
+      public event fromWebClientHandler gotTypesOfUserPowers;
       #endregion ______________________________________________________________________________________
       #endregion __________________________________________________________________________________
       #endregion ______________________________________________________________________________
@@ -70,9 +72,10 @@ namespace IAM.FileIO
       /// <param name="document">Character stat XML, to get correct power files from. Default: null</param>
       public void PrepareFilePaths(string Reason, string File = "", XDocument document = null)
       {
+         List<string> PowerIndex = new List<string>();
          switch (Reason)
          {
-            // Startup loading of informations
+         // Startup loading of informations
             case "Get list of games":
                FileProcessTask = (int)FileProcessEnum.getListOfGames;
                LoadFile("./index.xml");
@@ -97,7 +100,7 @@ namespace IAM.FileIO
                FileProcessTask = (int)FileProcessEnum.getTypesOfPower;
                LoadFile("./" + Globals.GameInformation.SelectedGame + "/powers/" + File + "/index_" + File + ".xml");
                break;
-            // Character sheet informations
+         // Character sheet informations
             case "Get character stats":
                FileProcessTask = (int)FileProcessEnum.getCharacterStats;
                LoadFile("./" + Globals.GameInformation.SelectedGame + "/characters/" + File + ".xml");
@@ -108,10 +111,11 @@ namespace IAM.FileIO
 
                foreach (XElement ePowerName in document.Descendants("powers"))
                {
+                  PowerIndex.Clear();
                   string powerType = ePowerName.Attribute("type").Value;
 
                   // find single power types
-                  List<string> PowerIndex = (from vTypes in ePowerName.Descendants(powerType)
+                  PowerIndex = (from vTypes in ePowerName.Descendants(powerType)
                                              select vTypes.Element("user").Value).Distinct().ToList();
                   PowerIndex.AddRange(Globals.GameInformation.PowerIndexForAll.ElementAt(Globals.GameInformation.PowerIndex.IndexOf(powerType)));  // find general powers
                   PowerIndex.Remove("");                                                          // Cleanup of list
@@ -162,6 +166,24 @@ namespace IAM.FileIO
             case "Get empty character sheet":
                FileProcessTask = (int)FileProcessEnum.getEmptyCharacterSheet;
                LoadFile("./" + Globals.GameInformation.SelectedGame + "/sheets/" + File + ".xml");
+               break;
+         // power informations
+            case "Get type of user powers":
+               PowerIndex.Clear();
+               FileProcessTask = (int)FileProcessEnum.getTypeOfUserPowers;
+
+               // find single power types
+               PowerIndex.Add(File);
+               PowerIndex.AddRange(Globals.GameInformation.PowerIndexForAll.ElementAt(Globals.GameInformation.PowerIndex.IndexOf(Globals.TemporaryData.SelectedPowerLibrary)));  // find general powers
+               PowerIndex.Remove("");                                                          // Cleanup of list
+
+               // number of files to load
+               Globals.TemporaryData.FilesStillToLoad += PowerIndex.Count;
+
+               PowerIndex.ForEach(delegate(string str)
+               {
+                  LoadFile("./" + Globals.GameInformation.SelectedGame + "/powers/" + Globals.TemporaryData.SelectedPowerLibrary + "/" + str + ".xml");
+               });
                break;
             default:
                throw new UnknownFileProcessException(Reason);
@@ -228,6 +250,9 @@ namespace IAM.FileIO
                   this.gotEmptyCharacterSheet(XDocument.Load(e.Result));
                   break;
                // Power library informations
+               case (int)FileProcessEnum.getTypeOfUserPowers:
+                  this.gotTypesOfUserPowers(XDocument.Load(e.Result));
+                  break;
                default:
                   throw new UnknownFileProcessException(Enum.GetName(typeof(FileProcessEnum), FileProcessTask));
             }

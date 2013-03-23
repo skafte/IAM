@@ -45,6 +45,36 @@ namespace IAM
          float px = (float)pt * 96/72;
          return px;
       }
+      public static string ToUpperCaseProper(string toConvert)
+      {
+         char FirstLetter = ' ';
+         string haveConverted = "";
+         foreach (char SecondLetter in toConvert)
+         {
+            if ((FirstLetter == ' ') || (FirstLetter == '_'))
+               haveConverted += SecondLetter.ToString().ToUpper();
+            else
+               haveConverted += SecondLetter.ToString();
+            FirstLetter = SecondLetter;
+         }
+         return haveConverted;
+      }
+
+      public static string ToLowerCaseProper(string toConvert)
+      {
+         char FirstLetter = ' ';
+         string haveConverted = "";
+         foreach (char SecondLetter in toConvert)
+         {
+            if ((FirstLetter == ' ') || (FirstLetter == '_'))
+               haveConverted += SecondLetter.ToString().ToLower();
+            else
+               haveConverted += SecondLetter.ToString();
+            FirstLetter = SecondLetter;
+         }
+         return haveConverted;
+      }
+
       #endregion ______________________________________________________________________________
 
       #region Properties ______________________________________________________________________

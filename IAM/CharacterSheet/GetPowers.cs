@@ -19,6 +19,55 @@ namespace IAM.CharacterSheet
 {
    public class GetPowers
    {
+      #region Properties ______________________________________________________________________
+      #region Private _____________________________________________________________________________
+      private string categorySelected;
+      private string skillSelected;
+      private string treeSelected;
+      private string subtreeSelected;
+      private List<string> categoryCollection = new List<string>();
+      private List<string> skillCollection = new List<string>();
+      private List<string> treeCollection = new List<string>();
+      private List<string> subtreeCollection = new List<string>();
+      #endregion __________________________________________________________________________________
+      #endregion ______________________________________________________________________________
+
+      #region Methods _________________________________________________________________________
+      #region Private _____________________________________________________________________________
+      /// <summary>
+      /// Will clean collections of power data
+      /// It will fall down from a parent collection to all its children and clean them all
+      /// </summary>
+      /// <param name="AmountToClean">Name of collection to clean from</param>
+      private void CleanCollections(string AmountToClean)
+      {
+         switch (AmountToClean)
+         {
+            case "user":
+               categoryCollection.Clear();
+               categorySelected = "";
+               skillCollection.Clear();
+               skillSelected = "";
+               //dTypeCharms.Document.Element("body").ReplaceWith(new XElement("body", ""));
+               goto case "category";
+            case "category":
+            case "skill":
+               treeCollection.Clear();
+               treeSelected = "";
+               goto case "tree";
+            case "tree":
+               subtreeCollection.Clear();
+               subtreeSelected = "";
+               goto case "subtree";
+            case "subtree":
+            default:
+               break;
+         }
+      }
+      #endregion __________________________________________________________________________________
+
+      #region Public ______________________________________________________________________________
+      #region Character _______________________________________________________________________________
       /// <summary>
       /// Will find the specific powers belonging to the selected sheet
       /// </summary>
@@ -107,5 +156,31 @@ namespace IAM.CharacterSheet
             Globals.TemporaryData.SelectedCharacterPowers.Element("body").Add(PowerKeywords);
          }
       }
+      #endregion ______________________________________________________________________________________
+      #region Library _________________________________________________________________________________
+
+      public void UserIsSelected(string user)
+      {
+         CleanCollections("user");
+      }
+      public void CategoryIsSelected(string user)
+      {
+         CleanCollections("category");
+      }
+      public void SkillIsSelected(string user)
+      {
+         CleanCollections("skill");
+      }
+      public void TreeIsSelected(string user)
+      {
+         CleanCollections("tree");
+      }
+      public void SubtreeIsSelected(string user)
+      {
+         CleanCollections("subtree");
+      }
+      #endregion ______________________________________________________________________________________
+      #endregion __________________________________________________________________________________
+      #endregion ______________________________________________________________________________
    }
 }
